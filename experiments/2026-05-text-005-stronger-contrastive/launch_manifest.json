@@ -1,0 +1,21 @@
+{
+  "experiment_id": "2026-05-text-005-stronger-contrastive",
+  "launched_at": "2026-04-24T22:50:39Z",
+  "git_sha": "0cb14771ac6ac216a7cec72b4bcd159808b9cd85",
+  "git_dirty": false,
+  "python_version": "3.8.10",
+  "core_commit": "e36293e12d3ff5ba8d05b6aaa376add38d73dd4e",
+  "config_sha256": "52b56ab83be3df3e4bf11e94ac5566305a5ab4c0dac18fd4a9cc8cf377db29aa",
+  "requirements_lock_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "data_paths": [
+    "../../../text-ip-adapter/data/pairs/train.llm.jsonl",
+    "../../../text-ip-adapter/data/pairs/val.llm.jsonl",
+    "../../../text-ip-adapter/data/pairs/test.llm.jsonl"
+  ],
+  "data_sha256": {
+    "../../../text-ip-adapter/data/pairs/train.llm.jsonl": "80587d8cc448c0e15f38e17dcabbce138d56dbbbf98e87b3fbff00b56e8ba93a",
+    "../../../text-ip-adapter/data/pairs/val.llm.jsonl": "fcf660d696774d242bd9d975e5d0bec0030303950a5187333b810a75965da76b",
+    "../../../text-ip-adapter/data/pairs/test.llm.jsonl": "1b57af97eade55cf482981afdd27f718f54fd6683a64fb0046cf099e16756352"
+  },
+  "path_base": "experiments/2026-05-text-005-stronger-contrastive/"
+}

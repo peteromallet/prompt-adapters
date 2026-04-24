@@ -7,7 +7,7 @@ tags:
   - same-architecture-as-004
   - hyperparameter-bump
   - minimum-viable-iteration
-status: planned
+status: running
 consequential: true
 type: training
 question: "Does bumping the projector-K/V contrastive weight from 0.1 (experiment 004) to 0.3 push T3b decisively past 60% AND tighten α-blend endpoints (frac_own < 0.30 at α=0, > 0.85 at α=1) without regressing T2 below 55%?"
