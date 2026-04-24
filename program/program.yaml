@@ -20,7 +20,8 @@ claims:
     status: testing
     primary_project: text-gemma3-prefix-kv
     gates_on: C1
-    evidence_so_far: "Experiment 004 capability probe: 6/8 probes show monotonic Jaccard interpolation across α∈{0,0.25,0.5,0.75,1.0} (own↔swap blend). Endpoint Jaccard 0.000 (refs produce fully distinct outputs), middle Jaccards 0.009-0.040 (mid-α textually positioned between endpoints). Directional positive evidence at the text-similarity level. Not yet verified at the STYLE axis specifically — need an LLM-judge α-blend probe ('does α=0.5 look stylistically intermediate?')."
+    evidence_so_far: "Experiment 004 capability probe: 6/8 probes show monotonic Jaccard interpolation across α∈{0,0.25,0.5,0.75,1.0}. LLM-judge follow-up (claude-haiku-4-5, 40 judgments) confirms a STYLE-axis signal but weak: frac_picked_as_own_ref grows monotonically from 0.50 (α=0) to 0.75 (α=1.0), signal strength 0.25. Endpoints behave imperfectly — even at α=0 (pure swap_z) only 50% of generations are perceived as more swap-like than own-like, suggesting the adapter projects onto a generic 'literary register' rather than fully committing to either reference's style. C3 has DIRECTIONAL evidence; not decisive."
+    note: "Decisive C3 would require frac_own ≈ 0 at α=0, ≈ 0.5 at α=0.5, ≈ 1.0 at α=1.0. Current: 0.50/0.62/0.75. The signal exists but is muted by the same projector-weakness that makes T3b WEAK in 004. Likely needs the 005 follow-up (stronger contrastive or no-trunk) to push C3 to supported."
 
   - id: C4
     statement: "A reference channel's win over prompting grows with generation length (context-efficiency advantage)."
