@@ -1,0 +1,21 @@
+{
+  "experiment_id": "2026-05-text-004-projector-contrastive",
+  "launched_at": "2026-04-24T21:23:07Z",
+  "git_sha": "2f7091cd69d179311f892826a35e46f8b4349389",
+  "git_dirty": false,
+  "python_version": "3.8.10",
+  "core_commit": "b523e0beb96827000bc05d131d5fdcb5a226f226",
+  "config_sha256": "affa5f3575aac788a2dbbe9b57ecb478290e5480cdf2020cb5402a9e633ed055",
+  "requirements_lock_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "data_paths": [
+    "../../../text-ip-adapter/data/pairs/train.llm.jsonl",
+    "../../../text-ip-adapter/data/pairs/val.llm.jsonl",
+    "../../../text-ip-adapter/data/pairs/test.llm.jsonl"
+  ],
+  "data_sha256": {
+    "../../../text-ip-adapter/data/pairs/train.llm.jsonl": "80587d8cc448c0e15f38e17dcabbce138d56dbbbf98e87b3fbff00b56e8ba93a",
+    "../../../text-ip-adapter/data/pairs/val.llm.jsonl": "fcf660d696774d242bd9d975e5d0bec0030303950a5187333b810a75965da76b",
+    "../../../text-ip-adapter/data/pairs/test.llm.jsonl": "1b57af97eade55cf482981afdd27f718f54fd6683a64fb0046cf099e16756352"
+  },
+  "path_base": "experiments/2026-05-text-004-projector-contrastive/"
+}
