@@ -6,20 +6,27 @@ Active plan of what to run next, in priority order. Gates on claim status (see [
 
 ### text-gemma3-prefix-kv
 
-Primary claim: C1. Current evidence: experiment 001 FAILED against prompting at n=20 (30% win rate, 6W/11L/3T), while experiment 002 PASSED at n=20 after cleaning rule-based instruction noise (70% win rate, 14W/6L/0T). T3 still fails as a decision instrument and needs an LLM-judge rebuild before 003.
+Primary claim: C1. Current evidence — **mixed, and more complicated than prior versions of this doc claimed**:
+
+- Experiment 001 (rule-based instructions): FAILED vs prompting at n=20 (30% win rate).
+- Experiment 002 (LLM instructions): PASSED vs prompting at n=20 (70-80% win rate).
+- New LLM-judge T3b on both: FAILED (coin-flip on style match).
+- Experiment 002b (conditioning-pathway diagnostic): localized the failure to **the projector** — the encoder produces reference-varying latents (cos_z 0.0-0.77 across pathological references) but the projector collapses them into near-identical K/V tensors (cos 0.77-0.98). So 002's T2 PASS was register bias, not reference conditioning. **C1 is downgraded from "first positive evidence" back toward "testing" — the operational spirit of the claim requires reference-driven style change, and we don't have that yet.**
 
 Process reference: use [`program/PROCESS.md`](./PROCESS.md) before planning, launching, finalizing, or writing up experiments.
 
-**Queued experiments**, cheapest intervention first:
+**Queued experiments**, revised after 002b's projector-bottleneck finding:
 
 | # | ID | Hypothesis | Status | Cost |
 |---|---|---|---|---|
-| 002 | `2026-04-text-002-gemma3-llm-instructions` | Cleaner LLM-generated instructions remove test-rig noise and free the prefix channel for style signal. T3 should improve. | **complete — T2 PASS (70%, n=20), T3 FAIL** | $0.55 |
-| 003 | `2026-05-text-003-gemma3-contrastive-loss` | Contrastive loss on encoder outputs directly attacks the "encoder produces similar latents per reference" failure mode. | planned | ~$0.70 |
-| 004 | `2026-05-text-004-gemma3-data-scale-10x` | 10× more data across 6+ registers cleans the style signal; standard data-scaling prescription. | planned | ~$5–10 (fetching + training) |
-| 005 | `2026-05-text-005-gemma3-wider-encoder` | Widen encoder bottleneck from 16→32 queries. Expand representational capacity. | planned | ~$0.70 |
+| 002 | `2026-04-text-002-gemma3-llm-instructions` | Cleaner LLM-generated instructions remove test-rig noise. | **closed — T2 PASS but register-bias, not reference conditioning** | $0.55 |
+| 002b | `2026-04-text-002b-conditioning-probe` | Localize where the conditioning signal dies in the pathway. | **finalized — projector is the bottleneck** | $0.12 |
+| **003** | `2026-05-text-003-projector-contrastive` | **Contrastive loss on per-layer K/V outputs** (not encoder). Pulls apart projector outputs across different-author references in-batch. Attacks the diagnosed bottleneck directly. | **planned (next)** | ~$0.80 |
+| 004 | `2026-05-text-004-projector-no-trunk` | Architectural fix: remove shared MLP trunk in `PrefixProjector`; per-layer heads project z → K/V directly. Eliminates the bottleneck structurally. Run only if 003 insufficient. | not yet scaffolded | ~$0.70 |
+| 005 | `2026-05-text-005-data-scale-10x` | 10× more data; deprioritized — won't fix the projector bottleneck on its own. Keep queued for after 003/004. | not yet scaffolded | ~$5-10 |
+| 006 | `2026-05-text-006-wider-encoder` | Widen encoder bottleneck from 16→32 queries. Lower priority — encoder already produces diverse latents per 002b. | not yet scaffolded | ~$0.70 |
 
-**C1 decision milestone**: after 003 and 004 complete. If both improve T2 meaningfully (>60% win rate with n≥20 probes), C1 is supported. If neither does, C1 is in trouble and we reconsider architecture.
+**C1 decision milestone**: after 003 (and possibly 004) complete. The success test is **not just T2 PASS** — it must include T3b PASS (LLM-judge style-match > 60% adapter wins) AND a positive conditioning-pathway probe re-run (cos_K/V across different refs < 0.6 post-training). If both pass, C1 is supported and we move to capability tests (α-blend, strength-dial). If neither does, the architecture (prefix-K/V) may genuinely not work at this scale and we reconsider — possibly Flamingo-style per-layer cross-attention, or abandoning the thread.
 
 ## Capability tests (gated on C1)
 
@@ -42,6 +49,8 @@ Once C1 is supported:
 
 ## What would cause the roadmap to change
 
-- **002's T2 result replicates independently at n>=20 → C1 supported.** Jump to capability tests + audio port after one independent replicate, not from 002 alone.
-- **002/003/004 all fail T2 → C1 refuted at small data scale.** Either abandon or try a different injection mechanism (Flamingo) before scaling.
-- **T3 surface-feature metric turns out to be uninformative regardless of training → replace with LLM-judge-based T3** (cheap to run; rebuild eval before running 003).
+- **003 moves cos_K/V across refs to <0.6 AND T3b > 60%** → projector bottleneck was the issue; C1 supported; move to capability tests + audio port.
+- **003 fails but 004 (architectural no-trunk) succeeds** → the shared-trunk projector design was structurally wrong; update architecture doc, then move on.
+- **Both 003 and 004 fail to open the K/V cosine gap** → the next-token CE training signal is too weak to teach reference conditioning at any projector shape. Consider a reconstruction auxiliary loss (force projector outputs to be decodable back to z) or abandon prefix-K/V for Flamingo-style per-layer cross-attention.
+- **003/004 succeed on K/V cosine but T3b still FAIL** → the base model's attention is saturating on content tokens and ignoring the expanded prefix signal; try heavier injection (more layers, higher projector scale) or rethink.
+- **Any experiment's T2 regresses back below 50% → data or config issue, investigate before continuing.**

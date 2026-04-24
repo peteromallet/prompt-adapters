@@ -1,0 +1,58 @@
+id: 2026-05-text-003-projector-contrastive
+modality: text
+project: text-gemma3-prefix-kv
+tags:
+  - projector-bottleneck
+  - contrastive-loss
+  - k-v-divergence
+  - same-architecture-as-002
+  - minimum-viable-fix
+status: planned
+consequential: true
+type: training
+question: "Does adding a contrastive loss on per-layer projector K/V outputs break the projector's near-constant collapse identified in experiment 002b?"
+hypothesis: |
+  Adding an InfoNCE-style contrastive term that pushes in-batch different-author projector
+  K/V outputs apart — combined with the existing next-token CE — will force the projector
+  to produce reference-specific K/V. Predict: after 2000 steps at contrastive weight ~0.1,
+  cos_K/V across pathological references drops from 002's 0.77-0.98 range into the 0.3-0.6
+  range. LLM-judge T3b moves from coin-flip (45-50%) to at least 55-60% adapter-wins.
+  T2 stays PASS (above 60%).
+parent: 2026-04-text-002b-conditioning-probe
+base_model: "google/gemma-3-4b-pt (frozen) — same as 001/002"
+dataset: "same 971 pairs as 002, LLM-generated instructions at data/pairs/*.llm.jsonl. NO data change."
+core_commit: "TBD at launch time (text-ip-adapter SHA after adding contrastive loss to training loop)"
+compute: "RTX 4090, ~45 min training + ~5 min eval with n=20 probes + pathway probe. Budget: ~$0.80."
+results: {}
+headline: "Contrastive loss on projector K/V — the minimum viable fix for the 002b-diagnosed projector bottleneck."
+implementation_notes: |
+  Training loop change (src/text_ip_adapter/train/loop.py):
+  1. For each batch, compute projector K/V for each sample.
+  2. For each injected layer: flatten (P, num_kv_heads, head_dim) -> single vector per sample.
+  3. Compute all-pairs cosine matrix (B x B) across different-author samples in batch.
+  4. Contrastive term: push off-diagonal cosines toward 0 (or below). Simplest form:
+       L_contrastive_layer = mean_off_diagonal(cos_matrix).clamp(min=0)
+     Aggregate across layers, add with weight lambda.
+  5. Total loss = L_ntk + lambda * L_contrastive. Start lambda=0.1; if no K/V gap
+     opens by step 500, bump to 0.5.
+  6. Log L_ntk and L_contrastive separately to wandb / train_log.jsonl.
+  Evaluation: re-run eval_probes.py with --n-judge 20 AND scripts/probe_conditioning.py on
+  the final checkpoint. Compare cos_K/V across refs vs 002b's baseline — this is the primary
+  result, not T2 or T3b.
+success_criteria:
+  - id: projector_unblocks
+    description: "cos_K/V across pathological references at end of training is < 0.6 (vs 002's 0.77-0.98). Hard gate."
+    priority: must
+  - id: t3b_moves
+    description: "LLM-judge T3b adapter_wins > swap_wins by at least 3 out of 20 probes."
+    priority: must
+  - id: t2_holds
+    description: "T2 vs prompted_baseline win rate >= 60%. No regression."
+    priority: must
+  - id: no_memorization_regression
+    description: "T4 memorization and ref_leak remain at 0%."
+    priority: should
+  - id: loss_balance
+    description: "Total training loss drops; contrastive term decreases alongside NTL. Logs must show both terms separately."
+    priority: should
+next: "If all must-pass: capability tests (alpha-blending, strength-dial), then consider 004 (no-trunk architecture) or 005 (data scale). If projector_unblocks fails: run 004 (architectural — remove shared trunk). If t3b_moves fails despite projector_unblocks passing: investigate whether the adapter learned an axis of variation that isn't style (wrong axis, not no axis)."
