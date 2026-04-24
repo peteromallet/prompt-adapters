@@ -1,0 +1,70 @@
+id: 2026-05-text-005-stronger-contrastive
+modality: text
+project: text-gemma3-prefix-kv
+tags:
+  - projector-bottleneck
+  - contrastive-loss
+  - same-architecture-as-004
+  - hyperparameter-bump
+  - minimum-viable-iteration
+status: planned
+consequential: true
+type: training
+question: "Does bumping the projector-K/V contrastive weight from 0.1 (experiment 004) to 0.3 push T3b decisively past 60% AND tighten α-blend endpoints (frac_own < 0.30 at α=0, > 0.85 at α=1) without regressing T2 below 55%?"
+hypothesis: |
+  Experiment 004 demonstrated that contrastive pressure on projector K/V outputs at
+  weight 0.1 broke the projector collapse (cos_K/V 0.91 -> 0.41 average) and produced
+  a directional but weak C3 signal (frac_own monotonic 0.50 -> 0.75 across α).
+  The 004 LLM-judge α-blend probe showed endpoint failure: at α=0 (pure swap_z),
+  the judge picks own-style as often as swap-style, suggesting the projector still
+  defaults toward a generic literary register that the contrastive term hasn't
+  fully overcome at weight 0.1.
+
+  Predict: at weight 0.3, the same contrastive mechanism with stronger pressure
+  will (1) drop cos_K/V further (target < 0.4 average across pathological refs),
+  (2) push T3b adapter-win rate to >= 60% (decisive PASS not WEAK), (3) tighten
+  α-blend endpoints (frac_own at α=0 below 0.30, at α=1 above 0.85), (4) keep T2
+  above 55% (allow slight dip vs 004's 60% since NTL/contrastive trade may grow).
+
+  Risk: at weight 0.3, contrastive may dominate NTL and T2 collapses. If T2 drops
+  below 50%, we have over-corrected; the answer is no-trunk projector (experiment
+  006), not more contrastive pressure.
+parent: 2026-05-text-004-projector-contrastive
+base_model: "google/gemma-3-4b-pt (frozen) - same as 002 and 004"
+dataset: "same 971 LLM-instructed pairs as 002 and 004; data/pairs/{train,val,test}.llm.jsonl. NO data change. Single variable: contrastive_weight 0.1 -> 0.3."
+core_commit: "TBD at launch (will pin text-ip-adapter SHA after committing configs/stage1_gemma_contrastive_03.yaml)"
+compute: "RTX 4090, ~37 min training + ~10 min eval (n=20 + pathway + capability + LLM-judge α-blend). Total budget ~$0.95."
+results: {}
+headline: "Single hyperparameter bump (contrastive_weight 0.1 -> 0.3) to test whether the WEAK T3b and weak C3 endpoints in 004 are a pressure problem or something deeper."
+implementation_notes: |
+  Only change vs 004: text-ip-adapter/configs/stage1_gemma_contrastive_03.yaml
+  with contrastive_weight: 0.3 instead of 0.1. Everything else identical.
+
+  Eval pipeline (same as 004 standard post-training):
+  1. eval_from_checkpoint.py -> samples_n20.jsonl (T1, T2, T3, T3b, T4, T5)
+  2. probe_conditioning.py -> cos_K/V across pathological refs
+  3. probe_capabilities.py -> α-blend Jaccard, strength-dial
+  4. analyze_alpha_blend_llm.py -> LLM-judge α-blend on style axis
+
+  Compare all of the above against 004's recorded values to know whether the
+  bump helped, hurt, or was neutral.
+success_criteria:
+  - id: t3b_decisive
+    description: "T3b LLM-judge style-match adapter_wins >= 12 of 20 (>=60%, vs 004's 11). Promotes from WEAK to PASS."
+    priority: must
+  - id: t2_holds
+    description: "T2 vs prompted_baseline win rate >= 55% at n=20 (slack vs 004's 60% for NTL/contrastive trade)."
+    priority: must
+  - id: alpha_endpoints_tighten
+    description: "LLM-judge α-blend frac_own at α=0 drops below 0.30 (vs 004's 0.50) AND at α=1 exceeds 0.85 (vs 004's 0.75)."
+    priority: must
+  - id: cos_kv_tightens
+    description: "Pathway probe avg cos_K_first across pathological refs < 0.35 (vs 004's 0.41)."
+    priority: should
+  - id: no_memorization_regression
+    description: "T4 memorization and ref_leak remain at 0%."
+    priority: should
+  - id: loss_balance
+    description: "loss_ntl decreases over training and loss_contrastive decreases on average. If loss_ntl plateaus or rises, contrastive is dominating and the result is uninterpretable."
+    priority: should
+next: "Three branches per outcome. (a) All must-pass -> C1 + C3 jointly supported; promote both claims, move to capability scaling or audio port. (b) cos_K/V tightens but T3b/α-endpoints don't -> pressure isn't the issue; run experiment 006 (no-trunk projector) for an architectural fix. (c) T2 collapses below 55% -> over-correction; 006 (no-trunk) as the alternative."
