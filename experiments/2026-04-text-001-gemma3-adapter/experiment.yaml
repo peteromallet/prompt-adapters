@@ -8,7 +8,7 @@ tags:
   - rule-based-instructions
   - 4-register-data
   - author-paired
-status: complete
+status: closed
 consequential: true
 question: "Can a reference-conditioned prefix K/V adapter on a frozen Gemma-3-4B beat prompting for style transfer?"
 hypothesis: "At 2000 steps on 971 author-paired pairs across 4 registers, the adapter will beat prompted_baseline on LLM-judge win rate."
@@ -26,3 +26,12 @@ results:
   test5_loss_curve: "SLOW"
 headline: "Adapter works mechanically, but n=20 eval shows T2 FAIL vs prompting (30%, 6W/11L/3T) and T3 only WEAK (12/20 own-wins)."
 next: "2026-04-text-002-gemma3-llm-instructions completed the instruction-quality follow-up; 2026-05-text-003-gemma3-contrastive-loss should wait until the T3 instrument is rebuilt."
+reflection:
+  hypothesis_outcome: refuted
+  surprises: |
+    n=4 TIE at step 2000 turned into n=20 FAIL (30% win rate). Rule-based instructions made the adapter genuinely WORSE than prompting, not tied. Small-n evaluation was hiding a clear negative result.
+  corrections_to_prior_beliefs: |
+    Instructions are not a cosmetic variable - they are first-order for this architecture. Noisy instructions force the prefix channel to compensate, destroying the style signal.
+  next_experiment: 2026-04-text-002-gemma3-llm-instructions
+  rolls_up_to_project: true
+  rolls_up_to_program: true

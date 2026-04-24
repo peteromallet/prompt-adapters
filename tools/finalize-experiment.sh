@@ -2,7 +2,7 @@
 set -euo pipefail
 
 usage() {
-  echo "usage: $0 <experiment-id>" >&2
+  echo "usage: $0 <experiment-id> [--push] [--checkpoint-path PATH] [--dry-run]" >&2
   exit 2
 }
 
@@ -25,11 +25,41 @@ yaml_value() {
     | sed -e 's/^"//' -e 's/"$//' -e "s/^'//" -e "s/'$//"
 }
 
-[[ $# -eq 1 ]] || usage
+experiment_id=""
+push=false
+dry_run=false
+checkpoint_path=""
 
-experiment_id="$1"
-repo_root="$(git rev-parse --show-toplevel)"
-exp_dir="${repo_root}/experiments/${experiment_id}"
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    --push)
+      push=true
+      shift
+      ;;
+    --dry-run)
+      dry_run=true
+      shift
+      ;;
+    --checkpoint-path)
+      [[ $# -ge 2 ]] || usage
+      checkpoint_path="$2"
+      shift 2
+      ;;
+    -*)
+      die "unknown argument: $1"
+      ;;
+    *)
+      [[ -z "$experiment_id" ]] || die "multiple experiment ids provided"
+      experiment_id="$1"
+      shift
+      ;;
+  esac
+done
+
+[[ -n "$experiment_id" ]] || usage
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+exp_dir="${REPO_ROOT}/experiments/${experiment_id}"
 
 [[ -d "$exp_dir" ]] || die "missing experiments/${experiment_id}"
 cd "$exp_dir"
@@ -78,12 +108,33 @@ sys.stdout.write("\n")
 PY
 mv "$tmp_manifest" launch_manifest.json
 
-sed -i.bak 's/^status: running$/status: complete/' experiment.yaml
+sed -i.bak 's/^status: running$/status: finalized/' experiment.yaml
 rm -f experiment.yaml.bak
+
+git_sha="$(git -C "$REPO_ROOT" rev-parse HEAD)"
+tag_name="exp-${experiment_id}-finalized"
+existing="$(git -C "$REPO_ROOT" rev-parse -q --verify "refs/tags/${tag_name}^{}" 2>/dev/null || true)"
+if [[ -z "$existing" ]]; then
+  git -C "$REPO_ROOT" tag -a "$tag_name" -m "finalized ${experiment_id}" HEAD
+elif [[ "$existing" == "$git_sha" ]]; then
+  echo "tag ${tag_name} already at HEAD, skipping"
+else
+  die "tag ${tag_name} already exists at ${existing}; refusing to move"
+fi
+
+if [[ "$push" == true ]]; then
+  push_args=("$experiment_id")
+  if [[ -n "$checkpoint_path" ]]; then
+    push_args+=(--checkpoint-path "$checkpoint_path")
+  fi
+  if [[ "$dry_run" == true ]]; then
+    push_args+=(--dry-run)
+  fi
+  python3 "${REPO_ROOT}/tools/hf_push.py" "${push_args[@]}" || exit $?
+fi
 
 echo "finalized experiments/${experiment_id}"
 echo "replay: inspect experiments/${experiment_id}/launch_manifest.json for pinned inputs and results hash"
-
 
 
 

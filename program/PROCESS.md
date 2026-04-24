@@ -50,7 +50,7 @@ Run the five-test battery before writing up: T1 discrimination, T2 vs prompted b
 
 **n≥20 probes minimum — hard rule.** Smaller probe sets are smoke tests only. LLM-judge should be available from day one for T2 and should replace brittle surface-feature T3 where possible.
 
-## Finalize
+## Finalize (ROBOT WORK: mechanical capture)
 
 Finalize robot-captured artifacts:
 
@@ -58,9 +58,23 @@ Finalize robot-captured artifacts:
 tools/finalize-experiment.sh <id>
 ```
 
-Finalization requires a launch manifest, non-empty results, non-empty learnings, and non-`TBD` `headline` and `next` fields. It records result hashes and flips the experiment to the complete state used by the current toolchain.
+Finalization requires a launch manifest, non-empty results, non-empty learnings, and non-`TBD` `headline` and `next` fields. It records result hashes and flips the experiment to the `finalized` state.
+
+Use `--push` to checkpoint the finalized experiment to Hugging Face, and `--checkpoint-path PATH` to include an external checkpoint file. The target namespace is `HF_NAMESPACE` or `peteromallet` by default. The token is read from `HF_TOKEN`, then `~/.cache/huggingface/token`. The push uploads `experiment.yaml`, `config.yaml`, `launch_manifest.json`, `requirements.lock`, `LEARNINGS.md`, `README.md`, `results/**`, and the optional checkpoint.
 
 Headline discipline matters: one sentence, actual result, no hedging placeholders, no `TBD`. If the result is negative, say so directly.
+
+## Close (HUMAN WORK: learning capture)
+
+Close the experiment after finalization:
+
+```bash
+tools/close-experiment.sh <id>
+```
+
+Closing requires `status: finalized`, blocks boilerplate by requiring `LEARNINGS.md` to be at least 400 bytes, and records the human reflection fields: `hypothesis_outcome`, `surprises`, `corrections_to_prior_beliefs`, `next_experiment`, `rolls_up_to_project`, and `rolls_up_to_program`.
+
+If `next_experiment` is not `none`, the close script creates the next experiment shell with the current experiment as parent. If roll-up flags are true, it opens `projects/<slug>/LEARNINGS.md` and/or `program/LEARNINGS.md` in `$EDITOR`; without `$EDITOR`, it prints a manual-update note.
 
 ## Write up
 
@@ -82,6 +96,7 @@ Replication starts from the manifest pin: git SHA, config hash, requirements has
 - Pre-register the hypothesis before launch.
 - Zero `TBD` at finalize.
 - No manifest means no experiment.
+- An experiment is not an experiment until it is CLOSED. Finalized means data captured; closed means learning captured.
 
 ## Common anti-patterns
 
@@ -90,3 +105,4 @@ Replication starts from the manifest pin: git SHA, config hash, requirements has
 - tune after eval and write it up as if it was pre-planned.
 - no manifest = no experiment.
 - n=4 is a smoke test, not an eval.
+- Treating finalized as good enough — this accumulates results without reflection.

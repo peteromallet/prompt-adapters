@@ -145,5 +145,15 @@ fi
 sed -i.bak 's/^status: planned$/status: running/' experiment.yaml
 rm -f experiment.yaml.bak
 
+tag_name="exp-${experiment_id}-launch"
+existing="$(git -C "$REPO_ROOT" rev-parse -q --verify "refs/tags/${tag_name}^{}" 2>/dev/null || true)"
+if [[ -z "$existing" ]]; then
+  git -C "$REPO_ROOT" tag -a "$tag_name" -m "launch ${experiment_id}" HEAD
+elif [[ "$existing" == "$git_sha" ]]; then
+  echo "tag ${tag_name} already at HEAD, skipping"
+else
+  die "tag ${tag_name} already exists at ${existing}; refusing to move"
+fi
+
 echo "launched experiments/${experiment_id}"
 echo "manifest: experiments/${experiment_id}/launch_manifest.json"
