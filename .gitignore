@@ -16,9 +16,14 @@ build/
 site/site/
 .cache/
 
-# Experiment outputs
-experiments/*/results/*
-!experiments/*/results/.gitkeep
+# Experiment outputs — track small analysis artifacts (JSONs, markdown, jsonl),
+# ignore large binaries (checkpoints live on HF or local scratch, not in git).
+experiments/*/results/*.pt
+experiments/*/results/*.bin
+experiments/*/results/*.safetensors
+experiments/*/results/*.ckpt
+experiments/*/results/checkpoints/
+experiments/*/results/wandb/
 
 # Environment and secrets
 .env*
