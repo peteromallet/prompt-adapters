@@ -2,12 +2,13 @@ type: training
 base_model: google/gemma-3-4b-pt
 training_config_path: text-ip-adapter/configs/stage1_gemma_contrastive.yaml
 parent_experiment: 2026-04-text-002-gemma3-llm-instructions
-# Data paths relative to the text-ip-adapter repo root on the pod.
-# launch-experiment.sh will sha256 these before launch.
+# Data paths relative to THIS experiment directory (launch-experiment.sh cds into exp dir then resolves).
+# These sibling-repo paths resolve locally for manifest hashing; the pod-side training invocation
+# uses the repo-relative paths in run.sh.
 data_paths:
-  - ../text-ip-adapter/data/pairs/train.llm.jsonl
-  - ../text-ip-adapter/data/pairs/val.llm.jsonl
-  - ../text-ip-adapter/data/pairs/test.llm.jsonl
+  - ../../../text-ip-adapter/data/pairs/train.llm.jsonl
+  - ../../../text-ip-adapter/data/pairs/val.llm.jsonl
+  - ../../../text-ip-adapter/data/pairs/test.llm.jsonl
 hparams:
   base_model_id: google/gemma-3-4b-pt
   max_steps: 2000
