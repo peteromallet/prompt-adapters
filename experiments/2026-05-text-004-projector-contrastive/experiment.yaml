@@ -7,7 +7,7 @@ tags:
   - k-v-divergence
   - same-architecture-as-002
   - minimum-viable-fix
-status: finalized
+status: closed
 consequential: true
 type: training
 question: "Does adding a contrastive loss on per-layer projector K/V outputs break the projector's near-constant collapse identified in experiment 003?"
