@@ -8,10 +8,13 @@ dataset:
     - essay
     - speech
     - screenplay
+instructions:
+  source: llm-generated
+  model: claude-haiku-4-5
 data_paths:
-  - ../../../text-ip-adapter/data/pairs/train.jsonl
-  - ../../../text-ip-adapter/data/pairs/val.jsonl
-  - ../../../text-ip-adapter/data/pairs/test.jsonl
+  - ../../../text-ip-adapter/data/pairs/train.llm.jsonl
+  - ../../../text-ip-adapter/data/pairs/val.llm.jsonl
+  - ../../../text-ip-adapter/data/pairs/test.llm.jsonl
 train_hparams:
   steps: 2000
   batch_size: 4

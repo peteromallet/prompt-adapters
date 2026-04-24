@@ -1,0 +1,21 @@
+{
+  "experiment_id": "2026-04-text-002-gemma3-llm-instructions",
+  "launched_at": "2026-04-18T00:00:00Z",
+  "git_sha": "RETROSPECTIVE-000000",
+  "git_dirty": true,
+  "python_version": "3.11",
+  "config_sha256": "b574f6bf8eb8021f8ef568bc428b17867e3b4769dd39153e2d4605a507c2400d",
+  "requirements_lock_sha256": null,
+  "data_paths": [
+    "../../../text-ip-adapter/data/pairs/train.llm.jsonl",
+    "../../../text-ip-adapter/data/pairs/val.llm.jsonl",
+    "../../../text-ip-adapter/data/pairs/test.llm.jsonl"
+  ],
+  "data_sha256": {
+    "../../../text-ip-adapter/data/pairs/train.llm.jsonl": null,
+    "../../../text-ip-adapter/data/pairs/val.llm.jsonl": null,
+    "../../../text-ip-adapter/data/pairs/test.llm.jsonl": null
+  },
+  "_data_hash_status": "blocked: source data not reachable at commit time",
+  "path_base": "experiments/2026-04-text-002-gemma3-llm-instructions/"
+}

@@ -1,0 +1,21 @@
+{
+  "experiment_id": "2026-04-text-001-gemma3-adapter",
+  "launched_at": "2026-04-18T00:00:00Z",
+  "git_sha": "RETROSPECTIVE-000000",
+  "git_dirty": true,
+  "python_version": "3.11",
+  "config_sha256": "1619f1fec0ef259c3b3aa3d406e4348b27e910304f20f579e256d7d9369e8b2a",
+  "requirements_lock_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "data_paths": [
+    "../../../text-ip-adapter/data/pairs/train.jsonl",
+    "../../../text-ip-adapter/data/pairs/val.jsonl",
+    "../../../text-ip-adapter/data/pairs/test.jsonl"
+  ],
+  "data_sha256": {
+    "../../../text-ip-adapter/data/pairs/train.jsonl": null,
+    "../../../text-ip-adapter/data/pairs/val.jsonl": null,
+    "../../../text-ip-adapter/data/pairs/test.jsonl": null
+  },
+  "_data_hash_status": "blocked: source data not reachable at commit time",
+  "path_base": "experiments/2026-04-text-001-gemma3-adapter/"
+}
