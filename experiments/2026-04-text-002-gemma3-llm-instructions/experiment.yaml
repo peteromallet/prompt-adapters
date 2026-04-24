@@ -1,0 +1,29 @@
+id: 2026-04-text-002-gemma3-llm-instructions
+modality: text
+project: text-gemma3-prefix-kv
+tags:
+  - frozen-base
+  - prefix-kv-injection
+  - perceiver-encoder
+  - llm-generated-instructions
+  - 4-register-data
+  - author-paired
+  - ablation-vs-001
+status: complete
+consequential: true
+question: "Does replacing rule-based instructions with Claude-generated content-only instructions push T3 style-carryover from FAIL → PASS, without degrading T1/T2?"
+hypothesis: "Cleaner content-only instructions free the prefix channel to carry style signal instead of compensating for noisy instructions. Expectation: T3 at least WEAK, T2 stable or improved over 001's TIE."
+parent: 2026-04-text-001-gemma3-adapter
+base_model: "google/gemma-3-4b-pt"
+dataset: "971 pairs (same as 001) with instructions regenerated via claude-haiku-4-5 from target only; output at data/pairs/{train,val,test}.llm.jsonl. Regen cost: ~$0.13."
+core_commit: "RETROSPECTIVE-000000"
+compute: "RTX 4090, ~37 min training + ~2 min regen, ~$0.55 total"
+results:
+  test1_discrimination: "PASS (jaccard 0.201, n=20)"
+  test2_vs_prompting: "PASS (70% win rate, 14W/6L/0T, n=20)"
+  test3_style_carryover: "FAIL (13/20 own-wins, mean adv ≈ 0)"
+  test4_memorization: "PASS"
+  test4_ref_leak: "PASS"
+  test5_loss_curve: "SLOW (15.6%)"
+headline: "LLM-generated instructions made T2 decisively PASS at n=20 (70%, 14W/6L/0T) after 001's FAIL, but T3 regressed from WEAK to FAIL under the n=20 instrument."
+next: "Rebuild T3 as an LLM-judge style-match instrument before 2026-05-text-003-gemma3-contrastive-loss; do not use the current surface-feature T3 as the next decision gate."

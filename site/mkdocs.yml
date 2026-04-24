@@ -13,7 +13,15 @@ theme:
         name: Switch to light mode
 nav:
   - Home: index.md
+  - Program:
+      - Overview: program/index.md
+      - Strategy: program/strategy.md
+      - Learnings: program/learnings.md
+      - Roadmap: program/roadmap.md
+  - Process: process.md
+  - Projects:
+      - Overview: projects/index.md
+      - text-gemma3-prefix-kv: projects/text-gemma3-prefix-kv.md
   - Experiments: experiments/index.md
   - Architecture: architecture.md
-  - Learnings: learnings.md
   - Replicate: replicate.md

@@ -1,20 +1,28 @@
 id: 2026-04-text-001-gemma3-adapter
 modality: text
-status: running
+project: text-gemma3-prefix-kv
+tags:
+  - frozen-base
+  - prefix-kv-injection
+  - perceiver-encoder
+  - rule-based-instructions
+  - 4-register-data
+  - author-paired
+status: complete
 consequential: true
 question: "Can a reference-conditioned prefix K/V adapter on a frozen Gemma-3-4B beat prompting for style transfer?"
 hypothesis: "At 2000 steps on 971 author-paired pairs across 4 registers, the adapter will beat prompted_baseline on LLM-judge win rate."
 parent: null
 base_model: "google/gemma-3-4b-pt, arch gemma3, 34 layers, hidden 2560, GQA 8/4 heads, head_dim 256"
 dataset: "local at ../../../text-ip-adapter/data/pairs/, 971 train pairs across poetry/essay/speech/screenplay from Gutenberg + Miller Center + IMSDb"
-core_commit: "TBD"
+core_commit: "RETROSPECTIVE-000000"
 compute: "RTX 4090, ~1.5 hours projected, ~$0.83 (at $0.69/hr)"
 results:
-  test1_discrimination: "PASS (step 1500, jaccard 0.002)"
-  test2_vs_prompting: "PASS (step 1500, 67% win rate)"
-  test3_style_carryover: "WEAK"
+  test1_discrimination: "PASS (jaccard 0.058, n=20)"
+  test2_vs_prompting: "FAIL (30% win rate, 6W/11L/3T, n=20)"
+  test3_style_carryover: "WEAK (12/20 own-wins)"
   test4_memorization: "PASS"
   test4_ref_leak: "PASS"
-  test5_loss_curve: "SLOW-still-improving"
-headline: "Adapter works mechanically and beats prompting 2/3 on Claude judge; style-carryover is weak — next: more data or contrastive loss."
-next: "TBD (likely 2026-05-text-002-contrastive-loss or 2026-05-text-002-data-scale)"
+  test5_loss_curve: "SLOW"
+headline: "Adapter works mechanically, but n=20 eval shows T2 FAIL vs prompting (30%, 6W/11L/3T) and T3 only WEAK (12/20 own-wins)."
+next: "2026-04-text-002-gemma3-llm-instructions completed the instruction-quality follow-up; 2026-05-text-003-gemma3-contrastive-loss should wait until the T3 instrument is rebuilt."

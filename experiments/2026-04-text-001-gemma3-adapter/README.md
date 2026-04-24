@@ -1,6 +1,6 @@
 # 2026-04-text-001-gemma3-adapter
 
-Status: running. Results below are in progress, preliminary results from the current text adapter run.
+Status: complete. Results below are the n=20 retrospective evaluation for the first text adapter run.
 
 ## Question
 
@@ -18,15 +18,15 @@ Train a small reference-conditioned prefix K/V adapter against frozen `google/ge
 
 | Test | Verdict | Notes |
 | --- | --- | --- |
-| T1 reference discrimination | PASS | Step 1500, jaccard 0.002; in progress, preliminary results. |
-| T2 adapter vs prompting | PASS | Step 1500, 67% LLM-judge win rate; in progress, preliminary results. |
-| T3 style carryover | WEAK | Style signal transfers weakly; in progress, preliminary results. |
-| T4 memorization and reference leak | PASS | Memorization and ref-leak checks pass; in progress, preliminary results. |
-| T5 loss curve | SLOW-still-improving | Loss continues improving slowly; in progress, preliminary results. |
+| T1 reference discrimination | PASS | Jaccard 0.058 at n=20: the adapter produces reference-conditioned differences. |
+| T2 adapter vs prompting | FAIL | 30% win rate, 6W/11L/3T at n=20. The prompted baseline beat the adapter. |
+| T3 style carryover | WEAK | 12/20 own-wins. There is some directional signal, but not enough to call style transfer solved. |
+| T4 memorization and reference leak | PASS / PASS | Memorization and reference-leak checks pass. |
+| T5 loss curve | SLOW | Training was still improving slowly rather than clearly converged. |
 
 ## Learnings
 
-The adapter works mechanically and beats prompting 2/3 on Claude judge, but style carryover is weak. Data scale is the leading suspect before changing the adapter architecture.
+The adapter works mechanically, but the n=20 evaluation reverses the early optimistic read: T2 fails against prompting and T3 is only weak. The important methodological lesson is that small probe counts were misleading; experiment 002 tested whether instruction quality, rather than the prefix-K/V architecture itself, caused the failure.
 
 ## Replicate
 

@@ -1,0 +1,59 @@
+name: prompt-adapters
+thesis: "Reference conditioning via dense latent channels can beat prompting on style/behavior transfer, and the architectural pattern generalizes across modalities (text, audio, music, video)."
+
+claims:
+  - id: C1
+    statement: "Prefix-K/V adapters on a frozen base LM beat the prompted_baseline for style transfer, at reasonable data scales."
+    status: testing                       # untested | testing | supported | refuted | abandoned
+    primary_project: text-gemma3-prefix-kv
+    evidence_so_far: "001 FAIL (30% win rate, 6W/11L/3T, n=20). 002 PASS (70% win rate, 14W/6L/0T, n=20) after cleaning rule-based instruction noise. First robust positive T2 evidence; needs one independent replicate (003 or data-scale) before C1 moves to supported."
+
+  - id: C2
+    statement: "The architectural pattern (reference encoder → projector → prefix injection into frozen base) transfers across modalities."
+    status: untested
+    primary_project: null
+    gates_on: C1
+    evidence_so_far: "Requires a second-modality port once C1 is supported."
+
+  - id: C3
+    statement: "Composability (α-blending two reference latents) produces smooth interpolations in generated style — a capability prompting cannot replicate."
+    status: untested
+    primary_project: text-gemma3-prefix-kv
+    gates_on: C1
+    evidence_so_far: "Probe not yet implemented. Planned after C1 is supported."
+
+  - id: C4
+    statement: "A reference channel's win over prompting grows with generation length (context-efficiency advantage)."
+    status: untested
+    gates_on: C1
+
+active_projects:
+  - id: text-gemma3-prefix-kv
+    modality: text
+    status: active
+    current_experiment: 2026-05-text-003-gemma3-contrastive-loss
+    claim_primary: C1
+
+planned_projects:
+  - id: audio-musicgen-prefix-kv
+    modality: audio
+    status: planned
+    gates_on: C1
+    note: "Port the text pattern to MusicGen. Tests C2."
+  - id: music-musicgen-prefix-kv
+    modality: music
+    status: planned
+    gates_on: C1
+  - id: video-tbd-prefix-kv
+    modality: video
+    status: planned
+    gates_on: C1
+    note: "Base model TBD — Mochi, Wan, or similar."
+
+principles:
+  - "Cheapest intervention first: fix test-rig noise before adding architecture."
+  - "Capability tests before scaling: α-blending and strength-dial are what prompting literally cannot do."
+  - "Author-paired matched-style data is the bedrock; without it, style is unlearnable from next-token CE."
+  - "Every experiment must answer a specific pre-registered question."
+  - "Experiments are immutable once written up; core code evolves via SHA pinning."
+  - "Claude LLM-judge is cheap enough ($0.001/judgment) to use from day one."
