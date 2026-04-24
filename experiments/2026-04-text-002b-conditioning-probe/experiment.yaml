@@ -1,0 +1,55 @@
+id: 2026-04-text-002b-conditioning-probe
+modality: text
+project: text-gemma3-prefix-kv
+tags:
+  - diagnostic
+  - no-training
+  - conditioning-pathway
+  - pathological-references
+  - projector-bottleneck
+status: finalized
+consequential: true
+type: diagnostic
+question: "Is the reference-conditioning pathway (encoder → projector → injection → output) actually carrying reference-specific signal end-to-end? If not, at which layer does the signal die?"
+hypothesis: "Given experiment 002's T2 PASS but T3b FAIL, the adapter likely produces reference-INDEPENDENT outputs despite beating prompting. Predict: either (a) encoder latents collapse to near-identical for any reference, or (b) encoder produces diverse latents but projector/injection doesn't propagate them to output."
+parent: 2026-04-text-002-gemma3-llm-instructions
+base_model: "google/gemma-3-4b-pt (frozen) + experiment 002's trained adapter checkpoint"
+dataset: "10 diagnostic probes from experiments/2026-04-text-002-gemma3-llm-instructions val split. Reference variants: own, swap, zero-prefix, random-tokens, out-of-domain (Python code). No training data used."
+core_commit: "text-ip-adapter: f3dc1980280aa16a75f38ce0a114a6a61fb3ac44"
+compute: "RTX 4090, ~10 min inference, ~$0.12"
+results:
+  cos_z_swap: 0.766
+  cos_z_zero: 0.000
+  cos_z_random: 0.382
+  cos_z_code: 0.420
+  cos_K_first_swap: 0.978
+  cos_K_last_swap: 0.963
+  cos_K_first_zero: 0.908
+  cos_K_last_zero: 0.817
+  cos_K_first_random: 0.805
+  cos_K_last_random: 0.770
+  cos_K_first_code: 0.934
+  cos_K_last_code: 0.853
+  gen_jaccard_swap: 0.127
+  gen_jaccard_zero: 0.003
+  gen_jaccard_random: 0.003
+  gen_jaccard_code: 0.009
+  diagnosis: "projector is the bottleneck"
+  encoder_working: true
+  projector_collapsing_signal: true
+  injection_working: true
+headline: "Diagnostic localizes the conditioning failure: encoder produces reference-varying latents (cos_z 0.0–0.77) but the projector collapses them into near-identical K/V tensors (cos 0.77–0.98), so downstream generation has ~no reference-specific signal to work with. The injection path and base model are fine."
+next: "Revise experiment 003 from 'contrastive loss on encoder outputs' to 'projector bottleneck fix'. Two sub-options (003a: contrastive loss on per-layer K/V outputs; 003b: architectural — remove shared MLP trunk in projector)."
+reflection:
+  hypothesis_outcome: confirmed
+  surprises: |
+    The projector collapse is more severe than expected. Zero-prefix z (all zeros) produces K/V that is 91% cosine-similar to own-reference K/V — the projector is near-constant across vastly different inputs. Also surprising: the base model is very sensitive to the tiny K/V differences that DO remain (zero-prefix generation is wildly different from own despite 91% K/V similarity on layer 1), meaning the downstream stack is fine and the pathway problem is isolated to the projector.
+  corrections_to_prior_beliefs: |
+    (1) Experiment 002's T2 PASS (80% win rate vs prompting) is real but NOT evidence of reference conditioning — it's register bias. C1 should be downgraded from "first positive evidence" back toward "testing" because the operational definition requires reference-driven style change, not just quality-over-prompting.
+    (2) Contrastive loss on encoder outputs (originally planned for 003) would be misdirected — the encoder already produces diverse latents. The fix needs to live at the projector.
+    (3) "Beat prompting on T2" is decisively NOT sufficient evidence of the architecture working as intended. The capability tests (α-blend, strength-dial) are even more load-bearing than I had marked — they would have caught this failure much earlier.
+  next_experiment: 2026-05-text-003a-projector-contrastive
+  rolls_up_to_project: true
+  rolls_up_to_program: true
+process_deviations: |
+  This experiment was run outside the PROCESS.md workflow: tools/launch-experiment.sh was NOT invoked, launch_manifest.json was backfilled retroactively, and the text-ip-adapter repo was not under version control at run time. The probe_conditioning.py script was committed to text-ip-adapter after the run (SHA f3dc198 represents the state at commit time, which matches the script that ran). Acknowledged as a process failure; the backfilled manifest is marked with backfilled=true for auditability. First instance of using the lifecycle scripts on a real experiment — discovered that finalize-experiment.sh assumes training outputs and needs a small tweak for diagnostic-type experiments.

@@ -1,0 +1,51 @@
+{
+  "experiment_id": "2026-04-text-002b-conditioning-probe",
+  "type": "diagnostic",
+  "backfilled": true,
+  "backfill_reason": "First experiment run without using tools/launch-experiment.sh. Manifest constructed retroactively from known state at run time. Acknowledged in LEARNINGS.md as a process violation.",
+  "launched_at": "2026-04-24T22:40:00Z",
+  "git": {
+    "prompt_adapters_sha": "6b57b0f3bd4f52115ad3dfa78da2595ad8688d48",
+    "prompt_adapters_branch": "main",
+    "prompt_adapters_dirty_at_launch": true,
+    "text_ip_adapter_sha": "f3dc1980280aa16a75f38ce0a114a6a61fb3ac44",
+    "text_ip_adapter_branch": "main",
+    "text_ip_adapter_dirty_at_launch": false,
+    "note": "text-ip-adapter was pre-git-init at the time the probe ran; SHA f3dc198 was written retroactively to cover the probe_conditioning.py source used."
+  },
+  "environment": {
+    "python": "3.11.10",
+    "cuda": "12.4",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "pod_id": "e0vudir5xdxq8d",
+    "base_model": "google/gemma-3-4b-pt",
+    "transformers": "5.6.2"
+  },
+  "input_artifacts": {
+    "parent_checkpoint": {
+      "path_on_pod": "/workspace/text-ip-adapter/checkpoints/stage1_gemma_llm/final.pt",
+      "source_experiment": "2026-04-text-002-gemma3-llm-instructions",
+      "sha256": "not-captured-at-run-time"
+    },
+    "probes_file": {
+      "path_on_pod": "/workspace/text-ip-adapter/data/pairs/probes_n20_llm.jsonl",
+      "local_sha256": "ee24758e9dcee2c8b53cd85997bf833daa51d7bd4fc56c5bf9f31fea843deaeb",
+      "n_probes_used": 10
+    },
+    "probe_script": {
+      "path": "text-ip-adapter/scripts/probe_conditioning.py",
+      "committed_at_sha": "f3dc1980280aa16a75f38ce0a114a6a61fb3ac44"
+    }
+  },
+  "command": "cd /workspace/text-ip-adapter && python scripts/probe_conditioning.py --checkpoint checkpoints/stage1_gemma_llm/final.pt --config configs/stage1_gemma_llm.yaml --probes data/pairs/probes_n20_llm.jsonl --output-dir results_probe_002b --n-probes 10 --max-new-tokens 80",
+  "variants_tested": ["own", "swap", "zero", "random", "code"],
+  "output_artifacts": [
+    "results/analysis.json",
+    "results/cosines.json",
+    "results/generations.jsonl",
+    "results/prefix_kv_summary.json"
+  ],
+  "results_sha256": {
+    "analysis.json": "0dce419c44b577351f8f2af99de160f2742872774db00b8b217fa452e3a5f97a"
+  }
+}

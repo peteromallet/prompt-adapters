@@ -1,0 +1,12 @@
+# Diagnostic experiment — no training. See experiment.yaml and launch_manifest.json.
+type: diagnostic
+base_model: google/gemma-3-4b-pt
+parent_experiment: 2026-04-text-002-gemma3-llm-instructions
+parent_checkpoint: checkpoints/stage1_gemma_llm/final.pt  # on the pod, under text-ip-adapter
+probes_path: data/pairs/probes_n20_llm.jsonl              # on the pod, under text-ip-adapter
+data_paths:
+  - data/pairs/probes_n20_llm.jsonl
+n_probes: 10
+max_new_tokens: 80
+variants: [own, swap, zero, random, code]
+probe_script: text-ip-adapter/scripts/probe_conditioning.py
