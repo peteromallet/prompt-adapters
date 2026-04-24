@@ -21,8 +21,8 @@ Process reference: use [`program/PROCESS.md`](./PROCESS.md) before planning, lau
 |---|---|---|---|---|
 | 002 | `2026-04-text-002-gemma3-llm-instructions` | Cleaner LLM-generated instructions remove test-rig noise. | **closed — T2 PASS but register-bias, not reference conditioning** | $0.55 |
 | 003 | `2026-04-text-003-conditioning-probe` | Localize where the conditioning signal dies in the pathway. | **finalized — projector is the bottleneck** | $0.12 |
-| **004** | `2026-05-text-004-projector-contrastive` | **Contrastive loss on per-layer K/V outputs** (not encoder). Pulls apart projector outputs across different-author references in-batch. Attacks the diagnosed bottleneck directly. | **planned (next)** | ~$0.80 |
-| 005 | `2026-05-text-005-projector-no-trunk` | Architectural fix: remove shared MLP trunk in `PrefixProjector`; per-layer heads project z → K/V directly. Eliminates the bottleneck structurally. Run only if 004 insufficient. | not yet scaffolded | ~$0.70 |
+| 004 | `2026-05-text-004-projector-contrastive` | Contrastive loss on per-layer K/V outputs. | **closed — projector unblock decisive (cos_K/V 0.91→0.41); T2 PASS 60%, T3b WEAK 55%; α-blend 6/8 monotonic; strength-dial saturates at λ=1** | $0.56 |
+| **005** | `2026-05-text-005-projector-followup` | Push T3b decisively past 60%. Two candidate sub-experiments to choose from based on operator judgment: (a) bump contrastive_weight 0.1 → 0.3 with same architecture, (b) remove shared MLP trunk in projector and run with weight 0.1. Pick one to start; run the other if needed. | **planned (next)** | ~$0.80 |
 | 006 | `2026-05-text-006-data-scale-10x` | 10× more data; deprioritized — won't fix the projector bottleneck on its own. Keep queued for after 004/005. | not yet scaffolded | ~$5-10 |
 | 007 | `2026-05-text-007-wider-encoder` | Widen encoder bottleneck from 16→32 queries. Lower priority — encoder already produces diverse latents per 003. | not yet scaffolded | ~$0.70 |
 

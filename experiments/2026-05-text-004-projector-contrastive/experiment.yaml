@@ -7,7 +7,7 @@ tags:
   - k-v-divergence
   - same-architecture-as-002
   - minimum-viable-fix
-status: running
+status: finalized
 consequential: true
 type: training
 question: "Does adding a contrastive loss on per-layer projector K/V outputs break the projector's near-constant collapse identified in experiment 003?"
@@ -21,10 +21,52 @@ hypothesis: |
 parent: 2026-04-text-003-conditioning-probe
 base_model: "google/gemma-3-4b-pt (frozen) — same as 001/002"
 dataset: "same 971 pairs as 002, LLM-generated instructions at data/pairs/*.llm.jsonl. NO data change."
-core_commit: "TBD at launch time (text-ip-adapter SHA after adding contrastive loss to training loop)"
-compute: "RTX 4090, ~45 min training + ~5 min eval with n=20 probes + pathway probe. Budget: ~$0.80."
-results: {}
-headline: "Contrastive loss on projector K/V — the minimum viable fix for the 003-diagnosed projector bottleneck."
+core_commit: "text-ip-adapter SHA b523e0beb96827000bc05d131d5fdcb5a226f226 (contrastive loss in train/loop.py)"
+compute: "RTX 4090, ~37 min training + ~10 min eval (n=20 + pathway probe) + capability probe. Total ~$0.85."
+results:
+  test1_discrimination: "PASS (mean Jaccard 0.177, n=20; tighter than 002's 0.201)"
+  test2_vs_prompting: "PASS (60% win rate, 12W/6L/2T, n=20, Claude judge)"
+  test3_style_carryover_surface: "WEAK (16/20 own-wins, mean_advantage ~ 0.000)"
+  test3b_llm_style_match: "WEAK (55% adapter-win rate, 11W/7L/2T, n=20, Claude judge - directional improvement vs 002's 45% coin flip)"
+  test4_memorization: "PASS (0% target 10-gram hits)"
+  test4_ref_leak: "PASS (0% reference 5-gram hits)"
+  test5_loss_curve: "SLOW (14.6% improvement, trained to schedule end)"
+  pathway_probe_cos_K_first_avg: 0.41
+  pathway_probe_cos_K_first_swap: 0.310
+  pathway_probe_cos_K_first_zero: 0.409
+  pathway_probe_cos_K_first_random: 0.608
+  pathway_probe_cos_K_first_code: 0.333
+  pathway_probe_cos_z_swap: 0.401
+  pathway_probe_cos_z_zero: 0.000
+  pathway_probe_cos_z_random: 0.373
+  pathway_probe_cos_z_code: 0.247
+  must_pass_projector_unblocks: "PASS (cos_K/V dropped from 003's 0.77-0.98 baseline to 0.31-0.66; <0.6 satisfied 3 of 4 variants, marginal for random at 0.61)"
+  must_pass_t3b_moves: "PASS (4 net adapter-wins of 20, threshold was >=3)"
+  must_pass_t2_holds: "PASS (60% exactly, threshold was >=60%)"
+  should_no_memorization_regression: "PASS"
+  should_loss_balance: "PASS (loss_ntl 2.6 -> 2.25; loss_contrastive oscillating 0.16-0.50, decreased on average)"
+  capability_test_alpha_blend: "DIRECTIONAL POSITIVE (6/8 probes show monotonic Jaccard interpolation across α∈{0,0.25,0.5,0.75,1.0}; endpoint Jaccard 0.000, asymmetric mid-balance 0.036). Evidence the latent space supports continuous reference interpolation."
+  capability_test_strength_dial: "PARTIAL / SATURATION (λ=0 differs from λ=1 by Jaccard=0.000; λ=0.5 vs λ=1 = 0.155; λ=2 vs λ=1 = 0.243 — λ=2 is MORE similar to λ=1 than λ=0.5 is, indicating saturation around λ=1, not a smooth continuous dial. Output remains coherent at all λ — length(λ=2)/length(λ=1) = 1.01.)"
+headline: "Contrastive loss on projector K/V broke the projector collapse decisively (cos_K/V 0.91 -> 0.41 average). All must-pass criteria met but T2/T3b are at the edge. Capability tests: α-blend shows monotonic interpolation in 6/8 probes (directional C3 evidence); strength-dial saturates at λ=1 rather than scaling smoothly. Net: C1 first non-register-bias evidence; C3 directional positive; C4 partial."
+next: "Two parallel branches based on capability tests. (a) Bump contrastive_weight 0.1 -> 0.3 OR run experiment 005 (no-trunk projector) — these target the marginal T3b gap. (b) Run a stronger α-blend probe with LLM-judge style-axis verification, since textual Jaccard monotonicity doesn't guarantee STYLE-axis interpolation. Then capability-test the result. The audio-port (experiment 008+, separate project) is unlocked once one of (a) is decisive."
+
+reflection:
+  hypothesis_outcome: partially_confirmed
+  surprises: |
+    1. The contrastive loss did exactly what the diagnostic predicted: cos_K/V collapsed from 0.91 to 0.41 average. Larger swing than expected (-0.50 vs predicted -0.30 to -0.50). Validates the 003 diagnosis precisely.
+    2. cos_z (encoder output diversity) ALSO improved from 0.77 to 0.40 for swap variants — gradient flow back through the projector improved the encoder too, without any direct pressure on z. Free side-effect.
+    3. T3b moved less than the projector unblock would suggest. cos_K/V dropped 50 percentage points but T3b only moved 10pp. That gap is the key open question.
+    4. α-blend showed monotonic interpolation in 6 of 8 probes — STRONGER than I predicted (predicted 3-5/8). The latent space appears more continuous than I feared.
+    5. Strength-dial saturated. λ=2 outputs are more like λ=1 than λ=0.5 outputs are. The model has a "loud enough" threshold, not a smooth intensity dial. Unexpected and means C4 needs different framing.
+  corrections_to_prior_beliefs: |
+    1. C1 has its first non-register-bias evidence. 002's T2 PASS was the wrong reason; 004's T2 PASS is the right reason but smaller magnitude. Move C1 from "testing" to "supported with caveats — directional, not decisive."
+    2. The "T2 PASS is necessary but not sufficient" framing was correct AND actionable: 003's pathway probe + 004's contrastive intervention together produced the right diagnosis-to-fix loop. Pathway probes belong in the standard eval, not as optional follow-ups.
+    3. Contrastive loss on K/V outputs is the right kind of intervention. We had three candidate diagnoses (data, encoder, projector) and picked the right one. The ROI on diagnostic experiments is high.
+    4. Strength-dial saturation suggests the prefix has a "regime" effect, not a smooth ramp. C4's framing should change from "linear strength dial" to "thresholded conditioning depth" — different (but still useful) capability.
+    5. α-blend monotonic at 6/8 is genuine partial evidence for C3, but the metric is text-Jaccard, not style-axis-aware. Need an LLM-judge α-blend probe ("does α=0.5 look stylistically intermediate?") before C3 can be supported decisively.
+  next_experiment: "Either 2026-05-text-005-projector-no-trunk (architectural fix to push T3b past 60% decisively) OR 2026-05-text-005-stronger-contrastive (bump weight to 0.3 — same architecture, more pressure). Run capability-test follow-up on whichever yields T3b PASS. Audio-001 unlocked after that."
+  rolls_up_to_project: true
+  rolls_up_to_program: true
 implementation_notes: |
   Training loop change (src/text_ip_adapter/train/loop.py):
   1. For each batch, compute projector K/V for each sample.

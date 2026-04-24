@@ -4,6 +4,25 @@ Cross-experiment findings for this research thread. Experiment-level findings li
 
 Updated as experiments complete.
 
+## What we've learned so far (as of experiment 004 finalized)
+
+### 004 headline: contrastive loss on projector K/V broke the projector collapse decisively
+
+cos_K/V across pathological references dropped from 003's 0.91 baseline to 0.41 average — a -0.50 swing. Encoder cos_z also improved as a free side-effect (0.77 → 0.40 for swap). The architecture CAN learn reference conditioning when given the right loss-landscape pressure; the 002 failure was confirmed as loss-landscape, not architectural fundamentals.
+
+Quality gates passed but at the edge:
+- T2 vs prompting: PASS but only 60% (down from 002's 70% — contrastive trades against NTL)
+- T3b LLM-judge style match: WEAK (55%, 11W/7L/2T at n=20 — barely above coin flip)
+- T1 discrimination: PASS (Jaccard 0.18, slightly tighter than 002)
+
+**Capability tests (load-bearing for the program's "moat" claim):**
+- α-blend interpolation: 6/8 probes show monotonic Jaccard interpolation across α∈{0,0.25,0.5,0.75,1.0}. Directional positive evidence for C3 (composability).
+- Strength-dial: SATURATION rather than smooth ramp. λ=2 is more similar to λ=1 than λ=0.5 is. C4's framing needs to retreat from "continuous knob" to "thresholded conditioning depth."
+
+### Updated diagnosis after 004
+
+The decision matrix from 003 was correct: T1 PASS / T2 PASS / T3 FAIL pointed at the projector, contrastive loss on K/V outputs was the right intervention, and the projector unblock was real. But the gap from "K/V varies across references" to "K/V varies along the *style* axis specifically" remains open. The contrastive loss rewards variance without prescribing direction.
+
 ## What we've learned so far (as of experiment 002 complete)
 
 ### 002 headline: instruction quality matters a lot

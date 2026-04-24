@@ -6,7 +6,7 @@ claims:
     statement: "Prefix-K/V adapters on a frozen base LM beat the prompted_baseline for style transfer, at reasonable data scales."
     status: testing                       # untested | testing | supported | refuted | abandoned
     primary_project: text-gemma3-prefix-kv
-    evidence_so_far: "001 T2 FAIL (30% win rate, n=20). 002 T2 PASS (70-80% win rate, n=20) BUT conditioning-pathway probe in 003 showed T2 PASS was register bias, not reference conditioning. LLM-judge T3b: coin flip (~50% adapter wins) on BOTH experiments. 003 pinpointed the projector as the bottleneck (encoder outputs cos_z 0.0-0.77 across pathological refs, but projector K/V stays cos 0.77-0.98 — near-constant function). C1 needs 004 (contrastive loss on projector K/V) or 005 (architectural — remove shared trunk) before it can be supported. T2 PASS alone is insufficient — must be paired with T3b PASS and a positive pathway probe."
+    evidence_so_far: "001 T2 FAIL (30%). 002 T2 PASS (70%) was register bias per 003's diagnostic (projector collapse, cos_K/V 0.77-0.98). 004 added contrastive loss on projector K/V — projector unblock decisive (cos_K/V 0.91→0.41 average; -0.50 swing). 004 T2 PASS 60% (down from 002 due to contrastive vs NTL trade-off). 004 T3b WEAK 55% (4 net adapter-wins of 20 — directional improvement vs 002's 45% coin flip but still indistinguishable from 50% at n=20). First non-register-bias positive evidence for C1, but magnitude is small. Next: 005 (stronger contrastive OR no-trunk projector) to push T3b past 60% decisively."
 
   - id: C2
     statement: "The architectural pattern (reference encoder → projector → prefix injection into frozen base) transfers across modalities."
@@ -17,23 +17,24 @@ claims:
 
   - id: C3
     statement: "Composability (α-blending two reference latents) produces smooth interpolations in generated style — a capability prompting cannot replicate."
-    status: untested
+    status: testing
     primary_project: text-gemma3-prefix-kv
     gates_on: C1
-    evidence_so_far: "Probe not yet implemented. Planned after C1 is supported."
+    evidence_so_far: "Experiment 004 capability probe: 6/8 probes show monotonic Jaccard interpolation across α∈{0,0.25,0.5,0.75,1.0} (own↔swap blend). Endpoint Jaccard 0.000 (refs produce fully distinct outputs), middle Jaccards 0.009-0.040 (mid-α textually positioned between endpoints). Directional positive evidence at the text-similarity level. Not yet verified at the STYLE axis specifically — need an LLM-judge α-blend probe ('does α=0.5 look stylistically intermediate?')."
 
   - id: C4
     statement: "A reference channel's win over prompting grows with generation length (context-efficiency advantage)."
     status: untested
     gates_on: C1
+    note: "C4 was originally framed alongside a 'smooth strength-dial' capability. Experiment 004 capability probe found the prefix saturates around λ=1 rather than scaling smoothly: λ=2 outputs are MORE similar to λ=1 outputs than λ=0.5 outputs are. C4 should be reframed from 'continuous knob' to 'thresholded conditioning depth'. Long-context advantage hasn't been tested yet — that's the proper C4 question."
 
 active_projects:
   - id: text-gemma3-prefix-kv
     modality: text
     status: active
-    current_experiment: 2026-05-text-004-projector-contrastive
+    current_experiment: 2026-05-text-005-projector-followup
     claim_primary: C1
-    diagnostic_finding: "003 localized the conditioning failure to the projector (shared MLP trunk collapses encoder diversity). Next: contrastive loss on K/V outputs (004) or architectural fix (005)."
+    diagnostic_finding: "003 localized the conditioning failure to the projector. 004 confirmed the projector was the bottleneck (cos_K/V 0.91→0.41) and produced first non-register-bias C1 evidence, but T3b style-match gain is modest. 005 will push T3b past 60% decisively via stronger contrastive pressure or architectural no-trunk fix. C3 has directional positive evidence (6/8 monotonic α-blend); C4 needs reframing (saturation, not smooth)."
 
 planned_projects:
   - id: audio-musicgen-prefix-kv
