@@ -11,22 +11,22 @@ Primary claim: C1. Current evidence — **mixed, and more complicated than prior
 - Experiment 001 (rule-based instructions): FAILED vs prompting at n=20 (30% win rate).
 - Experiment 002 (LLM instructions): PASSED vs prompting at n=20 (70-80% win rate).
 - New LLM-judge T3b on both: FAILED (coin-flip on style match).
-- Experiment 002b (conditioning-pathway diagnostic): localized the failure to **the projector** — the encoder produces reference-varying latents (cos_z 0.0-0.77 across pathological references) but the projector collapses them into near-identical K/V tensors (cos 0.77-0.98). So 002's T2 PASS was register bias, not reference conditioning. **C1 is downgraded from "first positive evidence" back toward "testing" — the operational spirit of the claim requires reference-driven style change, and we don't have that yet.**
+- Experiment 003 (conditioning-pathway diagnostic): localized the failure to **the projector** — the encoder produces reference-varying latents (cos_z 0.0-0.77 across pathological references) but the projector collapses them into near-identical K/V tensors (cos 0.77-0.98). So 002's T2 PASS was register bias, not reference conditioning. **C1 is downgraded from "first positive evidence" back toward "testing" — the operational spirit of the claim requires reference-driven style change, and we don't have that yet.**
 
 Process reference: use [`program/PROCESS.md`](./PROCESS.md) before planning, launching, finalizing, or writing up experiments.
 
-**Queued experiments**, revised after 002b's projector-bottleneck finding:
+**Queued experiments**, revised after 003's projector-bottleneck finding:
 
 | # | ID | Hypothesis | Status | Cost |
 |---|---|---|---|---|
 | 002 | `2026-04-text-002-gemma3-llm-instructions` | Cleaner LLM-generated instructions remove test-rig noise. | **closed — T2 PASS but register-bias, not reference conditioning** | $0.55 |
-| 002b | `2026-04-text-002b-conditioning-probe` | Localize where the conditioning signal dies in the pathway. | **finalized — projector is the bottleneck** | $0.12 |
-| **003** | `2026-05-text-003-projector-contrastive` | **Contrastive loss on per-layer K/V outputs** (not encoder). Pulls apart projector outputs across different-author references in-batch. Attacks the diagnosed bottleneck directly. | **planned (next)** | ~$0.80 |
-| 004 | `2026-05-text-004-projector-no-trunk` | Architectural fix: remove shared MLP trunk in `PrefixProjector`; per-layer heads project z → K/V directly. Eliminates the bottleneck structurally. Run only if 003 insufficient. | not yet scaffolded | ~$0.70 |
-| 005 | `2026-05-text-005-data-scale-10x` | 10× more data; deprioritized — won't fix the projector bottleneck on its own. Keep queued for after 003/004. | not yet scaffolded | ~$5-10 |
-| 006 | `2026-05-text-006-wider-encoder` | Widen encoder bottleneck from 16→32 queries. Lower priority — encoder already produces diverse latents per 002b. | not yet scaffolded | ~$0.70 |
+| 003 | `2026-04-text-003-conditioning-probe` | Localize where the conditioning signal dies in the pathway. | **finalized — projector is the bottleneck** | $0.12 |
+| **004** | `2026-05-text-004-projector-contrastive` | **Contrastive loss on per-layer K/V outputs** (not encoder). Pulls apart projector outputs across different-author references in-batch. Attacks the diagnosed bottleneck directly. | **planned (next)** | ~$0.80 |
+| 005 | `2026-05-text-005-projector-no-trunk` | Architectural fix: remove shared MLP trunk in `PrefixProjector`; per-layer heads project z → K/V directly. Eliminates the bottleneck structurally. Run only if 004 insufficient. | not yet scaffolded | ~$0.70 |
+| 006 | `2026-05-text-006-data-scale-10x` | 10× more data; deprioritized — won't fix the projector bottleneck on its own. Keep queued for after 004/005. | not yet scaffolded | ~$5-10 |
+| 007 | `2026-05-text-007-wider-encoder` | Widen encoder bottleneck from 16→32 queries. Lower priority — encoder already produces diverse latents per 003. | not yet scaffolded | ~$0.70 |
 
-**C1 decision milestone**: after 003 (and possibly 004) complete. The success test is **not just T2 PASS** — it must include T3b PASS (LLM-judge style-match > 60% adapter wins) AND a positive conditioning-pathway probe re-run (cos_K/V across different refs < 0.6 post-training). If both pass, C1 is supported and we move to capability tests (α-blend, strength-dial). If neither does, the architecture (prefix-K/V) may genuinely not work at this scale and we reconsider — possibly Flamingo-style per-layer cross-attention, or abandoning the thread.
+**C1 decision milestone**: after 004 (and possibly 005) complete. The success test is **not just T2 PASS** — it must include T3b PASS (LLM-judge style-match > 60% adapter wins) AND a positive conditioning-pathway probe re-run (cos_K/V across different refs < 0.6 post-training). If both pass, C1 is supported and we move to capability tests (α-blend, strength-dial). If neither does, the architecture (prefix-K/V) may genuinely not work at this scale and we reconsider — possibly Flamingo-style per-layer cross-attention, or abandoning the thread.
 
 ## Capability tests (gated on C1)
 
@@ -49,8 +49,8 @@ Once C1 is supported:
 
 ## What would cause the roadmap to change
 
-- **003 moves cos_K/V across refs to <0.6 AND T3b > 60%** → projector bottleneck was the issue; C1 supported; move to capability tests + audio port.
-- **003 fails but 004 (architectural no-trunk) succeeds** → the shared-trunk projector design was structurally wrong; update architecture doc, then move on.
-- **Both 003 and 004 fail to open the K/V cosine gap** → the next-token CE training signal is too weak to teach reference conditioning at any projector shape. Consider a reconstruction auxiliary loss (force projector outputs to be decodable back to z) or abandon prefix-K/V for Flamingo-style per-layer cross-attention.
-- **003/004 succeed on K/V cosine but T3b still FAIL** → the base model's attention is saturating on content tokens and ignoring the expanded prefix signal; try heavier injection (more layers, higher projector scale) or rethink.
+- **004 moves cos_K/V across refs to <0.6 AND T3b > 60%** → projector bottleneck was the issue; C1 supported; move to capability tests + audio port.
+- **004 fails but 005 (architectural no-trunk) succeeds** → the shared-trunk projector design was structurally wrong; update architecture doc, then move on.
+- **Both 004 and 005 fail to open the K/V cosine gap** → the next-token CE training signal is too weak to teach reference conditioning at any projector shape. Consider a reconstruction auxiliary loss (force projector outputs to be decodable back to z) or abandon prefix-K/V for Flamingo-style per-layer cross-attention.
+- **004/005 succeed on K/V cosine but T3b still FAIL** → the base model's attention is saturating on content tokens and ignoring the expanded prefix signal; try heavier injection (more layers, higher projector scale) or rethink.
 - **Any experiment's T2 regresses back below 50% → data or config issue, investigate before continuing.**

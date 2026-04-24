@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Exact command used to run experiment 002b conditioning probe (diagnostic, no training).
+# Exact command used to run experiment 003 (formerly 002b, the conditioning probe) conditioning probe (diagnostic, no training).
 # Assumes: text-ip-adapter repo checked out at SHA f3dc198, synced to /workspace/text-ip-adapter
 # on a RunPod RTX 4090 with Python 3.11.10 + transformers 5.6.2, base model downloadable from HF
 # via HF_TOKEN, and experiment 002's final.pt checkpoint exists at the path below.

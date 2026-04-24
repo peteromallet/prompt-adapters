@@ -26,13 +26,13 @@ results:
   test4_ref_leak: "PASS"
   test5_loss_curve: "SLOW (15.6%)"
 headline: "LLM-generated instructions made T2 decisively PASS at n=20 (70%, 14W/6L/0T) after 001's FAIL, but T3 regressed from WEAK to FAIL under the n=20 instrument."
-next: "Rebuild T3 as an LLM-judge style-match instrument before 2026-05-text-003-gemma3-contrastive-loss; do not use the current surface-feature T3 as the next decision gate."
+next: "Experiment 003 (2026-04-text-003-conditioning-probe) ran as a diagnostic follow-up and localized the failure to the projector. Experiment 004 (2026-05-text-004-projector-contrastive) is the next training experiment in the line."
 reflection:
   hypothesis_outcome: partially_confirmed
   surprises: |
     T3 style carryover stayed FAIL at n=20 despite T2 passing. The surface-feature metric cannot distinguish style match from noise; T3 is a broken instrument right now, not a real result. Also: delta between 001 and 002 was huge (40pp T2 swing) - larger than expected.
   corrections_to_prior_beliefs: |
     C1 (adapter beats prompting) has first decisive evidence: 70 percent at n=20. T3 needs a better instrument (LLM-judge style-match) before it can guide future decisions. Architectural interventions (003 contrastive loss, encoder widening) are less urgent than fixing eval.
-  next_experiment: none
+  next_experiment: 2026-04-text-003-conditioning-probe
   rolls_up_to_project: true
   rolls_up_to_program: true

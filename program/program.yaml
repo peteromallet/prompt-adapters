@@ -6,7 +6,7 @@ claims:
     statement: "Prefix-K/V adapters on a frozen base LM beat the prompted_baseline for style transfer, at reasonable data scales."
     status: testing                       # untested | testing | supported | refuted | abandoned
     primary_project: text-gemma3-prefix-kv
-    evidence_so_far: "001 T2 FAIL (30% win rate, n=20). 002 T2 PASS (70-80% win rate, n=20) BUT conditioning-pathway probe in 002b showed T2 PASS was register bias, not reference conditioning. LLM-judge T3b: coin flip (~50% adapter wins) on BOTH experiments. 002b pinpointed the projector as the bottleneck (encoder outputs cos_z 0.0-0.77 across pathological refs, but projector K/V stays cos 0.77-0.98 — near-constant function). C1 needs 003a (contrastive loss on projector K/V) or 003b (architectural — remove shared trunk) before it can be supported. T2 PASS alone is insufficient — must be paired with T3b PASS and a positive pathway probe."
+    evidence_so_far: "001 T2 FAIL (30% win rate, n=20). 002 T2 PASS (70-80% win rate, n=20) BUT conditioning-pathway probe in 003 showed T2 PASS was register bias, not reference conditioning. LLM-judge T3b: coin flip (~50% adapter wins) on BOTH experiments. 003 pinpointed the projector as the bottleneck (encoder outputs cos_z 0.0-0.77 across pathological refs, but projector K/V stays cos 0.77-0.98 — near-constant function). C1 needs 004 (contrastive loss on projector K/V) or 005 (architectural — remove shared trunk) before it can be supported. T2 PASS alone is insufficient — must be paired with T3b PASS and a positive pathway probe."
 
   - id: C2
     statement: "The architectural pattern (reference encoder → projector → prefix injection into frozen base) transfers across modalities."
@@ -31,9 +31,9 @@ active_projects:
   - id: text-gemma3-prefix-kv
     modality: text
     status: active
-    current_experiment: 2026-05-text-003-projector-contrastive
+    current_experiment: 2026-05-text-004-projector-contrastive
     claim_primary: C1
-    diagnostic_finding: "002b localized the conditioning failure to the projector (shared MLP trunk collapses encoder diversity). Next: contrastive loss on K/V outputs (003a) or architectural fix (003b)."
+    diagnostic_finding: "003 localized the conditioning failure to the projector (shared MLP trunk collapses encoder diversity). Next: contrastive loss on K/V outputs (004) or architectural fix (005)."
 
 planned_projects:
   - id: audio-musicgen-prefix-kv

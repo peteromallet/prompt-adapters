@@ -1,4 +1,4 @@
-id: 2026-04-text-002b-conditioning-probe
+id: 2026-04-text-003-conditioning-probe
 modality: text
 project: text-gemma3-prefix-kv
 tags:
@@ -48,7 +48,7 @@ reflection:
     (1) Experiment 002's T2 PASS (80% win rate vs prompting) is real but NOT evidence of reference conditioning — it's register bias. C1 should be downgraded from "first positive evidence" back toward "testing" because the operational definition requires reference-driven style change, not just quality-over-prompting.
     (2) Contrastive loss on encoder outputs (originally planned for 003) would be misdirected — the encoder already produces diverse latents. The fix needs to live at the projector.
     (3) "Beat prompting on T2" is decisively NOT sufficient evidence of the architecture working as intended. The capability tests (α-blend, strength-dial) are even more load-bearing than I had marked — they would have caught this failure much earlier.
-  next_experiment: 2026-05-text-003-projector-contrastive
+  next_experiment: 2026-05-text-004-projector-contrastive
   rolls_up_to_project: true
   rolls_up_to_program: true
 process_deviations: |

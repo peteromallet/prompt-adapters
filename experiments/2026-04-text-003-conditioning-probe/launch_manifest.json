@@ -1,5 +1,5 @@
 {
-  "experiment_id": "2026-04-text-002b-conditioning-probe",
+  "experiment_id": "2026-04-text-003-conditioning-probe",
   "type": "diagnostic",
   "backfilled": true,
   "backfill_reason": "First experiment run without using tools/launch-experiment.sh. Manifest constructed retroactively from known state at run time. Acknowledged in LEARNINGS.md as a process violation.",
@@ -37,7 +37,7 @@
       "committed_at_sha": "f3dc1980280aa16a75f38ce0a114a6a61fb3ac44"
     }
   },
-  "command": "cd /workspace/text-ip-adapter && python scripts/probe_conditioning.py --checkpoint checkpoints/stage1_gemma_llm/final.pt --config configs/stage1_gemma_llm.yaml --probes data/pairs/probes_n20_llm.jsonl --output-dir results_probe_002b --n-probes 10 --max-new-tokens 80",
+  "command": "cd /workspace/text-ip-adapter && python scripts/probe_conditioning.py --checkpoint checkpoints/stage1_gemma_llm/final.pt --config configs/stage1_gemma_llm.yaml --probes data/pairs/probes_n20_llm.jsonl --output-dir results_probe_003 --n-probes 10 --max-new-tokens 80",
   "variants_tested": ["own", "swap", "zero", "random", "code"],
   "output_artifacts": [
     "results/analysis.json",

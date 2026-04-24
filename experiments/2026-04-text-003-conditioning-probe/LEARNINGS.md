@@ -1,4 +1,4 @@
-# Experiment 002b — Learnings
+# Experiment 003 — Learnings
 
 ## Headline
 **The projector is the bottleneck.** Experiment 002's failure to style-condition on the reference (T3b coin flip despite T2 PASS) is not an encoder problem, not an injection problem, and not a data problem — the projector is collapsing diverse encoder outputs into near-identical K/V tensors.
@@ -49,7 +49,7 @@ More data alone will not fix the projector bottleneck — more data would just t
 ## Process notes (honest)
 
 - This experiment was not launched via tools/launch-experiment.sh. The script was skipped; manifest backfilled retroactively. Marked backfilled=true. First stress-test of PROCESS.md discipline and I (the operator) failed it on the first try.
-- What was fixed: text-ip-adapter initialized as git repo; the probe script committed (SHA f3dc198) to have a stable reference-commit; launch_manifest.json reconstructed from known run-time state; results copied to results/; this LEARNINGS written; tags exp-002b-launch and exp-002b-finalized created retroactively.
+- What was fixed: text-ip-adapter initialized as git repo; the probe script committed (SHA f3dc198) to have a stable reference-commit; launch_manifest.json reconstructed from known run-time state; results copied to results/; this LEARNINGS written; tags exp-003-launch and exp-003-finalized created retroactively.
 - Lesson for scripts: launch-experiment.sh assumes a training-style config with data_paths pointing at train/val/test jsonl. A diagnostic experiment has a different config shape. Either (a) extend the script to accept type: diagnostic configs, or (b) add a separate probe-experiment.sh. Tracking as a tool-TODO, not a blocker.
 
 ## Cost summary
