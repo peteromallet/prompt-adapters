@@ -58,7 +58,7 @@ Finalize robot-captured artifacts:
 tools/finalize-experiment.sh <id>
 ```
 
-Finalization requires a launch manifest, non-empty results, non-empty learnings, and non-`TBD` `headline` and `next` fields. It records result hashes and flips the experiment to the `finalized` state.
+Finalization requires a launch manifest, non-empty results, non-empty learnings, and non-`TBD` `headline` and `next` fields. It records result hashes, **auto-populates the `experiment.yaml` `results:` block** from `results/eval_report.json`, `results/capabilities_analysis.json`, and `results/conditioning_probe_analysis.json` (if present), and flips the experiment to the `finalized` state. The auto-population only runs if the existing `results:` block is empty (`results: {}`); a non-empty block is left alone.
 
 Use `--push` to checkpoint the finalized experiment to Hugging Face, and `--checkpoint-path PATH` to include an external checkpoint file. The target namespace is `HF_NAMESPACE` or `peteromallet` by default. The token is read from `HF_TOKEN`, then `~/.cache/huggingface/token`. The push uploads `experiment.yaml`, `config.yaml`, `launch_manifest.json`, `requirements.lock`, `LEARNINGS.md`, `README.md`, `results/**`, and the optional checkpoint.
 
@@ -74,7 +74,7 @@ tools/close-experiment.sh <id>
 
 Closing requires `status: finalized`, blocks boilerplate by requiring `LEARNINGS.md` to be at least 400 bytes, and records the human reflection fields: `hypothesis_outcome`, `surprises`, `corrections_to_prior_beliefs`, `next_experiment`, `rolls_up_to_project`, and `rolls_up_to_program`.
 
-If `next_experiment` is not `none`, the close script creates the next experiment shell with the current experiment as parent. If roll-up flags are true, it opens `projects/<slug>/LEARNINGS.md` and/or `program/LEARNINGS.md` in `$EDITOR`; without `$EDITOR`, it prints a manual-update note.
+If `next_experiment` is not `none`, the close script creates the next experiment shell with the current experiment as parent. If roll-up flags are true, the script **auto-appends a structured rollup entry** to `projects/<slug>/LEARNINGS.md` and/or `program/LEARNINGS.md` (a `[<id>] — <hypothesis_outcome>: <headline>` line under an `## Auto-rollup (date)` section), then opens the file in `$EDITOR` for additional editing if `$EDITOR` is set. The script also **auto-updates the experiment's row in `program/ROADMAP.md`** to mark it `closed — <hypothesis_outcome>` if the row mentions `planned`, `running`, `finalized`, or `queued`. Manual ROADMAP edits remain possible afterward.
 
 ## Write up
 

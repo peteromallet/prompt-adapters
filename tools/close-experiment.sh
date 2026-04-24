@@ -141,19 +141,77 @@ if [[ "$next_experiment" != "none" ]]; then
   rm -f "${next_yaml}.bak"
 fi
 project_slug="$(awk -F': *' '$1 == "project" {print $2; exit}' "$YAML_PATH" | sed -e 's/^"//' -e 's/"$//' -e "s/^'//" -e "s/'$//")"
-if [[ "$rolls_up_project" == true ]]; then
-  if [[ -n "${EDITOR:-}" ]]; then
-    "$EDITOR" "${REPO_ROOT}/projects/${project_slug}/LEARNINGS.md"
+headline="$(awk -F': *' '$1 == "headline" {sub(/^"/, "", $2); sub(/"$/, "", $2); print $2; exit}' "$YAML_PATH")"
+
+# Auto-write structured rollup entries to project/program LEARNINGS.md.
+# Operator can still edit further afterward; the script just writes the
+# baseline "[<id>] <headline>" pointer so nothing is silently lost.
+write_rollup_entry() {
+  local target="$1"
+  local label="$2"
+  local entry="- **[${experiment_id}](../experiments/${experiment_id}/) — ${hypothesis_outcome}**: ${headline}"
+  if grep -qF "${experiment_id}" "$target" 2>/dev/null; then
+    echo "[close] ${label} already references ${experiment_id}; skipping append"
   else
-    echo "note: update projects/${project_slug}/LEARNINGS.md manually"
+    {
+      echo ""
+      echo "## Auto-rollup ($(date -u '+%Y-%m-%d'))"
+      echo ""
+      echo "$entry"
+    } >> "$target"
+    echo "[close] appended rollup entry to ${target}"
+  fi
+}
+
+if [[ "$rolls_up_project" == true ]]; then
+  proj_learnings="${REPO_ROOT}/projects/${project_slug}/LEARNINGS.md"
+  if [[ -f "$proj_learnings" ]]; then
+    write_rollup_entry "$proj_learnings" "project LEARNINGS"
+  else
+    echo "warn: ${proj_learnings} missing — skipping project rollup"
+  fi
+  if [[ -n "${EDITOR:-}" ]]; then
+    "$EDITOR" "$proj_learnings"
   fi
 fi
 if [[ "$rolls_up_program" == true ]]; then
+  prog_learnings="${REPO_ROOT}/program/LEARNINGS.md"
+  write_rollup_entry "$prog_learnings" "program LEARNINGS"
   if [[ -n "${EDITOR:-}" ]]; then
-    "$EDITOR" "${REPO_ROOT}/program/LEARNINGS.md"
-  else
-    echo "note: update program/LEARNINGS.md manually"
+    "$EDITOR" "$prog_learnings"
   fi
+fi
+
+# Update ROADMAP.md status for this experiment row, if it exists.
+roadmap="${REPO_ROOT}/program/ROADMAP.md"
+if [[ -f "$roadmap" ]] && grep -qF "${experiment_id}" "$roadmap"; then
+  python3 - "$roadmap" "$experiment_id" "$hypothesis_outcome" "$headline" <<'PY'
+import re, sys
+path, eid, outcome, headline = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]
+text = open(path).read()
+# Find any markdown table row containing the experiment id and replace the
+# Status column content with "closed — <outcome>" if it currently mentions
+# planned/running/finalized/queued.
+lines = text.splitlines()
+changed = False
+for i, line in enumerate(lines):
+    if eid in line and line.lstrip().startswith("|"):
+        if any(tok in line for tok in ("planned", "running", "finalized", "queued", "(next)", "TBD")):
+            new = re.sub(r"\*\*?(planned|running|finalized|queued|planned \(next\))[^|]*\*?\*?",
+                         f"**closed — {outcome}**", line, count=1)
+            if new == line:
+                # fallback: replace the third-to-last cell (status column heuristic).
+                pass
+            else:
+                lines[i] = new
+                changed = True
+                break
+if changed:
+    open(path, 'w').write("\n".join(lines) + ("\n" if text.endswith("\n") else ""))
+    print(f"[close] updated ROADMAP row for {eid}")
+else:
+    print(f"[close] ROADMAP row for {eid} not auto-updated; review manually")
+PY
 fi
 git_sha="$(git -C "$REPO_ROOT" rev-parse HEAD)"
 tag_name="exp-${experiment_id}-closed"

@@ -81,6 +81,81 @@ next_value="$(yaml_value next)"
 finalized_at="$(date -u '+%Y-%m-%dT%H:%M:%SZ')"
 hash="$(results_hash)"
 
+# Auto-populate experiment.yaml `results:` block from results/eval_report.json
+# and results/capabilities_analysis.json if either exists. This is the missing
+# piece — without it, the operator has to hand-copy verdicts and the rollup
+# step (project/program LEARNINGS, ROADMAP) becomes manual every time.
+if [[ -f results/eval_report.json || -f results/capabilities_analysis.json ]]; then
+  python3 - <<'PY'
+import json
+import re
+from pathlib import Path
+
+def load(p):
+    try:
+        return json.loads(Path(p).read_text())
+    except Exception:
+        return None
+
+ev = load("results/eval_report.json")
+cap = load("results/capabilities_analysis.json")
+cond = load("results/conditioning_probe_analysis.json")
+
+# Build a results: block we can append (preserve existing if non-empty).
+results = {}
+if ev:
+    for k in ("test1_discrimination", "test2_llm_judge", "test3_style_carryover",
+              "test3b_llm_style_match", "test4_memorization", "test5_loss_curve"):
+        if k in ev and isinstance(ev[k], dict):
+            v = ev[k].get("verdict") or ev[k].get("status")
+            note_keys = ("final_mean_jaccard","adapter_win_rate","mean_advantage",
+                         "target_memorization_rate","ref_leak_rate","improvement_pct")
+            extras = {nk: ev[k].get(nk) for nk in note_keys if nk in ev[k]}
+            results[k] = f"{v} ({extras})" if extras else v
+if cap:
+    ab = cap.get("alpha_blend", {})
+    sd = cap.get("strength_dial", {})
+    if ab:
+        results["capability_alpha_blend"] = (
+            f"monotonic_count={ab.get('monotonic_count')}/{cap.get('n_probes')}; "
+            f"endpoint_J={ab.get('mean_endpoint_jaccard'):.3f}; "
+            f"smoothness_balance={ab.get('mean_smoothness_balance'):.3f}"
+        )
+    if sd:
+        results["capability_strength_dial"] = (
+            f"J(λ=0.5,1)={sd.get('mean_j_lam05'):.3f}; "
+            f"J(λ=2,1)={sd.get('mean_j_lam2'):.3f}; "
+            f"len(λ=2)/len(λ=1)={sd.get('mean_length_at_lam2_vs_lam1'):.2f}"
+        )
+if cond:
+    for k in ("mean_cos_z_swap", "mean_cos_K_first_swap", "mean_cos_K_first_zero",
+              "mean_cos_K_first_random", "mean_cos_K_first_code"):
+        if k in cond:
+            results[k] = round(cond[k], 4)
+
+if not results:
+    raise SystemExit(0)
+
+# Read existing experiment.yaml; replace `results: {}` with populated block ONLY if empty.
+text = Path("experiment.yaml").read_text()
+if re.search(r'^results:\s*\{\s*\}\s*$', text, re.MULTILINE):
+    block_lines = ["results:"]
+    for k, v in results.items():
+        if isinstance(v, (int, float)):
+            block_lines.append(f"  {k}: {v}")
+        else:
+            sv = str(v).replace('"', '\\"')
+            block_lines.append(f'  {k}: "{sv}"')
+    block_lines.append("  _auto_populated_at: \"" + __import__('datetime').datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ') + "\"")
+    new_block = "\n".join(block_lines)
+    text = re.sub(r'^results:\s*\{\s*\}\s*$', new_block, text, count=1, flags=re.MULTILINE)
+    Path("experiment.yaml").write_text(text)
+    print("[finalize] auto-populated experiment.yaml results: block from results/*.json")
+else:
+    print("[finalize] experiment.yaml results: block is non-empty; leaving unchanged")
+PY
+fi
+
 tmp_manifest="$(mktemp)"
 python3 - "$finalized_at" "$hash" launch_manifest.json > "$tmp_manifest" <<'PY'
 import datetime as dt
