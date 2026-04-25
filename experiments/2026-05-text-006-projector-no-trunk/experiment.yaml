@@ -7,7 +7,7 @@ tags:
   - per-layer-specialization
   - same-data-as-004-005
   - last-cheap-architectural-lever
-status: planned
+status: running
 consequential: true
 type: training
 question: "Does removing the shared MLP trunk from PrefixProjector — letting each per-layer K/V head read z directly via per-layer LayerNorm — push T3b decisively past 60% AND tighten α-blend endpoints, fixing the structural bottleneck that caused 005's non-monotonic contrastive response?"
