@@ -7,7 +7,7 @@ tags:
   - same-architecture-as-004
   - hyperparameter-bump
   - minimum-viable-iteration
-status: finalized
+status: closed
 consequential: true
 type: training
 question: "Does bumping the projector-K/V contrastive weight from 0.1 (experiment 004) to 0.3 push T3b decisively past 60% AND tighten α-blend endpoints (frac_own < 0.30 at α=0, > 0.85 at α=1) without regressing T2 below 55%?"
@@ -82,3 +82,13 @@ success_criteria:
     description: "loss_ntl decreases over training and loss_contrastive decreases on average. If loss_ntl plateaus or rises, contrastive is dominating and the result is uninterpretable."
     priority: should
 next: "Three branches per outcome. (a) All must-pass -> C1 + C3 jointly supported; promote both claims, move to capability scaling or audio port. (b) cos_K/V tightens but T3b/α-endpoints don't -> pressure isn't the issue; run experiment 006 (no-trunk projector) for an architectural fix. (c) T2 collapses below 55% -> over-correction; 006 (no-trunk) as the alternative."
+
+reflection:
+  hypothesis_outcome: refuted
+  surprises: |
+    The projector's response to contrastive weight is non-monotonic. At weight 0.3, OOD inputs (random, zero) get more decorrelated K/V (good), but in-distribution refs (swap, code — same register, different author/domain) get MORE similar K/V than at weight 0.1. This is exactly the wrong shape for style transfer between same-register authors. The α-blend LLM-judge signal flipped from monotonic +0.25 to non-monotonic -0.25.
+  corrections_to_prior_beliefs: |
+    Bumping contrastive weight is NOT a knob that monotonically improves style conditioning. The relationship is non-monotonic — both 0.1 and 0.3 are sub-optimal for different reasons. Loss-only intervention has been explored on both sides at this architecture; further hyperparameter search at this projector design is unlikely to be informative. The shared MLP trunk in PrefixProjector is forcing all per-layer K/V through one low-dim subspace, which is what gets non-uniformly squashed by contrastive pressure.
+  next_experiment: 2026-05-text-006-projector-no-trunk
+  rolls_up_to_project: true
+  rolls_up_to_program: true

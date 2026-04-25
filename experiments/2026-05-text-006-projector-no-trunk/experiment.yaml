@@ -1,0 +1,16 @@
+id: 2026-05-text-006-projector-no-trunk
+modality:          # text | audio | music | video | multimodal
+project:           # slug naming the research thread, e.g. text-gemma3-prefix-kv
+tags: []           # list of orthogonal tags, e.g. [contrastive-loss, llm-instructions]
+status: planned
+consequential: true
+question:
+hypothesis:
+parent: 2026-05-text-005-stronger-contrastive
+base_model:
+dataset:
+core_commit:
+compute:
+results: {}
+headline: TBD
+next: TBD

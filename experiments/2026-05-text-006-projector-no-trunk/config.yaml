@@ -1,0 +1,8 @@
+# base_model:
+# data_paths:
+#   - ../../../path/to/train.jsonl
+# train_hparams:
+#   steps:
+#   batch_size:
+# eval:
+#   n_probes:

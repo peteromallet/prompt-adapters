@@ -74,3 +74,7 @@ n=4 was too noisy. Minimum n=20 from experiment 003 forward for T2 and T3 verdic
 ## Cross-experiment eval table
 
 Populated as experiments complete. See project page [`text-gemma3-prefix-kv.md`](../../site/docs/projects/text-gemma3-prefix-kv.md) for the rendered version with links.
+
+## Auto-rollup (2026-04-25)
+
+- **[2026-05-text-005-stronger-contrastive](../experiments/2026-05-text-005-stronger-contrastive/) — refuted**: Hypothesis REFUTED. T3b regressed 55%->50%, LLM-judge alpha-blend signal inverted +0.25->-0.25, pathway cos_K for same-domain refs got WORSE (swap 0.31->0.69, code 0.33->0.69). T2 actually improved 60%->65%. Projector responds non-monotonically to contrastive weight; more pressure is not the answer. Next

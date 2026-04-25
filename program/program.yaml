@@ -6,7 +6,7 @@ claims:
     statement: "Prefix-K/V adapters on a frozen base LM beat the prompted_baseline for style transfer, at reasonable data scales."
     status: testing                       # untested | testing | supported | refuted | abandoned
     primary_project: text-gemma3-prefix-kv
-    evidence_so_far: "001 T2 FAIL (30%). 002 T2 PASS (70%) was register bias per 003's diagnostic (projector collapse, cos_K/V 0.77-0.98). 004 added contrastive loss on projector K/V — projector unblock decisive (cos_K/V 0.91→0.41 average; -0.50 swing). 004 T2 PASS 60% (down from 002 due to contrastive vs NTL trade-off). 004 T3b WEAK 55% (4 net adapter-wins of 20 — directional improvement vs 002's 45% coin flip but still indistinguishable from 50% at n=20). First non-register-bias positive evidence for C1, but magnitude is small. Next: 005 (stronger contrastive OR no-trunk projector) to push T3b past 60% decisively."
+    evidence_so_far: "001 T2 FAIL (30%). 002 T2 PASS (70%) was register bias per 003's diagnostic (projector collapse). 004 added contrastive loss on projector K/V at weight 0.1 — projector unblock decisive (cos_K/V 0.91→0.41), T2 PASS 60%, T3b WEAK 55% — first non-register-bias C1 evidence but modest. 005 tested weight 0.3 hypothesis ('more pressure'); REFUTED — T3b regressed to 50%, α-blend LLM-judge signal inverted (+0.25→−0.25), same-domain cos_K got worse (swap 0.31→0.69). Loss-only lever explored on both sides; non-monotonic response. Next: 006 architectural fix (no-trunk projector) — the shared MLP trunk is the root structural cause."
 
   - id: C2
     statement: "The architectural pattern (reference encoder → projector → prefix injection into frozen base) transfers across modalities."
@@ -33,9 +33,9 @@ active_projects:
   - id: text-gemma3-prefix-kv
     modality: text
     status: active
-    current_experiment: 2026-05-text-005-projector-followup
+    current_experiment: 2026-05-text-006-projector-no-trunk
     claim_primary: C1
-    diagnostic_finding: "003 localized the conditioning failure to the projector. 004 confirmed the projector was the bottleneck (cos_K/V 0.91→0.41) and produced first non-register-bias C1 evidence, but T3b style-match gain is modest. 005 will push T3b past 60% decisively via stronger contrastive pressure or architectural no-trunk fix. C3 has directional positive evidence (6/8 monotonic α-blend); C4 needs reframing (saturation, not smooth)."
+    diagnostic_finding: "003 localized failure to projector. 004 (contrastive weight 0.1) achieved cos_K/V 0.91→0.41 and first non-register-bias C1 evidence with WEAK T3b 55%. 005 (contrastive weight 0.3, same architecture) REFUTED 'more pressure is better' — T3b regressed to 50%, α-blend LLM-judge signal inverted (+0.25→−0.25), same-domain cos_K got WORSE (swap 0.31→0.69). The projector's response to contrastive weight is non-monotonic. Loss-only intervention exhausted at this architecture. Next: 006 architectural fix (no-trunk projector — remove shared MLP trunk, per-layer heads project z directly to K/V)."
 
 planned_projects:
   - id: audio-musicgen-prefix-kv

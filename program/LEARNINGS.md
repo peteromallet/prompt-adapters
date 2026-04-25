@@ -69,3 +69,7 @@ Cross-project findings that apply beyond any single experiment or project. Updat
 
 - **Light megaplan is the right tool for scaffolding.** A 10-minute plan/critique/revise/execute loop produced a clean monorepo scaffold in one pass. Standard/robust is overkill for greenfield structure work.
 - **Background subagents are fragile for multi-phase CLI orchestration.** Several times subagents quit prematurely mid-phase. For anything with sequential CLI calls (like megaplan workflow), either drive the CLI directly or chain phases via `&&` in a single `run_in_background` bash call.
+
+## Auto-rollup (2026-04-25)
+
+- **[2026-05-text-005-stronger-contrastive](../experiments/2026-05-text-005-stronger-contrastive/) — refuted**: Hypothesis REFUTED. T3b regressed 55%->50%, LLM-judge alpha-blend signal inverted +0.25->-0.25, pathway cos_K for same-domain refs got WORSE (swap 0.31->0.69, code 0.33->0.69). T2 actually improved 60%->65%. Projector responds non-monotonically to contrastive weight; more pressure is not the answer. Next
