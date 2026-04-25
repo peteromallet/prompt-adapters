@@ -1,8 +1,26 @@
-# base_model:
-# data_paths:
-#   - ../../../path/to/train.jsonl
-# train_hparams:
-#   steps:
-#   batch_size:
-# eval:
-#   n_probes:
+type: training
+base_model: google/gemma-3-4b-pt
+training_config_path: text-ip-adapter/configs/stage1_gemma_no_trunk.yaml
+parent_experiment: 2026-05-text-005-stronger-contrastive
+data_paths:
+  - ../../../text-ip-adapter/data/pairs/train.llm.jsonl
+  - ../../../text-ip-adapter/data/pairs/val.llm.jsonl
+  - ../../../text-ip-adapter/data/pairs/test.llm.jsonl
+hparams:
+  base_model_id: google/gemma-3-4b-pt
+  max_steps: 2000
+  batch_size: 4
+  lr_projector: 1.0e-4
+  lr_encoder: 5.0e-5
+  contrastive_weight: 0.1
+  contrastive_clamp: true
+  projector_use_trunk: false
+  inject_layers: [17, 32]
+  num_queries: 16
+  num_prefix_tokens: 16
+eval:
+  n_probes: 20
+  run_conditioning_probe: true
+  run_capability_probe: true
+  run_llm_judge_alpha_blend: true
+  tests: [T1_discrimination, T2_vs_prompting, T3b_llm_style_match, T4_memorization, T4_ref_leak, T5_loss_curve]

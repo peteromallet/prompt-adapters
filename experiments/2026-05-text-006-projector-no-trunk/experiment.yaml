@@ -1,16 +1,97 @@
 id: 2026-05-text-006-projector-no-trunk
-modality:          # text | audio | music | video | multimodal
-project:           # slug naming the research thread, e.g. text-gemma3-prefix-kv
-tags: []           # list of orthogonal tags, e.g. [contrastive-loss, llm-instructions]
+modality: text
+project: text-gemma3-prefix-kv
+tags:
+  - architectural-fix
+  - no-shared-trunk
+  - per-layer-specialization
+  - same-data-as-004-005
+  - last-cheap-architectural-lever
 status: planned
 consequential: true
-question:
-hypothesis:
+type: training
+question: "Does removing the shared MLP trunk from PrefixProjector — letting each per-layer K/V head read z directly via per-layer LayerNorm — push T3b decisively past 60% AND tighten α-blend endpoints, fixing the structural bottleneck that caused 005's non-monotonic contrastive response?"
+hypothesis: |
+  Experiment 003 diagnosed the projector as the conditioning bottleneck (cos_K/V
+  collapsed to 0.77-0.98 across pathological references). Experiment 004
+  partially fixed it via contrastive loss on K/V outputs (cos_K/V dropped to 0.41
+  average; T3b WEAK 55%). Experiment 005 tested 'more pressure' (weight 0.3) and
+  REFUTED the monotonicity assumption: T3b regressed to 50%, and same-domain
+  cos_K actually got WORSE (swap 0.31 -> 0.69). The pattern is consistent with
+  the shared MLP trunk forcing all per-layer K/V outputs through a single
+  low-dim subspace; contrastive pressure then non-uniformly squashes that
+  subspace, decorrelating outliers but collapsing same-domain inputs together.
+
+  Predict: removing the shared trunk lets each per-layer head specialize
+  independently. With contrastive_weight back at 004's 0.1, expect:
+  (1) cos_K/V across pathological refs at < 0.4 average, with the SAME-DOMAIN
+      variants (swap, code) staying low (vs 005's 0.69 for those), proving the
+      per-layer specialization works against the right inputs.
+  (2) T3b LLM-judge style match >= 60% (decisive PASS, not WEAK).
+  (3) α-blend LLM-judge frac_own monotonic AND with signal strength >= 0.4
+      (vs 004's 0.25, 005's -0.25). Endpoints: frac_own at α=0 < 0.30, at α=1 > 0.85.
+  (4) T2 vs prompted_baseline >= 60%.
+
+  Risk: per-layer heads have lower individual capacity than the trunk-then-head
+  design. If the encoder z signal is too weak per-layer-projection, the model
+  may underfit and T2 drops. Total trainable param count drops from 110M
+  (with trunk) to 84M (no trunk) — a -24% decrease in projector capacity
+  partially offset by training only the K/V heads with more direct gradient.
+
 parent: 2026-05-text-005-stronger-contrastive
-base_model:
-dataset:
-core_commit:
-compute:
+base_model: "google/gemma-3-4b-pt (frozen) — same as 002, 004, 005"
+dataset: "same 971 LLM-instructed pairs as 002/004/005; data/pairs/{train,val,test}.llm.jsonl. NO data change. Single architectural change: projector.use_trunk = false."
+core_commit: "TBD at launch (text-ip-adapter SHA after committing stage1_gemma_no_trunk.yaml + projector use_trunk option)"
+compute: "RTX 4090, ~37 min training + ~10 min eval (n=20 + pathway + capability + LLM-judge α-blend). Total budget ~$0.95."
 results: {}
-headline: TBD
-next: TBD
+headline: "Architectural fix: drop the shared MLP trunk in PrefixProjector. Last cheap lever before bigger-budget options (10x data, 12B base, Flamingo-style cross-attention)."
+implementation_notes: |
+  Single architectural change vs 004:
+  - text-ip-adapter/src/text_ip_adapter/model/projector.py: PrefixProjector
+    accepts use_trunk: bool. When False, self.trunk = nn.Identity() and each
+    per-layer K/V head gets its own per-layer LayerNorm before reading z.
+  - text-ip-adapter/src/text_ip_adapter/config.py: ProjectorConfig.use_trunk: bool = True.
+  - text-ip-adapter/configs/stage1_gemma_no_trunk.yaml: projector.use_trunk: false,
+    contrastive_weight: 0.1 (same as 004 — the working baseline).
+
+  Verified locally: projector params drop 110M -> 84M; zero-init still produces
+  exactly zero K/V at step 0; output shapes unchanged.
+
+  Eval pipeline (same as 004/005 standard post-training):
+  1. eval_from_checkpoint.py -> samples_n20.jsonl (T1, T2, T3, T3b, T4, T5)
+  2. probe_conditioning.py -> cos_K/V across pathological refs
+  3. probe_capabilities.py -> α-blend Jaccard, strength-dial
+  4. analyze_alpha_blend_llm.py -> LLM-judge α-blend on style axis
+success_criteria:
+  - id: t3b_decisive
+    description: "T3b LLM-judge style-match adapter_wins >= 12 of 20 (>=60%, vs 004's 11 and 005's 10). Promotes from WEAK to PASS."
+    priority: must
+  - id: t2_holds
+    description: "T2 vs prompted_baseline win rate >= 60% at n=20."
+    priority: must
+  - id: alpha_signal_strong
+    description: "LLM-judge α-blend signal strength >= 0.4 (vs 004's 0.25, 005's -0.25). Monotonic AND endpoints commit (frac_own at α=0 < 0.30, at α=1 > 0.85)."
+    priority: must
+  - id: same_domain_unblocks
+    description: "Pathway probe cos_K_first for swap variant < 0.40 (vs 005's catastrophic 0.69 and 004's 0.31). Confirms per-layer specialization fixes same-domain discrimination."
+    priority: must
+  - id: no_memorization_regression
+    description: "T4 memorization and ref_leak remain at 0%."
+    priority: should
+  - id: loss_balance
+    description: "loss_ntl decreases over training; loss_contrastive decreases on average."
+    priority: should
+next: |
+  Three branches per outcome.
+  (a) All four must-pass criteria succeed → C1 + C3 jointly supported decisively. Promote
+      C1 from 'testing' to 'supported'. Move to either capability scaling (longer
+      generations to test C4 properly) OR audio port (test C2 cross-modality). The 10x-data
+      experiment 007 becomes optional refinement, not required validation.
+  (b) Partial: t3b passes but α-signal stays weak, OR vice versa. Then 007 (10x data) is
+      the next cheap intervention to push the residual gap. Capability tests rerun on
+      007's checkpoint.
+  (c) All must-pass criteria fail like 005's pattern. Then the prefix-K/V primitive
+      genuinely doesn't work at this base-model scale (4B params, 1k pairs). Real
+      strategic decision: scale data to 10k+ AND model to 12B with offload, OR pivot
+      to Flamingo-style per-layer cross-attention (different injection mechanism), OR
+      rescope program claims to 'context-efficient prompting with weak conditioning.'
