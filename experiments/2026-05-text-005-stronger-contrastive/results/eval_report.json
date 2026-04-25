@@ -1,0 +1,563 @@
+{
+  "test1_discrimination": {
+    "per_step": {
+      "2000": {
+        "mean_jaccard": 0.15398692186981375,
+        "n": 20,
+        "max": 1.0,
+        "min": 0.0
+      }
+    },
+    "final_step": 2000,
+    "final_mean_jaccard": 0.15398692186981375,
+    "verdict": "PASS",
+    "note": "Jaccard of 3-grams between adapter and adapter_swap. Lower = more discrimination."
+  },
+  "test3_style_carryover": {
+    "per_probe": [
+      {
+        "probe_id": "probe_00",
+        "own_author": "michel_de_montaigne",
+        "swap_author": "matthew_arnold",
+        "sim_own": 0.9999091022622522,
+        "sim_swap": 0.9998989548999239,
+        "advantage_own": 1.0147362328294385e-05
+      },
+      {
+        "probe_id": "probe_01",
+        "own_author": "michel_de_montaigne",
+        "swap_author": "matthew_arnold",
+        "sim_own": 0.9999677110577027,
+        "sim_swap": 0.9996581321241302,
+        "advantage_own": 0.0003095789335724186
+      },
+      {
+        "probe_id": "probe_02",
+        "own_author": "michel_de_montaigne",
+        "swap_author": "matthew_arnold",
+        "sim_own": 0.9999036588516312,
+        "sim_swap": 0.9991933818645028,
+        "advantage_own": 0.0007102769871284442
+      },
+      {
+        "probe_id": "probe_03",
+        "own_author": "michel_de_montaigne",
+        "swap_author": "matthew_arnold",
+        "sim_own": 0.9999568178585746,
+        "sim_swap": 0.99980251348326,
+        "advantage_own": 0.00015430437531460672
+      },
+      {
+        "probe_id": "probe_04",
+        "own_author": "michel_de_montaigne",
+        "swap_author": "matthew_arnold",
+        "sim_own": 0.9996804274850536,
+        "sim_swap": 0.998647325075736,
+        "advantage_own": 0.0010331024093176433
+      },
+      {
+        "probe_id": "probe_05",
+        "own_author": "michel_de_montaigne",
+        "swap_author": "matthew_arnold",
+        "sim_own": 0.9999259921366693,
+        "sim_swap": 0.9995668307213397,
+        "advantage_own": 0.0003591614153296563
+      },
+      {
+        "probe_id": "probe_06",
+        "own_author": "matthew_arnold",
+        "swap_author": "sara_teasdale",
+        "sim_own": 0.9999530032964252,
+        "sim_swap": 0.9998576408208282,
+        "advantage_own": 9.536247559704947e-05
+      },
+      {
+        "probe_id": "probe_07",
+        "own_author": "sara_teasdale",
+        "swap_author": "matthew_arnold",
+        "sim_own": 0.9943580934663747,
+        "sim_swap": 0.9940809061421704,
+        "advantage_own": 0.0002771873242043421
+      },
+      {
+        "probe_id": "probe_08",
+        "own_author": "stephen_crane",
+        "swap_author": "matthew_arnold",
+        "sim_own": 0.993215310449039,
+        "sim_swap": 0.9930234731635363,
+        "advantage_own": 0.00019183728550264956
+      },
+      {
+        "probe_id": "probe_09",
+        "own_author": "matthew_arnold",
+        "swap_author": "stephen_crane",
+        "sim_own": 0.9999589070655156,
+        "sim_swap": 0.9999785966994597,
+        "advantage_own": -1.968963394405332e-05
+      },
+      {
+        "probe_id": "probe_10",
+        "own_author": "matthew_arnold",
+        "swap_author": "sara_teasdale",
+        "sim_own": 0.9996744534640659,
+        "sim_swap": 0.9998339119981493,
+        "advantage_own": -0.00015945853408338984
+      },
+      {
+        "probe_id": "probe_11",
+        "own_author": "matthew_arnold",
+        "swap_author": "stephen_crane",
+        "sim_own": 0.9988732750454271,
+        "sim_swap": 0.998831321592675,
+        "advantage_own": 4.1953452752152565e-05
+      },
+      {
+        "probe_id": "probe_12",
+        "own_author": "12_monkeys",
+        "swap_author": "2012",
+        "sim_own": 0.9994810645774823,
+        "sim_swap": 0.9997600683781337,
+        "advantage_own": -0.0002790038006513784
+      },
+      {
+        "probe_id": "probe_13",
+        "own_author": "2012",
+        "swap_author": "12_monkeys",
+        "sim_own": 0.9997736623517494,
+        "sim_swap": 0.9999497710375911,
+        "advantage_own": -0.0001761086858417249
+      },
+      {
+        "probe_id": "probe_14",
+        "own_author": "8mm",
+        "swap_author": "after_life",
+        "sim_own": 0.9993073769507159,
+        "sim_swap": 0.9990942934019862,
+        "advantage_own": 0.00021308354872973112
+      },
+      {
+        "probe_id": "probe_15",
+        "own_author": "after_life",
+        "swap_author": "8mm",
+        "sim_own": 0.9999788509282261,
+        "sim_swap": 0.9999784759956665,
+        "advantage_own": 3.749325596658082e-07
+      },
+      {
+        "probe_id": "probe_16",
+        "own_author": "alien_vs_predator",
+        "swap_author": "american_pie",
+        "sim_own": 0.9999230229994173,
+        "sim_swap": 0.9999255204456705,
+        "advantage_own": -2.497446253246771e-06
+      },
+      {
+        "probe_id": "probe_17",
+        "own_author": "american_pie",
+        "swap_author": "alien_vs_predator",
+        "sim_own": 0.9998119074747104,
+        "sim_swap": 0.999633992672755,
+        "advantage_own": 0.00017791480195539222
+      },
+      {
+        "probe_id": "probe_18",
+        "own_author": "michel_de_montaigne",
+        "swap_author": "matthew_arnold",
+        "sim_own": 0.9996389392269622,
+        "sim_swap": 0.9999145589151459,
+        "advantage_own": -0.00027561968818368143
+      },
+      {
+        "probe_id": "probe_19",
+        "own_author": "michel_de_montaigne",
+        "swap_author": "matthew_arnold",
+        "sim_own": 0.9999668129902343,
+        "sim_swap": 0.9995375127170129,
+        "advantage_own": 0.0004293002732214113
+      }
+    ],
+    "mean_advantage": 0.00015456038942779916,
+    "own_wins": 14,
+    "total": 20,
+    "verdict": "WEAK",
+    "note": "advantage_own = cos(gen_feats, own_ref_feats) - cos(gen_feats, swap_ref_feats). >0.05 = PASS."
+  },
+  "test3b_llm_style_match": {
+    "per_probe": [
+      {
+        "probe_id": "probe_00",
+        "adapter_was": "A",
+        "raw": "B",
+        "winner": "swap"
+      },
+      {
+        "probe_id": "probe_01",
+        "adapter_was": "A",
+        "raw": "A",
+        "winner": "adapter"
+      },
+      {
+        "probe_id": "probe_02",
+        "adapter_was": "A",
+        "raw": "A",
+        "winner": "adapter"
+      },
+      {
+        "probe_id": "probe_03",
+        "adapter_was": "B",
+        "raw": "B",
+        "winner": "adapter"
+      },
+      {
+        "probe_id": "probe_04",
+        "adapter_was": "A",
+        "raw": "B",
+        "winner": "swap"
+      },
+      {
+        "probe_id": "probe_05",
+        "adapter_was": "A",
+        "raw": "A",
+        "winner": "adapter"
+      },
+      {
+        "probe_id": "probe_06",
+        "adapter_was": "A",
+        "raw": "A",
+        "winner": "adapter"
+      },
+      {
+        "probe_id": "probe_07",
+        "adapter_was": "B",
+        "raw": "A",
+        "winner": "swap"
+      },
+      {
+        "probe_id": "probe_08",
+        "adapter_was": "A",
+        "raw": "TIE",
+        "winner": "tie"
+      },
+      {
+        "probe_id": "probe_09",
+        "adapter_was": "B",
+        "raw": "A",
+        "winner": "swap"
+      },
+      {
+        "probe_id": "probe_10",
+        "adapter_was": "A",
+        "raw": "A",
+        "winner": "adapter"
+      },
+      {
+        "probe_id": "probe_11",
+        "adapter_was": "A",
+        "raw": "B",
+        "winner": "swap"
+      },
+      {
+        "probe_id": "probe_12",
+        "adapter_was": "A",
+        "raw": "B",
+        "winner": "swap"
+      },
+      {
+        "probe_id": "probe_13",
+        "adapter_was": "B",
+        "raw": "B",
+        "winner": "adapter"
+      },
+      {
+        "probe_id": "probe_14",
+        "adapter_was": "A",
+        "raw": "TIE",
+        "winner": "tie"
+      },
+      {
+        "probe_id": "probe_15",
+        "adapter_was": "A",
+        "raw": "A",
+        "winner": "adapter"
+      },
+      {
+        "probe_id": "probe_16",
+        "adapter_was": "A",
+        "raw": "A",
+        "winner": "adapter"
+      },
+      {
+        "probe_id": "probe_17",
+        "adapter_was": "B",
+        "raw": "B",
+        "winner": "adapter"
+      },
+      {
+        "probe_id": "probe_18",
+        "adapter_was": "B",
+        "raw": "A",
+        "winner": "swap"
+      },
+      {
+        "probe_id": "probe_19",
+        "adapter_was": "B",
+        "raw": "TIE",
+        "winner": "tie"
+      }
+    ],
+    "adapter_wins": 10,
+    "swap_wins": 7,
+    "ties": 3,
+    "adapter_win_rate": 0.5,
+    "verdict": "WEAK",
+    "note": "LLM-judge style match: adapter vs adapter_swap output compared to probe reference. PASS >=0.60, WEAK 0.50-0.60, FAIL <0.50."
+  },
+  "test4_memorization": {
+    "per_probe": [
+      {
+        "probe_id": "probe_00",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_01",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_02",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_03",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_04",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_05",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_06",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_07",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_08",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_09",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_10",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_11",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_12",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_13",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_14",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_15",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_16",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_17",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_18",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_19",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      }
+    ],
+    "target_memorization_rate": 0.0,
+    "ref_leak_rate": 0.0,
+    "memorization_verdict": "PASS",
+    "leak_verdict": "PASS",
+    "note": "memorization: fraction of adapter outputs with any 10-gram in training targets. leak: 5-gram overlap with probe's own reference."
+  },
+  "test5_loss_curve": {
+    "n_steps": 200,
+    "first_quartile_loss_mean": 2.7022329998016357,
+    "last_quartile_loss_mean": 2.3245376420021056,
+    "improvement_pct": 0.13977157329780807,
+    "still_learning_last_half": true,
+    "verdict": "SLOW",
+    "note": "HEALTHY: >25% loss drop + still improving. PLATEAU: <10% drop."
+  },
+  "test2_llm_judge": {
+    "per_probe": [
+      {
+        "probe_id": "probe_00",
+        "adapter_was": "A",
+        "raw": "A",
+        "winner": "adapter"
+      },
+      {
+        "probe_id": "probe_01",
+        "adapter_was": "A",
+        "raw": "B",
+        "winner": "baseline"
+      },
+      {
+        "probe_id": "probe_02",
+        "adapter_was": "A",
+        "raw": "A",
+        "winner": "adapter"
+      },
+      {
+        "probe_id": "probe_03",
+        "adapter_was": "B",
+        "raw": "A",
+        "winner": "baseline"
+      },
+      {
+        "probe_id": "probe_04",
+        "adapter_was": "A",
+        "raw": "B",
+        "winner": "baseline"
+      },
+      {
+        "probe_id": "probe_05",
+        "adapter_was": "A",
+        "raw": "A",
+        "winner": "adapter"
+      },
+      {
+        "probe_id": "probe_06",
+        "adapter_was": "A",
+        "raw": "B",
+        "winner": "baseline"
+      },
+      {
+        "probe_id": "probe_07",
+        "adapter_was": "B",
+        "raw": "B",
+        "winner": "adapter"
+      },
+      {
+        "probe_id": "probe_08",
+        "adapter_was": "A",
+        "raw": "A",
+        "winner": "adapter"
+      },
+      {
+        "probe_id": "probe_09",
+        "adapter_was": "B",
+        "raw": "B",
+        "winner": "adapter"
+      },
+      {
+        "probe_id": "probe_10",
+        "adapter_was": "A",
+        "raw": "A",
+        "winner": "adapter"
+      },
+      {
+        "probe_id": "probe_11",
+        "adapter_was": "A",
+        "raw": "A",
+        "winner": "adapter"
+      },
+      {
+        "probe_id": "probe_12",
+        "adapter_was": "A",
+        "raw": "A",
+        "winner": "adapter"
+      },
+      {
+        "probe_id": "probe_13",
+        "adapter_was": "B",
+        "raw": "B",
+        "winner": "adapter"
+      },
+      {
+        "probe_id": "probe_14",
+        "adapter_was": "A",
+        "raw": "B",
+        "winner": "baseline"
+      },
+      {
+        "probe_id": "probe_15",
+        "adapter_was": "A",
+        "raw": "B",
+        "winner": "baseline"
+      },
+      {
+        "probe_id": "probe_16",
+        "adapter_was": "A",
+        "raw": "A",
+        "winner": "adapter"
+      },
+      {
+        "probe_id": "probe_17",
+        "adapter_was": "B",
+        "raw": "A",
+        "winner": "baseline"
+      },
+      {
+        "probe_id": "probe_18",
+        "adapter_was": "B",
+        "raw": "B",
+        "winner": "adapter"
+      },
+      {
+        "probe_id": "probe_19",
+        "adapter_was": "B",
+        "raw": "B",
+        "winner": "adapter"
+      }
+    ],
+    "adapter_wins": 13,
+    "baseline_wins": 7,
+    "ties": 0,
+    "adapter_win_rate": 0.65,
+    "verdict": "PASS",
+    "note": "PASS >=0.60 win rate over prompted_baseline. TIE 0.45-0.60. FAIL <0.45."
+  }
+}

@@ -17,5 +17,10 @@
     "../../../text-ip-adapter/data/pairs/val.llm.jsonl": "fcf660d696774d242bd9d975e5d0bec0030303950a5187333b810a75965da76b",
     "../../../text-ip-adapter/data/pairs/test.llm.jsonl": "1b57af97eade55cf482981afdd27f718f54fd6683a64fb0046cf099e16756352"
   },
-  "path_base": "experiments/2026-05-text-005-stronger-contrastive/"
+  "path_base": "experiments/2026-05-text-005-stronger-contrastive/",
+  "finalize": {
+    "finalized_at": "2026-04-25T00:52:40Z",
+    "results_sha256": "9c95ff6b30169607b3049722296013d9bbd61f44c926c1d3cbb709220b4cae6e",
+    "duration_seconds": 7321
+  }
 }

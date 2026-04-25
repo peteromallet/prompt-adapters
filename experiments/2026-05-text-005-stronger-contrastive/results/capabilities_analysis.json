@@ -1,0 +1,19 @@
+{
+  "n_probes": 8,
+  "alpha_blend": {
+    "mean_endpoint_jaccard": 0.0023584905660377358,
+    "mean_mid_to_left": 0.03652864711176567,
+    "mean_mid_to_right": 0.00950923343088836,
+    "mean_smoothness_balance": 0.040829547209320693,
+    "monotonic_count": 6
+  },
+  "strength_dial": {
+    "mean_j_lam0": 0.0022296654510860947,
+    "mean_j_lam05": 0.7103251970763492,
+    "mean_j_lam2": 0.6420723895444335,
+    "mean_length_at_lam2_vs_lam1": 1.0134972807229259,
+    "mean_length_at_lam0": 415.5,
+    "mean_length_at_lam1": 271.375,
+    "mean_length_at_lam2": 275.5
+  }
+}

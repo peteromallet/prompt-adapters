@@ -1,0 +1,335 @@
+{
+  "summary": {
+    "n_probes": 8,
+    "n_judgments": 40,
+    "model": "claude-haiku-4-5",
+    "per_alpha": {
+      "0.0": {
+        "own": 5,
+        "swap": 3,
+        "tie": 0,
+        "n": 8,
+        "frac_own": 0.625,
+        "frac_swap": 0.375
+      },
+      "0.25": {
+        "own": 2,
+        "swap": 6,
+        "tie": 0,
+        "n": 8,
+        "frac_own": 0.25,
+        "frac_swap": 0.75
+      },
+      "0.5": {
+        "own": 3,
+        "swap": 5,
+        "tie": 0,
+        "n": 8,
+        "frac_own": 0.375,
+        "frac_swap": 0.625
+      },
+      "0.75": {
+        "own": 4,
+        "swap": 3,
+        "tie": 1,
+        "n": 8,
+        "frac_own": 0.5,
+        "frac_swap": 0.375
+      },
+      "1.0": {
+        "own": 3,
+        "swap": 5,
+        "tie": 0,
+        "n": 8,
+        "frac_own": 0.375,
+        "frac_swap": 0.625
+      }
+    },
+    "monotonic_own_with_alpha": false,
+    "frac_own_at_alpha_0": 0.625,
+    "frac_own_at_alpha_1": 0.375,
+    "c3_signal_strength": -0.25
+  },
+  "judgments": [
+    {
+      "probe_id": "probe_01",
+      "alpha": "0.25",
+      "picked": "swap",
+      "raw_verdict": "B",
+      "own_was_a": true
+    },
+    {
+      "probe_id": "probe_00",
+      "alpha": "1.0",
+      "picked": "swap",
+      "raw_verdict": "A",
+      "own_was_a": false
+    },
+    {
+      "probe_id": "probe_00",
+      "alpha": "0.75",
+      "picked": "swap",
+      "raw_verdict": "A",
+      "own_was_a": false
+    },
+    {
+      "probe_id": "probe_01",
+      "alpha": "0.5",
+      "picked": "swap",
+      "raw_verdict": "A",
+      "own_was_a": false
+    },
+    {
+      "probe_id": "probe_00",
+      "alpha": "0.0",
+      "picked": "own",
+      "raw_verdict": "A",
+      "own_was_a": true
+    },
+    {
+      "probe_id": "probe_01",
+      "alpha": "0.0",
+      "picked": "swap",
+      "raw_verdict": "A",
+      "own_was_a": false
+    },
+    {
+      "probe_id": "probe_01",
+      "alpha": "0.75",
+      "picked": "own",
+      "raw_verdict": "A",
+      "own_was_a": true
+    },
+    {
+      "probe_id": "probe_02",
+      "alpha": "0.0",
+      "picked": "own",
+      "raw_verdict": "A",
+      "own_was_a": true
+    },
+    {
+      "probe_id": "probe_01",
+      "alpha": "1.0",
+      "picked": "own",
+      "raw_verdict": "B",
+      "own_was_a": false
+    },
+    {
+      "probe_id": "probe_02",
+      "alpha": "0.25",
+      "picked": "swap",
+      "raw_verdict": "B",
+      "own_was_a": true
+    },
+    {
+      "probe_id": "probe_02",
+      "alpha": "0.5",
+      "picked": "own",
+      "raw_verdict": "B",
+      "own_was_a": false
+    },
+    {
+      "probe_id": "probe_02",
+      "alpha": "1.0",
+      "picked": "swap",
+      "raw_verdict": "A",
+      "own_was_a": false
+    },
+    {
+      "probe_id": "probe_03",
+      "alpha": "0.0",
+      "picked": "swap",
+      "raw_verdict": "A",
+      "own_was_a": false
+    },
+    {
+      "probe_id": "probe_02",
+      "alpha": "0.75",
+      "picked": "tie",
+      "raw_verdict": "TIE",
+      "own_was_a": false
+    },
+    {
+      "probe_id": "probe_03",
+      "alpha": "0.5",
+      "picked": "swap",
+      "raw_verdict": "B",
+      "own_was_a": true
+    },
+    {
+      "probe_id": "probe_04",
+      "alpha": "0.0",
+      "picked": "swap",
+      "raw_verdict": "A",
+      "own_was_a": false
+    },
+    {
+      "probe_id": "probe_04",
+      "alpha": "0.25",
+      "picked": "swap",
+      "raw_verdict": "A",
+      "own_was_a": false
+    },
+    {
+      "probe_id": "probe_04",
+      "alpha": "0.5",
+      "picked": "swap",
+      "raw_verdict": "A",
+      "own_was_a": false
+    },
+    {
+      "probe_id": "probe_00",
+      "alpha": "0.5",
+      "picked": "swap",
+      "raw_verdict": "B",
+      "own_was_a": true
+    },
+    {
+      "probe_id": "probe_03",
+      "alpha": "0.25",
+      "picked": "swap",
+      "raw_verdict": "A",
+      "own_was_a": false
+    },
+    {
+      "probe_id": "probe_04",
+      "alpha": "1.0",
+      "picked": "swap",
+      "raw_verdict": "A",
+      "own_was_a": false
+    },
+    {
+      "probe_id": "probe_05",
+      "alpha": "0.25",
+      "picked": "swap",
+      "raw_verdict": "B",
+      "own_was_a": true
+    },
+    {
+      "probe_id": "probe_05",
+      "alpha": "0.0",
+      "picked": "own",
+      "raw_verdict": "B",
+      "own_was_a": false
+    },
+    {
+      "probe_id": "probe_04",
+      "alpha": "0.75",
+      "picked": "swap",
+      "raw_verdict": "B",
+      "own_was_a": true
+    },
+    {
+      "probe_id": "probe_03",
+      "alpha": "1.0",
+      "picked": "swap",
+      "raw_verdict": "B",
+      "own_was_a": true
+    },
+    {
+      "probe_id": "probe_05",
+      "alpha": "0.5",
+      "picked": "swap",
+      "raw_verdict": "A",
+      "own_was_a": false
+    },
+    {
+      "probe_id": "probe_06",
+      "alpha": "0.0",
+      "picked": "own",
+      "raw_verdict": "B",
+      "own_was_a": false
+    },
+    {
+      "probe_id": "probe_05",
+      "alpha": "1.0",
+      "picked": "own",
+      "raw_verdict": "B",
+      "own_was_a": false
+    },
+    {
+      "probe_id": "probe_06",
+      "alpha": "0.25",
+      "picked": "own",
+      "raw_verdict": "A",
+      "own_was_a": true
+    },
+    {
+      "probe_id": "probe_05",
+      "alpha": "0.75",
+      "picked": "own",
+      "raw_verdict": "B",
+      "own_was_a": false
+    },
+    {
+      "probe_id": "probe_06",
+      "alpha": "0.5",
+      "picked": "own",
+      "raw_verdict": "A",
+      "own_was_a": true
+    },
+    {
+      "probe_id": "probe_06",
+      "alpha": "1.0",
+      "picked": "own",
+      "raw_verdict": "A",
+      "own_was_a": true
+    },
+    {
+      "probe_id": "probe_07",
+      "alpha": "0.0",
+      "picked": "own",
+      "raw_verdict": "A",
+      "own_was_a": true
+    },
+    {
+      "probe_id": "probe_07",
+      "alpha": "0.5",
+      "picked": "own",
+      "raw_verdict": "B",
+      "own_was_a": false
+    },
+    {
+      "probe_id": "probe_07",
+      "alpha": "0.25",
+      "picked": "own",
+      "raw_verdict": "B",
+      "own_was_a": false
+    },
+    {
+      "probe_id": "probe_07",
+      "alpha": "0.75",
+      "picked": "own",
+      "raw_verdict": "A",
+      "own_was_a": true
+    },
+    {
+      "probe_id": "probe_06",
+      "alpha": "0.75",
+      "picked": "own",
+      "raw_verdict": "B",
+      "own_was_a": false
+    },
+    {
+      "probe_id": "probe_07",
+      "alpha": "1.0",
+      "picked": "swap",
+      "raw_verdict": "B",
+      "own_was_a": true
+    },
+    {
+      "probe_id": "probe_00",
+      "alpha": "0.25",
+      "picked": "swap",
+      "raw_verdict": "B",
+      "own_was_a": true
+    },
+    {
+      "probe_id": "probe_03",
+      "alpha": "0.75",
+      "picked": "swap",
+      "raw_verdict": "A",
+      "own_was_a": false
+    }
+  ]
+}

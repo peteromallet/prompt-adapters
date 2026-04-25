@@ -7,7 +7,7 @@ tags:
   - same-architecture-as-004
   - hyperparameter-bump
   - minimum-viable-iteration
-status: running
+status: finalized
 consequential: true
 type: training
 question: "Does bumping the projector-K/V contrastive weight from 0.1 (experiment 004) to 0.3 push T3b decisively past 60% AND tighten α-blend endpoints (frac_own < 0.30 at α=0, > 0.85 at α=1) without regressing T2 below 55%?"
@@ -34,8 +34,22 @@ base_model: "google/gemma-3-4b-pt (frozen) - same as 002 and 004"
 dataset: "same 971 LLM-instructed pairs as 002 and 004; data/pairs/{train,val,test}.llm.jsonl. NO data change. Single variable: contrastive_weight 0.1 -> 0.3."
 core_commit: "TBD at launch (will pin text-ip-adapter SHA after committing configs/stage1_gemma_contrastive_03.yaml)"
 compute: "RTX 4090, ~37 min training + ~10 min eval (n=20 + pathway + capability + LLM-judge α-blend). Total budget ~$0.95."
-results: {}
-headline: "Single hyperparameter bump (contrastive_weight 0.1 -> 0.3) to test whether the WEAK T3b and weak C3 endpoints in 004 are a pressure problem or something deeper."
+results:
+  test1_discrimination: "PASS ({'final_mean_jaccard': 0.15398692186981375})"
+  test2_llm_judge: "PASS ({'adapter_win_rate': 0.65})"
+  test3_style_carryover: "WEAK ({'mean_advantage': 0.00015456038942779916})"
+  test3b_llm_style_match: "WEAK ({'adapter_win_rate': 0.5})"
+  test4_memorization: "None ({'target_memorization_rate': 0.0, 'ref_leak_rate': 0.0})"
+  test5_loss_curve: "SLOW ({'improvement_pct': 0.13977157329780807})"
+  capability_alpha_blend: "monotonic_count=6/8; endpoint_J=0.002; smoothness_balance=0.041"
+  capability_strength_dial: "J(λ=0.5,1)=0.710; J(λ=2,1)=0.642; len(λ=2)/len(λ=1)=1.01"
+  mean_cos_z_swap: 0.3946
+  mean_cos_K_first_swap: 0.6869
+  mean_cos_K_first_zero: 0.2569
+  mean_cos_K_first_random: 0.0231
+  mean_cos_K_first_code: 0.6875
+  _auto_populated_at: "2026-04-25T00:52:40Z"
+headline: "Hypothesis REFUTED. T3b regressed 55%->50%, LLM-judge alpha-blend signal inverted +0.25->-0.25, pathway cos_K for same-domain refs got WORSE (swap 0.31->0.69, code 0.33->0.69). T2 actually improved 60%->65%. Projector responds non-monotonically to contrastive weight; more pressure is not the answer. Next: 006 architectural fix (no-trunk projector)."
 implementation_notes: |
   Only change vs 004: text-ip-adapter/configs/stage1_gemma_contrastive_03.yaml
   with contrastive_weight: 0.3 instead of 0.1. Everything else identical.
