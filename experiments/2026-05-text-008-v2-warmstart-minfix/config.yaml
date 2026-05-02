@@ -1,0 +1,22 @@
+base_model: google/gemma-3-4b-pt
+adapter_config: ../../../text-ip-adapter/configs/stage1_v2_warmstart_minfix.yaml
+data_paths:
+  - ../../../text-ip-adapter/data/pairs_v2/train.v2_curated.jsonl
+  - ../../../text-ip-adapter/data/pairs_v2/val.v2_curated.jsonl
+  - ../../../text-ip-adapter/data/pairs_v2/test.v2_curated.jsonl
+  - results/audit_v2_curated.json
+train_hparams:
+  steps: 5000
+  batch_size: 2
+  target_max: 1024
+  contrastive_weight: 0.1
+  init_from: checkpoints/stage1_gemma_no_trunk/final.pt
+eval:
+  n_probes: 20
+  judges:
+    - haiku
+    - opus_or_sonnet
+  required_outputs:
+    - results/eval_report.json
+    - results/conditioning_probe_analysis.json
+    - results/capabilities_analysis.json

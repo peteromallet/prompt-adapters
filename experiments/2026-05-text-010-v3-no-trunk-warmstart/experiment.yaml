@@ -1,0 +1,31 @@
+id: 2026-05-text-010-v3-no-trunk-warmstart
+modality: text
+project: text-gemma3-prefix-kv
+tags:
+  - v3-corpus
+  - no-trunk
+  - warmstart
+  - contrastive-loss
+status: completed
+consequential: true
+question: "Does the 006 no-trunk warmstart recipe produce non-collapsed pathway conditioning and better generation quality on the repaired v3 corpus?"
+hypothesis: "If the v2 failures were mainly data lineage and split-policy failures, then training the no-trunk warmstart recipe on v3 should preserve pathway discrimination (cos_K_first_swap <= 0.40) while reducing OOD repetition compared with 008b."
+parent: 2026-05-text-009-v3-data-rebuild-speechfix
+base_model: google/gemma-3-4b-pt
+dataset: "data/pairs_v3_candidate/{train,val,test}.jsonl from experiment 009"
+core_commit:
+compute: "RunPod RTX 4090; 5,000 training steps completed 2026-04-25; final checkpoint on pod at /workspace/text-ip-adapter/checkpoints/stage1_v3_no_trunk_warmstart/final.pt"
+results:
+  train_steps: 5000
+  train_log: results/training/train_log.jsonl
+  samples: results/training/samples.jsonl
+  legacy_pathway_probe: results/v3_no_trunk_warmstart_pathway_legacy_n20
+  balanced_pathway_probe: results/v3_no_trunk_warmstart_pathway_balanced_n20
+  legacy_mean_cos_K_first_swap: 0.44595622420310976
+  legacy_mean_cos_K_last_swap: 0.34191746432334186
+  balanced_mean_cos_K_first_swap: 0.5032253443263471
+  balanced_mean_cos_K_last_swap: 0.46430326187983156
+  balanced_mean_cos_K_last_random: 0.10531148065347225
+  balanced_mean_cos_K_last_code: 0.08655380569398403
+headline: "Pathway-positive but generation-quality-negative; repaired v3 does not collapse globally, but poetry/speech diagnostics expose register-specific weaknesses and final smoke generations remain repetitive."
+next: "Do not scale this recipe yet. Run a cheap v3.1 data/eval repair: balanced held-out authors per register, remove content-summary/list/table-of-contents targets, regenerate instructions against cleaned targets, then test a shorter objective/decoding-focused run before wider encoder."

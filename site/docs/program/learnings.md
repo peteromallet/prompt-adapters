@@ -73,3 +73,23 @@ Cross-project findings that apply beyond any single experiment or project. Updat
 ## Auto-rollup (2026-04-25)
 
 - **[2026-05-text-005-stronger-contrastive](../experiments/2026-05-text-005-stronger-contrastive/) — refuted**: Hypothesis REFUTED. T3b regressed 55%->50%, LLM-judge alpha-blend signal inverted +0.25->-0.25, pathway cos_K for same-domain refs got WORSE (swap 0.31->0.69, code 0.33->0.69). T2 actually improved 60%->65%. Projector responds non-monotonically to contrastive weight; more pressure is not the answer. Next
+
+## Auto-rollup (2026-04-25)
+
+- **[2026-05-text-006-projector-no-trunk](../experiments/2026-05-text-006-projector-no-trunk/) — partially_confirmed**: Architectural fix is real at the K/V pathway (cos_K_first_swap 0.69→0.22). Initial Haiku-judged T3b/α-blend looked decisive (16/20, signal 1.0) but Opus cross-judge revealed ~20% mode collapse and non-monotonic α-curve. Haiku is an unreliable style judge (rewards Gutenberg-surface markers over actual style-match). Key meta-learning: **dual-judge eval (Haiku + Opus or Sonnet) is required for any LLM-judge criterion**.
+
+## Auto-rollup (2026-04-25)
+
+- **[2026-05-text-010-v3-no-trunk-warmstart](../experiments/2026-05-text-010-v3-no-trunk-warmstart/) — partially_confirmed**: Repaired v3 plus no-trunk warmstart is pathway-positive but generation-quality-negative. Legacy n=20 `cos_K_last_swap=0.342`; v3 balanced n=20 `cos_K_last_swap=0.464` with random/code low, so global projector collapse is not the immediate blocker. Final samples remain repetitive and generic. The legacy probe omitted speech; the new balanced probe exposed register-specific weakness: screenplay separates strongly, essay/poetry are partial, and speech own-vs-swap is nearly collapsed (`cos_K_last_swap=0.883`). Next best bet is v3.1 data/eval repair, not wider encoder.
+
+## Auto-rollup (2026-04-25)
+
+- **[2026-05-text-013-v3.3-corrected-poetry-core3-smoke](../experiments/2026-05-text-013-v3.3-corrected-poetry-core3-smoke/) — partially_confirmed/data-positive-quality-negative**: The data audit found a root cause in bogus Gutenberg poetry IDs; corrected v3.3 core3 passed gates and removed known poetry contamination markers. The 1,500-step smoke stayed pathway-positive (`cos_K_last_swap=0.398`, random=-0.039, code=0.044), so reference signal propagates. Final generations still repeat across poetry/screenplay/speech, so the next best bet shifts from data hygiene to objective/decoding ablations. Do not full-run v3.3.
+
+## Auto-rollup (2026-04-25)
+
+- **[2026-05-text-014-objective-ablation-core3](../experiments/2026-05-text-014-objective-ablation-core3/) — refuted**: Disabling contrastive on corrected v3.3 core3 did not fix repetition and substantially worsened pathway separation (`cos_K_last_swap=0.792`, `cos_K_first_swap=0.861`, `cos_z_swap=0.720`). 013 with contrastive on had much healthier separation (`cos_K_last_swap=0.398`). Keep contrastive enabled; the next best bet is a decoding-control diagnostic on the 013 checkpoint before another training run.
+
+## Auto-rollup (2026-04-25)
+
+- **[2026-05-text-015-decoding-repetition-diagnostic](../experiments/2026-05-text-015-decoding-repetition-diagnostic/) — partially_confirmed**: Holding the 013 checkpoint fixed and changing only decoding controls almost eliminated mechanical loops. 013 adapter `repeat_3` was poetry=0.806, screenplay=0.261, speech=0.416; 015 sampled anti-repeat reduced `repeat_3` and repeated-line rate to 0.0 across all three registers. This makes decoding a real eval lever, but not a claim win: instruction leakage, page artifacts, generic/no-ref contamination, and uncertain author-level style carryover remain. Next best bet is a small judge/human audit of 015 sampled outputs before another training run.

@@ -1,0 +1,7 @@
+-rw-r--r-- 1 root root 0 Apr 26 04:49 /tmp/022_v3_8_eval/train_stdout.log
+-rw-r--r-- 1 root root 0 Apr 26 04:49 /tmp/022_v3_8_eval/train_stderr.log
+-rw-r--r-- 1 root root 0 Apr 26 04:49 /tmp/022_v3_8_eval/pathway_stdout.log
+-rw-r--r-- 1 root root 0 Apr 26 04:49 /tmp/022_v3_8_eval/pathway_stderr.log
+-rw-r--r-- 1 root root 0 Apr 26 04:49 /tmp/022_v3_8_eval/sampled_stdout.log
+-rw-r--r-- 1 root root 0 Apr 26 04:49 /tmp/022_v3_8_eval/sampled_stderr.log
+-rw-r--r-- 1 root root 452 Apr 26 04:49 /tmp/022_v3_8_eval/artifact_listing.txt

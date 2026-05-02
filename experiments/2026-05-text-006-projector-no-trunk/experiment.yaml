@@ -7,7 +7,7 @@ tags:
   - per-layer-specialization
   - same-data-as-004-005
   - last-cheap-architectural-lever
-status: running
+status: closed
 consequential: true
 type: training
 question: "Does removing the shared MLP trunk from PrefixProjector — letting each per-layer K/V head read z directly via per-layer LayerNorm — push T3b decisively past 60% AND tighten α-blend endpoints, fixing the structural bottleneck that caused 005's non-monotonic contrastive response?"
@@ -43,7 +43,22 @@ base_model: "google/gemma-3-4b-pt (frozen) — same as 002, 004, 005"
 dataset: "same 971 LLM-instructed pairs as 002/004/005; data/pairs/{train,val,test}.llm.jsonl. NO data change. Single architectural change: projector.use_trunk = false."
 core_commit: "TBD at launch (text-ip-adapter SHA after committing stage1_gemma_no_trunk.yaml + projector use_trunk option)"
 compute: "RTX 4090, ~37 min training + ~10 min eval (n=20 + pathway + capability + LLM-judge α-blend). Total budget ~$0.95."
-results: {}
+results:
+  test2_llm_judge: "PASS (haiku=0.80, opus=0.80 — consistent, lopsided vs prompt)"
+  test3_style_carryover: "PASS"
+  test3b_llm_style_match: "MIXED (haiku=0.80 PASS, opus=0.50 WEAK) — Haiku over-rewarded surface markers"
+  test4_memorization: "PASS"
+  test5_loss_curve: "PASS"
+  alpha_blend_haiku: "signal=1.00 monotonic=true endpoints_commit=true — overgenerous"
+  alpha_blend_opus: "signal=0.60 monotonic=FALSE endpoints_commit=true; 11/50 mode-collapsed"
+  capability_alpha_blend: "monotonic_count=9/10; endpoint_J=0.001; smoothness_balance=0.003"
+  capability_strength_dial: "J(λ=0.5,1)=0.321; J(λ=2,1)=0.477; len(λ=2)/len(λ=1)=1.02"
+  mean_cos_z_swap: 0.3152
+  mean_cos_K_first_swap: 0.2207
+  mean_cos_K_first_zero: 0.545
+  mean_cos_K_first_random: 0.3283
+  mean_cos_K_first_code: 0.3644
+  _auto_populated_at: "2026-04-25T02:02:42Z"
 headline: "Architectural fix: drop the shared MLP trunk in PrefixProjector. Last cheap lever before bigger-budget options (10x data, 12B base, Flamingo-style cross-attention)."
 implementation_notes: |
   Single architectural change vs 004:
@@ -95,3 +110,41 @@ next: |
       strategic decision: scale data to 10k+ AND model to 12B with offload, OR pivot
       to Flamingo-style per-layer cross-attention (different injection mechanism), OR
       rescope program claims to 'context-efficient prompting with weak conditioning.'
+
+reflection:
+  hypothesis_outcome: partially_confirmed
+  haiku_vs_opus_reconciliation: |
+    Initial Haiku-judged results reported confirmed (T3b 16/20, T2 16/20, α-blend
+    signal 1.0). Opus cross-check on SAME samples returned: T3b 10/20 (50%, WEAK),
+    T2 16/20 (80%, unchanged), α-blend signal 0.60, non-monotonic, endpoints commit.
+    Opus flagged 11/50 α-blend generations as mode-collapsed (garbage/wrong-language)
+    that Haiku had rewarded based on surface Gutenberg-style markers.
+    Criterion-by-criterion (Opus-corrected):
+    - t3b_decisive: FAIL (50% < 60% threshold)
+    - t2_holds: PASS (80%)
+    - alpha_signal_strong: PARTIAL (signal 0.6, endpoints commit, but non-monotonic)
+    - same_domain_unblocks: PASS (cos_K_first_swap = 0.22, numeric)
+  mode_collapse_diagnostic: |
+    Of 11 mode-collapse cases Opus flagged, ~7 trace to probe-file quality issues:
+    - probe_05: cross-register pair (Montaigne essay vs Arnold poetry)
+    - probe_07: labeled Teasdale poetry but ref is prose passage
+    - probe_08: labeled Crane poetry but ref is pamphlet bibliography
+    - probe_09: labeled Arnold poetry but ref is lecture text
+    The model can't interpolate between mislabeled/mis-registered refs. Remaining
+    ~4 collapses may be genuine failures on harder valid probes.
+  surprises: |
+    Haiku is an unreliable style judge — it rewards surface markers (underscore
+    italics, Gutenberg formatting) over actual style-match. Dual-judge eval is
+    necessary going forward.
+    The -24% param reduction (trunk removal) improved rather than hurt performance
+    on numeric metrics (cos_K_first_swap 0.69→0.22), but did NOT automatically
+    produce decisive T3b wins — mode collapse remains at ~20% of generations.
+  corrections_to_prior_beliefs: |
+    Prior: shared trunk provides useful shared representation. Refuted at the K/V
+    pathway level — trunk was a bottleneck. Per-layer independent LayerNorm is
+    strictly superior for encoder-to-K/V specialization.
+    Prior: Haiku is a sufficient style judge. Refuted — Haiku over-indexes on
+    surface typography markers. Use Opus or Sonnet for production eval.
+  next_experiment: 2026-05-text-007-v2-corpus
+  rolls_up_to_project: true
+  rolls_up_to_program: true

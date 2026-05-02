@@ -1,0 +1,37 @@
+id: 2026-05-text-023-evalclean-probe-audit
+modality: text
+project: text-gemma3-prefix-kv
+tags:
+  - eval
+  - core2
+  - clean-heldout
+  - probe-repair
+status: completed
+consequential: true
+question: "Did dirty v3.8 probe references inflate or distort 022's pathway readout?"
+hypothesis: "Cleaning probe references should reduce artifacty poetry outputs and reveal whether 022's author-style pathway remains strong under cleaner references."
+parent: 2026-05-text-022-broader-clean-split-restart
+base_model: google/gemma-3-4b-pt
+dataset: "data/pairs_v3_9_core2_evalclean"
+config: "configs/stage1_v3_8_core2_cleanheldout_restart.yaml"
+compute: "Checkpoint-only RunPod eval on pod vemrd9dj9mq1zj; local 022 final.pt uploaded to /tmp, project run from /tmp, artifacts downloaded, pod terminated."
+headline: "Eval-clean probes remove the dirty-reference confound but weaken the 022 pathway result."
+results:
+  pathway:
+    n_probes: 32
+    mean_cos_z_swap: 0.526
+    mean_cos_K_first_swap: 0.757
+    mean_cos_K_last_swap: 0.541
+    mean_cos_K_last_random: 0.047
+    mean_cos_K_last_code: -0.079
+    mean_gen_jaccard_swap: 0.083
+    poetry_cos_K_last_swap: 0.647
+    screenplay_cos_K_last_swap: 0.435
+  sampled_eval:
+    T1: PASS
+    T3_surface: FAIL
+    T4_memorization: PASS
+    T4_ref_leak: PASS
+    repeat3_mean: 0.0004
+  verdict: "negative_informative/probe-sensitive/style-unproven"
+next: "Build a v4 objective/data repair: clean reference docs for train/eval, reduce brittle content-word instructions, and add direct own-vs-swap style alignment or author-negative objective before wider encoder."

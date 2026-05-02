@@ -1,0 +1,42 @@
+base_model: google/gemma-3-4b-pt
+parent_experiment: 2026-05-text-010-v3-no-trunk-warmstart
+data_paths:
+  - ../../../text-ip-adapter/data/pairs_v3_candidate/train.jsonl
+  - ../../../text-ip-adapter/data/pairs_v3_candidate/val.jsonl
+  - ../../../text-ip-adapter/data/pairs_v3_candidate/test.jsonl
+target_outputs:
+  - ../../../text-ip-adapter/data/pairs_v3_1/train.jsonl
+  - ../../../text-ip-adapter/data/pairs_v3_1/val.jsonl
+  - ../../../text-ip-adapter/data/pairs_v3_1/test.jsonl
+  - ../../../text-ip-adapter/data/pairs_v3_1/manifest.json
+  - ../../../text-ip-adapter/data/pairs_v3_1/probes_balanced_n20.jsonl
+gates:
+  min_train_pairs_by_register:
+    poetry: 1500
+    essay: 100
+    screenplay: 1500
+    speech: 1500
+  min_heldout_pairs_by_register: 50
+  min_heldout_authors_by_register: 2
+  author_disjoint: true
+  source_dataset_present: true
+  max_suspicious_target_rate: 0.10
+filters:
+  drop_target_regexes:
+    - "(?i)^contents\\b"
+    - "(?i)table of contents"
+    - "(?i)^index\\b"
+    - "(?i)^chapter\\s+[ivxlcdm0-9]+\\.?\\s*$"
+    - "(?i)this book is a comprehensive reference work"
+    - "(?i)^the first volume of"
+    - "(?i)^the story of .* is the story of"
+  drop_repetition_threshold:
+    repeated_5gram_fraction: 0.20
+  instruction_mode: content_focused_after_filtering
+eval:
+  n_probes: 20
+  required_registers:
+    - poetry
+    - essay
+    - screenplay
+    - speech

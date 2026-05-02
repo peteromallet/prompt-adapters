@@ -1,0 +1,386 @@
+{"pair_id": "pairs_v5_0_train_l_a_czarnecki_0061", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_l_a_czarnecki_0062", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_l_a_czarnecki_0063", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_l_a_czarnecki_0064", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target contains visible OCR garbage mark"}
+{"pair_id": "pairs_v5_0_train_l_a_czarnecki_0065", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference carries visible OCR garbage mark"}
+{"pair_id": "pairs_v5_0_train_l_a_czarnecki_0066", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_l_a_czarnecki_0067", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_l_a_czarnecki_0068", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target has multiple OCR word errors"}
+{"pair_id": "pairs_v5_0_train_l_a_czarnecki_0069", "decision": "delete", "severity": "major", "reasons": ["prose", "metadata", "ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target is an editorial letter/testimonial, not poetry"}
+{"pair_id": "pairs_v5_0_train_l_a_czarnecki_0070", "decision": "delete", "severity": "major", "reasons": ["prose", "metadata"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference is an editorial letter/testimonial, not poetry"}
+{"pair_id": "pairs_v5_0_train_l_a_czarnecki_0071", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_l_a_czarnecki_0072", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_l_a_czarnecki_0073", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_l_a_czarnecki_0074", "decision": "delete", "severity": "major", "reasons": ["prose"], "edited_ref_text": null, "edited_target_text": null, "notes": "target is prose discussion, not poetry"}
+{"pair_id": "pairs_v5_0_train_l_a_czarnecki_0075", "decision": "delete", "severity": "major", "reasons": ["prose"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference is prose discussion, not poetry"}
+{"pair_id": "pairs_v5_0_train_l_a_czarnecki_0076", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_l_a_czarnecki_0077", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_l_a_czarnecki_0078", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_l_a_czarnecki_0079", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0000", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0001", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0002", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0003", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0004", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0005", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0006", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target has intrusive OCR spacing/errors"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0007", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference/target contain intrusive OCR spacing/errors"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0008", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference/target contain intrusive OCR artifacts"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0009", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference carries OCR-corrupted fragment"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0010", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0011", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0012", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target has OCR punctuation/mark contamination"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0013", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference carries OCR punctuation/mark contamination"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0014", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0015", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target has OCR-spaced initial word"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0016", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference has OCR-spaced initial word"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0017", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0018", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0019", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0020", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0021", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0022", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0023", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0024", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0025", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0026", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target has OCR-spaced initial word"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0027", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference has OCR-spaced initial word"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0028", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target begins as OCR-damaged fragment"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0029", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference begins as OCR-damaged fragment"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0030", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0031", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0032", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0033", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0034", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0035", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0036", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0037", "decision": "delete", "severity": "major", "reasons": ["ocr", "metadata"], "edited_ref_text": null, "edited_target_text": null, "notes": "texts include page-number/OCR artifacts"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0038", "decision": "delete", "severity": "major", "reasons": ["ocr", "metadata"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference includes page-number/OCR artifacts"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0039", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0040", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0041", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target has OCR-spaced initial word"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0042", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference has OCR-spaced initial word"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0043", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0044", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target has intrusive OCR spacing"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0045", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference has intrusive OCR spacing"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0046", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0047", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0048", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0049", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0050", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0051", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0052", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0053", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target has intrusive OCR spacing/errors"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0054", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference has intrusive OCR spacing/errors"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0055", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0056", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0057", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target has intrusive OCR spacing/errors"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0058", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference has intrusive OCR spacing/errors"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0059", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0060", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0061", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0062", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0063", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0064", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target contains OCR-degraded words"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0065", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference contains OCR-degraded words"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0066", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0067", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0068", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target has OCR-spaced initial word"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0069", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference has OCR-spaced initial word"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0070", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0071", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0072", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target is badly OCR-corrupted"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0073", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference badly OCR-corrupted and target has OCR-spaced initial"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0074", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference has OCR-spaced initial"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0075", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0076", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0077", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0078", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_field_eugene_0079", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0000", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0001", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0002", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0003", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0004", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0005", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0006", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0007", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0008", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0009", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0010", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0011", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0012", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0013", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0014", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0015", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0016", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0017", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0018", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0019", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0020", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0021", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target has intrusive OCR symbols/line damage"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0022", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference has intrusive OCR symbols/line damage"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0023", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0024", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0025", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0026", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference begins with OCR-corrupted title/text"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0027", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference carries OCR-corrupted word"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0028", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0029", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0030", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0031", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0032", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0033", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0034", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0035", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0036", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0037", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target is OCR-damaged"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0038", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference/target contain OCR symbols"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0039", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference carries OCR symbol contamination"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0040", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0041", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0042", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target has intrusive OCR line marks"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0043", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference has intrusive OCR line marks"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0044", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0045", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0046", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0047", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0048", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target has OCR garbage at line start"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0049", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference has OCR garbage at line start and target fragment"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0050", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference begins as broken OCR fragment"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0051", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference has OCR-degraded wording"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0052", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0053", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0054", "decision": "delete", "severity": "major", "reasons": ["metadata"], "edited_ref_text": null, "edited_target_text": null, "notes": "target begins with section numbering metadata"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0055", "decision": "delete", "severity": "major", "reasons": ["metadata"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference begins with section numbering metadata"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0056", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0057", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0058", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0059", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0060", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0061", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0062", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0063", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0064", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0065", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0066", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0067", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0068", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0069", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0070", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0071", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0072", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0073", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0074", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0075", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0076", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0077", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0078", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_alfred_tennyson_0079", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0000", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0001", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0002", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0003", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0004", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0005", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0006", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0007", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0008", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0009", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0010", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0011", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0012", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0013", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0014", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0015", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0016", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0017", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0018", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0019", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0020", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0021", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0022", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0023", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0024", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0025", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0026", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0027", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0028", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0029", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0030", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0031", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0032", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0033", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0034", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0035", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0036", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0037", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0038", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0039", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0040", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0041", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0042", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0043", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0044", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0045", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0046", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0047", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0048", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0049", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0050", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0051", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0052", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0053", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0054", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0055", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0056", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0057", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0058", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0059", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0060", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0061", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0062", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0063", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0064", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0065", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0066", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0067", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0068", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0069", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0070", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0071", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0072", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0073", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0074", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0075", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0076", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0077", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0078", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_craig_frank_h_0079", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_davidson_gustav_1895_1971_0000", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_davidson_gustav_1895_1971_0001", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_davidson_gustav_1895_1971_0002", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_davidson_gustav_1895_1971_0003", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_davidson_gustav_1895_1971_0004", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_davidson_gustav_1895_1971_0005", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_davidson_gustav_1895_1971_0006", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_davidson_gustav_1895_1971_0007", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_davidson_gustav_1895_1971_0008", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target has page/OCR garbage and truncated fragment"}
+{"pair_id": "pairs_v5_0_train_davidson_gustav_1895_1971_0009", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference has page/OCR garbage and truncated fragment"}
+{"pair_id": "pairs_v5_0_train_davidson_gustav_1895_1971_0010", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_davidson_gustav_1895_1971_0011", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_davidson_gustav_1895_1971_0012", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_davidson_gustav_1895_1971_0013", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_davidson_gustav_1895_1971_0014", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_davidson_gustav_1895_1971_0015", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_davidson_gustav_1895_1971_0016", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_davidson_gustav_1895_1971_0017", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_davidson_gustav_1895_1971_0018", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_davidson_gustav_1895_1971_0019", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_davidson_gustav_1895_1971_0020", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_davidson_gustav_1895_1971_0021", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_davidson_gustav_1895_1971_0022", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_davidson_gustav_1895_1971_0023", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_davidson_gustav_1895_1971_0024", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_davidson_gustav_1895_1971_0025", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_davidson_gustav_1895_1971_0026", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_davidson_gustav_1895_1971_0027", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_davidson_gustav_1895_1971_0028", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target has OCR-corrupted words"}
+{"pair_id": "pairs_v5_0_train_davidson_gustav_1895_1971_0029", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference has OCR-corrupted words"}
+{"pair_id": "pairs_v5_0_train_davidson_gustav_1895_1971_0030", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_davidson_gustav_1895_1971_0031", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_davidson_gustav_1895_1971_0032", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_davidson_gustav_1895_1971_0033", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0000", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target begins with OCR garbage"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0001", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference/target contain OCR bracket and word damage"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0002", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference has OCR bracket damage"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0003", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0004", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0005", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target has intrusive OCR symbols and broken text"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0006", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference has intrusive OCR symbols and broken text"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0007", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0008", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0009", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0010", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0011", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target is badly OCR-corrupted"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0012", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference is badly OCR-corrupted"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0013", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0014", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0015", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0016", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0017", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0018", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0019", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0020", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target has intrusive OCR symbols"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0021", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference has intrusive OCR symbols"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0022", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0023", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0024", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0025", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0026", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target begins with OCR-corrupted word"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0027", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference begins with OCR-corrupted word"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0028", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0029", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0030", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target has visible OCR symbol"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0031", "decision": "delete", "severity": "major", "reasons": ["prose", "metadata", "ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target is prose dedication/letter, not poetry"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0032", "decision": "delete", "severity": "major", "reasons": ["prose", "metadata", "ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference is prose dedication/letter, not poetry"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0033", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0034", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0035", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference/target contain OCR symbols"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0036", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference has OCR symbol and target has word damage"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0037", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference has OCR punctuation/word damage"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0038", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0039", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0040", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target has OCR-degraded word"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0041", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference has OCR-degraded word"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0042", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target has intrusive OCR line mark"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0043", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference has intrusive OCR line mark"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0044", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target has OCR punctuation/word damage"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0045", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference/target contain OCR damage"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0046", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference has OCR damage"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0047", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target has OCR-degraded words"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0048", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference/target have severe OCR-degraded words"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0049", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference has severe OCR-degraded words"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0050", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0051", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target contains OCR symbol/word damage"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0052", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference/target contain OCR-damaged words"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0053", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference begins with OCR-dropped initial"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0054", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target has OCR punctuation/spacing damage"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0055", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference has OCR punctuation/spacing damage"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0056", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0057", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target has intrusive OCR line mark"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0058", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference/target contain intrusive OCR symbols"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0059", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference has intrusive OCR symbols"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0060", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target has OCR symbols/word damage"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0061", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference has OCR symbols/word damage"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0062", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target has OCR-degraded word"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0063", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference/target contain OCR bracket/word damage"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0064", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference/target contain OCR-degraded words"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0065", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference has OCR-degraded word"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0066", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0067", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0068", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target is badly OCR-corrupted"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0069", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference is badly OCR-corrupted"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0070", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "target has OCR-degraded word"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0071", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference/target contain OCR-degraded words/symbols"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0072", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference/target contain OCR-degraded words/symbols"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0073", "decision": "delete", "severity": "major", "reasons": ["ocr"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference contains OCR-degraded words"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0074", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0075", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0076", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0077", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0078", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_little_david_flemming_0079", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_lampman_archibald_1861_1899_0000", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_lampman_archibald_1861_1899_0001", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_lampman_archibald_1861_1899_0002", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_lampman_archibald_1861_1899_0003", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_lampman_archibald_1861_1899_0004", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_lampman_archibald_1861_1899_0005", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_lampman_archibald_1861_1899_0006", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_lampman_archibald_1861_1899_0007", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_lampman_archibald_1861_1899_0008", "decision": "delete", "severity": "major", "reasons": ["prose", "metadata"], "edited_ref_text": null, "edited_target_text": null, "notes": "target is prose criticism, not poetry"}
+{"pair_id": "pairs_v5_0_train_lampman_archibald_1861_1899_0009", "decision": "delete", "severity": "major", "reasons": ["prose", "metadata"], "edited_ref_text": null, "edited_target_text": null, "notes": "reference is prose criticism, not poetry"}
+{"pair_id": "pairs_v5_0_train_lampman_archibald_1861_1899_0010", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_lampman_archibald_1861_1899_0011", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}
+{"pair_id": "pairs_v5_0_train_lampman_archibald_1861_1899_0012", "decision": "keep", "severity": "none", "reasons": [], "edited_ref_text": null, "edited_target_text": null, "notes": "clean poem pair"}

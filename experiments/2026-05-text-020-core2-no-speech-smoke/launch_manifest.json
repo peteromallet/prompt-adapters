@@ -1,0 +1,14 @@
+{
+  "launched_at": "2026-04-26T05:06:00+02:00",
+  "pod_id": "gaw0383lfjnq7k",
+  "remote_root": "/workspace/text-ip-adapter",
+  "remote_log": "/workspace/text-ip-adapter/train.log",
+  "remote_pid": 271,
+  "hf_token_synced": true,
+  "status": "completed_terminated",
+  "config": "configs/stage1_v3_6_core2_poetry_screenplay_smoke.yaml",
+  "dataset": "data/pairs_v3_6_core2_poetry_screenplay",
+  "init_from": "checkpoints/stage1_v3_5_artifact_clean_core3_longer/step_1000.pt",
+  "terminated_after_eval": true,
+  "local_results": "prompt-adapters/experiments/2026-05-text-020-core2-no-speech-smoke/results"
+}

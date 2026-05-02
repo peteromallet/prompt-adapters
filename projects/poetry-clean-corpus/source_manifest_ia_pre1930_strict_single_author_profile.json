@@ -1,0 +1,555 @@
+{
+  "anthology_like": 10,
+  "licenses": {
+    "public_domain_candidate": 144
+  },
+  "missing_author": 0,
+  "missing_title": 0,
+  "path": "prompt-adapters/projects/poetry-clean-corpus/source_manifest_ia_pre1930_strict_single_author.jsonl",
+  "rows": 144,
+  "sample_rows": [
+    {
+      "author_id": null,
+      "author_name": "Maynard, Theodore",
+      "expected_register": "poetry",
+      "filter_decision": "keep",
+      "filter_reasons": [],
+      "ia_identifier": "poems00maynuoft",
+      "ia_language": [
+        "English"
+      ],
+      "ia_licenseurl": [
+        "http://creativecommons.org/licenses/publicdomain/"
+      ],
+      "ia_rights": [],
+      "ia_subject": [],
+      "license": "public_domain_candidate",
+      "public_domain_basis": "internet_archive_rights_or_license_metadata_candidate",
+      "risk_notes": "Internet Archive metadata candidate; requires author normalization, OCR quality audit, rights verification, and poem-boundary parsing before acceptance.",
+      "source_id": "internet_archive_poems00maynuoft",
+      "source_name": "internet_archive",
+      "source_publication_year": 1919,
+      "source_url": "https://archive.org/details/poems00maynuoft",
+      "source_work_title": "Poems",
+      "status": "candidate"
+    },
+    {
+      "author_id": null,
+      "author_name": "O'Hanlon, John, 1821-1905",
+      "expected_register": "poetry",
+      "filter_decision": "keep",
+      "filter_reasons": [],
+      "ia_identifier": "LegendLaysOfIreland",
+      "ia_language": [
+        "eng"
+      ],
+      "ia_licenseurl": [
+        "http://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "ia_rights": [],
+      "ia_subject": [
+        "Legends -- Ireland -- Poetry",
+        "Folklore",
+        "Folklore -- Ireland",
+        "Legends"
+      ],
+      "license": "public_domain_candidate",
+      "public_domain_basis": "internet_archive_rights_or_license_metadata_candidate",
+      "risk_notes": "Internet Archive metadata candidate; requires author normalization, OCR quality audit, rights verification, and poem-boundary parsing before acceptance.",
+      "source_id": "internet_archive_LegendLaysOfIreland",
+      "source_name": "internet_archive",
+      "source_publication_year": 1870,
+      "source_url": "https://archive.org/details/LegendLaysOfIreland",
+      "source_work_title": "Legend Lays of Ireland",
+      "status": "candidate"
+    },
+    {
+      "author_id": null,
+      "author_name": "Forrest, M (Mabel) 1872-1935",
+      "expected_register": "poetry",
+      "filter_decision": "keep",
+      "filter_reasons": [],
+      "ia_identifier": "b2256717",
+      "ia_language": [
+        "eng"
+      ],
+      "ia_licenseurl": [
+        "http://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "ia_rights": [],
+      "ia_subject": [
+        "Poetry",
+        "Australian -- 20th century"
+      ],
+      "license": "public_domain_candidate",
+      "public_domain_basis": "internet_archive_rights_or_license_metadata_candidate",
+      "risk_notes": "Internet Archive metadata candidate; requires author normalization, OCR quality audit, rights verification, and poem-boundary parsing before acceptance.",
+      "source_id": "internet_archive_b2256717",
+      "source_name": "internet_archive",
+      "source_publication_year": 1927,
+      "source_url": "https://archive.org/details/b2256717",
+      "source_work_title": "Poems.",
+      "status": "candidate"
+    },
+    {
+      "author_id": null,
+      "author_name": "M'Cready Sykes",
+      "expected_register": "poetry",
+      "filter_decision": "keep",
+      "filter_reasons": [],
+      "ia_identifier": "PoesRun",
+      "ia_language": [
+        "eng"
+      ],
+      "ia_licenseurl": [
+        "http://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "ia_rights": [],
+      "ia_subject": [
+        "poem",
+        "princeton",
+        "elis",
+        "sykes",
+        "tarkington",
+        "pell",
+        "imbrie",
+        "football"
+      ],
+      "license": "public_domain_candidate",
+      "public_domain_basis": "internet_archive_rights_or_license_metadata_candidate",
+      "risk_notes": "Internet Archive metadata candidate; requires author normalization, OCR quality audit, rights verification, and poem-boundary parsing before acceptance.",
+      "source_id": "internet_archive_PoesRun",
+      "source_name": "internet_archive",
+      "source_publication_year": 1904,
+      "source_url": "https://archive.org/details/PoesRun",
+      "source_work_title": "Poe's Run & Other Poems",
+      "status": "candidate"
+    },
+    {
+      "author_id": null,
+      "author_name": "Williams, Isaac, 1802-1865",
+      "expected_register": "poetry",
+      "filter_decision": "keep",
+      "filter_reasons": [],
+      "ia_identifier": "SacredVersesWithPictures",
+      "ia_language": [
+        "eng"
+      ],
+      "ia_licenseurl": [
+        "http://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "ia_rights": [],
+      "ia_subject": [
+        "English poetry"
+      ],
+      "license": "public_domain_candidate",
+      "public_domain_basis": "internet_archive_rights_or_license_metadata_candidate",
+      "risk_notes": "Internet Archive metadata candidate; requires author normalization, OCR quality audit, rights verification, and poem-boundary parsing before acceptance.",
+      "source_id": "internet_archive_SacredVersesWithPictures",
+      "source_name": "internet_archive",
+      "source_publication_year": 1846,
+      "source_url": "https://archive.org/details/SacredVersesWithPictures",
+      "source_work_title": "Sacred Verses: With Pictures",
+      "status": "candidate"
+    },
+    {
+      "author_id": null,
+      "author_name": "Thomas Hoccleve",
+      "expected_register": "poetry",
+      "filter_decision": "keep",
+      "filter_reasons": [],
+      "ia_identifier": "HM00111_43",
+      "ia_language": [
+        "eng"
+      ],
+      "ia_licenseurl": [],
+      "ia_rights": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "ia_subject": [],
+      "license": "public_domain_candidate",
+      "public_domain_basis": "internet_archive_rights_or_license_metadata_candidate",
+      "risk_notes": "Internet Archive metadata candidate; requires author normalization, OCR quality audit, rights verification, and poem-boundary parsing before acceptance.",
+      "source_id": "internet_archive_HM00111_43",
+      "source_name": "internet_archive",
+      "source_publication_year": 1400,
+      "source_url": "https://archive.org/details/HM00111_43",
+      "source_work_title": "HM 00111, Poems",
+      "status": "candidate"
+    },
+    {
+      "author_id": null,
+      "author_name": "Fitzgerald, Marcella Agnes, 1845-",
+      "expected_register": "poetry",
+      "filter_decision": "keep",
+      "filter_reasons": [],
+      "ia_identifier": "Poems1886",
+      "ia_language": [
+        "eng"
+      ],
+      "ia_licenseurl": [
+        "http://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "ia_rights": [],
+      "ia_subject": [
+        "Poetry"
+      ],
+      "license": "public_domain_candidate",
+      "public_domain_basis": "internet_archive_rights_or_license_metadata_candidate",
+      "risk_notes": "Internet Archive metadata candidate; requires author normalization, OCR quality audit, rights verification, and poem-boundary parsing before acceptance.",
+      "source_id": "internet_archive_Poems1886",
+      "source_name": "internet_archive",
+      "source_publication_year": 1886,
+      "source_url": "https://archive.org/details/Poems1886",
+      "source_work_title": "Poems",
+      "status": "candidate"
+    },
+    {
+      "author_id": null,
+      "author_name": "Noel, Caroline M",
+      "expected_register": "poetry",
+      "filter_decision": "keep",
+      "filter_reasons": [],
+      "ia_identifier": "TheNameOfJesusAnd",
+      "ia_language": [
+        "eng"
+      ],
+      "ia_licenseurl": [
+        "http://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "ia_rights": [],
+      "ia_subject": [
+        "Consolation",
+        "Consolation -- Poetry"
+      ],
+      "license": "public_domain_candidate",
+      "public_domain_basis": "internet_archive_rights_or_license_metadata_candidate",
+      "risk_notes": "Internet Archive metadata candidate; requires author normalization, OCR quality audit, rights verification, and poem-boundary parsing before acceptance.",
+      "source_id": "internet_archive_TheNameOfJesusAnd",
+      "source_name": "internet_archive",
+      "source_publication_year": 1878,
+      "source_url": "https://archive.org/details/TheNameOfJesusAnd",
+      "source_work_title": "The name of Jesus : and other poems for the sick and lonely",
+      "status": "candidate"
+    },
+    {
+      "author_id": null,
+      "author_name": "Cushag",
+      "expected_register": "poetry",
+      "filter_decision": "keep",
+      "filter_reasons": [],
+      "ia_identifier": "PoemsByCushag_SecondEdition",
+      "ia_language": [
+        "eng"
+      ],
+      "ia_licenseurl": [
+        "http://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "ia_rights": [],
+      "ia_subject": [
+        "Josephine Kermode",
+        "Cushag",
+        "Manx poetry",
+        "Manx literature",
+        "Manx poems",
+        "Isle of Man poems",
+        "Isle of Man poetry",
+        "Isle of Man literature",
+        "Isle of Man",
+        "Manx",
+        "Manx dialect",
+        "Cushag poems",
+        "Cushag poetry",
+        "Josephine Kermode poems",
+        "Josephine Kermode Poetry"
+      ],
+      "license": "public_domain_candidate",
+      "public_domain_basis": "internet_archive_rights_or_license_metadata_candidate",
+      "risk_notes": "Internet Archive metadata candidate; requires author normalization, OCR quality audit, rights verification, and poem-boundary parsing before acceptance.",
+      "source_id": "internet_archive_PoemsByCushag_SecondEdition",
+      "source_name": "internet_archive",
+      "source_publication_year": 1908,
+      "source_url": "https://archive.org/details/PoemsByCushag_SecondEdition",
+      "source_work_title": "Poems by Cushag [Second Edition]",
+      "status": "candidate"
+    },
+    {
+      "author_id": null,
+      "author_name": "Macaulay, Thomas Babington Macaulay, Baron, 1800-1859",
+      "expected_register": "poetry",
+      "filter_decision": "keep",
+      "filter_reasons": [],
+      "ia_identifier": "bub_gb_aQHEjkzgMDgC",
+      "ia_language": [
+        "eng"
+      ],
+      "ia_licenseurl": [
+        "http://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "ia_rights": [],
+      "ia_subject": [
+        "Rome -- History -- Poetry"
+      ],
+      "license": "public_domain_candidate",
+      "public_domain_basis": "internet_archive_rights_or_license_metadata_candidate",
+      "risk_notes": "Internet Archive metadata candidate; requires author normalization, OCR quality audit, rights verification, and poem-boundary parsing before acceptance.",
+      "source_id": "internet_archive_bub_gb_aQHEjkzgMDgC",
+      "source_name": "internet_archive",
+      "source_publication_year": 1874,
+      "source_url": "https://archive.org/details/bub_gb_aQHEjkzgMDgC",
+      "source_work_title": "Lays of ancient Rome, with ivry and the armada",
+      "status": "candidate"
+    }
+  ],
+  "source_names": {
+    "internet_archive": 144
+  },
+  "statuses": {
+    "candidate": 144
+  },
+  "top_authors": [
+    [
+      "William Shakespeare",
+      5
+    ],
+    [
+      "Ann Ward Radcliffe",
+      3
+    ],
+    [
+      "Tennyson, Alfred Tennyson, Baron, 1809-1892",
+      3
+    ],
+    [
+      "Cushag",
+      2
+    ],
+    [
+      "Percy Bysshe Shelley",
+      2
+    ],
+    [
+      "Dante Gabriel Rossetti",
+      2
+    ],
+    [
+      "Alfred Tennyson",
+      2
+    ],
+    [
+      "Caswall, Edward, 1814-1878",
+      2
+    ],
+    [
+      "Heider, Andrew Bernard, 1880-",
+      2
+    ],
+    [
+      "Chesterton, G. K. (Gilbert Keith), 1874-1936",
+      2
+    ],
+    [
+      "Newman, John Henry, 1801-1890",
+      2
+    ],
+    [
+      "Maynard, Theodore",
+      1
+    ],
+    [
+      "O'Hanlon, John, 1821-1905",
+      1
+    ],
+    [
+      "Forrest, M (Mabel) 1872-1935",
+      1
+    ],
+    [
+      "M'Cready Sykes",
+      1
+    ],
+    [
+      "Williams, Isaac, 1802-1865",
+      1
+    ],
+    [
+      "Thomas Hoccleve",
+      1
+    ],
+    [
+      "Fitzgerald, Marcella Agnes, 1845-",
+      1
+    ],
+    [
+      "Noel, Caroline M",
+      1
+    ],
+    [
+      "Macaulay, Thomas Babington Macaulay, Baron, 1800-1859",
+      1
+    ],
+    [
+      "Crashaw, Richard, 1613?-1649",
+      1
+    ],
+    [
+      "Furnivall, Frederick James, 1825-1910",
+      1
+    ],
+    [
+      "Ernest Charles Jones",
+      1
+    ],
+    [
+      "Donahoe, Daniel Joseph, 1853-1930",
+      1
+    ],
+    [
+      "Hahn, Reynaldo, 1875-1947.",
+      1
+    ],
+    [
+      "Rio, A.-F. (Alexis-Franc\u0327ois), 1797-1874",
+      1
+    ],
+    [
+      "John Clare",
+      1
+    ],
+    [
+      "Ruskin, John, 1819-1900",
+      1
+    ],
+    [
+      "Brian Hooker",
+      1
+    ],
+    [
+      "Quintus Horatius Flaccus",
+      1
+    ]
+  ],
+  "top_years": [
+    [
+      "1794",
+      6
+    ],
+    [
+      "1919",
+      5
+    ],
+    [
+      "1922",
+      5
+    ],
+    [
+      "1916",
+      5
+    ],
+    [
+      "1914",
+      4
+    ],
+    [
+      "1868",
+      3
+    ],
+    [
+      "1915",
+      3
+    ],
+    [
+      "1861",
+      3
+    ],
+    [
+      "1913",
+      3
+    ],
+    [
+      "1842",
+      3
+    ],
+    [
+      "1850",
+      3
+    ],
+    [
+      "1918",
+      3
+    ],
+    [
+      "1865",
+      3
+    ],
+    [
+      "1920",
+      3
+    ],
+    [
+      "1870",
+      2
+    ],
+    [
+      "1927",
+      2
+    ],
+    [
+      "1904",
+      2
+    ],
+    [
+      "1846",
+      2
+    ],
+    [
+      "1878",
+      2
+    ],
+    [
+      "1908",
+      2
+    ],
+    [
+      "1874",
+      2
+    ],
+    [
+      "1821",
+      2
+    ],
+    [
+      "1844",
+      2
+    ],
+    [
+      "1921",
+      2
+    ],
+    [
+      "1792",
+      2
+    ],
+    [
+      "1925",
+      2
+    ],
+    [
+      "1859",
+      2
+    ],
+    [
+      "1871",
+      2
+    ],
+    [
+      "1880",
+      2
+    ],
+    [
+      "1906",
+      2
+    ]
+  ],
+  "unique_author_names": 128
+}

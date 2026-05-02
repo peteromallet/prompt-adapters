@@ -1,0 +1,41 @@
+id: 2026-05-text-025-poetry-specific-style-axis
+status: completed_pathway_positive_surface_mixed
+question: >
+  Does a poetry-only v4 style-clean restart from 006 recover the poetry style
+  axis that remained weak in 024c?
+config: text-ip-adapter/configs/stage1_v4_3_poetry_strict_triplet_restart006.yaml
+data:
+  dataset: text-ip-adapter/data/pairs_v4_3_poetry_strict
+  alternate_dataset_built: text-ip-adapter/data/pairs_v4_2_poetry_styleclean
+  train_rows: 1771
+  val_rows: 378
+  test_rows: 358
+  probes: 16
+baseline:
+  experiment: 2026-05-text-024-v4-objective-data-repair
+  poetry_cos_K_last_swap: 0.5592
+  screenplay_cos_K_last_swap: 0.1611
+method:
+  init_from: checkpoints/stage1_gemma_no_trunk/final.pt
+  contrastive_weight: 0.1
+  style_triplet_weight: 0.7
+  style_triplet_margin: 0.35
+  max_steps: 1200
+gate:
+  target_poetry_cos_K_last_swap: "<=0.40"
+  random_code: near_zero_or_negative
+  sampled_repeat3: low
+blocker:
+  hf_token_file: missing
+  huggingface_cli: not_logged_in
+  env_token: missing
+  mitigation_done: runpod_runner_syncs_HF_TOKEN_or_HUGGINGFACE_HUB_TOKEN_when_present
+results:
+  repeat_run: prompt-adapters/experiments/2026-05-text-025-poetry-specific-style-axis/results/runpod_poetry_strict_restart006_repeat
+  mean_cos_K_last_swap: 0.4053
+  mean_cos_V_last_swap: 0.3854
+  mean_cos_K_last_random: 0.1012
+  mean_cos_K_last_code: 0.1387
+  repeat3_mean_adapter: 0.0050
+  line_repeat_mean_adapter: 0.0
+  conclusion: pathway_positive_surface_mixed

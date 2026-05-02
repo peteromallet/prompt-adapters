@@ -1,0 +1,56 @@
+{
+  "checkpoint": "/Users/peteromalley/Documents/reigh-workspace/prompt-adapters/experiments/2026-05-text-035-gemma4-e2b-poetry-v5-10-style/results/runpod_gemma4_e2b_v5_10_style_2000/train_artifacts/tmp/stage1_gemma4_e2b_poetry_v5_10_style_2000/final.pt",
+  "checkpoint_uploaded_at": "2026-04-27T11:50:52.109161+00:00",
+  "config": "configs/stage1_gemma4_e2b_poetry_v5_10_style_slowlr_5k.yaml",
+  "dataset_syncs": [
+    {
+      "local_dir": "/Users/peteromalley/Documents/reigh-workspace/text-ip-adapter/data/pairs_v5_10_poetry_llm_style_medium_strong",
+      "remote_dir": "/workspace/text-ip-adapter/data/pairs_v5_10_poetry_llm_style_medium_strong",
+      "result": {
+        "changed": true,
+        "hash": "96d3390584699f1ae0689da4640e56fbda252ca508d2c2dffeb6555e52c3fd1b"
+      }
+    }
+  ],
+  "error": "SSHException('Server connection dropped: ')",
+  "experiment_id": "2026-05-text-037-gemma4-e2b-poetry-v5-10-slowlr-5k",
+  "failed_at": "2026-04-27T12:36:00.878975+00:00",
+  "hf_token_synced": true,
+  "launched_at": "2026-04-27T11:49:27.684217+00:00",
+  "max_steps": 5000,
+  "n_probes": 12,
+  "pod_id": "ru0aq088zzkaxv",
+  "preflight_stdout": "scripts/train.py True 822\nsrc/text_ip_adapter/data/dataset.py True 6856\nsrc/text_ip_adapter/train/loop.py True 13949\nconfigs/stage1_gemma4_e2b_poetry_v5_10_style_slowlr_5k.yaml True 1367\ndata/pairs_v5_10_poetry_llm_style_medium_strong/train.jsonl True 5536556\ndata/pairs_v5_10_poetry_llm_style_medium_strong/probes_balanced_n24.jsonl True 21365\n/tmp/exp035_final.pt True 290225854\nmax_steps 5000\nmin_lr_ratio 0.25\nstyle_triplet_weight 1.5\nstyle_triplet_margin 0.35\ncontrastive_weight 0.2\ntrain_rows 2868\n",
+  "project_sync": {
+    "changed": true,
+    "hash": "f3b246b2be52a22105f150572010dfcf0b13c8d6dbe43eaed3f95012cf7dec9f"
+  },
+  "ready_at": "2026-04-27T11:49:40.160375+00:00",
+  "remote_eval_dir": "/tmp/exp037_gemma4_e2b_slowlr_eval",
+  "remote_orch_log_dir": "/tmp/exp037_gemma4_e2b_slowlr_orch",
+  "remote_project_root": "/tmp/text-ip-adapter-037-gemma4-e2b-slowlr-5k",
+  "remote_train_dir": "/tmp/stage1_gemma4_e2b_poetry_v5_10_style_slowlr_5k",
+  "skipped_checkpoint_evals": [
+    {
+      "checkpoint": "/tmp/stage1_gemma4_e2b_poetry_v5_10_style_slowlr_5k/step_5000.pt",
+      "tag": "step_5000"
+    }
+  ],
+  "status": "failed",
+  "storage": {
+    "matches": [
+      {
+        "dataCenterId": "EU-RO-1",
+        "id": "m6ccu1lodp",
+        "name": "Peter",
+        "size": 3000
+      }
+    ],
+    "storage_name": "Peter"
+  },
+  "terminate_error": "TerminateError('Failed to terminate pod ru0aq088zzkaxv: pod not found to terminate')",
+  "terminated": false,
+  "training_completed_at": "2026-04-27T12:07:49.345831+00:00",
+  "training_started_at": "2026-04-27T11:51:14.521642+00:00",
+  "workspace_root": "/workspace/text-ip-adapter"
+}

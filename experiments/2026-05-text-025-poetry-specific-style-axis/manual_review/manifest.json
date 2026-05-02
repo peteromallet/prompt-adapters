@@ -1,0 +1,103 @@
+{
+  "data_root": "text-ip-adapter/data/pairs_v4_3_poetry_strict",
+  "shards": {
+    "shard_01_train_swinburne_lowell_drossetti": {
+      "authors": [
+        "algernon_swinburne",
+        "amy_lowell",
+        "dante_rossetti"
+      ],
+      "path": "prompt-adapters/experiments/2026-05-text-025-poetry-specific-style-axis/manual_review/shards/shard_01_train_swinburne_lowell_drossetti.jsonl",
+      "review_path": "prompt-adapters/experiments/2026-05-text-025-poetry-specific-style-axis/manual_review/reviews/shard_01_train_swinburne_lowell_drossetti.review.jsonl",
+      "rows": 290
+    },
+    "shard_02_train_poe_ebrowning_hopkins": {
+      "authors": [
+        "edgar_allan_poe",
+        "elizabeth_browning",
+        "gerard_manley_hopkins"
+      ],
+      "path": "prompt-adapters/experiments/2026-05-text-025-poetry-specific-style-axis/manual_review/shards/shard_02_train_poe_ebrowning_hopkins.jsonl",
+      "review_path": "prompt-adapters/experiments/2026-05-text-025-poetry-specific-style-axis/manual_review/reviews/shard_02_train_poe_ebrowning_hopkins.review.jsonl",
+      "rows": 265
+    },
+    "shard_03_train_longfellow_keats": {
+      "authors": [
+        "henry_longfellow",
+        "john_keats"
+      ],
+      "path": "prompt-adapters/experiments/2026-05-text-025-poetry-specific-style-axis/manual_review/shards/shard_03_train_longfellow_keats.jsonl",
+      "review_path": "prompt-adapters/experiments/2026-05-text-025-poetry-specific-style-axis/manual_review/reviews/shard_03_train_longfellow_keats.review.jsonl",
+      "rows": 196
+    },
+    "shard_04_train_wilde_frost": {
+      "authors": [
+        "oscar_wilde",
+        "robert_frost"
+      ],
+      "path": "prompt-adapters/experiments/2026-05-text-025-poetry-specific-style-axis/manual_review/shards/shard_04_train_wilde_frost.jsonl",
+      "review_path": "prompt-adapters/experiments/2026-05-text-025-poetry-specific-style-axis/manual_review/reviews/shard_04_train_wilde_frost.review.jsonl",
+      "rows": 197
+    },
+    "shard_05_train_kipling_brooke_hardy": {
+      "authors": [
+        "rudyard_kipling",
+        "rupert_brooke",
+        "thomas_hardy"
+      ],
+      "path": "prompt-adapters/experiments/2026-05-text-025-poetry-specific-style-axis/manual_review/shards/shard_05_train_kipling_brooke_hardy.jsonl",
+      "review_path": "prompt-adapters/experiments/2026-05-text-025-poetry-specific-style-axis/manual_review/reviews/shard_05_train_kipling_brooke_hardy.review.jsonl",
+      "rows": 249
+    },
+    "shard_06_train_eliot_whitman": {
+      "authors": [
+        "t_s_eliot",
+        "walt_whitman"
+      ],
+      "path": "prompt-adapters/experiments/2026-05-text-025-poetry-specific-style-axis/manual_review/shards/shard_06_train_eliot_whitman.jsonl",
+      "review_path": "prompt-adapters/experiments/2026-05-text-025-poetry-specific-style-axis/manual_review/reviews/shard_06_train_eliot_whitman.review.jsonl",
+      "rows": 190
+    },
+    "shard_07_train_owen_blake": {
+      "authors": [
+        "wilfred_owen",
+        "william_blake"
+      ],
+      "path": "prompt-adapters/experiments/2026-05-text-025-poetry-specific-style-axis/manual_review/shards/shard_07_train_owen_blake.jsonl",
+      "review_path": "prompt-adapters/experiments/2026-05-text-025-poetry-specific-style-axis/manual_review/reviews/shard_07_train_owen_blake.review.jsonl",
+      "rows": 194
+    },
+    "shard_08_train_yeats_wordsworth": {
+      "authors": [
+        "william_butler_yeats",
+        "william_wordsworth"
+      ],
+      "path": "prompt-adapters/experiments/2026-05-text-025-poetry-specific-style-axis/manual_review/shards/shard_08_train_yeats_wordsworth.jsonl",
+      "review_path": "prompt-adapters/experiments/2026-05-text-025-poetry-specific-style-axis/manual_review/reviews/shard_08_train_yeats_wordsworth.review.jsonl",
+      "rows": 190
+    },
+    "shard_09_val_all": {
+      "authors": [
+        "edna_millay",
+        "edwin_arlington_robinson",
+        "john_masefield",
+        "matthew_arnold"
+      ],
+      "path": "prompt-adapters/experiments/2026-05-text-025-poetry-specific-style-axis/manual_review/shards/shard_09_val_all.jsonl",
+      "review_path": "prompt-adapters/experiments/2026-05-text-025-poetry-specific-style-axis/manual_review/reviews/shard_09_val_all.review.jsonl",
+      "rows": 378
+    },
+    "shard_10_test_and_probes": {
+      "authors": [
+        "christina_rossetti",
+        "emily_dickinson",
+        "sara_teasdale",
+        "stephen_crane"
+      ],
+      "path": "prompt-adapters/experiments/2026-05-text-025-poetry-specific-style-axis/manual_review/shards/shard_10_test_and_probes.jsonl",
+      "probe_rows": 16,
+      "review_path": "prompt-adapters/experiments/2026-05-text-025-poetry-specific-style-axis/manual_review/reviews/shard_10_test_and_probes.review.jsonl",
+      "rows": 374
+    }
+  }
+}

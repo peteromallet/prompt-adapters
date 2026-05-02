@@ -1,0 +1,49 @@
+{
+  "checkpoint": "/Users/peteromalley/Documents/reigh-workspace/prompt-adapters/experiments/2026-05-text-022-broader-clean-split-restart/results/runpod_tmp/train_artifacts/tmp/stage1_v3_8_core2_cleanheldout_restart/final.pt",
+  "checkpoint_upload": "skipped",
+  "completed_at": "2026-04-26T10:15:37.098789+00:00",
+  "config": "configs/stage1_v4_styleclean_triplet_restart006.yaml",
+  "dataset_syncs": [
+    {
+      "local_dir": "/Users/peteromalley/Documents/reigh-workspace/text-ip-adapter/data/pairs_v4_core2_styleclean",
+      "remote_dir": "/workspace/text-ip-adapter/data/pairs_v4_core2_styleclean",
+      "result": {
+        "changed": true,
+        "hash": "f40c7589c7369d0a565ed67d416d0d27b2ce4448c7846ed1aae7bd84553c6673"
+      }
+    }
+  ],
+  "experiment_id": "2026-05-text-024-v4-objective-data-repair",
+  "hf_token_synced": true,
+  "launched_at": "2026-04-26T09:35:24.155144+00:00",
+  "max_steps": 1000,
+  "n_probes": 32,
+  "pod_id": "9juqjavwr28mi6",
+  "preflight_stdout": "scripts/train.py True 822\nsrc/text_ip_adapter/data/dataset.py True 6856\nsrc/text_ip_adapter/train/loop.py True 13716\nconfigs/stage1_v4_styleclean_triplet_restart006.yaml True 1207\ndata/pairs_v4_core2_styleclean/train.jsonl True 17575425\ndata/pairs_v4_core2_styleclean/probes_balanced.jsonl True 107557\ncheckpoints/stage1_gemma_no_trunk/final.pt True 966090430\nmax_steps 1000\nstyle_triplet_weight 0.5\nstyle_triplet_margin 0.3\ncontrastive_weight 0.1\ntrain_rows 7273\n",
+  "project_sync": {
+    "changed": true,
+    "hash": "f030e4587503f028c6c3269df63d206c1d34f4f1b8afb59a814fc95626c2542f"
+  },
+  "ready_at": "2026-04-26T09:35:53.938978+00:00",
+  "remote_eval_dir": "/tmp/exp024_v4_r006_eval",
+  "remote_orch_log_dir": "/tmp/exp024_v4_r006_orch",
+  "remote_project_root": "/tmp/text-ip-adapter-024-v4-r006",
+  "remote_train_dir": "/tmp/stage1_v4_styleclean_triplet_restart006",
+  "status": "completed",
+  "storage": {
+    "matches": [
+      {
+        "dataCenterId": "EU-RO-1",
+        "id": "m6ccu1lodp",
+        "name": "Peter",
+        "size": 3000
+      }
+    ],
+    "storage_name": "Peter"
+  },
+  "terminated": true,
+  "terminated_at": "2026-04-26T10:15:37.815314+00:00",
+  "training_completed_at": "2026-04-26T09:46:27.254717+00:00",
+  "training_started_at": "2026-04-26T09:37:36.620069+00:00",
+  "workspace_root": "/workspace/text-ip-adapter"
+}

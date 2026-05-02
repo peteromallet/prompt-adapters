@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-04-25",
+  "source": "/workspace/text-ip-adapter/data/raw/speeches",
+  "code_patch": "text-ip-adapter/src/text_ip_adapter/data/ingest_speeches.py infers president from Miller Center speech URL date and ignores global nav president anchors",
+  "before_patch": {
+    "records_checked": 1000,
+    "unique_authors": 1,
+    "top_authors": [["washington", 1000]]
+  },
+  "after_patch": {
+    "urls": 1059,
+    "records": 998,
+    "unique_authors": 42,
+    "top_url_inferred_authors": [
+      ["lbjohnson", 71],
+      ["reagan", 58],
+      ["trump", 53],
+      ["fdroosevelt", 49],
+      ["obama", 49],
+      ["wilson", 45],
+      ["gwbush", 41],
+      ["clinton", 39],
+      ["kennedy", 38],
+      ["grant", 32]
+    ],
+    "top_ingested_authors": [
+      ["lbjohnson", 71],
+      ["reagan", 57],
+      ["fdroosevelt", 49],
+      ["obama", 48],
+      ["wilson", 45],
+      ["gwbush", 41],
+      ["clinton", 39],
+      ["kennedy", 38],
+      ["trump", 33],
+      ["grant", 32]
+    ]
+  },
+  "pair_potential": [
+    {"cap_per_author": 15, "total": 627, "train": 507, "val": 60, "test": 60, "train_authors": 34, "val_authors": 4, "test_authors": 4},
+    {"cap_per_author": 20, "total": 832, "train": 672, "val": 80, "test": 80, "train_authors": 34, "val_authors": 4, "test_authors": 4},
+    {"cap_per_author": 30, "total": 1242, "train": 1002, "val": 120, "test": 120, "train_authors": 34, "val_authors": 4, "test_authors": 4},
+    {"cap_per_author": 40, "total": 1642, "train": 1322, "val": 160, "test": 160, "train_authors": 34, "val_authors": 4, "test_authors": 4},
+    {"cap_per_author": 50, "total": 2034, "train": 1634, "val": 200, "test": 200, "train_authors": 34, "val_authors": 4, "test_authors": 4},
+    {"cap_per_author": 75, "total": 2987, "train": 2387, "val": 300, "test": 300, "train_authors": 34, "val_authors": 4, "test_authors": 4},
+    {"cap_per_author": 100, "total": 3902, "train": 3102, "val": 400, "test": 400, "train_authors": 34, "val_authors": 4, "test_authors": 4}
+  ],
+  "recommended_cap_per_author": 50,
+  "gate_result_at_cap_50": {
+    "speech_train_gte_1500": true,
+    "speech_val_gte_100": true,
+    "speech_test_gte_100": true,
+    "speech_authors_gte_30": true
+  }
+}

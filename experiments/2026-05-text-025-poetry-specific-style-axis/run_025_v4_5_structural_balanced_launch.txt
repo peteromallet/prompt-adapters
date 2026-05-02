@@ -1,0 +1,54 @@
+Experiment 025 v4.5 launch notes
+=================================
+
+Goal
+----
+Run the same successful v4.3 poetry triplet restart objective on the manual-clean
+and structurally balanced v4.5 dataset. This tests whether v4.3's pathway gain
+survives after removing repeated-target and repeated-reference artifacts.
+
+Prepared inputs
+---------------
+- Dataset: text-ip-adapter/data/pairs_v4_5_poetry_structural_balanced
+- Config: text-ip-adapter/configs/stage1_v4_5_poetry_structural_balanced_triplet_restart006.yaml
+- Audit: prompt-adapters/experiments/2026-05-text-025-poetry-specific-style-axis/manual_review/STRUCTURAL_AUDIT_V4_5.md
+
+Run command
+-----------
+From /Users/peteromalley/Documents/reigh-workspace:
+
+  export HF_TOKEN="$(grep '^HF_TOKEN=' /Users/peteromalley/InData/.env | cut -d= -f2-)"
+
+  PYENV_VERSION=3.11.11 PYTHONPATH=$PWD/text-ip-adapter/src:$PWD/runpod-lifecycle/src \
+  python text-ip-adapter/scripts/run_024_style_triplet_tmp.py \
+    --config configs/stage1_v4_5_poetry_structural_balanced_triplet_restart006.yaml \
+    --local-output-dir ../prompt-adapters/experiments/2026-05-text-025-poetry-specific-style-axis/results/runpod_poetry_v45_structural_balanced_restart006 \
+    --remote-project-root /tmp/text-ip-adapter-025-poetry-v45-structural-balanced \
+    --remote-train-dir /tmp/stage1_v4_5_poetry_structural_balanced_triplet_restart006 \
+    --remote-eval-dir /tmp/exp025_poetry_v45_structural_balanced_eval \
+    --remote-orch-log-dir /tmp/exp025_poetry_v45_structural_balanced_orch \
+    --experiment-id 2026-05-text-025-poetry-specific-style-axis \
+    --max-steps 1200 \
+    --n-probes 16 \
+    --skip-checkpoint-upload \
+    --skip-train-artifacts-download \
+    --prune-step-checkpoints-before-download
+
+Note: the completed v4.5 run hit local disk exhaustion while downloading
+`final.pt` after eval artifacts had already downloaded. Future launches should
+use `--skip-train-artifacts-download` unless there is at least several GB of
+local free disk.
+
+Expected readout
+----------------
+- Pathway target: stay near v4.3 repeat (`mean_cos_K_last_swap=0.405`) and
+  clearly better than 024c poetry (`0.559`).
+- Random/code should stay separated.
+- Sampled outputs should have less meta-instruction/prose leakage than v4.3.
+
+Interpretation
+--------------
+- Good pathway + better surface: v4.5 is the next baseline.
+- Good pathway + same leakage: move to stronger surface/style supervision.
+- Worse pathway: we removed too much duplicate exposure, so the missing piece
+  is more clean unique poetry rather than pair expansion.

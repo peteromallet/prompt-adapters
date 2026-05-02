@@ -1,0 +1,102 @@
+{
+  "probes": {
+    "authors": {
+      "christina_rossetti": 2,
+      "edna_millay": 2,
+      "edwin_arlington_robinson": 2,
+      "emily_dickinson": 2,
+      "john_masefield": 2,
+      "matthew_arnold": 2,
+      "sara_teasdale": 2,
+      "stephen_crane": 2
+    },
+    "issues": [
+      {
+        "author": "john_masefield",
+        "probe_id": "v43_poetry_john_masefield_00",
+        "stage": false,
+        "swap": "matthew_arnold",
+        "upper_lines": 1
+      }
+    ],
+    "rows": 16
+  },
+  "test": {
+    "authors": {
+      "christina_rossetti": 100,
+      "emily_dickinson": 86,
+      "sara_teasdale": 87,
+      "stephen_crane": 85
+    },
+    "heading_rows": 107,
+    "ref_words_min_median_max": [
+      40,
+      105.0,
+      125
+    ],
+    "rows": 358,
+    "stage_hits": 0,
+    "target_words_min_median_max": [
+      39,
+      80.0,
+      567
+    ]
+  },
+  "train": {
+    "authors": {
+      "algernon_swinburne": 96,
+      "amy_lowell": 94,
+      "dante_rossetti": 100,
+      "edgar_allan_poe": 73,
+      "elizabeth_browning": 100,
+      "gerard_manley_hopkins": 92,
+      "henry_longfellow": 96,
+      "john_keats": 100,
+      "oscar_wilde": 97,
+      "robert_frost": 100,
+      "rudyard_kipling": 59,
+      "rupert_brooke": 98,
+      "t_s_eliot": 94,
+      "thomas_hardy": 92,
+      "walt_whitman": 96,
+      "wilfred_owen": 94,
+      "william_blake": 100,
+      "william_butler_yeats": 95,
+      "william_wordsworth": 95
+    },
+    "heading_rows": 477,
+    "ref_words_min_median_max": [
+      47,
+      121,
+      486
+    ],
+    "rows": 1771,
+    "stage_hits": 0,
+    "target_words_min_median_max": [
+      40,
+      117,
+      562
+    ]
+  },
+  "val": {
+    "authors": {
+      "edna_millay": 95,
+      "edwin_arlington_robinson": 97,
+      "john_masefield": 96,
+      "matthew_arnold": 90
+    },
+    "heading_rows": 264,
+    "ref_words_min_median_max": [
+      64,
+      112.0,
+      248
+    ],
+    "rows": 378,
+    "stage_hits": 0,
+    "target_words_min_median_max": [
+      41,
+      118.0,
+      546
+    ]
+  }
+}

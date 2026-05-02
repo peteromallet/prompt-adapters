@@ -1,0 +1,13 @@
+{
+  "launched_at": "2026-04-25T20:12:10+02:00",
+  "pod_id": "5a1mbqto0am3xk",
+  "remote_root": "/workspace/text-ip-adapter",
+  "remote_log": "/workspace/text-ip-adapter/train.log",
+  "remote_pid": 344,
+  "config": "configs/stage1_v3_3_core3_no_contrastive_smoke.yaml",
+  "dataset": "data/pairs_v3_3_corrected_poetry_core3",
+  "hf_token_synced": true,
+  "status": "completed_and_pod_terminated",
+  "completed_at": "2026-04-25T20:35:00+02:00",
+  "termination_check": "RunPod get_pod_status returned None after cleanup."
+}

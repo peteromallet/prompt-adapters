@@ -1,0 +1,49 @@
+{
+  "checkpoint": "/Users/peteromalley/Documents/reigh-workspace/prompt-adapters/experiments/2026-05-text-022-broader-clean-split-restart/results/runpod_tmp/train_artifacts/tmp/stage1_v3_8_core2_cleanheldout_restart/final.pt",
+  "checkpoint_upload": "skipped",
+  "completed_at": "2026-04-26T23:59:13.392263+00:00",
+  "config": "configs/stage1_v5_10_poetry_llm_style_medium_strong_lrfloor_restart006.yaml",
+  "dataset_syncs": [
+    {
+      "local_dir": "/Users/peteromalley/Documents/reigh-workspace/text-ip-adapter/data/pairs_v5_10_poetry_llm_style_medium_strong",
+      "remote_dir": "/workspace/text-ip-adapter/data/pairs_v5_10_poetry_llm_style_medium_strong",
+      "result": {
+        "changed": true,
+        "hash": "96d3390584699f1ae0689da4640e56fbda252ca508d2c2dffeb6555e52c3fd1b"
+      }
+    }
+  ],
+  "experiment_id": "2026-05-text-033-poetry-v5-10-llm-style-filter",
+  "hf_token_synced": true,
+  "launched_at": "2026-04-26T23:26:40.492325+00:00",
+  "max_steps": 2400,
+  "n_probes": 12,
+  "pod_id": "5cakv7ik4qemhz",
+  "preflight_stdout": "scripts/train.py True 822\nsrc/text_ip_adapter/data/dataset.py True 6856\nsrc/text_ip_adapter/train/loop.py True 13949\nconfigs/stage1_v5_10_poetry_llm_style_medium_strong_lrfloor_restart006.yaml True 1325\ndata/pairs_v5_10_poetry_llm_style_medium_strong/train.jsonl True 5536556\ndata/pairs_v5_10_poetry_llm_style_medium_strong/probes_balanced_n24.jsonl True 21365\ncheckpoints/stage1_gemma_no_trunk/final.pt True 966090430\nmax_steps 2400\nmin_lr_ratio 0.1\nstyle_triplet_weight 1.5\nstyle_triplet_margin 0.35\ncontrastive_weight 0.2\ntrain_rows 2868\n",
+  "project_sync": {
+    "changed": true,
+    "hash": "4df8c559671e1dc0a1fa517dda213b1b8c92be5e2040aeda9094c8adac805744"
+  },
+  "ready_at": "2026-04-26T23:27:20.651782+00:00",
+  "remote_eval_dir": "/tmp/exp033_v5_10_llm_style_filter_eval",
+  "remote_orch_log_dir": "/tmp/exp033_v5_10_llm_style_filter_orch",
+  "remote_project_root": "/tmp/text-ip-adapter-033-v5-10-llm-style-filter",
+  "remote_train_dir": "/tmp/stage1_v5_10_poetry_llm_style_medium_strong_lrfloor_restart006",
+  "status": "completed",
+  "storage": {
+    "matches": [
+      {
+        "dataCenterId": "EU-RO-1",
+        "id": "m6ccu1lodp",
+        "name": "Peter",
+        "size": 3000
+      }
+    ],
+    "storage_name": "Peter"
+  },
+  "terminated": true,
+  "terminated_at": "2026-04-26T23:59:14.058660+00:00",
+  "training_completed_at": "2026-04-26T23:47:49.792928+00:00",
+  "training_started_at": "2026-04-26T23:28:12.583747+00:00",
+  "workspace_root": "/workspace/text-ip-adapter"
+}

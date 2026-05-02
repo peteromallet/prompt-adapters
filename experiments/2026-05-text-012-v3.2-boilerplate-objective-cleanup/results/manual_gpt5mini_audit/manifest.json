@@ -1,0 +1,35 @@
+{
+  "total_rows": 10683,
+  "selected_rows": 1500,
+  "chunk_size": 300,
+  "chunks": [
+    "/Users/peteromalley/Documents/reigh-workspace/prompt-adapters/experiments/2026-05-text-012-v3.2-boilerplate-objective-cleanup/results/manual_gpt5mini_audit/chunks/chunk_00.jsonl",
+    "/Users/peteromalley/Documents/reigh-workspace/prompt-adapters/experiments/2026-05-text-012-v3.2-boilerplate-objective-cleanup/results/manual_gpt5mini_audit/chunks/chunk_01.jsonl",
+    "/Users/peteromalley/Documents/reigh-workspace/prompt-adapters/experiments/2026-05-text-012-v3.2-boilerplate-objective-cleanup/results/manual_gpt5mini_audit/chunks/chunk_02.jsonl",
+    "/Users/peteromalley/Documents/reigh-workspace/prompt-adapters/experiments/2026-05-text-012-v3.2-boilerplate-objective-cleanup/results/manual_gpt5mini_audit/chunks/chunk_03.jsonl",
+    "/Users/peteromalley/Documents/reigh-workspace/prompt-adapters/experiments/2026-05-text-012-v3.2-boilerplate-objective-cleanup/results/manual_gpt5mini_audit/chunks/chunk_04.jsonl"
+  ],
+  "risk_counts": {
+    "reference_meta": 1500,
+    "screenplay_bad": 241,
+    "repeat_frac=0.10": 14,
+    "repetition": 5,
+    "repeat_frac=0.14": 38,
+    "repeat_frac=0.09": 14,
+    "formal_doc": 237,
+    "repeat_frac=0.17": 4,
+    "repeat_frac=0.15": 18,
+    "transcript": 751,
+    "repeat_frac=0.11": 19,
+    "repeat_frac=0.16": 33,
+    "repeat_frac=0.08": 44,
+    "dictionary": 39,
+    "repeat_frac=0.13": 12,
+    "repeat_frac=0.19": 3,
+    "repeat_frac=0.18": 7,
+    "repeat_frac=0.12": 11,
+    "screenplay_lacks_structure": 28,
+    "repeat_frac=0.30": 30,
+    "repeat_frac=0.20": 1
+  }
+}

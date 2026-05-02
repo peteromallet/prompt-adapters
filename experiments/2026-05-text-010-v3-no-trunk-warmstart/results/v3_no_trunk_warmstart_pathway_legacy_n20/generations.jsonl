@@ -1,0 +1,100 @@
+{"probe_id": "probe_00", "variant": "own", "text": "The"}
+{"probe_id": "probe_00", "variant": "swap", "text": "EX"}
+{"probe_id": "probe_00", "variant": "zero", "text": "The"}
+{"probe_id": "probe_00", "variant": "random", "text": "The"}
+{"probe_id": "probe_00", "variant": "code", "text": "The"}
+{"probe_id": "probe_01", "variant": "own", "text": "The"}
+{"probe_id": "probe_01", "variant": "swap", "text": "EX"}
+{"probe_id": "probe_01", "variant": "zero", "text": "The"}
+{"probe_id": "probe_01", "variant": "random", "text": "The"}
+{"probe_id": "probe_01", "variant": "code", "text": "-"}
+{"probe_id": "probe_02", "variant": "own", "text": "The"}
+{"probe_id": "probe_02", "variant": "swap", "text": "LECT"}
+{"probe_id": "probe_02", "variant": "zero", "text": "Ex"}
+{"probe_id": "probe_02", "variant": "random", "text": " "}
+{"probe_id": "probe_02", "variant": "code", "text": "The"}
+{"probe_id": "probe_03", "variant": "own", "text": "The"}
+{"probe_id": "probe_03", "variant": "swap", "text": "EX"}
+{"probe_id": "probe_03", "variant": "zero", "text": "Ex"}
+{"probe_id": "probe_03", "variant": "random", "text": "Ex"}
+{"probe_id": "probe_03", "variant": "code", "text": "The"}
+{"probe_id": "probe_04", "variant": "own", "text": "The"}
+{"probe_id": "probe_04", "variant": "swap", "text": "LECT"}
+{"probe_id": "probe_04", "variant": "zero", "text": "The"}
+{"probe_id": "probe_04", "variant": "random", "text": "The"}
+{"probe_id": "probe_04", "variant": "code", "text": "The"}
+{"probe_id": "probe_05", "variant": "own", "text": "The"}
+{"probe_id": "probe_05", "variant": "swap", "text": "ESS"}
+{"probe_id": "probe_05", "variant": "zero", "text": "The"}
+{"probe_id": "probe_05", "variant": "random", "text": " "}
+{"probe_id": "probe_05", "variant": "code", "text": "The"}
+{"probe_id": "probe_06", "variant": "own", "text": "This"}
+{"probe_id": "probe_06", "variant": "swap", "text": "The"}
+{"probe_id": "probe_06", "variant": "zero", "text": "This"}
+{"probe_id": "probe_06", "variant": "random", "text": "The"}
+{"probe_id": "probe_06", "variant": "code", "text": "The"}
+{"probe_id": "probe_07", "variant": "own", "text": "The"}
+{"probe_id": "probe_07", "variant": "swap", "text": "LECT"}
+{"probe_id": "probe_07", "variant": "zero", "text": "The"}
+{"probe_id": "probe_07", "variant": "random", "text": "The"}
+{"probe_id": "probe_07", "variant": "code", "text": "The"}
+{"probe_id": "probe_08", "variant": "own", "text": "The"}
+{"probe_id": "probe_08", "variant": "swap", "text": "HEN"}
+{"probe_id": "probe_08", "variant": "zero", "text": "The"}
+{"probe_id": "probe_08", "variant": "random", "text": "The"}
+{"probe_id": "probe_08", "variant": "code", "text": "The"}
+{"probe_id": "probe_09", "variant": "own", "text": " "}
+{"probe_id": "probe_09", "variant": "swap", "text": "The"}
+{"probe_id": "probe_09", "variant": "zero", "text": "A"}
+{"probe_id": "probe_09", "variant": "random", "text": "The"}
+{"probe_id": "probe_09", "variant": "code", "text": "The"}
+{"probe_id": "probe_10", "variant": "own", "text": "DOCUMENT"}
+{"probe_id": "probe_10", "variant": "swap", "text": "To"}
+{"probe_id": "probe_10", "variant": "zero", "text": "A"}
+{"probe_id": "probe_10", "variant": "random", "text": "This"}
+{"probe_id": "probe_10", "variant": "code", "text": "The"}
+{"probe_id": "probe_11", "variant": "own", "text": "The"}
+{"probe_id": "probe_11", "variant": "swap", "text": "The"}
+{"probe_id": "probe_11", "variant": "zero", "text": "Create"}
+{"probe_id": "probe_11", "variant": "random", "text": "Develop"}
+{"probe_id": "probe_11", "variant": "code", "text": "Create"}
+{"probe_id": "probe_12", "variant": "own", "text": " "}
+{"probe_id": "probe_12", "variant": "swap", "text": " "}
+{"probe_id": "probe_12", "variant": "zero", "text": "A"}
+{"probe_id": "probe_12", "variant": "random", "text": "A"}
+{"probe_id": "probe_12", "variant": "code", "text": "A"}
+{"probe_id": "probe_13", "variant": "own", "text": " "}
+{"probe_id": "probe_13", "variant": "swap", "text": " "}
+{"probe_id": "probe_13", "variant": "zero", "text": "Show"}
+{"probe_id": "probe_13", "variant": "random", "text": "A"}
+{"probe_id": "probe_13", "variant": "code", "text": "Show"}
+{"probe_id": "probe_14", "variant": "own", "text": "CLOSE"}
+{"probe_id": "probe_14", "variant": "swap", "text": "EXT"}
+{"probe_id": "probe_14", "variant": "zero", "text": "Show"}
+{"probe_id": "probe_14", "variant": "random", "text": "Show"}
+{"probe_id": "probe_14", "variant": "code", "text": "Show"}
+{"probe_id": "probe_15", "variant": "own", "text": " "}
+{"probe_id": "probe_15", "variant": "swap", "text": " "}
+{"probe_id": "probe_15", "variant": "zero", "text": "Create"}
+{"probe_id": "probe_15", "variant": "random", "text": " "}
+{"probe_id": "probe_15", "variant": "code", "text": "Dep"}
+{"probe_id": "probe_16", "variant": "own", "text": "EXT"}
+{"probe_id": "probe_16", "variant": "swap", "text": "EXT"}
+{"probe_id": "probe_16", "variant": "zero", "text": "The"}
+{"probe_id": "probe_16", "variant": "random", "text": " "}
+{"probe_id": "probe_16", "variant": "code", "text": "The"}
+{"probe_id": "probe_17", "variant": "own", "text": " "}
+{"probe_id": "probe_17", "variant": "swap", "text": "EXT"}
+{"probe_id": "probe_17", "variant": "zero", "text": "Show"}
+{"probe_id": "probe_17", "variant": "random", "text": "The"}
+{"probe_id": "probe_17", "variant": "code", "text": "Show"}
+{"probe_id": "probe_18", "variant": "own", "text": "The"}
+{"probe_id": "probe_18", "variant": "swap", "text": "Psych"}
+{"probe_id": "probe_18", "variant": "zero", "text": "Explore"}
+{"probe_id": "probe_18", "variant": "random", "text": "Read"}
+{"probe_id": "probe_18", "variant": "code", "text": "Explore"}
+{"probe_id": "probe_19", "variant": "own", "text": "The"}
+{"probe_id": "probe_19", "variant": "swap", "text": "("}
+{"probe_id": "probe_19", "variant": "zero", "text": "The"}
+{"probe_id": "probe_19", "variant": "random", "text": "The"}
+{"probe_id": "probe_19", "variant": "code", "text": "The"}

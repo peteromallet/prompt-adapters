@@ -1,0 +1,176 @@
+=== TRAIN (13547 rows total) ===
+
+--- essay (5000 rows) ---
+  INSTR: 'Draft an essay exploring also and levels.'
+  TGT:   'Step 1. Get hydrated and replace your nutrients. We’re often told to drink water, but we also need sodium, potassium, ma'
+
+  INSTR: 'Draft an essay exploring water and chocolate.'
+  TGT:   'Exceptionally delicious, and most importantly a quick recipe for baking for the holiday. Ginger and orange will give you'
+
+  INSTR: 'Draft an essay exploring project and obelisk.'
+  TGT:   'Due to a lack of interest and funding, Obelisk has had to cancel the GRN1 project. All who purchased the GRN1 directly f'
+
+  INSTR: 'Draft an essay exploring welles and film.'
+  TGT:   'The problems faced by Orson Welles in finding funding for his post-Citizen Kane endeavours are the stuff of legend. Ther'
+
+  INSTR: 'Draft an essay exploring content and accessibility.'
+  TGT:   'How To Create Accessible Websites Guidelines on how to create applications that carter for people with impairments The w'
+
+  INSTR: 'Draft an essay exploring product and software.'
+  TGT:   '*… despite the diligent effort of your UX and Product teams, and what you can do about it.* The Creator’s Curse You’ve i'
+
+  INSTR: 'Draft an essay exploring staff and support.'
+  TGT:   'Poor Management Uncovered In Employee Covid Work-From-Home Survey About 400 employees at all levels were surveyed About '
+
+  INSTR: 'Draft an essay exploring nico and devil.'
+  TGT:   'How a New Character Successfully Gatecrashed a Capcom Classic Nico is a tattooed gunsmith who is a masterful addition to'
+
+
+--- poetry (4785 rows) ---
+  INSTR: 'Write a poem about night and over.'
+  TGT:   'Or shall we run with Artemis Or yield the breast to Aphrodite? Both are mighty; Both give bliss; Each can torture if div'
+
+  INSTR: 'Write a poem about slow and hushed.'
+  TGT:   'O hushed October morning mild,Thy leaves have ripened to the fall;Tomorrow’s wind, if it be wild,Should waste them all.T'
+
+  INSTR: 'Write a poem about love and while.'
+  TGT:   'Not at first sight, nor with a dribbèd shot, Love gave the wound which while I breathe will bleed: But known worth did i'
+
+  INSTR: 'Write a poem about silken and spider.'
+  TGT:   "The sun shines bright, the morning's fair, The gossamers float on the air, The dew-gems twinkle in the glare, The spider"
+
+  INSTR: 'Write a poem about island and home.'
+  TGT:   'A new volcano has erupted,\r the papers say, and last week I was reading \r where some ship saw an island being born: \r at'
+
+  INSTR: 'Write a poem about great and fame.'
+  TGT:   'I sing the man that never equal knew, Whose mighty arms all Asia did subdue, Whose conquests through the spacious world '
+
+  INSTR: 'Write a poem about thousand and years.'
+  TGT:   'THERE are no handles upon a language Whereby men take hold of it And mark it with signs for its remembrance. It is a riv'
+
+  INSTR: 'Write a poem about author and theory.'
+  TGT:   "I Motives to the present work--Reception of the Author's first publication--Discipline of his taste at school--Effect of"
+
+
+--- screenplay (750 rows) ---
+  INSTR: 'Write a dramatic scene exploring karenin and anna.'
+  TGT:   'INT. NURSERY, KARENIN HOUSE--DAY           The baby girl, two months old, is being fed by a Wet Nurse. Replete, the     '
+
+  INSTR: 'Write a dramatic scene exploring harvey and toby.'
+  TGT:   'Hey Toby, can you eat lentils during                           lent?                                      TOBY          '
+
+  INSTR: 'Write a dramatic scene exploring sound and under.'
+  TGT:   'comfortably under a straw hat. There is the SOUND OVER of people           playing croquet.           Serozha, aged ten,'
+
+  INSTR: 'Write a dramatic scene exploring railly and cole.'
+  TGT:   'RAILLY turns, COLE follows, and they walk quickly to the stairs \tpassing the stares of gloomy RESIDENTS sitting on torn '
+
+  INSTR: 'Write a dramatic scene exploring quid and tibi.'
+  TGT:   'nam si ignis vivet, tu extinguere extempulo. tum aquam aufugisse dicito, si quis petet. cultrum, securim, pistillum, mor'
+
+  INSTR: 'Write a dramatic scene exploring kaffee and kendrick.'
+  TGT:   'because he made a decision about the                           welfare of a marine that was in                          '
+
+  INSTR: 'Write a dramatic scene exploring paul and anna.'
+  TGT:   "away the earth from the coffin. Then pulls open the lid.           Anna's eyes are WIDE OPEN.     Her fingernails torn a"
+
+  INSTR: 'Write a dramatic scene exploring george and amelia.'
+  TGT:   "lecture. Five years since                           Lindbergh, no one's made it solo,                           so many "
+
+
+--- speech (3012 rows) ---
+  INSTR: 'Compose a speech addressing land and years.'
+  TGT:   'Mr. Chairman. I have been familiar with this land. having passed through it or near to it. as I have for the past forty '
+
+  INSTR: 'Compose a speech addressing states and roads.'
+  TGT:   'Mr. Chairman. in considering the matter of the agricultural bill the following bill introduced by me should. in my opini'
+
+  INSTR: 'Compose a speech addressing bill and hall.'
+  TGT:   'Mr. President. since this bill was reported a bill has been passed for the relief of Mercy Ann Hall. widow of Captain Ha'
+
+  INSTR: 'Compose a speech addressing costs and medicine.'
+  TGT:   'Then. I understand the Senator to say that in the particular situation of which I speak. in which we contemplate making '
+
+  INSTR: 'Compose a speech addressing bill and maryland.'
+  TGT:   'I want to say to my friend from Maryland that I do not wish to raise an objection here. but I want to remind him that on'
+
+  INSTR: 'Compose a speech addressing must and friend.'
+  TGT:   '1 submit in the first place that the statement and admission of my friend from Maryland is simply begging the tilestion.'
+
+  INSTR: 'Compose a speech addressing fact and prison.'
+  TGT:   'I am not reflecting upon the gentleman. of course. or implying that he would do anything of this kind. but it. is a well'
+
+  INSTR: 'Compose a speech addressing pensions and bill.'
+  TGT:   'The Senator has listened I presume. or he ought to have listened. to the estimate of the Commissioner of Pensions. He sp'
+
+
+
+=== PROBES (eval-time, llm-rewritten) (20 rows total) ===
+
+--- essay (8 rows) ---
+  INSTR: 'Examine the historical significance and cultural meanings of the thumb across ancient civilizations and Roman society.'
+  TGT:   'OF THUMBS  Tacitus reports, that amongst certain barbarian kings their manner was, when they would make a firm obligatio'
+
+  INSTR: 'Examine the social protocols and courtesies governing the reception of distinguished visitors, and evaluate their practical merit against personal convenience.'
+  TGT:   'THE CEREMONY OF THE INTERVIEW OF PRINCES  There is no subject so frivolous that does not merit a place in this rhapsody.'
+
+  INSTR: 'Examine whether soldiers should face capital punishment for cowardice versus treachery, and discuss the distinction between natural human weakness and willful moral transgression.'
+  TGT:   'OF THE PUNISHMENT OF COWARDICE  I once heard of a prince, and a great captain, having a narration given him as he sat at'
+
+  INSTR: 'Examine how the human mind creates obstacles to rational decision-making through self-imposed constraints.'
+  TGT:   'THAT OUR MIND HINDERS ITSELF  ‘Tis a pleasant imagination to fancy a mind exactly balanced betwixt two equal desires: fo'
+
+  INSTR: 'Examine how human self-ignorance and insatiable desire prevent us from achieving lasting contentment with what we possess.'
+  TGT:   'OF A SAYING OF CAESAR  If we would sometimes bestow a little consideration upon ourselves, and employ the time we spend '
+
+  INSTR: 'Examine the ancient philosophical argument that abandoning worldly pleasures and ambitions is preferable to living a life of comfort and vanity.'
+  TGT:   'CHAPTER XXXII  THAT WE ARE TO AVOID PLEASURES, EVEN AT THE EXPENSE OF LIFE  I had long ago observed most of the opinions'
+
+  INSTR: 'Examine the military principle that excessive valor in defending an indefensible position constitutes a punishable vice requiring disciplinary examples.'
+  TGT:   'OF A FORT THAT IS NOT IN REASON TO BE DEFENDED  Valour has its bounds as well as other virtues, which, once transgressed'
+
+  INSTR: 'Present a table of contents listing philosophical and practical essay topics explored by Montaigne.'
+  TGT:   'ESSAYS OF MICHEL DE MONTAIGNE  Translated by Charles Cotton  Edited by William Carew Hazlitt  1877  CONTENTS OF VOLUME 1'
+
+
+--- poetry (6 rows) ---
+  INSTR: 'Convey a lifetime of accumulated encounters with remarkable figures across military, artistic, political, and exploratory spheres.'
+  TGT:   'REMINISCENCES OF FIFTY YEARS. By MARK BOYD. 1 vol., 12mo, 390 pp. Price, $1.75.  Mr. Boyd has seen much of life at home '
+
+  INSTR: "Document the comprehensive scope and authoritative value of a historical reference work cataloging a nation's affairs and global events for a specific year."
+  TGT:   'ANNUAL CYCLOPAEDIA  _FOR 1870._  In addition to its usual information on all the Civil, Political, Industrial Affairs of'
+
+  INSTR: 'Present statistical evidence demonstrating diphtheria mortality decline in Paris following the introduction and widespread adoption of serotherapy.'
+  TGT:   'We give herewith a table showing the absolute and relative mortality due to diphtheria in Paris from 1872 to 1905, out o'
+
+  INSTR: 'Depict the emotional and domestic devastation wrought by industrial monopoly on a family.'
+  TGT:   "A modern ballad, quoted by E. Buret, sings the solitude of monopoly:  Le rouet est silencieux dans la vallee: C'en est f"
+
+  INSTR: 'Document a comprehensive travel guide cataloging European destinations, routes, and landmarks for English-speaking visitors.'
+  TGT:   "APPLETONS' EUROPEAN GUIDE-BOOK, Illustrated, including England, Scotland, and Ireland, France, Belgium, Holland, Norther"
+
+  INSTR: 'Document a guide to curated reading lists with editorial corrections applied throughout the text.'
+  TGT:   'WHAT TO READ, AND HOW TO READ, being Classified Lists of Choice Reading, with appropriate hints and remarks, adapted to '
+
+
+--- screenplay (6 rows) ---
+  INSTR: 'Show a young man waking alone and realizing he was manipulated, then celebrating the experience with unexpected enthusiasm.'
+  TGT:   "INT. STIFLER'S COTTAGE - STIFLER'S BROTHER'S BEDROOM - DAY\r \r  Jim wakes up in bed, alone. He looks around.\r \r  JIM\r  Sh"
+
+  INSTR: 'Depict a confrontation in a funeral home where a character faces existential dread and chooses surrender over resistance.'
+  TGT:   "INT. FUNERAL HOME. PREP ROOM - NIGHT\r \r  Anna's eyes snap open. She's still in the Prep Room.\r  She steps back from the "
+
+  INSTR: 'Show a character alone in a dark chamber, donning protective gear while an unseen voice delivers critical safety instructions.'
+  TGT:   "INT. EQUIPMENT ROOM - ETERNAL NIGHT\r \r  COLE's alone, struggling to get into what looks like a space suit\r  in a room wh"
+
+  INSTR: 'Show a father and son working together underwater to free a stuck drill, then the father retrieving an abandoned knapsack before surfacing.'
+  TGT:   "INT. HYDRAULIC CHAMBER/AMERICAN SHIP - DAY\r  \r  Jackson pulls with all his might, but he can't quite shift\r  the drill.\r"
+
+  INSTR: 'Establish an isolated communications outpost built on platforms above a dense alien rainforest world.'
+  TGT:   'EXT. RYUSHI STATION - MIDDAY\r \r Imagine a world where every square mile is covered by a canopy of \r treetop foliage, and'
+
+  INSTR: 'Show a detective questioning a nun at a youth hostel about a girl from her past.'
+  TGT:   'EXT. MISSION YOUTH HOSTEL -- DAY\r \r  TEENAGERS work cleaning this large DORMITORY, sweeping and\r  mopping the floor, mak'
+
+
+

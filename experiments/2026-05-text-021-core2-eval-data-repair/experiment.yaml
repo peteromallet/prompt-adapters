@@ -1,0 +1,21 @@
+id: 2026-05-text-021-core2-eval-data-repair
+modality: text
+project: text-gemma3-prefix-kv
+tags:
+  - core2
+  - eval-repair
+  - v3-corpus
+  - no-speech
+status: completed
+consequential: true
+question: "Was 020's weak poetry result partly an eval/data artifact, and which checkpoint is best after repaired core2 probes?"
+hypothesis: "v3.6 core2 probes repeated poetry reference documents and train screenplay retained artifacts. Repaired v3.7 probes should give a cleaner read; if poetry remains weak, the problem is real and needs a poetry-focused intervention."
+parent: 2026-05-text-020-core2-no-speech-smoke
+base_model: google/gemma-3-4b-pt
+dataset: "data/pairs_v3_7_core2_repaired"
+config: "configs/stage1_v3_7_core2_repaired_eval.yaml"
+compute: "Eval-only RunPod comparison completed. First pod hit network-volume write quota during 020 sampled eval; recovery pods downloaded existing artifacts and reran the missing sampled eval on /tmp. All pods terminated."
+decision_rule: "Compare 018_step1000 and 020_final on repaired balanced n20 pathway plus sampled anti-repeat. If poetry remains cos_K_last_swap > 0.60, run poetry-focused repair/negative-pair ablation before wider encoder."
+headline: "020_final remains best on repaired core2 eval, but the eval set is too narrow for a claim win."
+result: "On repaired v3.7 core2 n20 probes, 020_final beats 018_step1000 (cos_K_last_swap 0.502 vs 0.598) with random/code separated and T4 PASS/PASS. Register split is poetry=0.522, screenplay=0.483; surface T3 remains WEAK."
+next: "Run dual-judge T2/T3b on repaired n20 if judge key is available; otherwise build a broader clean heldout split from a less-contaminated restart point before more training."

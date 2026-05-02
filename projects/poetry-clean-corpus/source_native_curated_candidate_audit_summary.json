@@ -1,0 +1,105 @@
+{
+  "artifact_rate": 0.0,
+  "authors": 99,
+  "duplicate_clean_hash_groups": 0,
+  "flag_counts": {},
+  "gates": {
+    "all_public_domain": true,
+    "max_artifact_rate": true,
+    "min_authors": true,
+    "min_records_per_author": true,
+    "no_duplicate_clean_text": true,
+    "no_parse_errors": true
+  },
+  "low_authors": {},
+  "min_records_per_author": 25,
+  "parse_errors": [],
+  "passed": true,
+  "path": "text-ip-adapter/data/poetry_corpus_v0_source_native_curated_candidate/corpus.jsonl",
+  "retained_authors_at_min_records": 99,
+  "rows": 44024,
+  "top_author_counts": [
+    [
+      "percy_bysshe_shelley",
+      3205
+    ],
+    [
+      "samuel_coleridge",
+      2781
+    ],
+    [
+      "william_shakespeare",
+      2367
+    ],
+    [
+      "alfred_tennyson",
+      2048
+    ],
+    [
+      "henry_longfellow",
+      1887
+    ],
+    [
+      "ezra_pound",
+      1464
+    ],
+    [
+      "elizabeth_barrett_browning",
+      1195
+    ],
+    [
+      "walt_whitman",
+      983
+    ],
+    [
+      "christina_rossetti",
+      913
+    ],
+    [
+      "gordon_adam_lindsay_1833_1870",
+      809
+    ],
+    [
+      "knortz_karl_1841_d",
+      787
+    ],
+    [
+      "dante_gabriel_rossetti",
+      713
+    ],
+    [
+      "prior_matthew",
+      710
+    ],
+    [
+      "g_k_chesterton",
+      706
+    ],
+    [
+      "caswall_edward_1814_1878",
+      669
+    ],
+    [
+      "charles_churchill",
+      658
+    ],
+    [
+      "skidmore_harriet_m_1837_1904",
+      639
+    ],
+    [
+      "lampman_archibald_1861_1899",
+      634
+    ],
+    [
+      "fisher_benjamin_franklin_1873_1916",
+      612
+    ],
+    [
+      "joaquin_miller",
+      606
+    ]
+  ],
+  "top_author_flags": {},
+  "unique_clean_hashes": 44024
+}

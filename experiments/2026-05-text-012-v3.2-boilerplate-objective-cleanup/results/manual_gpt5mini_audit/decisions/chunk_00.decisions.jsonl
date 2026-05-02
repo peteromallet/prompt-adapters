@@ -1,0 +1,300 @@
+{"row_id": "test|93|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_4afbf8651c13", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|4870|screenplay|anniversary_party_the|anniversary_party_the_8b590a952f9a|anniversary_party_the_3b3a16da7eec", "action": "delete", "reason": "severe repetition", "confidence": "high"}
+{"row_id": "train|6176|screenplay|beavis_and_butt_head_do_america|beavis_and_butt_head_do_america_2cb3e98deca1|beavis_and_butt_head_do_america_eea3365c6d9d", "action": "delete", "reason": "severe repetition", "confidence": "high"}
+{"row_id": "train|8786|speech|andrew_johnson|andrew_johnson_92711c2e09cf|andrew_johnson_2f488d0a5c6f", "action": "delete", "reason": "formal document boilerplate", "confidence": "high"}
+{"row_id": "train|8825|speech|bharrison|bharrison_1459c01b5586|bharrison_151bf575ddf5", "action": "delete", "reason": "formal document boilerplate", "confidence": "high"}
+{"row_id": "train|8838|speech|bharrison|bharrison_18e5ec96a816|bharrison_151bf575ddf5", "action": "delete", "reason": "formal document boilerplate", "confidence": "high"}
+{"row_id": "train|8999|speech|clinton|clinton_47a631dca889|clinton_7ad042761307", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "train|9126|speech|fdroosevelt|fdroosevelt_ad729b60e169|fdroosevelt_44922f9d4a02", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "train|9148|speech|fdroosevelt|fdroosevelt_ad729b60e169|fdroosevelt_a024bbdd6d21", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "train|9150|speech|fdroosevelt|fdroosevelt_ad729b60e169|fdroosevelt_adfcf426f5d2", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "train|9186|speech|fillmore|fillmore_d89d10c801cf|fillmore_1bbb2e60b0de", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "train|9187|speech|fillmore|fillmore_d89d10c801cf|fillmore_56ec5865eb32", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "train|9188|speech|fillmore|fillmore_d89d10c801cf|fillmore_590e3591fe3e", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "train|9189|speech|fillmore|fillmore_d89d10c801cf|fillmore_614dd2b90bdf", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "train|9190|speech|fillmore|fillmore_d89d10c801cf|fillmore_ff6b914c069b", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "train|9271|speech|gwbush|gwbush_c486423c535f|gwbush_9d36cb418876", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "train|9297|speech|harding|harding_192e1d734597|harding_c3af1b166360", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "train|9302|speech|harding|harding_3fce10b64b61|harding_c3af1b166360", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "train|9307|speech|harding|harding_afa42b23d6ba|harding_c3af1b166360", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "train|9310|speech|harding|harding_c3af1b166360|harding_192e1d734597", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "train|9311|speech|harding|harding_c3af1b166360|harding_3fce10b64b61", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "train|9312|speech|harding|harding_c3af1b166360|harding_afa42b23d6ba", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "train|9313|speech|harding|harding_c3af1b166360|harding_c90f5979125a", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "train|9314|speech|harding|harding_c3af1b166360|harding_cfb30324a581", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "train|9318|speech|harding|harding_c90f5979125a|harding_c3af1b166360", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "train|9323|speech|harding|harding_cfb30324a581|harding_c3af1b166360", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "train|9355|speech|jackson|jackson_47eb98b65387|jackson_5c1a5fe837ea", "action": "delete", "reason": "formal document boilerplate", "confidence": "high"}
+{"row_id": "train|9369|speech|jackson|jackson_9deac45681ce|jackson_5c1a5fe837ea", "action": "delete", "reason": "formal document boilerplate", "confidence": "high"}
+{"row_id": "train|9522|speech|lbjohnson|lbjohnson_125ddb23bafd|lbjohnson_be608367af3e", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "train|9570|speech|lincoln|lincoln_ba53b6a47714|lincoln_dd1b8f9d2a84", "action": "delete", "reason": "formal document boilerplate", "confidence": "high"}
+{"row_id": "train|9648|speech|mckinley|mckinley_b0d0f5189467|mckinley_e594f8780672", "action": "delete", "reason": "formal document boilerplate", "confidence": "high"}
+{"row_id": "train|9649|speech|mckinley|mckinley_b0d0f5189467|mckinley_ee5b3e3466b8", "action": "delete", "reason": "formal document boilerplate", "confidence": "high"}
+{"row_id": "train|9776|speech|obama|obama_67bf8e6dffda|obama_90c0f2f19f45", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "train|9825|speech|polk|polk_72cdec5946f2|polk_32fbe190c228", "action": "delete", "reason": "formal document boilerplate", "confidence": "high"}
+{"row_id": "train|9826|speech|polk|polk_72cdec5946f2|polk_3a7561c49a66", "action": "delete", "reason": "formal document boilerplate", "confidence": "high"}
+{"row_id": "train|9827|speech|polk|polk_72cdec5946f2|polk_54483cba12c7", "action": "delete", "reason": "formal document boilerplate", "confidence": "high"}
+{"row_id": "train|9828|speech|polk|polk_72cdec5946f2|polk_5bf5de43cc71", "action": "delete", "reason": "formal document boilerplate", "confidence": "high"}
+{"row_id": "train|9829|speech|polk|polk_72cdec5946f2|polk_5f0d950913b1", "action": "delete", "reason": "formal document boilerplate", "confidence": "high"}
+{"row_id": "train|9830|speech|polk|polk_72cdec5946f2|polk_91745f1ec092", "action": "delete", "reason": "formal document boilerplate", "confidence": "high"}
+{"row_id": "train|9831|speech|polk|polk_72cdec5946f2|polk_9eecad29e014", "action": "delete", "reason": "formal document boilerplate", "confidence": "high"}
+{"row_id": "train|9832|speech|polk|polk_72cdec5946f2|polk_b0ef67fb6b14", "action": "delete", "reason": "formal document boilerplate", "confidence": "high"}
+{"row_id": "train|9833|speech|polk|polk_72cdec5946f2|polk_b72ce8452603", "action": "delete", "reason": "formal document boilerplate", "confidence": "high"}
+{"row_id": "train|9834|speech|polk|polk_72cdec5946f2|polk_d706412ecd76", "action": "delete", "reason": "formal document boilerplate", "confidence": "high"}
+{"row_id": "train|9835|speech|polk|polk_72cdec5946f2|polk_f904fbeb5b4e", "action": "delete", "reason": "formal document boilerplate", "confidence": "high"}
+{"row_id": "train|9862|speech|reagan|reagan_579f6596786d|reagan_6034a728f75d", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "train|10002|speech|trump|trump_1f422c892f38|trump_f99ccba94bc9", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "val|250|speech|grant|grant_7ec20ba7870f|grant_f66613d58969", "action": "delete", "reason": "formal document boilerplate", "confidence": "high"}
+{"row_id": "val|271|speech|hoover|hoover_3214b474e51e|hoover_e515825e9582", "action": "delete", "reason": "formal document boilerplate", "confidence": "high"}
+{"row_id": "val|288|speech|hoover|hoover_53025db86f36|hoover_e515825e9582", "action": "delete", "reason": "formal document boilerplate", "confidence": "high"}
+{"row_id": "test|30|essay|michel_de_montaigne|michel_de_montaigne_87fd6f8ef4af|michel_de_montaigne_11ea5f370fbd", "action": "keep", "reason": "core essay passage", "confidence": "high"}
+{"row_id": "test|31|essay|michel_de_montaigne|michel_de_montaigne_87fd6f8ef4af|michel_de_montaigne_191d50f24a6a", "action": "keep", "reason": "core essay passage", "confidence": "high"}
+{"row_id": "test|32|essay|michel_de_montaigne|michel_de_montaigne_87fd6f8ef4af|michel_de_montaigne_33e394cc7f09", "action": "keep", "reason": "core essay passage", "confidence": "high"}
+{"row_id": "test|33|essay|michel_de_montaigne|michel_de_montaigne_87fd6f8ef4af|michel_de_montaigne_42dbae1c8653", "action": "keep", "reason": "core essay passage", "confidence": "high"}
+{"row_id": "test|34|essay|michel_de_montaigne|michel_de_montaigne_87fd6f8ef4af|michel_de_montaigne_62f7bc3545e1", "action": "keep", "reason": "core essay passage", "confidence": "high"}
+{"row_id": "test|35|essay|michel_de_montaigne|michel_de_montaigne_87fd6f8ef4af|michel_de_montaigne_6fed65bc0abb", "action": "keep", "reason": "core essay passage", "confidence": "high"}
+{"row_id": "test|36|essay|michel_de_montaigne|michel_de_montaigne_87fd6f8ef4af|michel_de_montaigne_772ad479df26", "action": "keep", "reason": "core essay passage", "confidence": "high"}
+{"row_id": "test|37|essay|michel_de_montaigne|michel_de_montaigne_87fd6f8ef4af|michel_de_montaigne_8473fcbec113", "action": "keep", "reason": "core essay passage", "confidence": "high"}
+{"row_id": "test|38|essay|michel_de_montaigne|michel_de_montaigne_87fd6f8ef4af|michel_de_montaigne_97e4fb7c1a5d", "action": "keep", "reason": "core essay passage", "confidence": "high"}
+{"row_id": "test|39|essay|michel_de_montaigne|michel_de_montaigne_87fd6f8ef4af|michel_de_montaigne_d5160ccd6ba0", "action": "keep", "reason": "core essay passage", "confidence": "high"}
+{"row_id": "test|40|essay|michel_de_montaigne|michel_de_montaigne_87fd6f8ef4af|michel_de_montaigne_df42fc70bf7f", "action": "keep", "reason": "core essay passage", "confidence": "high"}
+{"row_id": "test|41|essay|michel_de_montaigne|michel_de_montaigne_87fd6f8ef4af|michel_de_montaigne_e7322d40cd34", "action": "keep", "reason": "core essay passage", "confidence": "high"}
+{"row_id": "test|42|essay|michel_de_montaigne|michel_de_montaigne_87fd6f8ef4af|michel_de_montaigne_f58d7947a1d0", "action": "keep", "reason": "core essay passage", "confidence": "high"}
+{"row_id": "test|71|poetry|dante_rossetti|dante_rossetti_0efdf57ad6dd|dante_rossetti_a785f2f2b4bb", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|72|poetry|dante_rossetti|dante_rossetti_0efdf57ad6dd|dante_rossetti_ce7956663d4e", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|75|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_0178f213d7ea", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|76|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_04214e321a97", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|77|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_06d45bb4e918", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|78|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_0a464584b482", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|79|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_0f5d48f1d8f1", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|80|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_124a1eac48b4", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|81|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_16d2e2a32d90", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|82|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_1ee630dd4392", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|83|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_2025fca74382", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|84|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_2b52bd1fca41", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|85|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_2cbb95059e00", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|86|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_3200141c7b0f", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|87|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_399eae9fb506", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|88|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_3e3e60d9fb8a", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|89|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_3ffe80a0a1c1", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|90|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_405b8aa01b07", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|91|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_4861207b7721", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|92|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_48f1077d381b", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|94|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_50f62c156c04", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|95|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_54462dcdef03", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|96|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_54c648ab3f99", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|97|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_55e372ee6e7d", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|98|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_58f05351922c", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|99|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_5fb14b4cf9f7", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|100|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_648a1a001795", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|101|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_65631648abae", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|102|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_699a730a726f", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|103|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_6a8f76236d49", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|104|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_7cad0bb609ee", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|105|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_84e23fdb18c6", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|106|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_8dde05ed7b76", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|107|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_8dec340c1d9d", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|108|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_8e079497897b", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|109|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_91728f91e667", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|110|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_9597c0abbbdc", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|111|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_9709ac192c87", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|112|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_9e1735e4e35d", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|113|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_a576fdf68cce", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|114|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_ab119f73e7f9", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|115|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_ae304178609e", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|116|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_af92ab02692d", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|117|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_afaefc9ae638", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|118|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_c2caae3ddfbb", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|119|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_c704cad888a5", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|120|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_cb289d8c14ab", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|121|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_cbc912d07299", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|122|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_cc45bdf51f87", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|123|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_d55ed28353fe", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|124|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_d6ef65f33162", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|125|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_e0d19dafb55f", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|126|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_e38f4b19aeef", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|127|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_e41f14c5a254", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|128|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_e4e7ecb46b82", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|129|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_e50fbacd8f78", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|130|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_e792e235014a", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|131|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_edeb81849804", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|132|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_f5c706c1b3ba", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|133|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_f6f1cc051ee6", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|134|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_f8f008790a71", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|135|poetry|paul_laurence_dunbar|paul_laurence_dunbar_f7a686d04c51|paul_laurence_dunbar_ff98452410ce", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "test|186|speech|bush|bush_656eac86c063|bush_063cd46182be", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|187|speech|bush|bush_656eac86c063|bush_1696bfeeab7e", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|188|speech|bush|bush_656eac86c063|bush_32d7b88bb667", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|189|speech|bush|bush_656eac86c063|bush_71f201f3aa26", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|190|speech|bush|bush_656eac86c063|bush_7ffaee165691", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|191|speech|bush|bush_656eac86c063|bush_adf3850b22f5", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|192|speech|bush|bush_656eac86c063|bush_d543fcf9b796", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|193|speech|bush|bush_656eac86c063|bush_d5a2f03398b2", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|194|speech|bush|bush_656eac86c063|bush_e6b94bf00354", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|195|speech|bush|bush_71f201f3aa26|bush_063cd46182be", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|196|speech|bush|bush_71f201f3aa26|bush_0f5376874ee4", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|197|speech|bush|bush_71f201f3aa26|bush_1696bfeeab7e", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|198|speech|bush|bush_71f201f3aa26|bush_2b57a3c13692", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|199|speech|bush|bush_71f201f3aa26|bush_32d7b88bb667", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|200|speech|bush|bush_71f201f3aa26|bush_5065c029b6e7", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|201|speech|bush|bush_71f201f3aa26|bush_53ab243142a2", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|202|speech|bush|bush_71f201f3aa26|bush_6070d2b3fbf3", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|203|speech|bush|bush_71f201f3aa26|bush_656eac86c063", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|204|speech|bush|bush_71f201f3aa26|bush_7ffaee165691", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|205|speech|bush|bush_71f201f3aa26|bush_915aae53639d", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|206|speech|bush|bush_71f201f3aa26|bush_adf3850b22f5", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|207|speech|bush|bush_71f201f3aa26|bush_d317af87d202", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|208|speech|bush|bush_71f201f3aa26|bush_d543fcf9b796", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|209|speech|bush|bush_71f201f3aa26|bush_d5a2f03398b2", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|210|speech|bush|bush_71f201f3aa26|bush_e6b94bf00354", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|211|speech|bush|bush_71f201f3aa26|bush_ed7dda635e56", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|212|speech|bush|bush_71f201f3aa26|bush_f745ff1c90c4", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|213|speech|bush|bush_71f201f3aa26|bush_ff0c889008e6", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|214|speech|bush|bush_e6b94bf00354|bush_063cd46182be", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|215|speech|bush|bush_e6b94bf00354|bush_0f5376874ee4", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|216|speech|bush|bush_e6b94bf00354|bush_1696bfeeab7e", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|217|speech|bush|bush_e6b94bf00354|bush_2b57a3c13692", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|218|speech|bush|bush_e6b94bf00354|bush_32d7b88bb667", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|219|speech|bush|bush_e6b94bf00354|bush_5065c029b6e7", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|220|speech|bush|bush_e6b94bf00354|bush_53ab243142a2", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|221|speech|bush|bush_e6b94bf00354|bush_6070d2b3fbf3", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|222|speech|bush|bush_e6b94bf00354|bush_656eac86c063", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|223|speech|bush|bush_e6b94bf00354|bush_71f201f3aa26", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|224|speech|bush|bush_e6b94bf00354|bush_7ffaee165691", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|225|speech|bush|bush_e6b94bf00354|bush_915aae53639d", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|226|speech|bush|bush_e6b94bf00354|bush_adf3850b22f5", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|227|speech|bush|bush_e6b94bf00354|bush_d317af87d202", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|228|speech|bush|bush_e6b94bf00354|bush_d543fcf9b796", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|229|speech|bush|bush_e6b94bf00354|bush_d5a2f03398b2", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|230|speech|bush|bush_e6b94bf00354|bush_ed7dda635e56", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|231|speech|bush|bush_e6b94bf00354|bush_f745ff1c90c4", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|232|speech|bush|bush_e6b94bf00354|bush_ff0c889008e6", "action": "delete", "reason": "transcript artifact", "confidence": "high"}
+{"row_id": "test|233|speech|tyler|tyler_516701eb35c0|tyler_d3bd20c2c782", "action": "delete", "reason": "formal document boilerplate", "confidence": "high"}
+{"row_id": "test|234|speech|tyler|tyler_a87ecd75ada8|tyler_d3bd20c2c782", "action": "delete", "reason": "formal document boilerplate", "confidence": "high"}
+{"row_id": "test|235|speech|tyler|tyler_bab4ed755d9a|tyler_d3bd20c2c782", "action": "delete", "reason": "formal document boilerplate", "confidence": "high"}
+{"row_id": "train|0|essay|matthew_arnold_essays|matthew_arnold_essays_1027b80c0f8d|matthew_arnold_essays_838f8edd8684", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|4|essay|matthew_arnold_essays|matthew_arnold_essays_838f8edd8684|matthew_arnold_essays_1027b80c0f8d", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|5|essay|matthew_arnold_essays|matthew_arnold_essays_838f8edd8684|matthew_arnold_essays_85cf42e93b86", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|6|essay|matthew_arnold_essays|matthew_arnold_essays_838f8edd8684|matthew_arnold_essays_9e7ad08c84d3", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|7|essay|matthew_arnold_essays|matthew_arnold_essays_838f8edd8684|matthew_arnold_essays_fcd6fd51c101", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|9|essay|matthew_arnold_essays|matthew_arnold_essays_85cf42e93b86|matthew_arnold_essays_838f8edd8684", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|13|essay|matthew_arnold_essays|matthew_arnold_essays_9e7ad08c84d3|matthew_arnold_essays_838f8edd8684", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|17|essay|matthew_arnold_essays|matthew_arnold_essays_fcd6fd51c101|matthew_arnold_essays_838f8edd8684", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|20|essay|william_james|william_james_03130a68a811|william_james_0d8afbad096c", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|21|essay|william_james|william_james_03130a68a811|william_james_40e7fd9b6def", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|22|essay|william_james|william_james_03130a68a811|william_james_6344441a6e64", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|23|essay|william_james|william_james_03130a68a811|william_james_782b209d8e4f", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|24|essay|william_james|william_james_03130a68a811|william_james_7afe790d9cea", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|25|essay|william_james|william_james_03130a68a811|william_james_85f40c545174", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|26|essay|william_james|william_james_03130a68a811|william_james_8fbe7fdad45f", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|27|essay|william_james|william_james_03130a68a811|william_james_9229e1b03319", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|28|essay|william_james|william_james_03130a68a811|william_james_9c8df99f710e", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|29|essay|william_james|william_james_03130a68a811|william_james_b13f796de957", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|30|essay|william_james|william_james_03130a68a811|william_james_b4a568205ada", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|31|essay|william_james|william_james_03130a68a811|william_james_bb440a5b0c9a", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|32|essay|william_james|william_james_0d8afbad096c|william_james_03130a68a811", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|44|essay|william_james|william_james_40e7fd9b6def|william_james_03130a68a811", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|56|essay|william_james|william_james_6344441a6e64|william_james_03130a68a811", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|68|essay|william_james|william_james_7afe790d9cea|william_james_03130a68a811", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|72|essay|william_james|william_james_85f40c545174|william_james_03130a68a811", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|84|essay|william_james|william_james_9229e1b03319|william_james_03130a68a811", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|96|essay|william_james|william_james_b13f796de957|william_james_03130a68a811", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|108|essay|william_james|william_james_bb440a5b0c9a|william_james_03130a68a811", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|153|poetry|alfred_tennyson|alfred_tennyson_5d180400b99c|alfred_tennyson_58c3a5b5f0c4", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|171|poetry|alfred_tennyson|alfred_tennyson_5d180400b99c|alfred_tennyson_82e281cd9338", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|175|poetry|alfred_tennyson|alfred_tennyson_5d180400b99c|alfred_tennyson_8e1a97cd1874", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|209|poetry|alfred_tennyson|alfred_tennyson_5d180400b99c|alfred_tennyson_e9c4a558e300", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|254|poetry|algernon_swinburne|algernon_swinburne_4d01ac24832d|algernon_swinburne_dac84358c71b", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|255|poetry|algernon_swinburne|algernon_swinburne_4d01ac24832d|algernon_swinburne_e734225fd225", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|273|poetry|algernon_swinburne|algernon_swinburne_58e369764336|algernon_swinburne_e734225fd225", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|310|poetry|algernon_swinburne|algernon_swinburne_9c86ea9f7962|algernon_swinburne_dac84358c71b", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|311|poetry|algernon_swinburne|algernon_swinburne_9c86ea9f7962|algernon_swinburne_e734225fd225", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|448|poetry|christina_rossetti|christina_rossetti_17a438d95469|christina_rossetti_62680fb01e2f", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|449|poetry|christina_rossetti|christina_rossetti_17a438d95469|christina_rossetti_63673facf357", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|473|poetry|christina_rossetti|christina_rossetti_17a438d95469|christina_rossetti_97fa2a863eae", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|500|poetry|christina_rossetti|christina_rossetti_17a438d95469|christina_rossetti_e14dfef2ead5", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|514|poetry|edgar_allan_poe|edgar_allan_poe_9a53909c8329|edgar_allan_poe_009da5fe5028", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|570|poetry|edgar_allan_poe|edgar_allan_poe_9a53909c8329|edgar_allan_poe_8fe6018af96a", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|592|poetry|edgar_allan_poe|edgar_allan_poe_9a53909c8329|edgar_allan_poe_c3d87743fe34", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|646|poetry|ee_cummings|ee_cummings_88a753f60133|ee_cummings_644d0f6998ec", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|1238|poetry|john_keats|john_keats_112fcddd0dde|john_keats_bef1308a8470", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|1243|poetry|john_keats|john_keats_112fcddd0dde|john_keats_e3847979dbee", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|1248|poetry|john_keats|john_keats_6b75940a5b42|john_keats_e3847979dbee", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|1266|poetry|john_keats|john_keats_8a05d274b970|john_keats_bef1308a8470", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|1271|poetry|john_keats|john_keats_8a05d274b970|john_keats_e3847979dbee", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|1291|poetry|john_keats|john_keats_c5744bf0c0aa|john_keats_bef1308a8470", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|1295|poetry|john_keats|john_keats_c5744bf0c0aa|john_keats_e3847979dbee", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|1297|poetry|john_keats|john_keats_e3847979dbee|john_keats_112fcddd0dde", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|1298|poetry|john_keats|john_keats_e3847979dbee|john_keats_1230b6429450", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|1299|poetry|john_keats|john_keats_e3847979dbee|john_keats_1cfc1de854f2", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|1300|poetry|john_keats|john_keats_e3847979dbee|john_keats_222a59ef7199", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|1301|poetry|john_keats|john_keats_e3847979dbee|john_keats_2657e7ace46e", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|1302|poetry|john_keats|john_keats_e3847979dbee|john_keats_2a903143af64", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|1303|poetry|john_keats|john_keats_e3847979dbee|john_keats_34e4e7c733a0", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|1304|poetry|john_keats|john_keats_e3847979dbee|john_keats_384c03b80270", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|1305|poetry|john_keats|john_keats_e3847979dbee|john_keats_446aa6835171", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|1306|poetry|john_keats|john_keats_e3847979dbee|john_keats_49216ab1b6b5", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|1307|poetry|john_keats|john_keats_e3847979dbee|john_keats_4935ee1fcccb", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|1308|poetry|john_keats|john_keats_e3847979dbee|john_keats_6b75940a5b42", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|1309|poetry|john_keats|john_keats_e3847979dbee|john_keats_718ab22284b6", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|1310|poetry|john_keats|john_keats_e3847979dbee|john_keats_7637b010aa12", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|1311|poetry|john_keats|john_keats_e3847979dbee|john_keats_8a05d274b970", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|1312|poetry|john_keats|john_keats_e3847979dbee|john_keats_9cd65fa1ba82", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|1313|poetry|john_keats|john_keats_e3847979dbee|john_keats_abe43d0aeb74", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|1314|poetry|john_keats|john_keats_e3847979dbee|john_keats_b5b5ae59b555", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|1315|poetry|john_keats|john_keats_e3847979dbee|john_keats_bef1308a8470", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|1316|poetry|john_keats|john_keats_e3847979dbee|john_keats_c5744bf0c0aa", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|1317|poetry|john_keats|john_keats_e3847979dbee|john_keats_c64cee39f2c5", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|1318|poetry|john_keats|john_keats_e3847979dbee|john_keats_ca8162700557", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|1319|poetry|john_keats|john_keats_e3847979dbee|john_keats_d9a479487f3b", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|1320|poetry|john_keats|john_keats_e3847979dbee|john_keats_ff3f71688d9d", "action": "keep", "reason": "poem passage", "confidence": "high"}
+{"row_id": "train|1321|poetry|lord_byron|lord_byron_0486658211f5|lord_byron_4833c30d6081", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1322|poetry|lord_byron|lord_byron_0486658211f5|lord_byron_67846ed2e835", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1323|poetry|lord_byron|lord_byron_0486658211f5|lord_byron_70883e063bee", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1324|poetry|lord_byron|lord_byron_0486658211f5|lord_byron_9ae1d9ee801d", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1325|poetry|lord_byron|lord_byron_0486658211f5|lord_byron_a2eab593901f", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1326|poetry|lord_byron|lord_byron_0486658211f5|lord_byron_bf61b462863b", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1327|poetry|lord_byron|lord_byron_0486658211f5|lord_byron_f3339d20ff01", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1328|poetry|lord_byron|lord_byron_4833c30d6081|lord_byron_0486658211f5", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1329|poetry|lord_byron|lord_byron_4833c30d6081|lord_byron_0f78cb31cc13", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1330|poetry|lord_byron|lord_byron_4833c30d6081|lord_byron_10bedbab741f", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1331|poetry|lord_byron|lord_byron_4833c30d6081|lord_byron_277b11f62a8a", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1332|poetry|lord_byron|lord_byron_4833c30d6081|lord_byron_291c13473247", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1333|poetry|lord_byron|lord_byron_4833c30d6081|lord_byron_2b23f5eb69b7", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1334|poetry|lord_byron|lord_byron_4833c30d6081|lord_byron_38c91bba6b25", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1335|poetry|lord_byron|lord_byron_4833c30d6081|lord_byron_494f73a44152", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1336|poetry|lord_byron|lord_byron_4833c30d6081|lord_byron_4a4f3a8fc790", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1337|poetry|lord_byron|lord_byron_4833c30d6081|lord_byron_5ae1eab454b3", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1338|poetry|lord_byron|lord_byron_4833c30d6081|lord_byron_62e840ce1a1c", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1339|poetry|lord_byron|lord_byron_4833c30d6081|lord_byron_67846ed2e835", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1340|poetry|lord_byron|lord_byron_4833c30d6081|lord_byron_70883e063bee", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1341|poetry|lord_byron|lord_byron_4833c30d6081|lord_byron_7a13f3b8a293", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1342|poetry|lord_byron|lord_byron_4833c30d6081|lord_byron_85040b2871de", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1343|poetry|lord_byron|lord_byron_4833c30d6081|lord_byron_893e1b0cb0c0", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1344|poetry|lord_byron|lord_byron_4833c30d6081|lord_byron_8acc73183529", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1345|poetry|lord_byron|lord_byron_4833c30d6081|lord_byron_95006a933a08", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1346|poetry|lord_byron|lord_byron_4833c30d6081|lord_byron_9525169baf87", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1347|poetry|lord_byron|lord_byron_4833c30d6081|lord_byron_9ae1d9ee801d", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1348|poetry|lord_byron|lord_byron_4833c30d6081|lord_byron_a2eab593901f", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1349|poetry|lord_byron|lord_byron_4833c30d6081|lord_byron_a84e8749fcb6", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1350|poetry|lord_byron|lord_byron_4833c30d6081|lord_byron_ae10988f22be", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1351|poetry|lord_byron|lord_byron_4833c30d6081|lord_byron_bf61b462863b", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1352|poetry|lord_byron|lord_byron_4833c30d6081|lord_byron_c07c8b45990d", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1353|poetry|lord_byron|lord_byron_4833c30d6081|lord_byron_c87b3bb30637", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1354|poetry|lord_byron|lord_byron_4833c30d6081|lord_byron_d11b59feaa59", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1355|poetry|lord_byron|lord_byron_4833c30d6081|lord_byron_d561bca1cf59", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1356|poetry|lord_byron|lord_byron_4833c30d6081|lord_byron_f2872b8c7450", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1357|poetry|lord_byron|lord_byron_4833c30d6081|lord_byron_f3339d20ff01", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1358|poetry|lord_byron|lord_byron_4833c30d6081|lord_byron_f3477127772d", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1359|poetry|lord_byron|lord_byron_70883e063bee|lord_byron_0486658211f5", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1360|poetry|lord_byron|lord_byron_70883e063bee|lord_byron_0f78cb31cc13", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1361|poetry|lord_byron|lord_byron_70883e063bee|lord_byron_10bedbab741f", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1362|poetry|lord_byron|lord_byron_70883e063bee|lord_byron_277b11f62a8a", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1363|poetry|lord_byron|lord_byron_70883e063bee|lord_byron_291c13473247", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1364|poetry|lord_byron|lord_byron_70883e063bee|lord_byron_2b23f5eb69b7", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1365|poetry|lord_byron|lord_byron_70883e063bee|lord_byron_38c91bba6b25", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1366|poetry|lord_byron|lord_byron_70883e063bee|lord_byron_4833c30d6081", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1367|poetry|lord_byron|lord_byron_70883e063bee|lord_byron_494f73a44152", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1368|poetry|lord_byron|lord_byron_70883e063bee|lord_byron_4a4f3a8fc790", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1369|poetry|lord_byron|lord_byron_70883e063bee|lord_byron_5ae1eab454b3", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}
+{"row_id": "train|1370|poetry|lord_byron|lord_byron_70883e063bee|lord_byron_62e840ce1a1c", "action": "delete", "reason": "artifact or boilerplate", "confidence": "high"}

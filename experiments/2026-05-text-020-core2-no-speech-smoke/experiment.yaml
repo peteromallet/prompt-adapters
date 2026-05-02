@@ -1,0 +1,21 @@
+id: 2026-05-text-020-core2-no-speech-smoke
+modality: text
+project: text-gemma3-prefix-kv
+tags:
+  - core2
+  - no-speech
+  - v3-corpus
+  - smoke
+status: completed
+consequential: true
+question: "Does removing the collapsed speech register let the adapter show cleaner reference conditioning on poetry+screenplay?"
+hypothesis: "019 showed speech is near-collapsed across every checkpoint, while poetry+screenplay are much healthier. Continuing the best checkpoint (018_step1000) on a poetry+screenplay-only corpus should improve aggregate pathway and style metrics without speech boilerplate dominating the result."
+parent: 2026-05-text-019-balanced-checkpoint-comparison
+base_model: google/gemma-3-4b-pt
+dataset: "data/pairs_v3_6_core2_poetry_screenplay"
+config: "configs/stage1_v3_6_core2_poetry_screenplay_smoke.yaml"
+compute: "RunPod RTX 4090 1,000-step speech-excluded smoke from 018 step1000 on pod gaw0383lfjnq7k; pod terminated after eval/artifact download."
+decision_rule: "Promising if balanced core2 pathway has cos_K_last_swap <= 0.45, random/code stay near zero or negative, sampled generations stay low-repeat, and T4 does not show non-formulaic leakage."
+headline: "Partially confirmed: dropping speech exposes a healthy core2 pathway, but poetry author separation remains weak."
+result: "Final balanced core2 n20 pathway passed the target with cos_K_last_swap=0.440, random=-0.149, code=-0.066. T1 PASS, T4 PASS/PASS, T3 WEAK 11/20. Register split: poetry cos_K_last_swap=0.633, screenplay=0.248."
+next: "Repair/audit core2 before more training: strip screenplay page/image artifacts, audit poetry author-pair separability, re-evaluate 018_step1000 and 020 final on repaired core2 probes, then decide whether to run a poetry-focused negative-pair ablation."

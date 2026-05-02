@@ -1,0 +1,35 @@
+{
+  "pod_id": "cuwzkiei2rpz3t",
+  "status": "ready",
+  "config": "configs/stage1_v3_7_core2_repaired_eval.yaml",
+  "probe_path": "data/pairs_v3_7_core2_repaired/probes_balanced_n20.jsonl",
+  "checkpoints": {
+    "018_step1000": "checkpoints/stage1_v3_5_artifact_clean_core3_longer/step_1000.pt",
+    "020_final": "checkpoints/stage1_v3_6_core2_poetry_screenplay_smoke/final.pt"
+  },
+  "remote_output": "/workspace/text-ip-adapter/experiments/021_core2_repaired_eval",
+  "storage": {
+    "storage_name": "Peter",
+    "matches": [
+      {
+        "id": "m6ccu1lodp",
+        "name": "Peter",
+        "size": 3000,
+        "dataCenterId": "EU-RO-1"
+      }
+    ]
+  },
+  "launched_at": "2026-04-26T05:54:54+0200",
+  "hf_token_synced": true,
+  "project_sync": {
+    "changed": true,
+    "hash": "8489ae7fbd181dc6e94761a6582670fd71caf306360f788485a75a3660ef5f0e"
+  },
+  "dataset_sync": [
+    {
+      "changed": true,
+      "hash": "905c84e06e4aceaaffb875a0c499cc533021716ae43886fe2e668b0bb05e64a0"
+    }
+  ],
+  "terminated": true
+}

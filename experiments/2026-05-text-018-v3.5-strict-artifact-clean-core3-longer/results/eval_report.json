@@ -1,0 +1,311 @@
+{
+  "test1_discrimination": {
+    "per_step": {
+      "3000": {
+        "mean_jaccard": 0.0041081210725225446,
+        "n": 20,
+        "max": 0.04477611940298507,
+        "min": 0.0
+      }
+    },
+    "final_step": 3000,
+    "final_mean_jaccard": 0.0041081210725225446,
+    "verdict": "PASS",
+    "note": "Jaccard of 3-grams between adapter and adapter_swap. Lower = more discrimination."
+  },
+  "test3_style_carryover": {
+    "per_probe": [
+      {
+        "probe_id": "probe_00",
+        "own_author": "sara_teasdale",
+        "swap_author": "thomas_hardy",
+        "sim_own": 0.9999795892542509,
+        "sim_swap": 0.9995690224649065,
+        "advantage_own": 0.00041056678934436874
+      },
+      {
+        "probe_id": "probe_01",
+        "own_author": "thomas_hardy",
+        "swap_author": "sara_teasdale",
+        "sim_own": 0.9993490576622888,
+        "sim_swap": 0.9999307264270785,
+        "advantage_own": -0.0005816687647897112
+      },
+      {
+        "probe_id": "probe_02",
+        "own_author": "sara_teasdale",
+        "swap_author": "thomas_hardy",
+        "sim_own": 0.9999900973175883,
+        "sim_swap": 0.9997527769981036,
+        "advantage_own": 0.00023732031948464627
+      },
+      {
+        "probe_id": "probe_03",
+        "own_author": "sara_teasdale",
+        "swap_author": "thomas_hardy",
+        "sim_own": 0.9999521664020113,
+        "sim_swap": 0.9997464305459012,
+        "advantage_own": 0.00020573585611016743
+      },
+      {
+        "probe_id": "probe_04",
+        "own_author": "sara_teasdale",
+        "swap_author": "thomas_hardy",
+        "sim_own": 0.9998836748443116,
+        "sim_swap": 0.9997932493424863,
+        "advantage_own": 9.042550182536413e-05
+      },
+      {
+        "probe_id": "probe_05",
+        "own_author": "sara_teasdale",
+        "swap_author": "thomas_hardy",
+        "sim_own": 0.9998701472338594,
+        "sim_swap": 0.9992041455013716,
+        "advantage_own": 0.0006660017324877643
+      },
+      {
+        "probe_id": "probe_06",
+        "own_author": "12_and_holding",
+        "swap_author": "17_again",
+        "sim_own": 0.9995360731774043,
+        "sim_swap": 0.9995536534801057,
+        "advantage_own": -1.7580302701381e-05
+      },
+      {
+        "probe_id": "probe_07",
+        "own_author": "17_again",
+        "swap_author": "12_and_holding",
+        "sim_own": 0.9999745777044867,
+        "sim_swap": 0.9997987500659669,
+        "advantage_own": 0.00017582763851986538
+      },
+      {
+        "probe_id": "probe_08",
+        "own_author": "12_and_holding",
+        "swap_author": "17_again",
+        "sim_own": 0.9996676279941235,
+        "sim_swap": 0.9999859818710869,
+        "advantage_own": -0.00031835387696343975
+      },
+      {
+        "probe_id": "probe_09",
+        "own_author": "12_and_holding",
+        "swap_author": "17_again",
+        "sim_own": 0.999419399639737,
+        "sim_swap": 0.9991424246228063,
+        "advantage_own": 0.0002769750169306917
+      },
+      {
+        "probe_id": "probe_10",
+        "own_author": "12_and_holding",
+        "swap_author": "17_again",
+        "sim_own": 0.9998153150581633,
+        "sim_swap": 0.9997804516939937,
+        "advantage_own": 3.486336416969049e-05
+      },
+      {
+        "probe_id": "probe_11",
+        "own_author": "12_and_holding",
+        "swap_author": "17_again",
+        "sim_own": 0.9996046007413933,
+        "sim_swap": 0.9999973055452438,
+        "advantage_own": -0.00039270480385045214
+      },
+      {
+        "probe_id": "probe_12",
+        "own_author": "buchanan",
+        "swap_author": "jqadams",
+        "sim_own": 0.9999788297698574,
+        "sim_swap": 0.9999956906344415,
+        "advantage_own": -1.6860864584078428e-05
+      },
+      {
+        "probe_id": "probe_13",
+        "own_author": "jqadams",
+        "swap_author": "buchanan",
+        "sim_own": 0.9999964514717858,
+        "sim_swap": 0.9999773073652478,
+        "advantage_own": 1.9144106538027117e-05
+      },
+      {
+        "probe_id": "probe_14",
+        "own_author": "buchanan",
+        "swap_author": "jqadams",
+        "sim_own": 0.9999958460735238,
+        "sim_swap": 0.9999799588736098,
+        "advantage_own": 1.5887199913966477e-05
+      },
+      {
+        "probe_id": "probe_15",
+        "own_author": "buchanan",
+        "swap_author": "jqadams",
+        "sim_own": 0.9997541222058673,
+        "sim_swap": 0.9999086379777342,
+        "advantage_own": -0.00015451577186686993
+      },
+      {
+        "probe_id": "probe_16",
+        "own_author": "buchanan",
+        "swap_author": "jqadams",
+        "sim_own": 0.9999168807698087,
+        "sim_swap": 0.9999895913748066,
+        "advantage_own": -7.271060499791648e-05
+      },
+      {
+        "probe_id": "probe_17",
+        "own_author": "buchanan",
+        "swap_author": "jqadams",
+        "sim_own": 0.999952087282111,
+        "sim_swap": 0.9999979315085046,
+        "advantage_own": -4.584422639353214e-05
+      },
+      {
+        "probe_id": "probe_18",
+        "own_author": "sara_teasdale",
+        "swap_author": "thomas_hardy",
+        "sim_own": 0.999952658633876,
+        "sim_swap": 0.9994440431228843,
+        "advantage_own": 0.0005086155109916835
+      },
+      {
+        "probe_id": "probe_19",
+        "own_author": "sara_teasdale",
+        "swap_author": "thomas_hardy",
+        "sim_own": 0.9999526391252784,
+        "sim_swap": 0.9998053288763449,
+        "advantage_own": 0.00014731024893355205
+      }
+    ],
+    "mean_advantage": 5.9421703455120325e-05,
+    "own_wins": 12,
+    "total": 20,
+    "verdict": "WEAK",
+    "note": "advantage_own = cos(gen_feats, own_ref_feats) - cos(gen_feats, swap_ref_feats). >0.05 = PASS."
+  },
+  "test3b_llm_style_match": {
+    "verdict": "SKIPPED",
+    "reason": "--skip-llm-judge"
+  },
+  "test4_memorization": {
+    "per_probe": [
+      {
+        "probe_id": "probe_00",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_01",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_02",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_03",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_04",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_05",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_06",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_07",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_08",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_09",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_10",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_11",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_12",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_13",
+        "target_10gram_hits": 3,
+        "ref_5gram_hits": 1
+      },
+      {
+        "probe_id": "probe_14",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 1
+      },
+      {
+        "probe_id": "probe_15",
+        "target_10gram_hits": 1,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_16",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_17",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_18",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_19",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      }
+    ],
+    "target_memorization_rate": 0.1,
+    "ref_leak_rate": 0.1,
+    "memorization_verdict": "WEAK",
+    "leak_verdict": "WEAK",
+    "note": "memorization: fraction of adapter outputs with any 10-gram in training targets. leak: 5-gram overlap with probe's own reference."
+  },
+  "test5_loss_curve": {
+    "n_steps": 120,
+    "first_quartile_loss_mean": 2.4616956233978273,
+    "last_quartile_loss_mean": 2.3878612319628396,
+    "improvement_pct": 0.029993306537660264,
+    "still_learning_last_half": false,
+    "verdict": "PLATEAU",
+    "note": "HEALTHY: >25% loss drop + still improving. PLATEAU: <10% drop."
+  },
+  "test2_llm_judge": {
+    "verdict": "SKIPPED",
+    "reason": "--skip-llm-judge"
+  }
+}

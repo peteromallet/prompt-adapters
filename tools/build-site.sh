@@ -12,6 +12,7 @@ mkdir -p site/docs/program
 cp program/STRATEGY.md site/docs/program/strategy.md
 cp program/LEARNINGS.md site/docs/program/learnings.md
 cp program/ROADMAP.md site/docs/program/roadmap.md
+cp program/DATA_10X_PLAN.md site/docs/program/data_10x_plan.md
 
 # Project tier: copy each project's LEARNINGS into site/docs/projects/<slug>-learnings.md if present.
 if [[ -d projects ]]; then

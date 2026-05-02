@@ -1,0 +1,47 @@
+{
+  "config": "configs/stage1_v3_8_core2_cleanheldout_restart.yaml",
+  "dataset_syncs": [
+    {
+      "local_dir": "/Users/peteromalley/Documents/reigh-workspace/text-ip-adapter/data/pairs_v3_8_core2_cleanheldout",
+      "remote_dir": "/workspace/text-ip-adapter/data/pairs_v3_8_core2_cleanheldout",
+      "result": {
+        "changed": true,
+        "hash": "c3b2281ae92205528000031a0f43ae4c08bffc9e3db3f5c1efb528e6b4acdb39"
+      }
+    }
+  ],
+  "experiment_id": "2026-05-text-022-broader-clean-split-restart",
+  "hf_token_synced": true,
+  "launched_at": "2026-04-26T05:02:05.868213+00:00",
+  "manual_recovery": true,
+  "manual_recovery_reason": "Initial runner hung waiting for completed train exec_ssh; eval/download continued from same live pod.",
+  "max_steps": 1000,
+  "n_probes": 32,
+  "pod_id": "18dobdao5syd9f",
+  "preflight_stdout": "scripts/train.py True 822\npyproject.toml True 845\nsrc/text_ip_adapter/__init__.py True 151\nsrc/text_ip_adapter/data/__init__.py True 15\nconfigs/stage1_v3_8_core2_cleanheldout_restart.yaml True 1227\ndata/pairs_v3_8_core2_cleanheldout/train.jsonl True 16948531\ncheckpoints/stage1_gemma_no_trunk/final.pt True 966090430\nloaded_config_max_steps 1000\nloaded_config_output_dir /tmp/stage1_v3_8_core2_cleanheldout_restart\n",
+  "project_sync": {
+    "changed": true,
+    "hash": "ac53de47602b4824a751c1b128bccc143b53073965ec33513cf71bf635ac9bbf"
+  },
+  "ready_at": "2026-04-26T05:02:23.780411+00:00",
+  "remote_eval_dir": "/tmp/exp022_eval",
+  "remote_project_root": "/tmp/text-ip-adapter-022",
+  "remote_train_dir": "/tmp/stage1_v3_8_core2_cleanheldout_restart",
+  "status": "completed_manual_recovery",
+  "storage": {
+    "matches": [
+      {
+        "dataCenterId": "EU-RO-1",
+        "id": "m6ccu1lodp",
+        "name": "Peter",
+        "size": 3000
+      }
+    ],
+    "storage_name": "Peter"
+  },
+  "terminated": true,
+  "terminated_at": "2026-04-26T06:39:40.082725+00:00",
+  "training_completed_at": "2026-04-26T06:39:39.548402+00:00",
+  "training_started_at": "2026-04-26T05:03:11.175231+00:00",
+  "workspace_root": "/workspace/text-ip-adapter"
+}

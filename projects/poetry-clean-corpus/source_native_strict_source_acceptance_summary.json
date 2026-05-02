@@ -1,0 +1,21 @@
+{
+  "accepted_records": 51634,
+  "accepted_sources": 147,
+  "decision_counts": {
+    "accept": 147,
+    "reject": 10,
+    "review_or_reject": 23
+  },
+  "reason_counts": {
+    "curated_project_gutenberg": 36,
+    "fetch_missing_ia_text_file": 4,
+    "risky_author": 2,
+    "risky_title": 22,
+    "strict_single_author_poetry_source": 111,
+    "too_few_records": 6
+  },
+  "rejected_sources": 10,
+  "review_sources": 23,
+  "source_results": "text-ip-adapter/data/poetry_corpus_v0_source_native_strict_candidate/source_results.jsonl",
+  "sources": 180
+}

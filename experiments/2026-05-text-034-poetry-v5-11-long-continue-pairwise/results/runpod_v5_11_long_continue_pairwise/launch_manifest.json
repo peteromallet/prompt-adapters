@@ -1,0 +1,49 @@
+{
+  "checkpoint": "/Users/peteromalley/Documents/reigh-workspace/prompt-adapters/experiments/2026-05-text-033-poetry-v5-10-llm-style-filter/results/runpod_v5_10_llm_style_filter/train_artifacts/tmp/stage1_v5_10_poetry_llm_style_medium_strong_lrfloor_restart006/final.pt",
+  "checkpoint_uploaded_at": "2026-04-27T01:51:05.570096+00:00",
+  "completed_at": "2026-04-27T03:05:12.380969+00:00",
+  "config": "configs/stage1_v5_11_poetry_llm_style_continue_long_pairwise.yaml",
+  "dataset_syncs": [
+    {
+      "local_dir": "/Users/peteromalley/Documents/reigh-workspace/text-ip-adapter/data/pairs_v5_10_poetry_llm_style_medium_strong",
+      "remote_dir": "/workspace/text-ip-adapter/data/pairs_v5_10_poetry_llm_style_medium_strong",
+      "result": {
+        "changed": true,
+        "hash": "96d3390584699f1ae0689da4640e56fbda252ca508d2c2dffeb6555e52c3fd1b"
+      }
+    }
+  ],
+  "experiment_id": "2026-05-text-034-poetry-v5-11-long-continue-pairwise",
+  "hf_token_synced": true,
+  "launched_at": "2026-04-27T01:47:52.483304+00:00",
+  "max_steps": 3600,
+  "n_probes": 12,
+  "pod_id": "xslm5wghvvj5wy",
+  "preflight_stdout": "scripts/train.py True 822\nsrc/text_ip_adapter/data/dataset.py True 6856\nsrc/text_ip_adapter/train/loop.py True 13949\nconfigs/stage1_v5_11_poetry_llm_style_continue_long_pairwise.yaml True 1312\ndata/pairs_v5_10_poetry_llm_style_medium_strong/train.jsonl True 5536556\ndata/pairs_v5_10_poetry_llm_style_medium_strong/probes_balanced_n24.jsonl True 21365\n/tmp/exp033_final.pt True 966090430\nmax_steps 3600\nmin_lr_ratio 0.1\nstyle_triplet_weight 1.5\nstyle_triplet_margin 0.35\ncontrastive_weight 0.2\ntrain_rows 2868\n",
+  "project_sync": {
+    "changed": true,
+    "hash": "2f89f5cb95c5158ab955a8b72977493ba39ee9f5b7f9316f69fc7c951ba69e93"
+  },
+  "ready_at": "2026-04-27T01:48:05.180299+00:00",
+  "remote_eval_dir": "/tmp/exp034_v5_11_long_continue_pairwise_eval",
+  "remote_orch_log_dir": "/tmp/exp034_v5_11_long_continue_pairwise_orch",
+  "remote_project_root": "/tmp/text-ip-adapter-034-v5-11-long-continue-pairwise",
+  "remote_train_dir": "/tmp/stage1_v5_11_poetry_llm_style_continue_long_pairwise",
+  "status": "completed",
+  "storage": {
+    "matches": [
+      {
+        "dataCenterId": "EU-RO-1",
+        "id": "m6ccu1lodp",
+        "name": "Peter",
+        "size": 3000
+      }
+    ],
+    "storage_name": "Peter"
+  },
+  "terminated": true,
+  "terminated_at": "2026-04-27T03:05:13.132111+00:00",
+  "training_completed_at": "2026-04-27T02:19:35.394855+00:00",
+  "training_started_at": "2026-04-27T01:51:42.403998+00:00",
+  "workspace_root": "/workspace/text-ip-adapter"
+}

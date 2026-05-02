@@ -1,0 +1,24 @@
+{
+  "pod_id": "2wk8ccy36w75cq",
+  "remote_root": "/workspace/text-ip-adapter",
+  "storage": {
+    "storage_name": "Peter",
+    "matches": [
+      {
+        "id": "m6ccu1lodp",
+        "name": "Peter",
+        "size": 3000,
+        "dataCenterId": "EU-RO-1"
+      }
+    ]
+  },
+  "status": "completed",
+  "checkpoints": {
+    "017_final": "checkpoints/stage1_v3_4_artifact_clean_core3_smoke/final.pt",
+    "018_step500": "checkpoints/stage1_v3_5_artifact_clean_core3_longer/step_500.pt",
+    "018_step1000": "checkpoints/stage1_v3_5_artifact_clean_core3_longer/step_1000.pt",
+    "018_final": "checkpoints/stage1_v3_5_artifact_clean_core3_longer/final.pt"
+  },
+  "hf_token_synced": true,
+  "terminated": true
+}

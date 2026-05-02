@@ -1,0 +1,1 @@
+experiments/2026-05-text-037-gemma4-e2b-poetry-v5-10-slowlr-5k/results/runpod_gemma4_e2b_slowlr_5k/eval_artifacts/download.tar.gz filter=lfs diff=lfs merge=lfs -text

@@ -1,0 +1,660 @@
+TRAINING PAIR SAMPLES — v2_clean corpus
+================================================================================
+
+Format: each pair shows the REFERENCE (style source), the INSTRUCTION (prompt), and the TARGET (what model should produce). Pairs are same-author different-pieces.
+
+================================================================================
+  REGISTER: POETRY (4785 train pairs)
+================================================================================
+
+--- POETRY pair #1 (author=herman_melville, source=pulpo) ---
+
+REFERENCE TEXT  (838 chars):
+Far off in the sea is Marlena,
+A land of shades and streams,
+A land of many delights,
+Dark and bold, thy shores, Marlena;
+But green, and timorous, thy soft knolls,
+Crouching behind the woodlands.
+All shady thy hills; all gleaming thy springs,
+Like eyes in the earth looking at you.
+How charming thy haunts, Marlena!--
+Oh, the waters that flow through Onimoo;
+Oh, the leaves that rustle through Ponoo:
+Oh, the roses that blossom in Tarma.
+Come, and see the valley of Vina:
+How sweet, how sweet, the Isles from Hina:
+'Tis aye afternoon of the full, full moon,
+And ever the season of fruit,
+And ever the
+  ...
+
+INSTRUCTION:
+  Write a poem about killed and people.
+
+TARGET TEXT  (1073 chars):
+Indicative of the passion of the people on the 15th of April, 1865
+
+
+
+Good Friday was the day Of the prodigy and crime, When they killed him in his pity, When they killed him in his prime Of clemency and calm— When with yearning he was filled To redeem the evil-willed, And, though conqueror, be kind; But they killed him in his kindness, In their madness and their blindness, And they killed him from behind. There is sobbing of the strong, And a pall upon the land; But the People in their weeping Bare the iron hand: Beware the People weeping When they bare the iron hand. He lieth in his bloo
+  ...
+
+------------------------------------------------------------
+
+--- POETRY pair #2 (author=natalie_scenters_zapico, source=pulpo) ---
+
+REFERENCE TEXT  (805 chars):
+I was so thirsty, you cracked
+an egg into my mouth. I ate it
+& thanked you. We were so
+rich then. I imagined the moon,
+a being I’d never seen, in every nail
+you’d use to tack the tarp
+over our heads. I confused
+hens clucking for the ringing
+of the phone you’d never
+let me answer. With a spatula
+to my ear, I’d pretend to be
+a woman on TV & say:¿Bueno? Your anger
+was the gun you kept by the door,
+my fear, the knife I used to chop
+onions. One night you confused
+the sound of a snake rattling
+for rain. The snake opened
+its jaw & its fangs were the color
+of mud. You reached for my 
+  ...
+
+INSTRUCTION:
+  Write a poem about macho and dying.
+
+TARGET TEXT  (1500 chars):
+My mother is dying of too much electricity on the brain, my father, a limp in his walk, & my macho lost his green card at a bus station. I want words split letter for letter to turn sound into wisdom on my losses.
+ 
+
+•
+ 
+
+My macho says: Your skin is the color of milk, you glow between sheets. ¿Who gives more light: me, or the luna lunera? Too much milk makes you sick — drink, drink, cascabelera.
+ 
+
+•
+ 
+
+I want to leave my hembra behind. ¿What are my options? She bleeds on the rug, births a litter, then hides limp bodies in kitchen cabinets.
+ 
+
+•
+ 
+
+I lied. M
+  ...
+
+------------------------------------------------------------
+
+--- POETRY pair #3 (author=diane_glancy, source=pulpo) ---
+
+REFERENCE TEXT  (846 chars):
+The t(rain)
+again this morning, sky always gray,
+grain cars f(lying)
+like blackbirds with fieldseed
+in their bellies.
+The eight o five carrying
+g(rain)
+sings like tribes
+when they migrated north in summer
+across the plains
+following tracks of herds.
+High water into trees.
+The lake full of rain.
+We say it is someone else
+pushing down on the lake
+to make it spill over its edge.
+While we wait
+the woman earth sings with the tribes,
+transforms herself
+into all things.
+After the train
+b(rush) burning, the delay of smoke
+in the car comes after
+we have passed like sound.
+Rain h
+  ...
+
+INSTRUCTION:
+  Write a poem about plane and camera.
+
+TARGET TEXT  (534 chars):
+It’s mostly the same here
+slow as melonvines in an arctic sun
+where the great ball of the plane
+went down in nineteen thirty-five & an eskimo
+with a camera took a picture that stayed
+in his camera twenty-one years
+& by some chance he told
+an explorer who bought the film
+& found the crash
+& the bodies under tarp looking like
+two seals on the ice,
+the crumpled plane with oversized pontoons,
+the propeller as though
+it could turn again—
+the men, Wiley Post & Will Rogers,
+still twelve miles southwest of Barrow, Alaska.
+
+------------------------------------------------------------
+
+--- POETRY pair #4 (author=joanna_klink, source=pulpo) ---
+
+REFERENCE TEXT  (1240 chars):
+Some feel rain. Some feel the beetle startle
+in its ghost-part when the bark
+slips. Some feel musk. Asleep against
+each other in the whiskey dark, scarcely there.
+When it falls apart, some feel the moondark air
+drop its motes to the patch-thick slopes of
+snow. Tiny blinkings of ice from the oak,
+a boot-beat that comes and goes, the line of prayer
+you can follow from the dusking wind to the snowy owl
+it carries. Some feel sunlight
+well up in blood-vessels below the skin
+and wish there had been less to lose.
+Knowing how it could have been, pale maples
+drowsing like a second sleep ab
+  ...
+
+INSTRUCTION:
+  Write a poem about evenings and trees.
+
+TARGET TEXT  (896 chars):
+It began in a foyer of evenings
+The evenings left traces of glass in the trees
+A book and a footpath we followed
+Under throat-pipes of birds
+We moved through a room of leaves
+Thin streams of silver buried under our eyes
+A field of white clover buried under our eyes
+Or a river we stopped at to watch
+The wind cross it, recross it
+Room into room you paused
+Where once on a stoop we leaned back
+Talking late into daylight
+The morning trees shook off twilight
+Opening and closing our eyes auroras
+Beyond groves and flora we followed a road
+Dotted with polished brown bottles,
+Scoured fur
+  ...
+
+------------------------------------------------------------
+
+
+================================================================================
+  REGISTER: ESSAY (5000 train pairs)
+================================================================================
+
+--- ESSAY pair #1 (author=mwiza_kumwenda, source=medium) ---
+
+REFERENCE TEXT  (525 chars):
+The Best Software Engineering Books I Read in 2020 A software engineer’s reading list . As 2020 draws to a close, I am thrilled to share with you a selection of the best software engineering books that I have read during the past 12 months. If you are a software engineer, data scientist, or one of those people who work in the tech or software industry, you will agree with me that you have to constantly keep learning if you are to remain relevant in the game. When you decide to become a software engineer, you essentially
+
+INSTRUCTION:
+  Draft an essay exploring content and accessibility.
+
+TARGET TEXT  (3911 chars):
+How To Create Accessible Websites Guidelines on how to create applications that carter for people with impairments The web is used by a wide range of people that have unique physical and or mental abilities. In this guide, I will walk you through the steps that you can take to make your Angular applications more accessible to a wide range of people regardless of their impairments. A website is said to be accessible when its content can accommodate all users and can be operated by almost anyone. When creating websites it is important to realize that not all users have the same access or ability
+  ...
+
+------------------------------------------------------------
+
+--- ESSAY pair #2 (author=olga_kouzina, source=medium) ---
+
+REFERENCE TEXT  (3801 chars):
+Managing or prioritizing backlog and re-prioritizing work in progress are some of those activities that usually make a product owner very busy. This is not a breaking news, obviously. Product Owners have lots of things to consider as they: 1. keep some work in the backlog (as unsorted as a pile of chopped wood); 2. sign off some work to go into production; 3. re-prioritize work that is already in progress. At times, the boundaries between a pure production flow (Work In Progress, as in Kanban) and backlog are quite blurred. Some items might stall, if it turns out that they need to be re-priori
+  ...
+
+INSTRUCTION:
+  Draft an essay exploring product and software.
+
+TARGET TEXT  (3936 chars):
+*… despite the diligent effort of your UX and Product teams, and what you can do about it.* The Creator’s Curse You’ve invested a ton of effort, time, care, and thought into your new software product. You live and breathe, sleep, and wake up with it. You’ve been so thoughtful and caring about your future users, and you’ve performed to the best of your ability (that’s the bottomline, as you’ll see later in the post). You’ve passionately instilled life, creative sparkles, baby unicorns, and what not into the product. But, for some annoying reason, when you’re finally ready to show the beta to yo
+  ...
+
+------------------------------------------------------------
+
+--- ESSAY pair #3 (author=jennifer_friebely, source=medium) ---
+
+REFERENCE TEXT  (3982 chars):
+There’s More To Chris Watts’ Murder Of His Family That Netflix Does Not Show Many pieces of information were left out Never has a story gripped more people — including me. Two weeks ago, I wrote a story wondering why we are all so fascinated with murder. In this case, family annihilation — and even more specifically, this family’s story that seemingly made no sense. After publishing that story, I learned that the Netflix documentary left out key facts, which forced me to take another look. The amount of information available online is immense. There are true crime YouTube videos with analysis 
+  ...
+
+INSTRUCTION:
+  Draft an essay exploring staff and support.
+
+TARGET TEXT  (3934 chars):
+Poor Management Uncovered In Employee Covid Work-From-Home Survey About 400 employees at all levels were surveyed About 400 employees at a large, privately held corporation responded to a survey. It was regarding their feelings about the pandemic, working from home (all office support staff has been on work from home since March 2020), and what it would take for them to return to the office. For the sake of confidentiality, I can’t reveal this company or any details. I consulted for them and can only share the findings in general terms. Many of these findings are consistent with surveys at oth
+  ...
+
+------------------------------------------------------------
+
+--- ESSAY pair #4 (author=aaron_moy, source=medium) ---
+
+REFERENCE TEXT  (3864 chars):
+Immortalizing Alex Trebek via the Wii Despite the passing of a longtime television icon, his digital likeness lives on forever in video games My family wasn’t the kind to gather around the TV every week in anticipation of another episode of Jeopardy! or any other program in particular. The times we would watch the show would be if it happened to come on while we were eating dinner, or during the holidays in the place of a Christmas movie. Growing up in my family, however, was a process that fostered education, sciences, and continued learning. While we didn’t necessarily fix our lives around J
+  ...
+
+INSTRUCTION:
+  Draft an essay exploring nico and devil.
+
+TARGET TEXT  (3896 chars):
+How a New Character Successfully Gatecrashed a Capcom Classic Nico is a tattooed gunsmith who is a masterful addition to both Devil May Cry 5 itself and the broader series Constructing a companion character in a video game is a tedious, delicate task. Creating a new character in a series that fans already know and love is even more tricky. A good companion must deliver information to the player where necessary, without making it seem like they are a blatant audience surrogate. The Legend of Zelda: Skyward Sword has an example of a controversial companion in Fi, where not many players were impr
+  ...
+
+------------------------------------------------------------
+
+
+================================================================================
+  REGISTER: SPEECH (3012 train pairs)
+================================================================================
+
+--- SPEECH pair #1 (author=air_howe, source=un_debate) ---
+
+REFERENCE TEXT  (578 chars):
+My friend says that is the way with opiumeaters. Yes. I have known naniyanman. after he had tscni two ortlireesswigs. labor under the hallucination that lie must have miero drink. That seems to be the condition of the country today. Business is a little drunk with this dishonored paper. tmd Senators are divided. some of them think. to get sober. we must take more. and the honorable Senator from Massachusetts thinks it is not worth while to take any more. if you can stagger under what yon have got you will do well. but by no means give ip at drop you have aready swallowed.
+
+INSTRUCTION:
+  Compose a speech addressing library and upon.
+
+TARGET TEXT  (2981 chars):
+Mr. President. I waut to add one.word to what tte honorable Senator from Vermont has just said in reference to the necessity of having additional accommodations for your library sinewhere and soon. As be has remarked there are sontc forty tbousand volumes which your industrious Librarian cannot shelve. and through your annual appropriations. smallas they are. ani through the operations of your copyright laws. you are adding to that number from thirty to forty thousand volumes annually. Now. Mr. President. a bookisnot of tuch value unless it is accessible. and when a book is buried under tons o
+  ...
+
+------------------------------------------------------------
+
+--- SPEECH pair #2 (author=mr_richardson_of_tennessee, source=un_debate) ---
+
+REFERENCE TEXT  (3903 chars):
+Mr. Chairman. there can be no controversy between my colleague and myself with respect to this proposition. I have no interest in it. except that a constituent of mine and a constituent of my colleague asked me last August to come to Washington City with them and go to the Secretary of War and ask for this privilege. I did so in connection with Senator CARMACK. My colleague was then out of the country. or I suppose he would have been invited to come. We went to the Secretary of War and presented the matter to him. and after a good deal of discussion. extending over several days. he stated. as 
+  ...
+
+INSTRUCTION:
+  Compose a speech addressing chairman and committee.
+
+TARGET TEXT  (1307 chars):
+I presume the gentleman would have made a point of order. if he thought it was not in order. as he never overlooks his hand. Now. then. Mr. Chairman. I am content to submit this question. I do not care if you can find where a Chairman of a committee. a gentleman called from the floor to preside either in the House or the committee for a few momentstemporarily called to preside in Committee of the Wholemay have made rulings different from that we now contend for. I confess that you may find some that are inconsistent with the position we take. I am sure you can not find any wellconsidered decis
+  ...
+
+------------------------------------------------------------
+
+--- SPEECH pair #3 (author=mr_morton, source=un_debate) ---
+
+REFERENCE TEXT  (1048 chars):
+Yes. sir. In one of these national banks they are required to furnish a security in advance to the depositors of $100.000 of paidisp capital. in a private bank they are not. and the bank examiner comes arond several times a year aud examines the condition of the tational bank to find whether this capital is maintained there of at least $100.000it may be $500.000whatever the contract of the bank with the Government determines. whatever they determine to start out with . but in a private bank there is no such thin. as a paidup capital. After men start .the bank they may draw out every cent they 
+  ...
+
+INSTRUCTION:
+  Compose a speech addressing senator and think.
+
+TARGET TEXT  (787 chars):
+I desire simply to say that I think the provision that Senators shall be allowed their individual traveling expenses is not a good one. it leaves a Senator to pay out of his salary the oxpense of bringing his family here. It discourages the bringing of families here to spend the winter in the capital. and I think in titat respect it is badbad to those who have large families. as was remarked by the Senator fron Michigan. or who have to bring them a long way: It becomes very expensive aid onerots. If the amotint of mileage under time late law was too high. let it be reduced by the motion of the
+  ...
+
+------------------------------------------------------------
+
+--- SPEECH pair #4 (author=mr_mills, source=un_debate) ---
+
+REFERENCE TEXT  (1302 chars):
+Mr. Chairman. I have examined with some care the BlieBook which lies on our tables to see where the army of appointees who fill tle different Depnttmctits come front. Of the five or six thousand Department etapltyds appearing oi the pages of that book (exclusive of the snall army of employ6s whose names will not be found there) I find that nearly two thousand are from the District of Columbia. some seven or eight hundred from Penisylvania. and about the saime number from New York. Most of the employds in tle Departments are from right around this city. In proportion as we go away froni tite ca
+  ...
+
+INSTRUCTION:
+  Compose a speech addressing house and franking.
+
+TARGET TEXT  (2631 chars):
+I move to strike out the last word of the original proposition. The PostmasterGeneral. i his report to Congress in 1869. showed to the House of Representatives that there was a deficit in the receipts below the expenditures of the PostOfficeDepartment. He had vexed his righteous soul from day to day from 1869 until 1873 to remove the causes that produced this deficiency. He states that the great cause was the franking privilege. He showed to Congress that there were 31.933 persons in the United States exercising the franking privileoge and sending mail matter through the postoffice free of pos
+  ...
+
+------------------------------------------------------------
+
+
+================================================================================
+  REGISTER: SCREENPLAY (750 train pairs)
+================================================================================
+
+--- SCREENPLAY pair #1 (author=a_quiet_place, source=dracor) ---
+
+REFERENCE TEXT  (3961 chars):
+42   EXT. FARM - DRIVEWAY - LATE AFTERNOON                        42
+     CLOSE ON BARE FEET... walking along a sand path.
+     WE BOOM UP TO REVEAL... REGAN walking with purpose. In her
+     hands she carries a pillowcase. Inside the pillowcase... an
+     irregular shape.
+     After a moment, she looks up to... the telephone pole.
+     Sitting on the power line are... MORE BIRDS. There is
+     something buoyant about them. Something... oblivious.
+43   EXT. RIVER - LATE AFTERNOON                                  43
+     An immediate and jarring sound of water rushes in as we are:
+     TIGHT ON
+  ...
+
+INSTRUCTION:
+  Write a dramatic scene exploring truck and dawn.
+
+TARGET TEXT  (3985 chars):
+disappear over the edge of the clearing... and down the long
+      driveway...
+107   INT. TRUCK - DAWN                                           107
+      BACK IN SILENCE
+      ON REGAN AND MARCUS as she holds her brother and looks around
+      the cab for options. Suddenly, out the passenger side window
+      she sees...
+      ANOTHER CREATURE BURST OUT OF THE CORN AND... SLAM INTO THE
+      PASSENGER SIDE DOOR!!!!
+      GLASS SHATTERS!!!... And the truck... LIFTS UP!!!
+108   EXT. TRUCK - DAWN                                           108
+      ON LEE'S BACK, SPRINTING, now only twenty yards 
+  ...
+
+------------------------------------------------------------
+
+--- SCREENPLAY pair #2 (author=affliction, source=dracor) ---
+
+REFERENCE TEXT  (3951 chars):
+sees you smoking that wacky tabacky 
+                         around me they'll expect me to bust 
+                         you. And I'll be outta a job.
+                                     JACK
+                         Some job. Here, have a hit. Don't be 
+                         such a hardass. I know you got 
+                         problems, but everybody's got 
+                         problems.
+                              (offers joint)
+                                     WADE
+                         Not here.
+               LaCoy laughs: that Jack Hewitt, some guy. Wade holds his
+  ...
+
+INSTRUCTION:
+  Write a dramatic scene exploring wade and nick.
+
+TARGET TEXT  (3970 chars):
+something. Nobody owns nobody, 
+                         especially not kids. And I pay her.
+                                     NICK
+                              (calls)
+                         Marg!
+                                     WADE
+                         That goddamned woman. Thinks she can 
+                         cart Jill off and leave me alone 
+                         like this. I'm more than pissed, 
+                         Margie. I'm a whole lot more than 
+                         pissed. I been that plenty and I 
+                         know the difference. This is 
+  ...
+
+------------------------------------------------------------
+
+--- SCREENPLAY pair #3 (author=500_days_of_summer, source=dracor) ---
+
+REFERENCE TEXT  (3964 chars):
+500 DAYS OF SUMMER
+                                   Written by
+                       Scott Neustadter & Michael H. Weber
+                                                           First Draft
+          SIMPLE BLACK ON WHITE CREDITS ROLL TO BIG STAR'S "I'M IN LOVE
+          WITH A GIRL." When all is said and done, up comes a single
+          number in parenthesis, like so:
+          (478)
+          EXT. PARK - DAY
+          For a few seconds we watch A MAN (20s) and a WOMAN (20s) on a
+          park bench. Their names are TOM and SUMMER. Neither one says
+          a word.
+          CLOSE ON 
+  ...
+
+INSTRUCTION:
+  Write a dramatic scene exploring summer and mckenzie.
+
+TARGET TEXT  (3895 chars):
+BACK TO:
+          INT BAR
+          On Tom:
+                              TOM
+                    I think it's...kind of a huge
+                    thing.
+                               SUMMER
+                        (BEAT)
+                    Ok. Looks like we're gonna have to
+                    agree to disagree on that one.
+          McKenzie senses some discontent.
+                              MCKENZIE
+                    So, uh, who's singing next?
+                              SUMMER
+                        (re: singing)
+                    I'd say it's your turn loverboy.
+           
+  ...
+
+------------------------------------------------------------
+
+--- SCREENPLAY pair #4 (author=127_hours, source=dracor) ---
+
+REFERENCE TEXT  (3922 chars):
+Over or under? He drops to his belly and squeezes
+          underneath, rucking the sandy floor in front of him. He's
+          halfway, his chest rising out the far side when suddenly he
+          can't move. The music jams and loops on 2 notes like bad
+          techno. He pushes but nothing.
+          He reaches back with his hand and releases a part of his
+          rucksack strap that's snagged. And the music releases too.
+          He squat-jumps out and brushes off the sand.
+          No panic -a nothing moment.
+                          CUT TO:
+          INT. SLOT CANYON. DAY.
+        
+  ...
+
+INSTRUCTION:
+  Write a dramatic scene exploring aron and canyon.
+
+TARGET TEXT  (3967 chars):
+ARON
+                          (SCREAMING)
+           HELP!!! HELP!!!! OVER HERE!!!
+           HEEELLLPP!!!
+          Freaky. We just see an arbitrary view of the rock and sky on
+          the video camera, maybe with a bit of elbow, but we hear his
+          desperation, screaming at no one, distorting on the tiny
+          speaker.
+                          CUT TO:
+          INT. CANYON. DAY. REALTIME.
+          He stops it. The sound of his absolute helplessness and need
+          freaks him out and threatens absolute despair. Snorts.
+                          ARON
+           No one's comin
+  ...
+
+------------------------------------------------------------
+
+
+
+================================================================================
+  COMPARISON: eval-time PROBES (proper LLM-rewritten)
+================================================================================
+
+--- PROBE probe_16 (author=alien_vs_predator, register=screenplay) ---
+
+REFERENCE TEXT:
+EXT. RYUSHI STATION - ROOFTOP LEVEL - NIGHT
+
+BANG! BANG! BANG! BANG! CLICK. HIROKO's gun's empty. She reaches 
+for another clip on her bandolier...then realises that was her last 
+one.
+
+The encircling ALIENS HISS triumphantly and close in. With no place to 
+go, and no means of defending herself, HIROKO's a goner. The lead 
+ALIEN's lethal double-barrel teeth open. It's almost on her. HIROKO 
+CRIES OUT...
+
+WHOOSH! The ALIEN's face is severed in half. A circular metal object 
+blurs through the air and loops back on itself, almost faster then the 
+human eye can follow. A massive form 
+  ...
+
+INSTRUCTION:
+  Establish an isolated communications outpost built on platforms above a dense alien rainforest world.
+
+EXPECTED TARGET:
+EXT. RYUSHI STATION - MIDDAY
+
+Imagine a world where every square mile is covered by a canopy of 
+treetop foliage, and you've just drawn yourself a picture of the planet 
+Ryushi.
+
+Nestled amongst this lush rainforest is the Yutani-Templin 
+Communications Relay Station. Several inverted-'U'-shaped suspension 
+cranes painted bright yellow look down over a collection of 
+preassembled buildings and roadways raised above the swamp on 
+platforms, much like a truncated oil-rig. A navigation beacon flashes 
+intermittently from a tall gantry tower above, while dominating the 
+view is the slo
+  ...
+
+------------------------------------------------------------
+
+--- PROBE probe_00 (author=michel_de_montaigne, register=essay) ---
+
+REFERENCE TEXT:
+OF A MONSTROUS CHILD
+
+This story shall go by itself; for I will leave it to physicians to
+discourse of. Two days ago I saw a child that two men and a nurse, who
+said they were the father, the uncle, and the aunt of it, carried about
+to get money by showing it, by reason it was so strange a creature. It
+was, as to all the rest, of a common form, and could stand upon its feet;
+could go and gabble much like other children of the same age; it had
+never as yet taken any other nourishment but from the nurse’s breasts,
+and what, in my presence, they tried to put into the mouth of it, it only
+chewed a
+  ...
+
+INSTRUCTION:
+  Examine the military principle that excessive valor in defending an indefensible position constitutes a punishable vice requiring disciplinary examples.
+
+EXPECTED TARGET:
+OF A FORT THAT IS NOT IN REASON TO BE DEFENDED
+
+Valour has its bounds as well as other virtues, which, once transgressed,
+the next step is into the territories of vice; so that by having too
+large a proportion of this heroic virtue, unless a man be very perfect in
+its limits, which upon the confines are very hard to discern, he may very
+easily unawares run into temerity, obstinacy, and folly. From this
+consideration it is that we have derived the custom, in times of war, to
+punish, even with death, those who are obstinate to defend a place that
+by the rules of war is not tenable; otherwise men
+  ...
+
+------------------------------------------------------------
+
+--- PROBE probe_17 (author=american_pie, register=screenplay) ---
+
+REFERENCE TEXT:
+INT. KEVIN'S BEDROOM - DAY
+
+ Kevin is on the phone. Hanging near his closet is a
+ tuxedo. INTERCUT with KEVIN'S OLDER BROTHER -- 25, on
+ his cell phone, traveling down a California road.
+
+ KEVIN'S BROTHER
+ You called me to ask me how to get laid?
+
+ KEVIN
+ What was I gonna do, call dad? I
+ don't even know his number.
+
+ KEVIN'S BROTHER
+ Just dial 976-Asshole.
+
+ KEVIN
+ Yeah, well anyway...I thought you
+ might have some advice, brother to
+ brother. I mean, I think tonight she
+ might, we might really, there's a
+ chance that -- you know.
+
+ KEVIN'S BROTHER
+ Have you ever heard
+  ...
+
+INSTRUCTION:
+  Show a young man waking alone and realizing he was manipulated, then celebrating the experience with unexpected enthusiasm.
+
+EXPECTED TARGET:
+INT. STIFLER'S COTTAGE - STIFLER'S BROTHER'S BEDROOM - DAY
+
+ Jim wakes up in bed, alone. He looks around.
+
+ JIM
+ She's gone.
+
+ He considers this.
+
+ JIM (cont'd)
+ Oh my God. She used me.
+
+ He considers this further. Smiles.
+
+ JIM (cont'd)
+ Wow! I was used! Cool!
+
+ He jumps up and does a little dance, SINGING...
+
+ JIM (CONT'D)
+ Hail! to the victors, valiant; Hail!
+ to the conquering heroes, hail...
+  ...
+
+------------------------------------------------------------
+
+--- PROBE probe_06 (author=matthew_arnold, register=poetry) ---
+
+REFERENCE TEXT:
+LECTURE XVII.
+
+RESUME OF DOCTRINE.
+
+Review of the doctrine contained in these lectures, and the
+three orders of facts on which this doctrine rests, with the
+relation of each one of them to the modern school that has
+recognized and developed it, but almost always exaggerated
+it.--Experience and empiricism.--Reason and idealism.--Sentiment
+and mysticism.--Theodicea. Defects of different known
+systems.--The process that conducts to true theodicea, and the
+character of certainty and reality that this process gives to
+it.
+  ...
+
+INSTRUCTION:
+  Document the comprehensive scope and authoritative value of a historical reference work cataloging a nation's affairs and global events for a specific year.
+
+EXPECTED TARGET:
+ANNUAL CYCLOPAEDIA
+
+_FOR 1870._
+
+In addition to its usual information on all the Civil, Political,
+Industrial Affairs of each State, and of the whole country, it contains
+very complete details of the UNITED STATES CENSUS. A complete account of
+the origin and progress of the GERMAN-FRENCH WAR, and a very full
+exhibition of the present state of Europe, Population, Nationalities,
+Wealth, Debts, Military Force of the different Countries and an
+EXPLANATION OF ALL THE EXISTING EUROPEAN QUESTIONS, are presented.
+
+The Discoveries, Events, and Developments of the year are fully brought
+up, together wit
+  ...
+
+------------------------------------------------------------
+

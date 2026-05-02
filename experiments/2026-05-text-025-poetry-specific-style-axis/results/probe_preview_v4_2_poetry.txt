@@ -1,0 +1,39 @@
+--- probe 1 author=christina_rossetti swap=None ---
+instruction: Write a short poem in the style of the reference passage.
+ref: It is over. What is over? / Nay, how much is over truly!-- / Harvest days we toiled to sow for; / Now the sheaves are gathered newly, / Now the wheat is garnered duly. /  / It is finished. What is finished? / Much is finished known or unknown: / Lives are finished; time diminished; / Was the fallow field left unsown? / Will these buds be always unblown? /  / It suffices. What suffices? / All suffices reckoned rightly: / Spring shall bloom where now the ice is, / Roses make the bramble sightly, / And the quickening sun shine br
+expected: 
+
+--- probe 2 author=edwin_arlington_robinson swap=None ---
+instruction: Write a short poem in the style of the reference passage.
+ref: HAMILTON /  / I mean the man who rode by on his horse. / I'll beg of you the meed of your indulgence / If I should say this planet may have done / A deal of weary whirling when at last, / If ever, Time shall aggregate again / A majesty like his that has no name.
+expected: 
+
+--- probe 3 author=emily_dickinson swap=None ---
+instruction: Write a short poem in the style of the reference passage.
+ref: I have not told my garden yet, / Lest that should conquer me; / I have not quite the strength now / To break it to the bee. /  / I will not name it in the street, / For shops would stare, that I, / So shy, so very ignorant, / Should have the face to die. /  / The hillsides must not know it, / Where I have rambled so, / Nor tell the loving forests / The day that I shall go, /  / Nor lisp it at the table, / Nor heedless by the way / Hint that within the riddle / One will walk to-day!
+expected: 
+
+--- probe 4 author=john_masefield swap=None ---
+instruction: Write a short poem in the style of the reference passage.
+ref: LAUGH AND BE MERRY /  / Laugh and be merry, remember, better the world with a song, / Better the world with a blow in the teeth of a wrong. / Laugh, for the time is brief, a thread the length of a span. / Laugh and be proud to belong to the old proud pageant of man. /  / Laugh and be merry: remember, in olden time. / God made Heaven and Earth for joy He took in a rhyme, / Made them, and filled them full with the strong red wine of His mirth, / The splendid joy of the stars: the joy of the earth. /  / So we must laugh a
+expected: 
+
+--- probe 5 author=matthew_arnold swap=None ---
+instruction: Write a short poem in the style of the reference passage.
+ref: I ask not that my bed of death / From bands of greedy heirs be free; / For these besiege the latest breath / Of fortune’s favored sons, not me. /  / I ask not each kind soul to keep / Tearless, when of my death he hears. / Let those who will, if any, weep! / There are worse plagues on earth than tears. /  / I ask but that my death may find / The freedom to my life denied; / Ask but the folly of mankind / Then, then at last, to quit my side. /  / Spare me the whispering, crowded room, / The friends who come, and gape, and go; / T
+expected: 
+
+--- probe 6 author=edna_millay swap=None ---
+instruction: Write a short poem in the style of the reference passage.
+ref: All the dog-wood blossoms are underneath the tree! / Ere spring was going--ah, spring is gone! / And there comes no summer to the like of you and me,-- / Blossom time is early, but no fruit sets on. /  / All the dog-wood blossoms are underneath the tree, / Browned at the edges, turned in a day; / And I would with all my heart they trimmed a mound for me, / And weeds were tall on all the paths that led that way!
+expected: 
+
+--- probe 7 author=sara_teasdale swap=None ---
+instruction: Write a short poem in the style of the reference passage.
+ref: Gray pilgrim, you have journeyed far, / I pray you tell to me / Is there a land where Love is not, / By shore of any sea? /  / For I am weary of the god, / And I would flee from him / Tho' I must take a ship and go / Beyond the ocean's rim. /  / "I know a port where Love is not, / The ship is in your hand, / Then plunge your sword within your breast / And you will reach the land."
+expected: 
+
+--- probe 8 author=stephen_crane swap=None ---
+instruction: Write a short poem in the style of the reference passage.
+ref: Behold, the grave of a wicked man, / And near it, a stern spirit. /  / There came a drooping maid with violets, / But the spirit grasped her arm. / "No flowers for him," he said. / The maid wept: / "Ah, I loved him." / But the spirit, grim and frowning: / "No flowers for him." /  / Now, this is it-- / If the spirit was just, / Why did the maid weep?
+expected: 

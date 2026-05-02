@@ -1,0 +1,27 @@
+id: 2026-05-text-018-v3.5-strict-artifact-clean-core3-longer
+modality: text
+project: text-gemma3-prefix-kv
+tags:
+  - v3-corpus
+  - data-cleanup
+  - artifact-clean
+  - strict-clean
+  - longer-run
+status: completed
+consequential: true
+question: "Does continuing from the promising 017 checkpoint on stricter v3.5-cleaned data convert register-positive, loop-free generations into stronger author-level style conditioning?"
+hypothesis: "017 showed the pathway is still alive and sampled generations are much cleaner, while T5 remained SLOW. A follow-up probe audit found residual wrapped Gutenberg artifacts in v3.4 heldout references, so v3.5 removes those before continuation. Continuing from the 017 checkpoint with a lower LR should improve style alignment without reintroducing collapse or loops."
+parent: 2026-05-text-017-v3.4-artifact-clean-core3-smoke
+base_model: google/gemma-3-4b-pt
+dataset: "data/pairs_v3_5_artifact_clean_core3"
+config: "configs/stage1_v3_5_artifact_clean_core3_longer.yaml"
+compute: "Completed RunPod RTX 4090 continuation from checkpoints/stage1_v3_4_artifact_clean_core3_smoke/final.pt on pod 1vn8vxnojn66zw; pod terminated after artifact download."
+decision_rule: "Promising only if n>=20 pathway remains non-collapsed, sampled anti-repeat generations stay low-repeat, T1/T4 pass, and dual-judge T2/T3b beats chance without Haiku-only evidence."
+headline: "Inconclusive-to-negative: generations remain clean, but the longer continuation plateaued and the n20 pathway/probe design exposed same-register collapse risk."
+outcome:
+  status: inconclusive_negative
+  pathway: "n20 default probe showed same-register swap collapse risk: cos_z_swap=0.819, cos_K_last_swap=0.909. Random/code remained separated, so this is not global collapse."
+  sampled_generation: "Clean sampled outputs persisted: adapter repeat3_mean=0.001, repeated-line mean=0.0, heuristic artifact rows 1/20."
+  eval_battery: "T1 PASS (mean_jaccard=0.004), surface T3 WEAK (12/20), T4 WEAK/WEAK (10% target memorization and 10% ref leak), T5 PLATEAU (3.0% improvement), LLM judges skipped."
+  caveat: "The n20 default probe set was poorly balanced: mostly two authors per register and repeated author pairs. A balanced n21 probe file was created for future comparable eval."
+next: "Do not trust the 3000-step final as the next checkpoint. Re-evaluate 017 final and 018 early checkpoints on the new balanced n21 probe, then choose either a shorter continuation or a v3.5-from-017 smoke with earlier stopping."

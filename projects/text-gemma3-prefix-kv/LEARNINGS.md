@@ -78,3 +78,57 @@ Populated as experiments complete. See project page [`text-gemma3-prefix-kv.md`]
 ## Auto-rollup (2026-04-25)
 
 - **[2026-05-text-005-stronger-contrastive](../experiments/2026-05-text-005-stronger-contrastive/) — refuted**: Hypothesis REFUTED. T3b regressed 55%->50%, LLM-judge alpha-blend signal inverted +0.25->-0.25, pathway cos_K for same-domain refs got WORSE (swap 0.31->0.69, code 0.33->0.69). T2 actually improved 60%->65%. Projector responds non-monotonically to contrastive weight; more pressure is not the answer. Next
+
+## Auto-rollup (2026-04-25)
+
+- **[2026-05-text-006-projector-no-trunk](../experiments/2026-05-text-006-projector-no-trunk/) — partially_confirmed**: Architectural fix works at K/V pathway (cos_K_first_swap 0.69→0.22, audit-proof). LLM-judge results initially looked like a clean PASS under Haiku (16/20 T3b, signal 1.0), but Opus cross-check showed 50% T3b, non-monotonic α-curve, 11/50 mode-collapsed generations. Haiku over-rewards surface markers. Going forward: dual-judge eval required; 7/11 collapses trace to probe-file mislabels (cross-register pairs, prose labeled as poetry).
+
+## Auto-rollup (2026-04-25)
+
+- **[2026-05-text-010-v3-no-trunk-warmstart](../experiments/2026-05-text-010-v3-no-trunk-warmstart/) — partially_confirmed**: The v3 corpus repair preserved pathway discrimination but did not fix generation quality. Legacy n=20 `cos_K_last_swap=0.342`; v3 balanced n=20 `cos_K_last_swap=0.464`, random/code low. Final samples still repeat and drift into generic summary mode. The new balanced probe found a real eval/data gap: speech was absent from the legacy probe and remains hard to distinguish within-register (`speech cos_K_last_swap=0.883`), while poetry has elevated random/code similarity. Next experiment is v3.1 data/eval repair before architecture changes.
+
+## Auto-rollup (2026-04-25)
+
+- **[2026-05-text-013-v3.3-corrected-poetry-core3-smoke](../experiments/2026-05-text-013-v3.3-corrected-poetry-core3-smoke/) — pathway-positive/generation-negative**: Correcting bogus Gutenberg poetry IDs fixed the most obvious data corruption; v3.3 core3 gates pass with poetry/screenplay/speech and two held-out authors per register. Final pathway remains healthy (`cos_K_last_swap=0.398`, random=-0.039, code=0.044), but samples still repeat phrases and sentences. The next experiment should hold data fixed and ablate objective/decoding, starting with contrastive disabled and a smaller probe set.
+
+## Auto-rollup (2026-04-25)
+
+- **[2026-05-text-014-objective-ablation-core3](../experiments/2026-05-text-014-objective-ablation-core3/) — refuted**: Contrastive-off is not the generation-quality fix. The 750-step smoke still repeated across registers and degraded the pathway (`cos_K_last_swap=0.792` versus 013's 0.398). Use the corrected v3.3 core3 corpus with contrastive enabled; next isolate decoding-time repetition controls on the 013 checkpoint before changing architecture or launching another full training run.
+
+## Auto-rollup (2026-04-25)
+
+- **[2026-05-text-015-decoding-repetition-diagnostic](../experiments/2026-05-text-015-decoding-repetition-diagnostic/) — partially_confirmed**: Anti-repetition decoding is a real fix for the obvious loop pathology when applied to the 013 checkpoint. The sampled profile (`temperature=0.8`, `top_p=0.9`, `repetition_penalty=1.12`, `no_repeat_ngram_size=3`) reduced adapter repeated-line and `repeat_3` rates to 0 across poetry/screenplay/speech. It does not yet prove style conditioning quality; next run should audit 015 sampled outputs against references and baselines.
+
+## Auto-rollup (2026-04-26)
+
+- **[2026-05-text-017-v3.4-artifact-clean-core3-smoke](../experiments/2026-05-text-017-v3.4-artifact-clean-core3-smoke/) — partially_confirmed**: The best current recipe is v3.4 artifact-clean core3 data, no-trunk warmstart, sampled anti-repeat decoding, and contrastive `0.1`. The smoke kept reference signal alive (`cos_K_last_swap=0.502`; random/code near zero), eliminated mechanical loops (`repeat3_mean=0.002`), and passed T1/T4. It still does not prove author-level style: surface T3 failed and judge eval was unavailable. Next run should scale this exact direction rather than testing contrastive-off or another broad bundle.
+
+## Auto-rollup (2026-04-26)
+
+- **[2026-05-text-018-v3.5-strict-artifact-clean-core3-longer](../experiments/2026-05-text-018-v3.5-strict-artifact-clean-core3-longer/) — inconclusive_negative**: Longer continuation is not automatically better. The 3000-step v3.5 continuation kept outputs low-repeat but worsened same-register pathway separation on the n20 default probe (`cos_K_last_swap=0.909`) and introduced WEAK T4 leak/memorization. The probe itself was flawed because default n20 over-selected two authors per register; use `probes_balanced_n21.jsonl` for the next comparison. Next action is eval-only checkpoint comparison before changing architecture.
+
+## Auto-rollup (2026-04-26)
+
+- **[2026-05-text-019-balanced-checkpoint-comparison](../experiments/2026-05-text-019-balanced-checkpoint-comparison/) — completed**: The best current checkpoint is `018_step1000`, not 017 final or 018 final. Balanced n21 pathway: `cos_K_last_swap=0.609`; random/code remain separated; sampled outputs stay low-repeat. Register breakdown changed the diagnosis: screenplay is strong (`0.216` at step1000), poetry is middling (`0.640`), and speech is collapsed (`0.972`). Next training should isolate poetry+screenplay core2 or repair speech, not widen the encoder yet.
+
+## Auto-rollup (2026-04-26)
+
+- **[2026-05-text-020-core2-no-speech-smoke](../experiments/2026-05-text-020-core2-no-speech-smoke/) — partially_confirmed**: Speech exclusion gives a clean pathway-positive core2 result (`cos_K_last_swap=0.440`, random=-0.149, code=-0.066) with T1 PASS and T4 PASS/PASS. The result is not yet author-style proof: screenplay is strong (`cos_K_last_swap=0.248`), poetry is still middling (`0.633`), and surface T3 is WEAK (`11/20`). Keep speech out for now. Next step is a targeted v3.7 core2 eval/data repair: remove screenplay page/image artifacts, audit poetry author-pair separability, and re-evaluate best checkpoints before more training.
+
+## Auto-rollup (2026-04-26)
+
+- **[2026-05-text-021-core2-eval-data-repair](../experiments/2026-05-text-021-core2-eval-data-repair/) — completed**: Repaired core2 eval confirms `020_final` is the best current checkpoint but not a claim win. On v3.7 repaired probes, `020_final` has `cos_K_last_swap=0.502` (poetry `0.522`, screenplay `0.483`), random/code remain separated, outputs are clean, T1/T4 pass, and surface T3 is still WEAK. The old v3.6 probe overstated screenplay strength because heldout refs were too repetitive. The project bottleneck is now eval/split design and author-style proof, not obvious collapse or repetition.
+
+## Auto-rollup (2026-04-26)
+
+- **[2026-05-text-022-broader-clean-split-restart](../experiments/2026-05-text-022-broader-clean-split-restart/) — partially_confirmed**: Clean-heldout v3.8 removes warmstart author contamination and strengthens the core2 pathway result (`cos_K_last_swap=0.382`; poetry `0.293`, screenplay `0.470`; random/code `0.117`/`0.014`). Sampled anti-repeat eval is T1 PASS, T4 PASS/PASS, and low-repeat. But T3 surface is still WEAK and qualitative samples often show genre/register imitation more than author-specific style. Next best bet is a focused T3b judge audit of 022 sampled/greedy outputs before spending on wider encoder or larger architecture changes.
+
+## Auto-rollup (2026-04-26)
+
+- **[2026-05-text-023-evalclean-probe-audit](../experiments/2026-05-text-023-evalclean-probe-audit/) — negative_informative**: Dirty v3.8 poetry references were real, but not the whole problem. v3.9 eval-clean probes (`dirty_refs=0`) made the 022 checkpoint's same-register pathway weaker: aggregate `cos_K_last_swap=0.541`, poetry `0.647`, screenplay `0.435`. Random/code stayed separated, so reference signal exists, but author-style direction is not robust. This demotes "just clean eval and judge" as the next bet; the next run should clean train references/instructions and add direct own-vs-swap style pressure.
+
+## Auto-rollup (2026-04-26)
+
+- **[2026-05-text-024-v4-objective-data-repair](../experiments/2026-05-text-024-v4-objective-data-repair/) — partially_confirmed**: The v4 restart from 006 is the first clean pathway recovery after 023. Continuations from 022 were weak (`0.522`/`0.535`), but 024c got aggregate `cos_K_last_swap=0.360`, with screenplay excellent (`0.161`) and random/code near zero. Poetry is still weak (`0.559`) and sampled T3 FAILs (`15/32`), so the project should split the problem: screenplay pathway is close; poetry needs targeted data/objective work and stronger style proof.
+
+- **[2026-05-text-025-poetry-specific-style-axis](../experiments/2026-05-text-025-poetry-specific-style-axis/) — ready/blocked**: Next run is staged as strict poetry-only v4.3 from 006, not a wider encoder change. v4.3 keeps poetry only, strips title/section headings, filters stage/prose-like rows, and uses 16 generic probes. Launch is blocked by missing Hugging Face auth for `google/gemma-3-4b-pt`; token sync now supports both the HF cache token file and `HF_TOKEN`/`HUGGINGFACE_HUB_TOKEN`.

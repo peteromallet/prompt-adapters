@@ -1,0 +1,192 @@
+{
+  "description": "First deterministic source/author curation layer for poetry_corpus_v0_source_native_accepted_candidate. Conservative by design: merge obvious duplicate poet identities, reject rows with artifact flags, reject non-author/editor/translator/classical-translation sources before pair derivation.",
+  "merge_author_ids": {
+    "browning_elizabeth_barrett_1806_1861": {
+      "author_id": "elizabeth_barrett_browning",
+      "author_name": "Elizabeth Barrett Browning",
+      "reason": "Same poet as Gutenberg Elizabeth Browning."
+    },
+    "elizabeth_browning": {
+      "author_id": "elizabeth_barrett_browning",
+      "author_name": "Elizabeth Barrett Browning",
+      "reason": "Same poet as IA Elizabeth Barrett Browning."
+    },
+    "chesterton_g_k": {
+      "author_id": "g_k_chesterton",
+      "author_name": "G. K. Chesterton",
+      "reason": "Same poet as fuller IA authority string."
+    },
+    "chesterton_g_k_1874_1936": {
+      "author_id": "g_k_chesterton",
+      "author_name": "G. K. Chesterton",
+      "reason": "Same poet as abbreviated IA authority string."
+    },
+    "christina_rossetti": {
+      "author_id": "christina_rossetti",
+      "author_name": "Christina Rossetti",
+      "reason": "Canonical spelling."
+    },
+    "rossetti_christina_georgina_1830_1894": {
+      "author_id": "christina_rossetti",
+      "author_name": "Christina Rossetti",
+      "reason": "Same poet as Gutenberg Christina Rossetti."
+    },
+    "dante_rossetti": {
+      "author_id": "dante_gabriel_rossetti",
+      "author_name": "Dante Gabriel Rossetti",
+      "reason": "Same poet as fuller IA authority string."
+    },
+    "lowell_amy_1874_1925": {
+      "author_id": "amy_lowell",
+      "author_name": "Amy Lowell",
+      "reason": "Same poet as Gutenberg Amy Lowell."
+    },
+    "masefield_john_1878_1967": {
+      "author_id": "john_masefield",
+      "author_name": "John Masefield",
+      "reason": "Same poet as Gutenberg John Masefield."
+    },
+    "percy_shelley": {
+      "author_id": "percy_bysshe_shelley",
+      "author_name": "Percy Bysshe Shelley",
+      "reason": "Same poet; Gutenberg short form."
+    },
+    "rupert_brooke": {
+      "author_id": "rupert_brooke",
+      "author_name": "Rupert Brooke",
+      "reason": "Canonical spelling."
+    },
+    "brooke_rupert_1887_1915": {
+      "author_id": "rupert_brooke",
+      "author_name": "Rupert Brooke",
+      "reason": "Same poet as Gutenberg Rupert Brooke."
+    },
+    "shakespeare_william_1564_1616": {
+      "author_id": "william_shakespeare",
+      "author_name": "William Shakespeare",
+      "reason": "Same poet/dramatist as Gutenberg William Shakespeare."
+    },
+    "tennyson_alfred_tennyson_baron_1809_1892": {
+      "author_id": "alfred_tennyson",
+      "author_name": "Alfred Tennyson",
+      "reason": "Same poet as Gutenberg Alfred Tennyson."
+    },
+    "wordsworth_william_1770_1850": {
+      "author_id": "william_wordsworth",
+      "author_name": "William Wordsworth",
+      "reason": "Same poet as Gutenberg William Wordsworth."
+    },
+    "yeats_w_b_1865_1939": {
+      "author_id": "william_butler_yeats",
+      "author_name": "William Butler Yeats",
+      "reason": "Same poet as Gutenberg William Butler Yeats."
+    }
+  },
+  "reject_author_ids": {
+    "adam_lindsay_gordon_lionel_edwards": "Joint author/illustrator metadata, not a clean single-author text bucket.",
+    "arber_edward_1836_1912": "Editor/anthology source, not a poet corpus.",
+    "croce_benedetto_1866_1952": "Criticism/prose source about Dante, not a poetry corpus by Croce.",
+    "h_cumberland_bentley_and_finch_mason": "Joint attribution, not a clean single-author bucket.",
+    "henry_william_herbert_frank_forester_morgan_herbert": "Multiple names/pseudonym metadata, not a clean single-author bucket.",
+    "heider_andrew_bernard_1880": "Academic/translation source about early Christian poetry, not original English poet style.",
+    "john_e_baxter_and_james_montgomery_flagg": "Joint attribution, not a clean single-author bucket.",
+    "knortz_karl_1841_d": "Anthology/translation source for German poetry, not original English poet style.",
+    "kraljevic_marko": "Epic/translation/folk-hero attribution risk, not clean author style.",
+    "leo_wiener": "Translator/editor of Russian Jewish popular poetry, not original English poet style.",
+    "morley_sylvanus_griswold_1883_1948": "Editor of Spanish ballads, not source poet.",
+    "mrs_chaworth_muster": "Hunting-song collection/anthology metadata, not a clean single-author poet bucket.",
+    "theodore_winthrop": "Memorial/prose-heavy source bucket rather than clean poetry.",
+    "omar_khayyam": "FitzGerald translation style, not Omar Khayyam author style.",
+    "quintus_horatius_flaccus": "Multi-translator Horace rendering, not Horace's English style.",
+    "rio_a_f_1797_1874": "Art criticism/prose source, not a poetry corpus.",
+    "schiller_friedrich_1759_1805": "Translated German poetry; author ID would mix translator style with Schiller.",
+    "seymour_william_kean_1887": "Miscellany anthology metadata, not a clean single-author bucket.",
+    "virgil": "Translated classical material; author ID would mix translator style with Virgil."
+  },
+  "reject_source_ids": {
+    "internet_archive_bub_gb_PlA8AAAAMAAJ": "Amy Lowell translations from Chinese; useful only for translator-style corpus, not original Amy Lowell.",
+    "internet_archive_TendenciesInModernAmericanPoetry1920": "Amy Lowell criticism/prose source, not a poem source.",
+    "internet_archive_JacobiteSongsAndBalladsOfScotland_201303": "Songs/ballads collection assigned to compiler/editor.",
+    "internet_archive_bub_gb_9ZgLAAAAIAAJ": "Letters source with added poems; too much prose/letter contamination.",
+    "internet_archive_bub_gb_bOUUgyAQxnkC": "Shakespeare plays-and-poems volume with drama/commentary contamination.",
+    "internet_archive_bub_gb_EbzgZpzq6PQC": "Shakespeare plays-and-poems volume with drama/commentary contamination.",
+    "internet_archive_bub_gb_Egw0n2GOOLEC": "Shakespeare plays-and-poems volume with drama/commentary contamination.",
+    "internet_archive_bub_gb_zDAJAAAAQAAJ": "Shakespeare plays-and-poems volume with drama/commentary contamination.",
+    "internet_archive_bub_gb_931YWx79lUgC": "Shakespeare plays-and-poems volume with drama/commentary contamination.",
+    "internet_archive_CollectedWorksOfPadraicHPearse": "Collected works include plays/stories as well as poems.",
+    "internet_archive_poems00yeatuoft": "Yeats IA source leaks stage directions, French prose, and notes.",
+    "internet_archive_wheatley-phillis.-memoir-and-poems": "Memoir plus poems source; hold until source parser can split front matter reliably.",
+    "gutenberg_10031": "Poe source leaks biography/editorial prose under the current parser.",
+    "gutenberg_4800": "Shelley collected edition persistently leaks notes/editorial apparatus under current parser; quarantine until source-specific parser exists.",
+    "gutenberg_8601": "Tennyson collected edition persistently leaks edition notes/commentary under current parser; quarantine until source-specific parser exists.",
+    "gutenberg_29090": "Coleridge collected edition persistently leaks line notes and apparatus under current parser; quarantine until source-specific parser exists.",
+    "gutenberg_5186": "Misassigned/contaminated source under Ezra Pound; spotcheck shows Kalevala/prose material rather than a clean Pound corpus.",
+    "gutenberg_1034": "Wilfred Owen source still leaks transcriber notes under pair spotcheck.",
+    "gutenberg_22403": "Hopkins source still leaks editorial notes/apparatus under pair spotcheck.",
+    "internet_archive_poemsofwiat02foxwufoft": "Wyatt IA edition persistently leaks introduction/edition apparatus under current parser.",
+    "internet_archive_spenserminorpoem00seliuoft": "OCR/control-character and introduction leakage; quarantine until source-specific parser exists.",
+    "internet_archive_TheNameOfJesusAnd": "Noel source still leaks edition prose under pair spotcheck.",
+    "internet_archive_satirical-poems-published-anonymously-by": "Mason source still leaks notes/index apparatus under pair spotcheck.",
+    "internet_archive_LegendLaysOfIreland": "O'Hanlon source still leaks notes/publication apparatus under pair spotcheck.",
+    "internet_archive_SelectPoemsOfDunbar88P1": "Dunbar source has OCR/edition contamination under pair spotcheck.",
+    "internet_archive_bub_gb_aQHEjkzgMDgC": "Macaulay source still leaks catalogue/edition prose under pair spotcheck.",
+    "internet_archive_shorterpoems00bulluoft": "Edited Elizabethan anthology.",
+    "internet_archive_AMayChaplet": "Mixed translated/original devotional source.",
+    "internet_archive_bub_gb_fLcDAAAAQAAJ": "Poe source includes republication/preface apparatus; hold out until source spotcheck.",
+    "internet_archive_bub_gb_4yVC1tVNPhYC": "Rossetti source includes memoir apparatus; hold out until source spotcheck.",
+    "internet_archive_bub_gb_EXHkcmlSET0C": "Shelley selection edited with memoir; hold out until source spotcheck.",
+    "internet_archive_bub_gb_RZRJAAAAMAAJ": "Translated Schiller source.",
+    "internet_archive_bub_gb_I-NCrx6f3r4C": "Horace paraphrased by several translators.",
+    "internet_archive_khayyamfitzgeraldrubaiyat": "FitzGerald translation source."
+  },
+  "reject_source_title_regex": [
+    "\\btranslated\\b",
+    "\\btranslations?\\b",
+    "\\btranslated from\\b",
+    "\\bedited with\\b",
+    "\\bedited by\\b",
+    "\\bmiscellany\\b",
+    "\\banthology\\b",
+    "\\bpopular poetry of\\b",
+    "\\bpoetry of christian art\\b",
+    "\\bpoetry of dante\\b",
+    "\\btendencies in modern american poetry\\b"
+  ],
+  "reject_row_title_regex": [
+    "^\\s*(line[- ]?notes?|notes?|footnotes?|preface|introduction)\\s*:?.*$",
+    "^\\s*page\\s*$",
+    "^\\s*list of early editions\\b",
+    "^\\s*illustrated works\\b",
+    "^\\s*herv[eé] riel\\. \\(page",
+    "^\\s*part\\s+[ivxlcdm0-9]+\\.?\\s*$"
+  ],
+  "reject_text_regex": [
+    "^\\s*(act|scene)\\s+[ivxlcdm0-9]+\\b",
+    "^\\s*(enter|exit|exeunt)\\b",
+    "^\\s*_?[A-Z][A-Za-z .'-]{1,35}\\._\\s+",
+    "^\\s*[A-Z][A-Z .'-]{1,35}:\\s*$",
+    "\\[(?:turns?|enter|exit|exeunt|scene|act)\\b",
+    "(?:^|\\n)\\s*_?\\d+[.,]?\\s+[^\\n]{0,120}(?:\\(\\d|\\]|manuscript|edition|ms\\.)",
+    "(?:^|\\n)\\s*[A-Z][A-Z .,'’:-]{8,}\\s+(?:[.;:,]\\s*){2,}\\d+",
+    "(?:^|\\n)\\s*[A-Z][A-Z .,'’:-]{8,}\\s+[-_. ]{3,}\\s*\\d+",
+    "(?:^|\\n)\\s*\\d+\\s+[A-Z][A-Za-z .'’-]{3,50}\\s+\\.",
+    "(?:^|\\n)\\s*[xivxlcdm0-9]+\\s*(?:intro|introduc|introdv|pobms|poems)\\b",
+    "\\u007f",
+    "\\.{4,}\\s*\\d+",
+    "\\btranscriber'?s notes?\\b",
+    "^\\s*(introduction|preface)\\b",
+    "\\b(in\\s+tr\\.?od\\s+u?cti\\s*on|ii\\u007ftroduction|pbe?fa\\.ce)\\b",
+    "\\bpage\\.\\s*notes?\\b",
+    "\\b(title\\]|line\\s+\\d+\\s+ran thus|ms\\.\\s*[a-z]|ms\\.\\s*o|ms\\.\\s*s|autograph|variant|line-?notes?)\\b",
+    "\\b(first published|published in\\s+\\d{4}|published for the first time|included in\\s+\\d{4}|edition of\\s+\\d{4}|alteration since|altered and in some cases|practically unaltered)\\b",
+    "\\b(Published in Boston|published in the Transactions|American Philosophical Society)\\b",
+    "\\b(Weekly News|Published in B[\\s\\S]{0,80}MOUNTAIN INTERVAL)\\b",
+    "\\b(edited with textual notes|critical notes|editor'?s note|biography of the poet|the three generations of readers|literary men were|fellow-townswoman|note on text)\\b",
+    "\\b(crown 8vo|cloth,?\\s*\\d+mo|price \\$|price \\d+s|second edition|popular edition|full page illustrations|uniform in size and style)\\b",
+    "\\b(fcap\\.?|fcp\\.?|gilt leaves|bevelled boards|handsome cover|engravings by|new edition, revised|gazetteer of the world)\\b",
+    "\\b(corrections? and illustrations|commentators|chronological order|dissertation|lectures on the history|oxford reformers)\\b",
+    "\\b(notes on passages|modern language review|stanza\\s+\\d+\\.\\s*1\\.\\s*\\d|mocking bird|natural note|favourite imitations)\\b",
+    "\\b(ce que|cher lecteur|cette ame|ecus d or|confiteor)\\b"
+  ],
+  "drop_audit_flagged_rows": true
+}

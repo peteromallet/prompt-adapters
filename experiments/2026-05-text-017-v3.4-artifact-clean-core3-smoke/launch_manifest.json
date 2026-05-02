@@ -1,0 +1,14 @@
+{
+  "launched_at": "2026-04-26T01:21:00+02:00",
+  "pod_id": "0bt8ytgxhc97kx",
+  "remote_root": "/workspace/text-ip-adapter",
+  "remote_log": "/workspace/text-ip-adapter/train.log",
+  "remote_pid": 271,
+  "config": "configs/stage1_v3_4_artifact_clean_core3_smoke.yaml",
+  "dataset": "data/pairs_v3_4_artifact_clean_core3",
+  "hf_token_synced": true,
+  "status": "completed_terminated",
+  "completed_at": "2026-04-26T02:10:00+02:00",
+  "terminated": true,
+  "local_results_dir": "prompt-adapters/experiments/2026-05-text-017-v3.4-artifact-clean-core3-smoke/results"
+}

@@ -1,0 +1,71 @@
+{
+  "013_original": {
+    "poetry": {
+      "tokens": 91.2,
+      "repeat_2": 0.8297308262540707,
+      "repeat_3": 0.8059650998524776,
+      "repeat_4": 0.7881228418390968,
+      "repeat_line": 0.6367277167277168
+    },
+    "screenplay": {
+      "tokens": 67.0,
+      "repeat_2": 0.3248741431392977,
+      "repeat_3": 0.26086695030085894,
+      "repeat_4": 0.22152524396125398,
+      "repeat_line": 0.26056998556998556
+    },
+    "speech": {
+      "tokens": 100.8,
+      "repeat_2": 0.47216803095952786,
+      "repeat_3": 0.4158877759391341,
+      "repeat_4": 0.4001614315629164,
+      "repeat_line": 0.20666666666666664
+    }
+  },
+  "015_greedy_no_repeat": {
+    "poetry": {
+      "tokens": 54.0,
+      "repeat_2": 0.02608187134502924,
+      "repeat_3": 0.005405405405405406,
+      "repeat_4": 0.0,
+      "repeat_line": 0.0
+    },
+    "screenplay": {
+      "tokens": 52.8,
+      "repeat_2": 0.004545454545454545,
+      "repeat_3": 0.0,
+      "repeat_4": 0.0,
+      "repeat_line": 0.0
+    },
+    "speech": {
+      "tokens": 104.4,
+      "repeat_2": 0.005681016231474947,
+      "repeat_3": 0.0,
+      "repeat_4": 0.0,
+      "repeat_line": 0.0
+    }
+  },
+  "015_sampled_rep": {
+    "poetry": {
+      "tokens": 85.2,
+      "repeat_2": 0.004218004218004218,
+      "repeat_3": 0.0,
+      "repeat_4": 0.0,
+      "repeat_line": 0.0
+    },
+    "screenplay": {
+      "tokens": 61.8,
+      "repeat_2": 0.0044444444444444444,
+      "repeat_3": 0.0,
+      "repeat_4": 0.0,
+      "repeat_line": 0.0
+    },
+    "speech": {
+      "tokens": 105.4,
+      "repeat_2": 0.013339849581288404,
+      "repeat_3": 0.0,
+      "repeat_4": 0.0,
+      "repeat_line": 0.0
+    }
+  }
+}

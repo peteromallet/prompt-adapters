@@ -1,0 +1,21 @@
+id: 2026-05-text-014-objective-ablation-core3
+modality: text
+project: text-gemma3-prefix-kv
+tags:
+  - objective-ablation
+  - no-contrastive
+  - v3-corpus
+  - smoke
+status: completed
+consequential: true
+question: "Does disabling contrastive K/V decorrelation reduce the repetitive generations seen in 013 on the corrected v3.3 core3 corpus?"
+hypothesis: "013 showed healthy reference-pathway separation but repeated phrases across registers. Contrastive pressure may preserve pathway diversity while competing with next-token style learning. If repetition improves with contrastive_weight=0 while pathway remains acceptable, the next objective should decouple style learning from K/V decorrelation."
+parent: 2026-05-text-013-v3.3-corrected-poetry-core3-smoke
+base_model: google/gemma-3-4b-pt
+dataset: "data/pairs_v3_3_corrected_poetry_core3"
+config: "configs/stage1_v3_3_core3_no_contrastive_smoke.yaml"
+compute: "Completed 750-step RunPod RTX 4090 smoke from checkpoints/stage1_gemma_no_trunk/final.pt; pod 5a1mbqto0am3xk terminated."
+decision_rule: "Proceed only if final samples are less repetitive than 013 without complete pathway collapse."
+headline: "Refuted: disabling contrastive did not fix repetition and substantially worsened pathway separation."
+result: "Final samples still repeat across poetry/screenplay/speech. Pathway n=6 degraded versus 013: mean_cos_K_last_swap=0.792, mean_cos_K_first_swap=0.861, mean_cos_z_swap=0.720. Contrastive-off is not the fix."
+next: "Keep contrastive on. Next best bet is a decoding/objective anti-repetition diagnostic on the 013 checkpoint before another training run."

@@ -1,0 +1,86 @@
+id: 2026-05-text-024-v4-objective-data-repair
+status: completed
+question: >
+  Does a direct within-register author-style triplet objective improve author-style
+  binding beyond generic K/V decorrelation on the clean v3.9 core2 setting?
+config: text-ip-adapter/configs/stage1_v3_9_style_triplet_022continue.yaml
+data:
+  dataset: text-ip-adapter/data/pairs_v3_9_core2_evalclean
+  train_rows: 7305
+  val_rows: 498
+  test_rows: 497
+  probes: 32 balanced clean-reference probes
+method:
+  init_from: experiment_022_final
+  max_steps: 500
+  contrastive_weight: 0.02
+  style_triplet_weight: 0.25
+  style_triplet_margin: 0.25
+notes:
+  - First smoke is a continuation from 022, chosen to isolate the objective before a larger restart.
+results_024a:
+  status: negative_informative
+  pathway:
+    cos_K_last_swap: 0.5219
+    poetry_cos_K_last_swap: 0.5715
+    screenplay_cos_K_last_swap: 0.4722
+    cos_K_last_random: 0.0851
+    cos_K_last_code: -0.0242
+    gen_jaccard_swap: 0.0642
+  sampled_eval:
+    t1_discrimination: PASS
+    t3_surface: WEAK
+    t3_own_wins: 16
+    t3_total: 32
+    t4_memorization: PASS
+    t4_ref_leak: PASS
+    adapter_repeat3_mean: 0.0008
+  interpretation: >
+    Direct triplet loss on the old v3.9 train distribution only slightly
+    improves aggregate same-register pathway separation. Objective repair alone
+    is not enough; test train-side data/instruction cleanup next.
+results_024b:
+  status: negative_informative
+  config: text-ip-adapter/configs/stage1_v4_styleclean_triplet_022continue.yaml
+  pathway:
+    cos_K_last_swap: 0.5347
+    poetry_cos_K_last_swap: 0.5887
+    screenplay_cos_K_last_swap: 0.4806
+    cos_K_last_random: 0.0576
+    cos_K_last_code: -0.0125
+  sampled_eval:
+    t1_discrimination: PASS
+    t3_surface: WEAK
+    t3_own_wins: 16
+    t3_total: 32
+    t4_memorization: PASS
+    t4_ref_leak: PASS
+  interpretation: >
+    Cleaning train text/instructions is not enough as a 022 continuation.
+    The continuation likely cannot unlearn the old distribution.
+results_024c:
+  status: partially_confirmed
+  config: text-ip-adapter/configs/stage1_v4_styleclean_triplet_restart006.yaml
+  init_from: checkpoints/stage1_gemma_no_trunk/final.pt
+  contrastive_weight: 0.1
+  style_triplet_weight: 0.5
+  style_triplet_margin: 0.3
+  pathway:
+    cos_K_last_swap: 0.3601
+    poetry_cos_K_last_swap: 0.5592
+    screenplay_cos_K_last_swap: 0.1611
+    cos_K_last_random: 0.0072
+    cos_K_last_code: -0.0459
+    gen_jaccard_swap: 0.0308
+  sampled_eval:
+    t1_discrimination: PASS
+    t3_surface: FAIL
+    t3_own_wins: 15
+    t3_total: 32
+    t4_memorization: PASS
+    t4_ref_leak: PASS
+    adapter_repeat3_mean: 0.0033
+  interpretation: >
+    Restarting from 006 on v4 with stronger triplet/normal contrastive is a
+    real pathway recovery, especially for screenplay. Poetry and surface style
+    quality remain the bottleneck.

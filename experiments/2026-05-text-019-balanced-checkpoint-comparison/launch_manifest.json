@@ -1,0 +1,10 @@
+{
+  "status": "running",
+  "probe_set": "data/pairs_v3_5_artifact_clean_core3/probes_balanced_n21.jsonl",
+  "checkpoints": [
+    "checkpoints/stage1_v3_4_artifact_clean_core3_smoke/final.pt",
+    "checkpoints/stage1_v3_5_artifact_clean_core3_longer/step_500.pt",
+    "checkpoints/stage1_v3_5_artifact_clean_core3_longer/step_1000.pt",
+    "checkpoints/stage1_v3_5_artifact_clean_core3_longer/final.pt"
+  ]
+}

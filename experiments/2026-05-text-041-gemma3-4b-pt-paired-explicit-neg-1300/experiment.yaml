@@ -1,0 +1,69 @@
+id: 2026-05-text-041-gemma3-4b-pt-paired-explicit-neg-1300
+status: completed
+completed_at: "2026-04-27T16:34:00Z"
+
+question: >
+  Can an explicit batch-size-independent positive-vs-negative K/V loss fix
+  the missing negative pressure in paired-completion training at batch size 1?
+
+model:
+  base_model_id: google/gemma-3-4b-pt
+  checkpoint_source: cold_start
+
+code_change:
+  - text-ip-adapter/src/text_ip_adapter/config.py
+  - text-ip-adapter/src/text_ip_adapter/train/loop.py
+  note: >
+    Added style_contrastive_weight/style_contrastive_temperature and
+    style_pairwise_contrastive_kv_loss over own/positive/negative K/V.
+
+training:
+  config: text-ip-adapter/configs/stage1_gemma3_4b_pt_poetry_v5_10_paired_completion_explicit_neg_1300.yaml
+  max_steps: 1300
+  batch_size: 1
+  projector_lr: 1.0e-5
+  encoder_lr: 5.0e-6
+  style_triplet_weight: 1.5
+  style_contrastive_weight: 0.5
+  style_contrastive_temperature: 0.2
+  prompt_format: paired_completion
+
+runpod:
+  pod_id: rch7oh2a4z0wel
+  local_results: prompt-adapters/experiments/2026-05-text-041-gemma3-4b-pt-paired-explicit-neg-1300/results/runpod_gemma3_4b_pt_paired_explicit_neg_1300
+  terminated: true
+  recovery_note: >
+    Runner hit local disk full while downloading train artifacts after eval
+    artifacts were already downloaded. Generated checkpoint/tar artifacts were
+    cleaned locally; RunPod lookup returned pod not found afterward.
+
+checkpoint_evals:
+  - tag: step_800
+    adapter_prompted_vs_prompted_baseline: {win: 0.417, delta: 0.016, n: 12}
+    adapter_vs_adapter_swap: {win: 0.500, delta: -0.014, n: 12}
+    adapter_vs_no_ref: {win: 0.667, delta: 0.026, n: 12}
+  - tag: step_1000
+    adapter_prompted_vs_prompted_baseline: {win: 0.417, delta: 0.015, n: 12}
+    adapter_vs_adapter_swap: {win: 0.333, delta: -0.054, n: 12}
+    adapter_vs_no_ref: {win: 0.417, delta: -0.054, n: 12}
+  - tag: step_1200
+    adapter_prompted_vs_prompted_baseline: {win: 0.417, delta: 0.007, n: 12}
+    adapter_vs_adapter_swap: {win: 0.333, delta: 0.011, n: 12}
+    adapter_vs_no_ref: {win: 0.167, delta: -0.045, n: 12}
+  - tag: final_1300
+    adapter_prompted_vs_prompted_baseline: {win: 0.250, delta: -0.026, n: 12}
+    adapter_vs_adapter_swap: {win: 0.417, delta: -0.030, n: 12}
+    adapter_vs_no_ref: {win: 0.417, delta: -0.080, n: 12}
+
+conclusion: >
+  Mostly negative. The explicit loss is mechanically active and greatly lowers
+  pathway swap similarity, but it does not improve generated style judgments.
+  It likely pushes representation geometry in a way that is not aligned with
+  generation quality.
+
+next_best_bet: >
+  Keep paired completion and exp039 step_1200 as the best checkpoint. Do not
+  simply add stronger K/V contrastive pressure. Next investigate prompt/data
+  and eval coupling: the visible reference may dominate style, while adapter
+  perturbations help only in a narrow region. Test smaller style loss weights
+  or adapter injection strength, and add larger/more reliable pairwise eval.

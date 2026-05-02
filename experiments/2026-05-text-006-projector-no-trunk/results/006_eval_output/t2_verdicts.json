@@ -1,0 +1,109 @@
+{
+  "total": 20,
+  "adapter_wins": 16,
+  "baseline_wins": 1,
+  "ties": 3,
+  "adapter_win_rate": 0.8,
+  "raw": [
+    {
+      "probe_id": "probe_00",
+      "sample_idx": 0,
+      "verdict": "adapter_wins"
+    },
+    {
+      "probe_id": "probe_00",
+      "sample_idx": 1,
+      "verdict": "adapter_wins"
+    },
+    {
+      "probe_id": "probe_01",
+      "sample_idx": 0,
+      "verdict": "adapter_wins"
+    },
+    {
+      "probe_id": "probe_01",
+      "sample_idx": 1,
+      "verdict": "adapter_wins"
+    },
+    {
+      "probe_id": "probe_02",
+      "sample_idx": 0,
+      "verdict": "adapter_wins"
+    },
+    {
+      "probe_id": "probe_02",
+      "sample_idx": 1,
+      "verdict": "adapter_wins"
+    },
+    {
+      "probe_id": "probe_03",
+      "sample_idx": 0,
+      "verdict": "adapter_wins"
+    },
+    {
+      "probe_id": "probe_03",
+      "sample_idx": 1,
+      "verdict": "adapter_wins"
+    },
+    {
+      "probe_id": "probe_04",
+      "sample_idx": 0,
+      "verdict": "adapter_wins"
+    },
+    {
+      "probe_id": "probe_04",
+      "sample_idx": 1,
+      "verdict": "adapter_wins"
+    },
+    {
+      "probe_id": "probe_05",
+      "sample_idx": 0,
+      "verdict": "adapter_wins"
+    },
+    {
+      "probe_id": "probe_05",
+      "sample_idx": 1,
+      "verdict": "adapter_wins"
+    },
+    {
+      "probe_id": "probe_06",
+      "sample_idx": 0,
+      "verdict": "adapter_wins"
+    },
+    {
+      "probe_id": "probe_06",
+      "sample_idx": 1,
+      "verdict": "adapter_wins"
+    },
+    {
+      "probe_id": "probe_07",
+      "sample_idx": 0,
+      "verdict": "adapter_wins"
+    },
+    {
+      "probe_id": "probe_07",
+      "sample_idx": 1,
+      "verdict": "tie"
+    },
+    {
+      "probe_id": "probe_08",
+      "sample_idx": 0,
+      "verdict": "adapter_wins"
+    },
+    {
+      "probe_id": "probe_08",
+      "sample_idx": 1,
+      "verdict": "tie"
+    },
+    {
+      "probe_id": "probe_09",
+      "sample_idx": 0,
+      "verdict": "baseline_wins"
+    },
+    {
+      "probe_id": "probe_09",
+      "sample_idx": 1,
+      "verdict": "tie"
+    }
+  ]
+}

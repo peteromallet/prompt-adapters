@@ -1,0 +1,47 @@
+id: 2026-05-text-011-v3.1-data-eval-repair
+modality: text
+project: text-gemma3-prefix-kv
+tags:
+  - v3-corpus
+  - data-quality
+  - eval-probes
+  - instruction-quality
+status: completed
+consequential: true
+question: "Can we repair the v3 data/eval layer enough to remove generic-summary/repetition failure before changing architecture again?"
+hypothesis: "010 showed non-collapsed global K/V conditioning but poor generations and register-specific probe weaknesses. If we filter target chunks that teach summaries/tables/lists, increase held-out author diversity, and make register-balanced probes canonical, then a cheap follow-up run should preserve pathway separation while reducing repetition."
+parent: 2026-05-text-010-v3-no-trunk-warmstart
+base_model: google/gemma-3-4b-pt
+dataset: "v3 candidate corpus from 009/010; output target is v3.1 cleaned corpus and balanced probe set"
+core_commit:
+compute: "CPU v3.1 rebuild plus 1,500-step RunPod RTX 4090 smoke; final checkpoint on pod at /workspace/text-ip-adapter/checkpoints/stage1_v3_1_no_trunk_smoke/final.pt"
+results:
+  v3_1_candidate:
+    train_rows: 10623
+    val_rows: 314
+    test_rows: 245
+    train_by_register:
+      essay: 120
+      poetry: 2900
+      screenplay: 5714
+      speech: 1889
+    val_by_register:
+      essay: 109
+      poetry: 76
+      screenplay: 57
+      speech: 72
+    test_by_register:
+      essay: 76
+      poetry: 65
+      screenplay: 50
+      speech: 54
+    removed_suspicious_pairs: 168
+    hard_gates_pass: true
+  smoke:
+    steps: 1500
+    mean_cos_K_first_swap: 0.48205759227275846
+    mean_cos_K_last_swap: 0.4462068475782871
+    mean_cos_K_last_random: 0.037394507077988234
+    mean_cos_K_last_code: 0.11310501550324262
+headline: "v3.1 data/eval gates pass and pathway remains healthy, but 1,500-step smoke still fails generation quality outside screenplay."
+next: "Do not launch a full v3.1 run yet. Repair boilerplate/metadata leakage and repetition targets further, especially transcript/reference-book artifacts, then rerun a cheap smoke."

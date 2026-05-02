@@ -1,0 +1,94 @@
+{
+  "017_final": {
+    "poetry": {
+      "cos_z_swap": 0.4195095194237573,
+      "cos_K_last_swap": 0.6338142837796893,
+      "gen_jaccard_swap": 0.08198751472495605,
+      "cos_K_last_random": -0.2689034789800644,
+      "cos_K_last_code": -0.18481380632147193
+    },
+    "screenplay": {
+      "cos_z_swap": 0.37214227127177374,
+      "cos_K_last_swap": 0.3063683339527675,
+      "gen_jaccard_swap": 0.07560484384620283,
+      "cos_K_last_random": 0.04947028189365353,
+      "cos_K_last_code": -0.07433677996907916
+    },
+    "speech": {
+      "cos_z_swap": 0.9691272803715297,
+      "cos_K_last_swap": 0.9780483416148594,
+      "gen_jaccard_swap": 0.3458924617788657,
+      "cos_K_last_random": -0.07662854769400188,
+      "cos_K_last_code": -0.058703266616378515
+    }
+  },
+  "018_step500": {
+    "poetry": {
+      "cos_z_swap": 0.45270372714315144,
+      "cos_K_last_swap": 0.655371538230351,
+      "gen_jaccard_swap": 0.0660047994544505,
+      "cos_K_last_random": -0.2955449926001685,
+      "cos_K_last_code": -0.24070656831775392
+    },
+    "screenplay": {
+      "cos_z_swap": 0.35859715938568115,
+      "cos_K_last_swap": 0.29331636854580473,
+      "gen_jaccard_swap": 0.14732896323732678,
+      "cos_K_last_random": 0.07021880469151906,
+      "cos_K_last_code": 0.016624112214360918
+    },
+    "speech": {
+      "cos_z_swap": 0.9616683891841343,
+      "cos_K_last_swap": 0.9743201732635498,
+      "gen_jaccard_swap": 0.15057005852222036,
+      "cos_K_last_random": -0.09084297440546964,
+      "cos_K_last_code": 0.05613960006407329
+    }
+  },
+  "018_step1000": {
+    "poetry": {
+      "cos_z_swap": 0.42207525031907217,
+      "cos_K_last_swap": 0.6402641875403268,
+      "gen_jaccard_swap": 0.08926330485550875,
+      "cos_K_last_random": -0.2375859852348055,
+      "cos_K_last_code": -0.10702072509697505
+    },
+    "screenplay": {
+      "cos_z_swap": 0.3226007864411388,
+      "cos_K_last_swap": 0.215573111815112,
+      "gen_jaccard_swap": 0.102582735787219,
+      "cos_K_last_random": -0.07087646052241325,
+      "cos_K_last_code": -0.11083579702036721
+    },
+    "speech": {
+      "cos_z_swap": 0.9545438970838275,
+      "cos_K_last_swap": 0.9717158845492772,
+      "gen_jaccard_swap": 0.13857500567833944,
+      "cos_K_last_random": -0.033158765972724984,
+      "cos_K_last_code": 0.009030926008043545
+    }
+  },
+  "018_final": {
+    "poetry": {
+      "cos_z_swap": 0.40529448219708036,
+      "cos_K_last_swap": 0.6259827613830566,
+      "gen_jaccard_swap": 0.021103896103896104,
+      "cos_K_last_random": -0.13812087852108693,
+      "cos_K_last_code": -0.1265938686473029
+    },
+    "screenplay": {
+      "cos_z_swap": 0.37749151034014566,
+      "cos_K_last_swap": 0.31215333725724903,
+      "gen_jaccard_swap": 0.031138835492822505,
+      "cos_K_last_random": -0.12452447041869164,
+      "cos_K_last_code": -0.18925311309950693
+    },
+    "speech": {
+      "cos_z_swap": 0.9546874846730914,
+      "cos_K_last_swap": 0.9738163437162127,
+      "gen_jaccard_swap": 0.17565617445765777,
+      "cos_K_last_random": -0.05982619071645396,
+      "cos_K_last_code": 0.1934043914079666
+    }
+  }
+}

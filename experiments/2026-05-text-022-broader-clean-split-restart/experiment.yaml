@@ -1,0 +1,45 @@
+id: 2026-05-text-022-broader-clean-split-restart
+modality: text
+project: text-gemma3-prefix-kv
+tags:
+  - core2
+  - clean-heldout
+  - restart
+  - v3-corpus
+status: completed
+consequential: true
+question: "Can the no-trunk adapter show cleaner author-disjoint core2 conditioning when heldout authors are unseen by the 006 warmstart train set?"
+hypothesis: "021's repaired eval is still too narrow and partly contaminated by 006 warmstart author exposure. Restarting from 006 onto v3.8 core2, whose heldout authors do not overlap 006 train authors, should give a more trustworthy read of C1."
+parent: 2026-05-text-021-core2-eval-data-repair
+base_model: google/gemma-3-4b-pt
+dataset: "data/pairs_v3_8_core2_cleanheldout"
+config: "configs/stage1_v3_8_core2_cleanheldout_restart.yaml"
+compute: "RunPod RTX 4090 completed on pod 18dobdao5syd9f. Project ran from /tmp with /workspace used only for data/checkpoint reads. Initial runner hung after train completion, so eval/download continued manually from the same live pod; artifacts downloaded and pod terminated."
+decision_rule: "Promising if aggregate cos_K_last_swap <= 0.55, poetry and screenplay are both <= 0.60, random/code stay near zero or negative, sampled outputs stay low-repeat, and T4 PASS/PASS."
+headline: "Clean-heldout restart from 006 passes the pathway gate but remains style-unproven."
+next: "Run a cheap judge audit on 022 sampled/greedy outputs for T3b own-vs-swap style match. If encouraging, replicate/continue with full final eval but sample_every disabled during training."
+results:
+  pathway:
+    n_probes: 32
+    mean_cos_z_swap: 0.437
+    mean_cos_K_first_swap: 0.595
+    mean_cos_K_last_swap: 0.382
+    mean_cos_K_last_random: 0.117
+    mean_cos_K_last_code: 0.014
+    mean_gen_jaccard_swap: 0.056
+    poetry_cos_K_last_swap: 0.293
+    screenplay_cos_K_last_swap: 0.470
+  sampled_eval:
+    T1: PASS
+    T3_surface: WEAK
+    T4_memorization: PASS
+    T4_ref_leak: PASS
+    repeat3_mean: 0.0
+  verdict: "partially_confirmed/pathway-positive/style-unproven"
+dataset_manifest:
+  train_rows: 7305
+  val_rows: 498
+  test_rows: 497
+  probes: 32
+  heldout_authors_per_register: 8
+  warmstart_train_overlap: 0

@@ -1,0 +1,49 @@
+Poetry clean corpus status as of 2026-04-26
+
+Current best corpus candidate:
+text-ip-adapter/data/poetry_corpus_v0_source_native_curated_candidate_v9
+
+Numbers:
+- 24,614 retained rows
+- 79 normalized author IDs
+- 97 retained sources
+- all retained authors have at least 25 rows
+- zero duplicate clean text hashes
+- deterministic artifact audit passes with artifact_rate=0.0
+
+Current derived pair dataset:
+text-ip-adapter/data/pairs_v5_0_poetry_corpus_curated
+
+Pair numbers:
+- train: 4,886 rows, 65 authors
+- val: 168 rows, 7 authors
+- test: 168 rows, 7 authors
+- author-disjoint splits
+- max_ref_repeat=1 and max_target_repeat=1 in every split
+- probes_balanced_n24.jsonl has 14 rows because val+test contain 14 authors
+
+What changed since curated v2:
+- v2 had enough scale but spotchecks still found source apparatus, line notes,
+  front matter, and bad collected-edition leakage.
+- v3-v9 progressively quarantined contaminated sources instead of trying to
+  rescue every volume.
+- v9 rejects known bad/misassigned sources such as Gutenberg 5186, major
+  collected-edition apparatus leaks, and several IA OCR/front-matter sources.
+- Pair derivation is now conservative and capped; repeated reference/target
+  artifacts are gone.
+
+Current interpretation:
+The next blocker is no longer corpus construction. The next best experiment is
+to run the small v5.0 training candidate and judge whether cleaner, broader,
+source-native poetry improves generations without reviving encoder collapse.
+
+Next best bet:
+1. Launch configs/stage1_v5_0_poetry_corpus_curated_triplet_restart006.yaml.
+2. Confirm the warm-start checkpoint path on the pod or patch to the nearest
+   available restart checkpoint before training.
+3. After training, run probe_conditioning/eval_from_checkpoint and inspect:
+   cos_K own/swap/random/zero, mode collapse, style transfer, and qualitative
+   poetry fidelity.
+4. If v5.0 improves qualitatively, scale corpus breadth from the same
+   source-gated process. If it fails, diagnose objective/checkpoint rather than
+   returning to noisy data scale.

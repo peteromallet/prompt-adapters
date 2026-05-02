@@ -18,6 +18,7 @@ nav:
       - Strategy: program/strategy.md
       - Learnings: program/learnings.md
       - Roadmap: program/roadmap.md
+      - Data 10x plan: program/data_10x_plan.md
   - Process: process.md
   - Projects:
       - Overview: projects/index.md

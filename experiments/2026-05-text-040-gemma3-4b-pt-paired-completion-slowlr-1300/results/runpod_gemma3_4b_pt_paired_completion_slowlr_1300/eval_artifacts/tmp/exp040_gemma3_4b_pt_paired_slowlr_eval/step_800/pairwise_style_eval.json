@@ -1,0 +1,1486 @@
+{
+  "comparisons": {
+    "adapter_prompted_vs_prompted_baseline": {
+      "left": "adapter_prompted",
+      "left_win_rate": 0.5,
+      "left_wins": 6,
+      "mean_delta_left_minus_right": 0.027242236935837785,
+      "n": 12,
+      "per_probe": [
+        {
+          "delta": 0.3282355338233539,
+          "left": "adapter_prompted",
+          "left_score": 0.5655690666245433,
+          "probe_id": "pairs_v5_0_poetry_buchanan_robert_00",
+          "right": "prompted_baseline",
+          "right_score": 0.23733353280118943,
+          "winner": "adapter_prompted"
+        },
+        {
+          "delta": 0.05177542680160599,
+          "left": "adapter_prompted",
+          "left_score": -0.08324105030363269,
+          "probe_id": "pairs_v5_0_poetry_cushag_00",
+          "right": "prompted_baseline",
+          "right_score": -0.13501647710523867,
+          "winner": "adapter_prompted"
+        },
+        {
+          "delta": -0.07128051248048377,
+          "left": "adapter_prompted",
+          "left_score": 0.03461799872381112,
+          "probe_id": "pairs_v5_0_poetry_emily_dickinson_00",
+          "right": "prompted_baseline",
+          "right_score": 0.10589851120429489,
+          "winner": "prompted_baseline"
+        },
+        {
+          "delta": -0.002975610062285916,
+          "left": "adapter_prompted",
+          "left_score": 0.2072316848529201,
+          "probe_id": "pairs_v5_0_poetry_john_keats_00",
+          "right": "prompted_baseline",
+          "right_score": 0.210207294915206,
+          "winner": "tie"
+        },
+        {
+          "delta": 0.0793142563435274,
+          "left": "adapter_prompted",
+          "left_score": 0.1265537797812904,
+          "probe_id": "pairs_v5_0_poetry_john_masefield_00",
+          "right": "prompted_baseline",
+          "right_score": 0.047239523437763,
+          "winner": "adapter_prompted"
+        },
+        {
+          "delta": -0.06066757756252389,
+          "left": "adapter_prompted",
+          "left_score": 0.18284293659710593,
+          "probe_id": "pairs_v5_0_poetry_kemp_harry_1883_1960_00",
+          "right": "prompted_baseline",
+          "right_score": 0.24351051415962982,
+          "winner": "prompted_baseline"
+        },
+        {
+          "delta": -0.2018874528773606,
+          "left": "adapter_prompted",
+          "left_score": -0.3783763158853924,
+          "probe_id": "pairs_v5_0_poetry_newman_john_henry_1801_1890_00",
+          "right": "prompted_baseline",
+          "right_score": -0.1764888630080318,
+          "winner": "prompted_baseline"
+        },
+        {
+          "delta": 0.06346169540636326,
+          "left": "adapter_prompted",
+          "left_score": 0.1782539915783925,
+          "probe_id": "pairs_v5_0_poetry_robert_frost_00",
+          "right": "prompted_baseline",
+          "right_score": 0.11479229617202924,
+          "winner": "adapter_prompted"
+        },
+        {
+          "delta": -0.016353050635792094,
+          "left": "adapter_prompted",
+          "left_score": 0.148412624331998,
+          "probe_id": "pairs_v5_0_poetry_stephen_crane_00",
+          "right": "prompted_baseline",
+          "right_score": 0.1647656749677901,
+          "winner": "tie"
+        },
+        {
+          "delta": 0.10348161079713777,
+          "left": "adapter_prompted",
+          "left_score": 0.09019597531977058,
+          "probe_id": "pairs_v5_0_poetry_stothert_james_a_00",
+          "right": "prompted_baseline",
+          "right_score": -0.013285635477367191,
+          "winner": "adapter_prompted"
+        },
+        {
+          "delta": -0.018758850251114123,
+          "left": "adapter_prompted",
+          "left_score": 0.10558685021153585,
+          "probe_id": "pairs_v5_0_poetry_thomas_hardy_00",
+          "right": "prompted_baseline",
+          "right_score": 0.12434570046264998,
+          "winner": "tie"
+        },
+        {
+          "delta": 0.07256137392762546,
+          "left": "adapter_prompted",
+          "left_score": 0.17803615007500662,
+          "probe_id": "pairs_v5_0_poetry_william_wordsworth_00",
+          "right": "prompted_baseline",
+          "right_score": 0.10547477614738116,
+          "winner": "adapter_prompted"
+        }
+      ],
+      "right": "prompted_baseline",
+      "right_win_rate": 0.25,
+      "right_wins": 3,
+      "ties": 3
+    },
+    "adapter_vs_adapter_swap": {
+      "left": "adapter",
+      "left_win_rate": 0.5833333333333334,
+      "left_wins": 7,
+      "mean_delta_left_minus_right": -0.014877993789885222,
+      "n": 12,
+      "per_probe": [
+        {
+          "delta": 0.09181834675902692,
+          "left": "adapter",
+          "left_score": 0.26601870599683075,
+          "probe_id": "pairs_v5_0_poetry_buchanan_robert_00",
+          "right": "adapter_swap",
+          "right_score": 0.17420035923780383,
+          "winner": "adapter"
+        },
+        {
+          "delta": -0.36216823739050086,
+          "left": "adapter",
+          "left_score": -0.18118797026742378,
+          "probe_id": "pairs_v5_0_poetry_cushag_00",
+          "right": "adapter_swap",
+          "right_score": 0.18098026712307708,
+          "winner": "adapter_swap"
+        },
+        {
+          "delta": -0.010435426374089368,
+          "left": "adapter",
+          "left_score": 0.12664669618036972,
+          "probe_id": "pairs_v5_0_poetry_emily_dickinson_00",
+          "right": "adapter_swap",
+          "right_score": 0.1370821225544591,
+          "winner": "tie"
+        },
+        {
+          "delta": -0.3575047586782792,
+          "left": "adapter",
+          "left_score": -0.27225872594010986,
+          "probe_id": "pairs_v5_0_poetry_john_keats_00",
+          "right": "adapter_swap",
+          "right_score": 0.08524603273816934,
+          "winner": "adapter_swap"
+        },
+        {
+          "delta": 0.07157019104645873,
+          "left": "adapter",
+          "left_score": 0.10721411124939778,
+          "probe_id": "pairs_v5_0_poetry_john_masefield_00",
+          "right": "adapter_swap",
+          "right_score": 0.03564392020293905,
+          "winner": "adapter"
+        },
+        {
+          "delta": 0.07006045041823677,
+          "left": "adapter",
+          "left_score": 0.23514493048046825,
+          "probe_id": "pairs_v5_0_poetry_kemp_harry_1883_1960_00",
+          "right": "adapter_swap",
+          "right_score": 0.16508448006223148,
+          "winner": "adapter"
+        },
+        {
+          "delta": 0.4888054151518857,
+          "left": "adapter",
+          "left_score": 0.0011643727660665265,
+          "probe_id": "pairs_v5_0_poetry_newman_john_henry_1801_1890_00",
+          "right": "adapter_swap",
+          "right_score": -0.4876410423858192,
+          "winner": "adapter"
+        },
+        {
+          "delta": 0.039367184922955156,
+          "left": "adapter",
+          "left_score": 0.1440995426003619,
+          "probe_id": "pairs_v5_0_poetry_robert_frost_00",
+          "right": "adapter_swap",
+          "right_score": 0.10473235767740674,
+          "winner": "adapter"
+        },
+        {
+          "delta": -0.07379452044922707,
+          "left": "adapter",
+          "left_score": 0.4141005012357211,
+          "probe_id": "pairs_v5_0_poetry_stephen_crane_00",
+          "right": "adapter_swap",
+          "right_score": 0.4878950216849482,
+          "winner": "adapter_swap"
+        },
+        {
+          "delta": -0.26291210466589715,
+          "left": "adapter",
+          "left_score": -0.24287473312285685,
+          "probe_id": "pairs_v5_0_poetry_stothert_james_a_00",
+          "right": "adapter_swap",
+          "right_score": 0.02003737154304032,
+          "winner": "adapter_swap"
+        },
+        {
+          "delta": 0.0666139549611719,
+          "left": "adapter",
+          "left_score": 0.03921025755407409,
+          "probe_id": "pairs_v5_0_poetry_thomas_hardy_00",
+          "right": "adapter_swap",
+          "right_score": -0.027403697407097805,
+          "winner": "adapter"
+        },
+        {
+          "delta": 0.060043578819635804,
+          "left": "adapter",
+          "left_score": 0.09888306537826541,
+          "probe_id": "pairs_v5_0_poetry_william_wordsworth_00",
+          "right": "adapter_swap",
+          "right_score": 0.03883948655862961,
+          "winner": "adapter"
+        }
+      ],
+      "right": "adapter_swap",
+      "right_win_rate": 0.3333333333333333,
+      "right_wins": 4,
+      "ties": 1
+    },
+    "adapter_vs_no_ref": {
+      "left": "adapter",
+      "left_win_rate": 0.4166666666666667,
+      "left_wins": 5,
+      "mean_delta_left_minus_right": 0.015843478286755062,
+      "n": 12,
+      "per_probe": [
+        {
+          "delta": 0.14384835538386292,
+          "left": "adapter",
+          "left_score": 0.26601870599683075,
+          "probe_id": "pairs_v5_0_poetry_buchanan_robert_00",
+          "right": "no_ref",
+          "right_score": 0.12217035061296783,
+          "winner": "adapter"
+        },
+        {
+          "delta": -0.014603852357143732,
+          "left": "adapter",
+          "left_score": -0.18118797026742378,
+          "probe_id": "pairs_v5_0_poetry_cushag_00",
+          "right": "no_ref",
+          "right_score": -0.16658411791028005,
+          "winner": "tie"
+        },
+        {
+          "delta": 0.022504104987977946,
+          "left": "adapter",
+          "left_score": 0.12664669618036972,
+          "probe_id": "pairs_v5_0_poetry_emily_dickinson_00",
+          "right": "no_ref",
+          "right_score": 0.10414259119239178,
+          "winner": "tie"
+        },
+        {
+          "delta": -0.525944058176882,
+          "left": "adapter",
+          "left_score": -0.27225872594010986,
+          "probe_id": "pairs_v5_0_poetry_john_keats_00",
+          "right": "no_ref",
+          "right_score": 0.2536853322367721,
+          "winner": "no_ref"
+        },
+        {
+          "delta": 0.006395222085373187,
+          "left": "adapter",
+          "left_score": 0.10721411124939778,
+          "probe_id": "pairs_v5_0_poetry_john_masefield_00",
+          "right": "no_ref",
+          "right_score": 0.1008188891640246,
+          "winner": "tie"
+        },
+        {
+          "delta": 0.4394381894699679,
+          "left": "adapter",
+          "left_score": 0.23514493048046825,
+          "probe_id": "pairs_v5_0_poetry_kemp_harry_1883_1960_00",
+          "right": "no_ref",
+          "right_score": -0.20429325898949963,
+          "winner": "adapter"
+        },
+        {
+          "delta": -0.04314893712964481,
+          "left": "adapter",
+          "left_score": 0.0011643727660665265,
+          "probe_id": "pairs_v5_0_poetry_newman_john_henry_1801_1890_00",
+          "right": "no_ref",
+          "right_score": 0.044313309895711334,
+          "winner": "no_ref"
+        },
+        {
+          "delta": 0.09987364718159893,
+          "left": "adapter",
+          "left_score": 0.1440995426003619,
+          "probe_id": "pairs_v5_0_poetry_robert_frost_00",
+          "right": "no_ref",
+          "right_score": 0.04422589541876297,
+          "winner": "adapter"
+        },
+        {
+          "delta": 0.04511713521331201,
+          "left": "adapter",
+          "left_score": 0.4141005012357211,
+          "probe_id": "pairs_v5_0_poetry_stephen_crane_00",
+          "right": "no_ref",
+          "right_score": 0.3689833660224091,
+          "winner": "adapter"
+        },
+        {
+          "delta": -0.18490722968149909,
+          "left": "adapter",
+          "left_score": -0.24287473312285685,
+          "probe_id": "pairs_v5_0_poetry_stothert_james_a_00",
+          "right": "no_ref",
+          "right_score": -0.05796750344135776,
+          "winner": "no_ref"
+        },
+        {
+          "delta": -0.08524859108045035,
+          "left": "adapter",
+          "left_score": 0.03921025755407409,
+          "probe_id": "pairs_v5_0_poetry_thomas_hardy_00",
+          "right": "no_ref",
+          "right_score": 0.12445884863452444,
+          "winner": "no_ref"
+        },
+        {
+          "delta": 0.2867977535445878,
+          "left": "adapter",
+          "left_score": 0.09888306537826541,
+          "probe_id": "pairs_v5_0_poetry_william_wordsworth_00",
+          "right": "no_ref",
+          "right_score": -0.1879146881663224,
+          "winner": "adapter"
+        }
+      ],
+      "right": "no_ref",
+      "right_win_rate": 0.3333333333333333,
+      "right_wins": 4,
+      "ties": 3
+    }
+  },
+  "per_sample": [
+    {
+      "adherence": {
+        "chars": 200,
+        "lineation_score": 0.6,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 41,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.3126224227083372,
+      "probe_id": "pairs_v5_0_poetry_buchanan_robert_00",
+      "score": 0.26601870599683075,
+      "style_advantage": 0.19401870599683074,
+      "swap_sim": 0.11860371671150642,
+      "variant": "adapter"
+    },
+    {
+      "adherence": {
+        "chars": 363,
+        "lineation_score": 0.0,
+        "meta": false,
+        "penalty": 0.1,
+        "prose": false,
+        "tokens": 67,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.44872273796949474,
+      "probe_id": "pairs_v5_0_poetry_buchanan_robert_00",
+      "score": 0.17420035923780383,
+      "style_advantage": 0.27420035923780384,
+      "swap_sim": 0.1745223787316909,
+      "variant": "adapter_swap"
+    },
+    {
+      "adherence": {
+        "chars": 567,
+        "lineation_score": 0.0,
+        "meta": false,
+        "penalty": 0.1,
+        "prose": false,
+        "tokens": 109,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.38879407117628034,
+      "probe_id": "pairs_v5_0_poetry_buchanan_robert_00",
+      "score": 0.12217035061296783,
+      "style_advantage": 0.22217035061296783,
+      "swap_sim": 0.1666237205633125,
+      "variant": "no_ref"
+    },
+    {
+      "adherence": {
+        "chars": 268,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 61,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.3087862639579191,
+      "probe_id": "pairs_v5_0_poetry_buchanan_robert_00",
+      "score": 0.23733353280118943,
+      "style_advantage": 0.11733353280118944,
+      "swap_sim": 0.19145273115672964,
+      "variant": "prompted_baseline"
+    },
+    {
+      "adherence": {
+        "chars": 367,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 69,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.6174214356766358,
+      "probe_id": "pairs_v5_0_poetry_buchanan_robert_00",
+      "score": 0.5655690666245433,
+      "style_advantage": 0.4455690666245433,
+      "swap_sim": 0.17185236905209242,
+      "variant": "adapter_prompted"
+    },
+    {
+      "adherence": {
+        "chars": 437,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 87,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.13522763929063647,
+      "probe_id": "pairs_v5_0_poetry_cushag_00",
+      "score": -0.18118797026742378,
+      "style_advantage": -0.3011879702674238,
+      "swap_sim": 0.43641560955806025,
+      "variant": "adapter"
+    },
+    {
+      "adherence": {
+        "chars": 172,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 33,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.2544458475033732,
+      "probe_id": "pairs_v5_0_poetry_cushag_00",
+      "score": 0.18098026712307708,
+      "style_advantage": 0.06098026712307708,
+      "swap_sim": 0.1934655803802961,
+      "variant": "adapter_swap"
+    },
+    {
+      "adherence": {
+        "chars": 365,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 74,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.11849157698829194,
+      "probe_id": "pairs_v5_0_poetry_cushag_00",
+      "score": -0.16658411791028005,
+      "style_advantage": -0.28658411791028005,
+      "swap_sim": 0.405075694898572,
+      "variant": "no_ref"
+    },
+    {
+      "adherence": {
+        "chars": 467,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 91,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.1846199150902407,
+      "probe_id": "pairs_v5_0_poetry_cushag_00",
+      "score": -0.13501647710523867,
+      "style_advantage": -0.25501647710523867,
+      "swap_sim": 0.43963639219547934,
+      "variant": "prompted_baseline"
+    },
+    {
+      "adherence": {
+        "chars": 374,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 79,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.1675338308223849,
+      "probe_id": "pairs_v5_0_poetry_cushag_00",
+      "score": -0.08324105030363269,
+      "style_advantage": -0.20324105030363268,
+      "swap_sim": 0.3707748811260176,
+      "variant": "adapter_prompted"
+    },
+    {
+      "adherence": {
+        "chars": 230,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 44,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.3632104405220678,
+      "probe_id": "pairs_v5_0_poetry_emily_dickinson_00",
+      "score": 0.12664669618036972,
+      "style_advantage": 0.006646696180369727,
+      "swap_sim": 0.3565637443416981,
+      "variant": "adapter"
+    },
+    {
+      "adherence": {
+        "chars": 144,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 25,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.1546698450041515,
+      "probe_id": "pairs_v5_0_poetry_emily_dickinson_00",
+      "score": 0.1370821225544591,
+      "style_advantage": 0.017082122554459095,
+      "swap_sim": 0.13758772244969242,
+      "variant": "adapter_swap"
+    },
+    {
+      "adherence": {
+        "chars": 380,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 70,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.3287508587396686,
+      "probe_id": "pairs_v5_0_poetry_emily_dickinson_00",
+      "score": 0.10414259119239178,
+      "style_advantage": -0.01585740880760822,
+      "swap_sim": 0.3446082675472768,
+      "variant": "no_ref"
+    },
+    {
+      "adherence": {
+        "chars": 251,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 50,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.3387440729636549,
+      "probe_id": "pairs_v5_0_poetry_emily_dickinson_00",
+      "score": 0.10589851120429489,
+      "style_advantage": -0.014101488795705108,
+      "swap_sim": 0.35284556175936,
+      "variant": "prompted_baseline"
+    },
+    {
+      "adherence": {
+        "chars": 102,
+        "lineation_score": 0.6,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 21,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.16645739236063561,
+      "probe_id": "pairs_v5_0_poetry_emily_dickinson_00",
+      "score": 0.03461799872381112,
+      "style_advantage": -0.037382001276188875,
+      "swap_sim": 0.2038393936368245,
+      "variant": "adapter_prompted"
+    },
+    {
+      "adherence": {
+        "chars": 169,
+        "lineation_score": 1.0,
+        "meta": true,
+        "penalty": 0.35,
+        "prose": false,
+        "tokens": 33,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.23962844196176997,
+      "probe_id": "pairs_v5_0_poetry_john_keats_00",
+      "score": -0.27225872594010986,
+      "style_advantage": -0.042258725940109876,
+      "swap_sim": 0.28188716790187984,
+      "variant": "adapter"
+    },
+    {
+      "adherence": {
+        "chars": 62,
+        "lineation_score": 0.6,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 15,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.08392084933495575,
+      "probe_id": "pairs_v5_0_poetry_john_keats_00",
+      "score": 0.08524603273816934,
+      "style_advantage": 0.01324603273816935,
+      "swap_sim": 0.0706748165967864,
+      "variant": "adapter_swap"
+    },
+    {
+      "adherence": {
+        "chars": 141,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 31,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.4036995042621845,
+      "probe_id": "pairs_v5_0_poetry_john_keats_00",
+      "score": 0.2536853322367721,
+      "style_advantage": 0.1336853322367721,
+      "swap_sim": 0.2700141720254124,
+      "variant": "no_ref"
+    },
+    {
+      "adherence": {
+        "chars": 229,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 49,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.347696849429027,
+      "probe_id": "pairs_v5_0_poetry_john_keats_00",
+      "score": 0.210207294915206,
+      "style_advantage": 0.09020729491520602,
+      "swap_sim": 0.257489554513821,
+      "variant": "prompted_baseline"
+    },
+    {
+      "adherence": {
+        "chars": 245,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 51,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.3261437951160981,
+      "probe_id": "pairs_v5_0_poetry_john_keats_00",
+      "score": 0.2072316848529201,
+      "style_advantage": 0.0872316848529201,
+      "swap_sim": 0.238912110263178,
+      "variant": "adapter_prompted"
+    },
+    {
+      "adherence": {
+        "chars": 164,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 31,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.2502058981010392,
+      "probe_id": "pairs_v5_0_poetry_john_masefield_00",
+      "score": 0.10721411124939778,
+      "style_advantage": -0.012785888750602215,
+      "swap_sim": 0.26299178685164143,
+      "variant": "adapter"
+    },
+    {
+      "adherence": {
+        "chars": 518,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 101,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.3027668845118621,
+      "probe_id": "pairs_v5_0_poetry_john_masefield_00",
+      "score": 0.03564392020293905,
+      "style_advantage": -0.08435607979706095,
+      "swap_sim": 0.38712296430892307,
+      "variant": "adapter_swap"
+    },
+    {
+      "adherence": {
+        "chars": 187,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 38,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.23100915381365822,
+      "probe_id": "pairs_v5_0_poetry_john_masefield_00",
+      "score": 0.1008188891640246,
+      "style_advantage": -0.0191811108359754,
+      "swap_sim": 0.2501902646496336,
+      "variant": "no_ref"
+    },
+    {
+      "adherence": {
+        "chars": 504,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 99,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.29567068632129156,
+      "probe_id": "pairs_v5_0_poetry_john_masefield_00",
+      "score": 0.047239523437763,
+      "style_advantage": -0.072760476562237,
+      "swap_sim": 0.36843116288352856,
+      "variant": "prompted_baseline"
+    },
+    {
+      "adherence": {
+        "chars": 272,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 56,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.2809886659926209,
+      "probe_id": "pairs_v5_0_poetry_john_masefield_00",
+      "score": 0.1265537797812904,
+      "style_advantage": 0.006553779781290403,
+      "swap_sim": 0.2744348862113305,
+      "variant": "adapter_prompted"
+    },
+    {
+      "adherence": {
+        "chars": 187,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 41,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.2906557090757549,
+      "probe_id": "pairs_v5_0_poetry_kemp_harry_1883_1960_00",
+      "score": 0.23514493048046825,
+      "style_advantage": 0.11514493048046825,
+      "swap_sim": 0.17551077859528663,
+      "variant": "adapter"
+    },
+    {
+      "adherence": {
+        "chars": 514,
+        "lineation_score": 0.6,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 96,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.2470614472303653,
+      "probe_id": "pairs_v5_0_poetry_kemp_harry_1883_1960_00",
+      "score": 0.16508448006223148,
+      "style_advantage": 0.0930844800622315,
+      "swap_sim": 0.1539769671681338,
+      "variant": "adapter_swap"
+    },
+    {
+      "adherence": {
+        "chars": 497,
+        "lineation_score": 1.0,
+        "meta": true,
+        "penalty": 0.35,
+        "prose": false,
+        "tokens": 100,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.32227480759587207,
+      "probe_id": "pairs_v5_0_poetry_kemp_harry_1883_1960_00",
+      "score": -0.20429325898949963,
+      "style_advantage": 0.025706741010500356,
+      "swap_sim": 0.2965680665853717,
+      "variant": "no_ref"
+    },
+    {
+      "adherence": {
+        "chars": 425,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 86,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.2646561973542128,
+      "probe_id": "pairs_v5_0_poetry_kemp_harry_1883_1960_00",
+      "score": 0.24351051415962982,
+      "style_advantage": 0.12351051415962983,
+      "swap_sim": 0.14114568319458298,
+      "variant": "prompted_baseline"
+    },
+    {
+      "adherence": {
+        "chars": 168,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 30,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.20188294035847962,
+      "probe_id": "pairs_v5_0_poetry_kemp_harry_1883_1960_00",
+      "score": 0.18284293659710593,
+      "style_advantage": 0.06284293659710594,
+      "swap_sim": 0.13904000376137368,
+      "variant": "adapter_prompted"
+    },
+    {
+      "adherence": {
+        "chars": 91,
+        "lineation_score": 0.6,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 18,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.1873481315092951,
+      "probe_id": "pairs_v5_0_poetry_newman_john_henry_1801_1890_00",
+      "score": 0.0011643727660665265,
+      "style_advantage": -0.07083562723393347,
+      "swap_sim": 0.2581837587432286,
+      "variant": "adapter"
+    },
+    {
+      "adherence": {
+        "chars": 494,
+        "lineation_score": 0.6,
+        "meta": true,
+        "penalty": 0.35,
+        "prose": false,
+        "tokens": 100,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.12624179031208385,
+      "probe_id": "pairs_v5_0_poetry_newman_john_henry_1801_1890_00",
+      "score": -0.4876410423858192,
+      "style_advantage": -0.20964104238581918,
+      "swap_sim": 0.33588283269790303,
+      "variant": "adapter_swap"
+    },
+    {
+      "adherence": {
+        "chars": 462,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 89,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.23541161887068915,
+      "probe_id": "pairs_v5_0_poetry_newman_john_henry_1801_1890_00",
+      "score": 0.044313309895711334,
+      "style_advantage": -0.07568669010428866,
+      "swap_sim": 0.3110983089749778,
+      "variant": "no_ref"
+    },
+    {
+      "adherence": {
+        "chars": 488,
+        "lineation_score": 0.6,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 94,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.17241020410391672,
+      "probe_id": "pairs_v5_0_poetry_newman_john_henry_1801_1890_00",
+      "score": -0.1764888630080318,
+      "style_advantage": -0.2484888630080318,
+      "swap_sim": 0.4208990671119485,
+      "variant": "prompted_baseline"
+    },
+    {
+      "adherence": {
+        "chars": 153,
+        "lineation_score": 1.0,
+        "meta": true,
+        "penalty": 0.35,
+        "prose": false,
+        "tokens": 33,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.10008294331658783,
+      "probe_id": "pairs_v5_0_poetry_newman_john_henry_1801_1890_00",
+      "score": -0.3783763158853924,
+      "style_advantage": -0.1483763158853924,
+      "swap_sim": 0.24845925920198023,
+      "variant": "adapter_prompted"
+    },
+    {
+      "adherence": {
+        "chars": 450,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 89,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.3128659069725849,
+      "probe_id": "pairs_v5_0_poetry_robert_frost_00",
+      "score": 0.1440995426003619,
+      "style_advantage": 0.0240995426003619,
+      "swap_sim": 0.288766364372223,
+      "variant": "adapter"
+    },
+    {
+      "adherence": {
+        "chars": 241,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 50,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.2993241566267401,
+      "probe_id": "pairs_v5_0_poetry_robert_frost_00",
+      "score": 0.10473235767740674,
+      "style_advantage": -0.015267642322593256,
+      "swap_sim": 0.31459179894933337,
+      "variant": "adapter_swap"
+    },
+    {
+      "adherence": {
+        "chars": 121,
+        "lineation_score": 0.6,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 26,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.1671810601054463,
+      "probe_id": "pairs_v5_0_poetry_robert_frost_00",
+      "score": 0.04422589541876297,
+      "style_advantage": -0.027774104581237025,
+      "swap_sim": 0.19495516468668334,
+      "variant": "no_ref"
+    },
+    {
+      "adherence": {
+        "chars": 531,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 100,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.39979113180205056,
+      "probe_id": "pairs_v5_0_poetry_robert_frost_00",
+      "score": 0.11479229617202924,
+      "style_advantage": -0.0052077038279707555,
+      "swap_sim": 0.4049988356300213,
+      "variant": "prompted_baseline"
+    },
+    {
+      "adherence": {
+        "chars": 333,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 72,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.2370822139003089,
+      "probe_id": "pairs_v5_0_poetry_robert_frost_00",
+      "score": 0.1782539915783925,
+      "style_advantage": 0.058253991578392506,
+      "swap_sim": 0.1788282223219164,
+      "variant": "adapter_prompted"
+    },
+    {
+      "adherence": {
+        "chars": 153,
+        "lineation_score": 0.6,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 33,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.5493215219733645,
+      "probe_id": "pairs_v5_0_poetry_stephen_crane_00",
+      "score": 0.4141005012357211,
+      "style_advantage": 0.3421005012357211,
+      "swap_sim": 0.2072210207376434,
+      "variant": "adapter"
+    },
+    {
+      "adherence": {
+        "chars": 160,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 32,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.5707468689406475,
+      "probe_id": "pairs_v5_0_poetry_stephen_crane_00",
+      "score": 0.4878950216849482,
+      "style_advantage": 0.3678950216849482,
+      "swap_sim": 0.20285184725569932,
+      "variant": "adapter_swap"
+    },
+    {
+      "adherence": {
+        "chars": 166,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 33,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.3774526384545924,
+      "probe_id": "pairs_v5_0_poetry_stephen_crane_00",
+      "score": 0.3689833660224091,
+      "style_advantage": 0.2489833660224091,
+      "swap_sim": 0.1284692724321833,
+      "variant": "no_ref"
+    },
+    {
+      "adherence": {
+        "chars": 529,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 102,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.3493638091210149,
+      "probe_id": "pairs_v5_0_poetry_stephen_crane_00",
+      "score": 0.1647656749677901,
+      "style_advantage": 0.0447656749677901,
+      "swap_sim": 0.3045981341532248,
+      "variant": "prompted_baseline"
+    },
+    {
+      "adherence": {
+        "chars": 138,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 32,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.25077933834110944,
+      "probe_id": "pairs_v5_0_poetry_stephen_crane_00",
+      "score": 0.148412624331998,
+      "style_advantage": 0.02841262433199801,
+      "swap_sim": 0.22236671400911143,
+      "variant": "adapter_prompted"
+    },
+    {
+      "adherence": {
+        "chars": 405,
+        "lineation_score": 1.0,
+        "meta": true,
+        "penalty": 0.35,
+        "prose": false,
+        "tokens": 79,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.32704451094531356,
+      "probe_id": "pairs_v5_0_poetry_stothert_james_a_00",
+      "score": -0.24287473312285685,
+      "style_advantage": -0.012874733122856863,
+      "swap_sim": 0.3399192440681704,
+      "variant": "adapter"
+    },
+    {
+      "adherence": {
+        "chars": 77,
+        "lineation_score": 0.6,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 15,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.14406975005338635,
+      "probe_id": "pairs_v5_0_poetry_stothert_james_a_00",
+      "score": 0.02003737154304032,
+      "style_advantage": -0.051962628456959675,
+      "swap_sim": 0.19603237851034602,
+      "variant": "adapter_swap"
+    },
+    {
+      "adherence": {
+        "chars": 384,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 75,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.29607986323280006,
+      "probe_id": "pairs_v5_0_poetry_stothert_james_a_00",
+      "score": -0.05796750344135776,
+      "style_advantage": -0.17796750344135776,
+      "swap_sim": 0.4740473666741578,
+      "variant": "no_ref"
+    },
+    {
+      "adherence": {
+        "chars": 240,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 44,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.22728436023282503,
+      "probe_id": "pairs_v5_0_poetry_stothert_james_a_00",
+      "score": -0.013285635477367191,
+      "style_advantage": -0.1332856354773672,
+      "swap_sim": 0.3605699957101922,
+      "variant": "prompted_baseline"
+    },
+    {
+      "adherence": {
+        "chars": 233,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 42,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.2596641389317011,
+      "probe_id": "pairs_v5_0_poetry_stothert_james_a_00",
+      "score": 0.09019597531977058,
+      "style_advantage": -0.029804024680229413,
+      "swap_sim": 0.2894681636119305,
+      "variant": "adapter_prompted"
+    },
+    {
+      "adherence": {
+        "chars": 127,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 24,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.19413608759959433,
+      "probe_id": "pairs_v5_0_poetry_thomas_hardy_00",
+      "score": 0.03921025755407409,
+      "style_advantage": -0.0807897424459259,
+      "swap_sim": 0.27492583004552024,
+      "variant": "adapter"
+    },
+    {
+      "adherence": {
+        "chars": 215,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 45,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.23418667807810595,
+      "probe_id": "pairs_v5_0_poetry_thomas_hardy_00",
+      "score": -0.027403697407097805,
+      "style_advantage": -0.1474036974070978,
+      "swap_sim": 0.38159037548520375,
+      "variant": "adapter_swap"
+    },
+    {
+      "adherence": {
+        "chars": 315,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 65,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.31493997276735314,
+      "probe_id": "pairs_v5_0_poetry_thomas_hardy_00",
+      "score": 0.12445884863452444,
+      "style_advantage": 0.004458848634524448,
+      "swap_sim": 0.3104811241328287,
+      "variant": "no_ref"
+    },
+    {
+      "adherence": {
+        "chars": 497,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 99,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.35589307620671184,
+      "probe_id": "pairs_v5_0_poetry_thomas_hardy_00",
+      "score": 0.12434570046264998,
+      "style_advantage": 0.004345700462649982,
+      "swap_sim": 0.35154737574406186,
+      "variant": "prompted_baseline"
+    },
+    {
+      "adherence": {
+        "chars": 254,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 53,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.21191369806024016,
+      "probe_id": "pairs_v5_0_poetry_thomas_hardy_00",
+      "score": 0.10558685021153585,
+      "style_advantage": -0.014413149788464141,
+      "swap_sim": 0.2263268478487043,
+      "variant": "adapter_prompted"
+    },
+    {
+      "adherence": {
+        "chars": 450,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 78,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.33736442709909337,
+      "probe_id": "pairs_v5_0_poetry_william_wordsworth_00",
+      "score": 0.09888306537826541,
+      "style_advantage": -0.021116934621734584,
+      "swap_sim": 0.35848136172082795,
+      "variant": "adapter"
+    },
+    {
+      "adherence": {
+        "chars": 539,
+        "lineation_score": 0.6,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 105,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.32751815421655206,
+      "probe_id": "pairs_v5_0_poetry_william_wordsworth_00",
+      "score": 0.03883948655862961,
+      "style_advantage": -0.03316051344137039,
+      "swap_sim": 0.36067866765792245,
+      "variant": "adapter_swap"
+    },
+    {
+      "adherence": {
+        "chars": 434,
+        "lineation_score": 1.0,
+        "meta": true,
+        "penalty": 0.35,
+        "prose": false,
+        "tokens": 88,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.3497530364186103,
+      "probe_id": "pairs_v5_0_poetry_william_wordsworth_00",
+      "score": -0.1879146881663224,
+      "style_advantage": 0.042085311833677586,
+      "swap_sim": 0.3076677245849327,
+      "variant": "no_ref"
+    },
+    {
+      "adherence": {
+        "chars": 466,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 95,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.26943047209814724,
+      "probe_id": "pairs_v5_0_poetry_william_wordsworth_00",
+      "score": 0.10547477614738116,
+      "style_advantage": -0.01452522385261884,
+      "swap_sim": 0.2839556959507661,
+      "variant": "prompted_baseline"
+    },
+    {
+      "adherence": {
+        "chars": 186,
+        "lineation_score": 1.0,
+        "meta": false,
+        "penalty": 0.0,
+        "prose": false,
+        "tokens": 35,
+        "too_long": false,
+        "too_short": false
+      },
+      "own_sim": 0.31446765430781004,
+      "probe_id": "pairs_v5_0_poetry_william_wordsworth_00",
+      "score": 0.17803615007500662,
+      "style_advantage": 0.05803615007500662,
+      "swap_sim": 0.2564315042328034,
+      "variant": "adapter_prompted"
+    }
+  ],
+  "variant_summary": {
+    "adapter": {
+      "mean_score": 0.06134672950926376,
+      "mean_style_advantage": 0.011680062842597087,
+      "meta_hits": 2,
+      "n": 12,
+      "prose_hits": 0
+    },
+    "adapter_prompted": {
+      "mean_score": 0.1129736409922791,
+      "mean_style_advantage": 0.02614030765894578,
+      "meta_hits": 1,
+      "n": 12,
+      "prose_hits": 0
+    },
+    "adapter_swap": {
+      "mean_score": 0.07622472329914898,
+      "mean_style_advantage": 0.023724723299148983,
+      "meta_hits": 1,
+      "n": 12,
+      "prose_hits": 0
+    },
+    "no_ref": {
+      "mean_score": 0.045503251222508694,
+      "mean_style_advantage": 0.00616991788917536,
+      "meta_hits": 2,
+      "n": 12,
+      "prose_hits": 0
+    },
+    "prompted_baseline": {
+      "mean_score": 0.08573140405644133,
+      "mean_style_advantage": -0.030268595943558668,
+      "meta_hits": 0,
+      "n": 12,
+      "prose_hits": 0
+    }
+  }
+}

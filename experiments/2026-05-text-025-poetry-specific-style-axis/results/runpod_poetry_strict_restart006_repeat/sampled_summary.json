@@ -1,0 +1,42 @@
+{
+  "adapter": {
+    "chars_median": 399.5,
+    "line_repeat_mean": 0.0,
+    "n": 16,
+    "non_ascii_rows": 2,
+    "prose_markers": 0,
+    "repeat3_max": 0.050000000000000044,
+    "repeat3_mean": 0.005048076923076926
+  },
+  "adapter_swap": {
+    "chars_median": 313.5,
+    "line_repeat_mean": 0.0,
+    "n": 16,
+    "non_ascii_rows": 3,
+    "prose_markers": 1,
+    "repeat3_max": 0.050000000000000044,
+    "repeat3_mean": 0.004513888888888894
+  },
+  "adapter_vs_swap_jaccard": {
+    "max": 0.0,
+    "mean": 0.0
+  },
+  "no_ref": {
+    "chars_median": 504.5,
+    "line_repeat_mean": 0.0,
+    "n": 16,
+    "non_ascii_rows": 5,
+    "prose_markers": 0,
+    "repeat3_max": 0.0,
+    "repeat3_mean": 0.0
+  },
+  "prompted_baseline": {
+    "chars_median": 321.0,
+    "line_repeat_mean": 0.0,
+    "n": 16,
+    "non_ascii_rows": 6,
+    "prose_markers": 1,
+    "repeat3_max": 0.0,
+    "repeat3_mean": 0.0
+  }
+}

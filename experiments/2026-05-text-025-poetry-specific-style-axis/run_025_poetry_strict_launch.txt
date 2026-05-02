@@ -1,0 +1,60 @@
+Experiment 025 launch notes
+===========================
+
+Goal
+----
+Run the next best experiment: strict poetry-only v4.3 restart from the clean
+006 no-trunk checkpoint. This tests whether poetry was weak in 024c because the
+mixed-register/objective path diluted the poetry style axis.
+
+Current blocker
+---------------
+Fresh RunPod jobs cannot load google/gemma-3-4b-pt until Hugging Face auth is
+available locally. Verified current local state:
+
+- ~/.cache/huggingface/token: missing
+- huggingface-cli whoami: Not logged in
+- runpod-lifecycle/.env: no HF_TOKEN or HUGGINGFACE_HUB_TOKEN
+
+The code now supports either auth route:
+
+- Put a token at ~/.cache/huggingface/token, or
+- Export HF_TOKEN / HUGGINGFACE_HUB_TOKEN before launching.
+
+One-time auth examples
+----------------------
+Option A:
+
+  huggingface-cli login
+
+Option B:
+
+  export HF_TOKEN=hf_your_token_here
+
+Run command
+-----------
+From /Users/peteromalley/Documents/reigh-workspace:
+
+  PYENV_VERSION=3.11.11 PYTHONPATH=$PWD/text-ip-adapter/src:$PWD/runpod-lifecycle/src \
+  python text-ip-adapter/scripts/run_024_style_triplet_tmp.py \
+    --config configs/stage1_v4_3_poetry_strict_triplet_restart006.yaml \
+    --local-output-dir ../prompt-adapters/experiments/2026-05-text-025-poetry-specific-style-axis/results/runpod_poetry_strict_restart006 \
+    --remote-project-root /tmp/text-ip-adapter-025-poetry-strict \
+    --remote-train-dir /tmp/stage1_v4_3_poetry_strict_triplet_restart006 \
+    --remote-eval-dir /tmp/exp025_poetry_strict_eval \
+    --remote-orch-log-dir /tmp/exp025_poetry_strict_orch \
+    --experiment-id 2026-05-text-025-poetry-specific-style-axis \
+    --max-steps 1200 \
+    --n-probes 16 \
+    --skip-checkpoint-upload \
+    --prune-step-checkpoints-before-download
+
+Expected pass condition
+-----------------------
+Beat 024c poetry cos_K_last_swap=0.559 by a large margin, ideally <=0.40, while
+random/code stay near zero or negative and sampled repetition remains low.
+
+If 025 fails
+------------
+Do not keep tweaking cleaning indefinitely. Move to a stronger style-supervision
+objective, likely author/prototype or harder batch-negative style loss.

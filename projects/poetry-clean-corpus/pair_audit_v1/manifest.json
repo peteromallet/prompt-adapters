@@ -1,0 +1,77 @@
+{
+  "source": "text-ip-adapter/data/pairs_v5_4_poetry_corpus_probe_artifact_clean/train.jsonl",
+  "rows": 3859,
+  "n_shards": 10,
+  "shards": [
+    {
+      "shard": 0,
+      "path": "prompt-adapters/projects/poetry-clean-corpus/pair_audit_v1/shards/pairs_v5_4_train_shard_00.jsonl",
+      "rows": 386,
+      "first_pair_id": "pairs_v5_0_train_t_s_eliot_0000",
+      "last_pair_id": "pairs_v5_0_train_fitzgerald_marcella_agnes_1845_0008"
+    },
+    {
+      "shard": 1,
+      "path": "prompt-adapters/projects/poetry-clean-corpus/pair_audit_v1/shards/pairs_v5_4_train_shard_01.jsonl",
+      "rows": 386,
+      "first_pair_id": "pairs_v5_0_train_fitzgerald_marcella_agnes_1845_0009",
+      "last_pair_id": "pairs_v5_0_train_rupert_brooke_0074"
+    },
+    {
+      "shard": 2,
+      "path": "prompt-adapters/projects/poetry-clean-corpus/pair_audit_v1/shards/pairs_v5_4_train_shard_02.jsonl",
+      "rows": 386,
+      "first_pair_id": "pairs_v5_0_train_rupert_brooke_0075",
+      "last_pair_id": "pairs_v5_0_train_l_a_czarnecki_0060"
+    },
+    {
+      "shard": 3,
+      "path": "prompt-adapters/projects/poetry-clean-corpus/pair_audit_v1/shards/pairs_v5_4_train_shard_03.jsonl",
+      "rows": 386,
+      "first_pair_id": "pairs_v5_0_train_l_a_czarnecki_0061",
+      "last_pair_id": "pairs_v5_0_train_lampman_archibald_1861_1899_0012"
+    },
+    {
+      "shard": 4,
+      "path": "prompt-adapters/projects/poetry-clean-corpus/pair_audit_v1/shards/pairs_v5_4_train_shard_04.jsonl",
+      "rows": 386,
+      "first_pair_id": "pairs_v5_0_train_lampman_archibald_1861_1899_0013",
+      "last_pair_id": "pairs_v5_0_train_ernest_charles_jones_0044"
+    },
+    {
+      "shard": 5,
+      "path": "prompt-adapters/projects/poetry-clean-corpus/pair_audit_v1/shards/pairs_v5_4_train_shard_05.jsonl",
+      "rows": 386,
+      "first_pair_id": "pairs_v5_0_train_ernest_charles_jones_0045",
+      "last_pair_id": "pairs_v5_0_train_firkins_chester_0042"
+    },
+    {
+      "shard": 6,
+      "path": "prompt-adapters/projects/poetry-clean-corpus/pair_audit_v1/shards/pairs_v5_4_train_shard_06.jsonl",
+      "rows": 386,
+      "first_pair_id": "pairs_v5_0_train_firkins_chester_0043",
+      "last_pair_id": "pairs_v5_0_train_lucas_daniel_bedinger_1836_1909_0044"
+    },
+    {
+      "shard": 7,
+      "path": "prompt-adapters/projects/poetry-clean-corpus/pair_audit_v1/shards/pairs_v5_4_train_shard_07.jsonl",
+      "rows": 386,
+      "first_pair_id": "pairs_v5_0_train_lucas_daniel_bedinger_1836_1909_0045",
+      "last_pair_id": "pairs_v5_0_train_walt_whitman_0030"
+    },
+    {
+      "shard": 8,
+      "path": "prompt-adapters/projects/poetry-clean-corpus/pair_audit_v1/shards/pairs_v5_4_train_shard_08.jsonl",
+      "rows": 386,
+      "first_pair_id": "pairs_v5_0_train_walt_whitman_0031",
+      "last_pair_id": "pairs_v5_0_train_sheehan_patrick_augustine_1852_1913_0016"
+    },
+    {
+      "shard": 9,
+      "path": "prompt-adapters/projects/poetry-clean-corpus/pair_audit_v1/shards/pairs_v5_4_train_shard_09.jsonl",
+      "rows": 385,
+      "first_pair_id": "pairs_v5_0_train_sheehan_patrick_augustine_1852_1913_0017",
+      "last_pair_id": "pairs_v5_0_train_skidmore_harriet_m_1837_1904_0079"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "checkpoint": "/Users/peteromalley/Documents/reigh-workspace/prompt-adapters/experiments/2026-05-text-022-broader-clean-split-restart/results/runpod_tmp/train_artifacts/tmp/stage1_v3_8_core2_cleanheldout_restart/final.pt",
+  "completed_at": "2026-04-26T07:35:59.428385+00:00",
+  "dataset_dir": "data/pairs_v3_9_core2_evalclean",
+  "dataset_sync": {
+    "changed": true,
+    "hash": "5688c58099d78ee1f3a9aa5cb9464cb4625f9cf436e48b89faa3054f0793b7d9"
+  },
+  "experiment_id": "2026-05-text-023-evalclean-probe-audit",
+  "hf_token_synced": true,
+  "launched_at": "2026-04-26T07:04:48.964826+00:00",
+  "pod_id": "vemrd9dj9mq1zj",
+  "project_sync": {
+    "changed": true,
+    "hash": "eff838e30a7ab8b9c85626706faec092e00ad939453318d2ac0be2fe2531f3de"
+  },
+  "ready_at": "2026-04-26T07:05:23.982565+00:00",
+  "remote_output_dir": "/tmp/exp023_v39_eval",
+  "remote_project_root": "/tmp/text-ip-adapter-v39-eval",
+  "status": "completed",
+  "storage": {
+    "matches": [
+      {
+        "dataCenterId": "EU-RO-1",
+        "id": "m6ccu1lodp",
+        "name": "Peter",
+        "size": 3000
+      }
+    ],
+    "storage_name": "Peter"
+  },
+  "terminated": true,
+  "terminated_at": "2026-04-26T07:35:59.907031+00:00"
+}

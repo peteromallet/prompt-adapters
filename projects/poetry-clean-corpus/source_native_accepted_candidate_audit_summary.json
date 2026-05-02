@@ -1,0 +1,350 @@
+{
+  "artifact_rate": 0.006701010961769377,
+  "authors": 127,
+  "duplicate_clean_hash_groups": 0,
+  "flag_counts": {
+    "classroom_prompt": 208,
+    "editorial": 1,
+    "ocr_noise": 136,
+    "placeholder": 1
+  },
+  "gates": {
+    "all_public_domain": true,
+    "max_artifact_rate": true,
+    "min_authors": true,
+    "min_records_per_author": true,
+    "no_duplicate_clean_text": true,
+    "no_parse_errors": true
+  },
+  "low_authors": {},
+  "min_records_per_author": 25,
+  "parse_errors": [],
+  "passed": true,
+  "path": "text-ip-adapter/data/poetry_corpus_v0_source_native_accepted_candidate/corpus.jsonl",
+  "retained_authors_at_min_records": 127,
+  "rows": 51634,
+  "top_author_counts": [
+    [
+      "percy_shelley",
+      2816
+    ],
+    [
+      "samuel_coleridge",
+      2812
+    ],
+    [
+      "william_shakespeare",
+      1947
+    ],
+    [
+      "henry_longfellow",
+      1903
+    ],
+    [
+      "ezra_pound",
+      1466
+    ],
+    [
+      "alfred_tennyson",
+      1354
+    ],
+    [
+      "browning_elizabeth_barrett_1806_1861",
+      1151
+    ],
+    [
+      "walt_whitman",
+      991
+    ],
+    [
+      "dante_gabriel_rossetti",
+      965
+    ],
+    [
+      "virgil",
+      883
+    ],
+    [
+      "percy_bysshe_shelley",
+      870
+    ],
+    [
+      "amy_lowell",
+      836
+    ],
+    [
+      "gordon_adam_lindsay_1833_1870",
+      811
+    ],
+    [
+      "knortz_karl_1841_d",
+      790
+    ],
+    [
+      "prior_matthew",
+      723
+    ],
+    [
+      "tennyson_alfred_tennyson_baron_1809_1892",
+      697
+    ],
+    [
+      "caswall_edward_1814_1878",
+      671
+    ],
+    [
+      "charles_churchill",
+      666
+    ],
+    [
+      "henry_william_herbert_frank_forester_morgan_herbert",
+      647
+    ],
+    [
+      "skidmore_harriet_m_1837_1904",
+      641
+    ]
+  ],
+  "top_author_flags": {
+    "alfred_tennyson": {
+      "classroom_prompt": 3
+    },
+    "algernon_swinburne": {
+      "classroom_prompt": 1
+    },
+    "amy_lowell": {
+      "classroom_prompt": 8
+    },
+    "arber_edward_1836_1912": {
+      "classroom_prompt": 1,
+      "ocr_noise": 2
+    },
+    "bowen_maria": {
+      "classroom_prompt": 1
+    },
+    "browning_elizabeth_barrett_1806_1861": {
+      "ocr_noise": 1
+    },
+    "caswall_edward_1814_1878": {
+      "classroom_prompt": 2
+    },
+    "charles_churchill": {
+      "ocr_noise": 8
+    },
+    "charles_mackay": {
+      "classroom_prompt": 3,
+      "ocr_noise": 2
+    },
+    "craig_frank_h": {
+      "ocr_noise": 2
+    },
+    "croce_benedetto_1866_1952": {
+      "classroom_prompt": 10
+    },
+    "de_vere_aubrey_1814_1902": {
+      "classroom_prompt": 1
+    },
+    "edgar_allan_poe": {
+      "classroom_prompt": 1,
+      "ocr_noise": 1
+    },
+    "ezra_pound": {
+      "classroom_prompt": 2
+    },
+    "firkins_chester": {
+      "classroom_prompt": 1
+    },
+    "fisher_benjamin_franklin_1873_1916": {
+      "ocr_noise": 1
+    },
+    "fitzgerald_marcella_agnes_1845": {
+      "classroom_prompt": 4
+    },
+    "gaffney_francis_a": {
+      "classroom_prompt": 1
+    },
+    "gerard_manley_hopkins": {
+      "classroom_prompt": 1
+    },
+    "gordon_adam_lindsay_1833_1870": {
+      "classroom_prompt": 1,
+      "ocr_noise": 1
+    },
+    "h_cumberland_bentley_and_finch_mason": {
+      "ocr_noise": 3
+    },
+    "heider_andrew_bernard_1880": {
+      "classroom_prompt": 8,
+      "ocr_noise": 2
+    },
+    "henry_longfellow": {
+      "classroom_prompt": 14
+    },
+    "henry_william_herbert_frank_forester_morgan_herbert": {
+      "classroom_prompt": 1
+    },
+    "huntingtower_catherine_rebecca_grey_talmash_baroness_1766_or_7_1852": {
+      "ocr_noise": 5
+    },
+    "joaquin_miller": {
+      "ocr_noise": 1
+    },
+    "john_clare": {
+      "ocr_noise": 5
+    },
+    "john_cunningham": {
+      "classroom_prompt": 1,
+      "ocr_noise": 4
+    },
+    "john_e_baxter_and_james_montgomery_flagg": {
+      "classroom_prompt": 1,
+      "ocr_noise": 6
+    },
+    "knortz_karl_1841_d": {
+      "classroom_prompt": 1,
+      "ocr_noise": 2
+    },
+    "kraljevic_marko": {
+      "classroom_prompt": 1,
+      "ocr_noise": 1
+    },
+    "l_a_czarnecki": {
+      "classroom_prompt": 2
+    },
+    "lampman_archibald_1861_1899": {
+      "classroom_prompt": 1,
+      "ocr_noise": 2
+    },
+    "leo_wiener": {
+      "classroom_prompt": 2
+    },
+    "leo_xiii_pope_1810_1903": {
+      "classroom_prompt": 1
+    },
+    "letitia_elizabeth_landon": {
+      "ocr_noise": 2
+    },
+    "lowell_amy_1874_1925": {
+      "classroom_prompt": 4,
+      "ocr_noise": 2
+    },
+    "macaulay_thomas_babington_macaulay_baron_1800_1859": {
+      "ocr_noise": 5
+    },
+    "masefield_john_1878_1967": {
+      "classroom_prompt": 4
+    },
+    "mason_william_1725_1797": {
+      "classroom_prompt": 1,
+      "ocr_noise": 9
+    },
+    "montagu_mary_wortley_lady_1689_1762": {
+      "classroom_prompt": 2,
+      "ocr_noise": 2
+    },
+    "morley_sylvanus_griswold_1883_1948": {
+      "classroom_prompt": 1
+    },
+    "mrs_chaworth_muster": {
+      "ocr_noise": 3
+    },
+    "newman_john_henry_1801_1890": {
+      "classroom_prompt": 1
+    },
+    "nichols_robert_malise_bowyer_1893_1944": {
+      "ocr_noise": 1
+    },
+    "noel_caroline_m": {
+      "classroom_prompt": 2
+    },
+    "o_hanlon_john_1821_1905": {
+      "classroom_prompt": 2,
+      "ocr_noise": 1
+    },
+    "omar_khayyam": {
+      "classroom_prompt": 2
+    },
+    "pearse_padraic_1879_1916": {
+      "classroom_prompt": 6
+    },
+    "percy_bysshe_shelley": {
+      "classroom_prompt": 3,
+      "ocr_noise": 2
+    },
+    "percy_shelley": {
+      "classroom_prompt": 9
+    },
+    "prior_matthew": {
+      "classroom_prompt": 1,
+      "ocr_noise": 12
+    },
+    "quintus_horatius_flaccus": {
+      "classroom_prompt": 2,
+      "ocr_noise": 6
+    },
+    "rio_a_f_1797_1874": {
+      "classroom_prompt": 2
+    },
+    "robert_browning": {
+      "classroom_prompt": 3
+    },
+    "ruskin_john_1819_1900": {
+      "classroom_prompt": 1,
+      "ocr_noise": 1
+    },
+    "samuel_coleridge": {
+      "classroom_prompt": 28,
+      "editorial": 1
+    },
+    "schiller_friedrich_1759_1805": {
+      "classroom_prompt": 4,
+      "ocr_noise": 1
+    },
+    "shakespeare_william_1564_1616": {
+      "classroom_prompt": 11,
+      "ocr_noise": 12
+    },
+    "skidmore_harriet_m_1837_1904": {
+      "classroom_prompt": 2
+    },
+    "stewart_john_of_baldynneis": {
+      "classroom_prompt": 1
+    },
+    "theodore_winthrop": {
+      "classroom_prompt": 1
+    },
+    "thomas_campbell": {
+      "classroom_prompt": 1
+    },
+    "thomas_hardy": {
+      "classroom_prompt": 1
+    },
+    "virgil": {
+      "ocr_noise": 1
+    },
+    "walt_whitman": {
+      "classroom_prompt": 8
+    },
+    "wheatley_phillis_1753_1784": {
+      "classroom_prompt": 1
+    },
+    "will_carleton": {
+      "classroom_prompt": 2
+    },
+    "william_shakespeare": {
+      "classroom_prompt": 25,
+      "ocr_noise": 27,
+      "placeholder": 1
+    },
+    "wordsworth_william_1770_1850": {
+      "classroom_prompt": 1
+    },
+    "wright_thomas_1810_1877": {
+      "classroom_prompt": 1
+    },
+    "wyatt_thomas_sir_1503_1542": {
+      "classroom_prompt": 1
+    }
+  },
+  "unique_clean_hashes": 51634
+}

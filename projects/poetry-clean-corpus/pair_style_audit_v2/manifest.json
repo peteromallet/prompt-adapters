@@ -1,0 +1,66 @@
+{
+  "source": "text-ip-adapter/data/pairs_v5_7_poetry_pair_audited_min25/train.jsonl",
+  "rows": 3135,
+  "shards": [
+    {
+      "shard": 0,
+      "path": "prompt-adapters/projects/poetry-clean-corpus/pair_style_audit_v2/shards/pairs_v5_7_train_style_shard_00.jsonl",
+      "rows": 314,
+      "decision_path": "prompt-adapters/projects/poetry-clean-corpus/pair_style_audit_v2/decisions/decisions_shard_00.jsonl"
+    },
+    {
+      "shard": 1,
+      "path": "prompt-adapters/projects/poetry-clean-corpus/pair_style_audit_v2/shards/pairs_v5_7_train_style_shard_01.jsonl",
+      "rows": 314,
+      "decision_path": "prompt-adapters/projects/poetry-clean-corpus/pair_style_audit_v2/decisions/decisions_shard_01.jsonl"
+    },
+    {
+      "shard": 2,
+      "path": "prompt-adapters/projects/poetry-clean-corpus/pair_style_audit_v2/shards/pairs_v5_7_train_style_shard_02.jsonl",
+      "rows": 314,
+      "decision_path": "prompt-adapters/projects/poetry-clean-corpus/pair_style_audit_v2/decisions/decisions_shard_02.jsonl"
+    },
+    {
+      "shard": 3,
+      "path": "prompt-adapters/projects/poetry-clean-corpus/pair_style_audit_v2/shards/pairs_v5_7_train_style_shard_03.jsonl",
+      "rows": 314,
+      "decision_path": "prompt-adapters/projects/poetry-clean-corpus/pair_style_audit_v2/decisions/decisions_shard_03.jsonl"
+    },
+    {
+      "shard": 4,
+      "path": "prompt-adapters/projects/poetry-clean-corpus/pair_style_audit_v2/shards/pairs_v5_7_train_style_shard_04.jsonl",
+      "rows": 314,
+      "decision_path": "prompt-adapters/projects/poetry-clean-corpus/pair_style_audit_v2/decisions/decisions_shard_04.jsonl"
+    },
+    {
+      "shard": 5,
+      "path": "prompt-adapters/projects/poetry-clean-corpus/pair_style_audit_v2/shards/pairs_v5_7_train_style_shard_05.jsonl",
+      "rows": 314,
+      "decision_path": "prompt-adapters/projects/poetry-clean-corpus/pair_style_audit_v2/decisions/decisions_shard_05.jsonl"
+    },
+    {
+      "shard": 6,
+      "path": "prompt-adapters/projects/poetry-clean-corpus/pair_style_audit_v2/shards/pairs_v5_7_train_style_shard_06.jsonl",
+      "rows": 314,
+      "decision_path": "prompt-adapters/projects/poetry-clean-corpus/pair_style_audit_v2/decisions/decisions_shard_06.jsonl"
+    },
+    {
+      "shard": 7,
+      "path": "prompt-adapters/projects/poetry-clean-corpus/pair_style_audit_v2/shards/pairs_v5_7_train_style_shard_07.jsonl",
+      "rows": 314,
+      "decision_path": "prompt-adapters/projects/poetry-clean-corpus/pair_style_audit_v2/decisions/decisions_shard_07.jsonl"
+    },
+    {
+      "shard": 8,
+      "path": "prompt-adapters/projects/poetry-clean-corpus/pair_style_audit_v2/shards/pairs_v5_7_train_style_shard_08.jsonl",
+      "rows": 314,
+      "decision_path": "prompt-adapters/projects/poetry-clean-corpus/pair_style_audit_v2/decisions/decisions_shard_08.jsonl"
+    },
+    {
+      "shard": 9,
+      "path": "prompt-adapters/projects/poetry-clean-corpus/pair_style_audit_v2/shards/pairs_v5_7_train_style_shard_09.jsonl",
+      "rows": 309,
+      "decision_path": "prompt-adapters/projects/poetry-clean-corpus/pair_style_audit_v2/decisions/decisions_shard_09.jsonl"
+    }
+  ]
+}

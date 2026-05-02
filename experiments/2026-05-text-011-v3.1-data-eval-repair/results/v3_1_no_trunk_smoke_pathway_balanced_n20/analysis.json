@@ -1,0 +1,33 @@
+{
+  "variants": [
+    "own",
+    "swap",
+    "zero",
+    "random",
+    "code"
+  ],
+  "mean_cos_z_swap": 0.4302059982903302,
+  "mean_cos_K_first_swap": 0.48205759227275846,
+  "mean_cos_K_last_swap": 0.4462068475782871,
+  "mean_cos_V_first_swap": 0.5038529701530934,
+  "mean_cos_V_last_swap": 0.43700771778821945,
+  "mean_gen_jaccard_swap": 0.0,
+  "mean_cos_z_zero": 0.0,
+  "mean_cos_K_first_zero": 0.3177463194355369,
+  "mean_cos_K_last_zero": -0.13832450853660702,
+  "mean_cos_V_first_zero": 0.31987349335104226,
+  "mean_cos_V_last_zero": -0.20219033118337393,
+  "mean_gen_jaccard_zero": 0.0,
+  "mean_cos_z_random": 0.026891845837235452,
+  "mean_cos_K_first_random": 0.09222350344061851,
+  "mean_cos_K_last_random": 0.037394507077988234,
+  "mean_cos_V_first_random": 0.10321274269372224,
+  "mean_cos_V_last_random": 0.009765377640724182,
+  "mean_gen_jaccard_random": 0.0,
+  "mean_cos_z_code": 0.0838715115794912,
+  "mean_cos_K_first_code": 0.22324104513972998,
+  "mean_cos_K_last_code": 0.11310501550324262,
+  "mean_cos_V_first_code": 0.19155123661039397,
+  "mean_cos_V_last_code": 0.06382498424500227,
+  "mean_gen_jaccard_code": 0.0
+}

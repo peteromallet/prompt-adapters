@@ -1,0 +1,35 @@
+id: 2026-05-text-008-v2-warmstart-minfix
+modality: text
+project: text-gemma3-prefix-kv
+tags:
+  - v2-corpus
+  - warmstart
+  - no-trunk
+  - contrastive-active
+  - data-curation
+status: planned
+consequential: true
+question: "After curating the v2 corpus and restoring active contrastive loss, can the 006 no-trunk warm-start recipe recover reference-specific K/V discrimination and Opus-judged style match?"
+hypothesis: |
+  The v2 dryrun failed because cold-start training on noisy v2_clean collapsed to a
+  near-constant prefix (cos_K_first_swap=0.989), and the big-context warmstart run
+  was confounded because it used batch_size=1 with contrastive disabled. If we
+  remove obvious v2 corpus poison (short/whitespace targets, OCR noise,
+  non-literary essay scaffolding, suspect mr_* UN-debate speeches, and possibly
+  broken screenplay rows), then warm-start from 006 with target_max=1024,
+  batch_size=2, and contrastive_weight=0.1 should recover pathway discrimination
+  while preserving the larger-context benefit.
+
+  Predict:
+  (1) cos_K_first_swap <= 0.40 by final eval.
+  (2) Opus T3b adapter wins >= 12/20.
+  (3) Opus-flagged mode collapse < 10% on the 50-sample alpha-blend pool.
+  (4) Opus T2 adapter-vs-prompted_baseline >= 60%.
+parent: 2026-05-text-006-projector-no-trunk
+base_model: "google/gemma-3-4b-pt (frozen), no-trunk 006 adapter warm-start"
+dataset: "data/pairs_v2/*.v2_curated.jsonl produced by prompt-adapters/scripts_staging/curate_v2_pairs.py from v2_clean"
+core_commit: "TBD at launch"
+compute: "Existing RunPod RTX 4090 if available; estimated ~$2.40 train + eval"
+results: {}
+headline: TBD
+next: "If all four gates pass, upgrade C1 from supported-with-caveat to supported and proceed to C4 long-context or C2 audio port. If pathway passes but Opus style fails, promote Flamingo-style cross-attention. If pathway fails, run stage1_v2_bundle.yaml only as fallback 008b."

@@ -1,0 +1,543 @@
+{
+  "anthology_like": 76,
+  "licenses": {
+    "public_domain_candidate": 500
+  },
+  "missing_author": 16,
+  "missing_title": 0,
+  "path": "prompt-adapters/projects/poetry-clean-corpus/source_manifest_ia_pre1930_candidates.jsonl",
+  "rows": 500,
+  "sample_rows": [
+    {
+      "author_id": null,
+      "author_name": "Maynard, Theodore",
+      "expected_register": "poetry",
+      "ia_identifier": "poems00maynuoft",
+      "ia_language": [
+        "English"
+      ],
+      "ia_licenseurl": [
+        "http://creativecommons.org/licenses/publicdomain/"
+      ],
+      "ia_rights": [],
+      "ia_subject": [],
+      "license": "public_domain_candidate",
+      "public_domain_basis": "internet_archive_rights_or_license_metadata_candidate",
+      "risk_notes": "Internet Archive metadata candidate; requires author normalization, OCR quality audit, rights verification, and poem-boundary parsing before acceptance.",
+      "source_id": "internet_archive_poems00maynuoft",
+      "source_name": "internet_archive",
+      "source_publication_year": 1919,
+      "source_url": "https://archive.org/details/poems00maynuoft",
+      "source_work_title": "Poems",
+      "status": "candidate"
+    },
+    {
+      "author_id": null,
+      "author_name": "Philander Bailey West",
+      "expected_register": "poetry",
+      "ia_identifier": "doc-cw-072_202112",
+      "ia_language": [
+        "eng"
+      ],
+      "ia_licenseurl": [
+        "http://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "ia_rights": [],
+      "ia_subject": [
+        "Philander Bailey West",
+        "P. B. West",
+        "poem",
+        "poetry",
+        "life",
+        "stars",
+        "ocean",
+        "sea",
+        "peaceful",
+        "shore"
+      ],
+      "license": "public_domain_candidate",
+      "public_domain_basis": "internet_archive_rights_or_license_metadata_candidate",
+      "risk_notes": "Internet Archive metadata candidate; requires author normalization, OCR quality audit, rights verification, and poem-boundary parsing before acceptance.",
+      "source_id": "internet_archive_doc-cw-072_202112",
+      "source_name": "internet_archive",
+      "source_publication_year": 1865,
+      "source_url": "https://archive.org/details/doc-cw-072_202112",
+      "source_work_title": "DOC CW 072 Poem",
+      "status": "candidate"
+    },
+    {
+      "author_id": null,
+      "author_name": "Robertson, Frederick William, 1816-1853",
+      "expected_register": "poetry",
+      "ia_identifier": "LecturesOnTheInfluenceOfPoetry",
+      "ia_language": [
+        "eng"
+      ],
+      "ia_licenseurl": [
+        "http://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "ia_rights": [],
+      "ia_subject": [
+        "Poetry",
+        "Wordsworth, William, 1770-1850"
+      ],
+      "license": "public_domain_candidate",
+      "public_domain_basis": "internet_archive_rights_or_license_metadata_candidate",
+      "risk_notes": "Internet Archive metadata candidate; requires author normalization, OCR quality audit, rights verification, and poem-boundary parsing before acceptance.",
+      "source_id": "internet_archive_LecturesOnTheInfluenceOfPoetry",
+      "source_name": "internet_archive",
+      "source_publication_year": 1906,
+      "source_url": "https://archive.org/details/LecturesOnTheInfluenceOfPoetry",
+      "source_work_title": "Lectures on the influence of poetry and Wordsworth",
+      "status": "candidate"
+    },
+    {
+      "author_id": null,
+      "author_name": "O'Hanlon, John, 1821-1905",
+      "expected_register": "poetry",
+      "ia_identifier": "LegendLaysOfIreland",
+      "ia_language": [
+        "eng"
+      ],
+      "ia_licenseurl": [
+        "http://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "ia_rights": [],
+      "ia_subject": [
+        "Legends -- Ireland -- Poetry",
+        "Folklore",
+        "Folklore -- Ireland",
+        "Legends"
+      ],
+      "license": "public_domain_candidate",
+      "public_domain_basis": "internet_archive_rights_or_license_metadata_candidate",
+      "risk_notes": "Internet Archive metadata candidate; requires author normalization, OCR quality audit, rights verification, and poem-boundary parsing before acceptance.",
+      "source_id": "internet_archive_LegendLaysOfIreland",
+      "source_name": "internet_archive",
+      "source_publication_year": 1870,
+      "source_url": "https://archive.org/details/LegendLaysOfIreland",
+      "source_work_title": "Legend Lays of Ireland",
+      "status": "candidate"
+    },
+    {
+      "author_id": null,
+      "author_name": "Walsh, James J. (James Joseph), 1865-1942",
+      "expected_register": "poetry",
+      "ia_identifier": "TheChirpingsOfDustyMike",
+      "ia_language": [
+        "eng"
+      ],
+      "ia_licenseurl": [
+        "http://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "ia_rights": [],
+      "ia_subject": [
+        "Homeless persons -- Poetry",
+        "Tansy, Bill, 1864- -- Poetry",
+        "Alcoholics -- Poetry",
+        "Tansy, Bill, 1864-",
+        "Alcoholics",
+        "Homeless persons"
+      ],
+      "license": "public_domain_candidate",
+      "public_domain_basis": "internet_archive_rights_or_license_metadata_candidate",
+      "risk_notes": "Internet Archive metadata candidate; requires author normalization, OCR quality audit, rights verification, and poem-boundary parsing before acceptance.",
+      "source_id": "internet_archive_TheChirpingsOfDustyMike",
+      "source_name": "internet_archive",
+      "source_publication_year": 1907,
+      "source_url": "https://archive.org/details/TheChirpingsOfDustyMike",
+      "source_work_title": "The chirpings of Dusty Mike",
+      "status": "candidate"
+    },
+    {
+      "author_id": null,
+      "author_name": "Students of Wesleyan University (Middletown, CT)",
+      "expected_register": "poetry",
+      "ia_identifier": "classic_or_college_monthly_184010",
+      "ia_language": [
+        "eng"
+      ],
+      "ia_licenseurl": [
+        "https://creativecommons.org/publicdomain/zero/1.0/"
+      ],
+      "ia_rights": [],
+      "ia_subject": [
+        "magazine",
+        "literary magazine",
+        "college life",
+        "literary criticism",
+        "poetry",
+        "essays",
+        "humor",
+        "religion",
+        "Wesleyan University"
+      ],
+      "license": "public_domain_candidate",
+      "public_domain_basis": "internet_archive_rights_or_license_metadata_candidate",
+      "risk_notes": "Internet Archive metadata candidate; requires author normalization, OCR quality audit, rights verification, and poem-boundary parsing before acceptance.",
+      "source_id": "internet_archive_classic_or_college_monthly_184010",
+      "source_name": "internet_archive",
+      "source_publication_year": 1840,
+      "source_url": "https://archive.org/details/classic_or_college_monthly_184010",
+      "source_work_title": "The Classic; or, College Monthly (October, 1840)",
+      "status": "candidate"
+    },
+    {
+      "author_id": null,
+      "author_name": "Frances Ellen Watkins Harper",
+      "expected_register": "poetry",
+      "ia_identifier": "frances-ellen-watkins-harper_sketches-of-southern-life-1872",
+      "ia_language": [
+        "eng"
+      ],
+      "ia_licenseurl": [
+        "https://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "ia_rights": [],
+      "ia_subject": [
+        "poetry"
+      ],
+      "license": "public_domain_candidate",
+      "public_domain_basis": "internet_archive_rights_or_license_metadata_candidate",
+      "risk_notes": "Internet Archive metadata candidate; requires author normalization, OCR quality audit, rights verification, and poem-boundary parsing before acceptance.",
+      "source_id": "internet_archive_frances-ellen-watkins-harper_sketches-of-southern-life-1872",
+      "source_name": "internet_archive",
+      "source_publication_year": 1872,
+      "source_url": "https://archive.org/details/frances-ellen-watkins-harper_sketches-of-southern-life-1872",
+      "source_work_title": "Sketches of Southern Life",
+      "status": "candidate"
+    },
+    {
+      "author_id": null,
+      "author_name": "Oliver Herford",
+      "expected_register": "poetry",
+      "ia_identifier": "ConfessionsOfACaricaturistOliverHerford",
+      "ia_language": [
+        "eng"
+      ],
+      "ia_licenseurl": [
+        "http://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "ia_rights": [],
+      "ia_subject": [
+        "Humorous poetry",
+        "Caricatures and cartoons"
+      ],
+      "license": "public_domain_candidate",
+      "public_domain_basis": "internet_archive_rights_or_license_metadata_candidate",
+      "risk_notes": "Internet Archive metadata candidate; requires author normalization, OCR quality audit, rights verification, and poem-boundary parsing before acceptance.",
+      "source_id": "internet_archive_ConfessionsOfACaricaturistOliverHerford",
+      "source_name": "internet_archive",
+      "source_publication_year": 1917,
+      "source_url": "https://archive.org/details/ConfessionsOfACaricaturistOliverHerford",
+      "source_work_title": "Confessions of a Caricaturist - Oliver Herford",
+      "status": "candidate"
+    },
+    {
+      "author_id": null,
+      "author_name": "Forrest, M (Mabel) 1872-1935",
+      "expected_register": "poetry",
+      "ia_identifier": "b2256717",
+      "ia_language": [
+        "eng"
+      ],
+      "ia_licenseurl": [
+        "http://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "ia_rights": [],
+      "ia_subject": [
+        "Poetry",
+        "Australian -- 20th century"
+      ],
+      "license": "public_domain_candidate",
+      "public_domain_basis": "internet_archive_rights_or_license_metadata_candidate",
+      "risk_notes": "Internet Archive metadata candidate; requires author normalization, OCR quality audit, rights verification, and poem-boundary parsing before acceptance.",
+      "source_id": "internet_archive_b2256717",
+      "source_name": "internet_archive",
+      "source_publication_year": 1927,
+      "source_url": "https://archive.org/details/b2256717",
+      "source_work_title": "Poems.",
+      "status": "candidate"
+    },
+    {
+      "author_id": null,
+      "author_name": "Percy, Thomas, 1729-1811",
+      "expected_register": "poetry",
+      "ia_identifier": "ReliquesOfAncientEnglishPoetry1866P2",
+      "ia_language": [
+        "eng"
+      ],
+      "ia_licenseurl": [
+        "http://creativecommons.org/publicdomain/mark/1.0/"
+      ],
+      "ia_rights": [],
+      "ia_subject": [
+        "poetry",
+        "Middle English",
+        "England",
+        "Great Britain",
+        "Middle Ages"
+      ],
+      "license": "public_domain_candidate",
+      "public_domain_basis": "internet_archive_rights_or_license_metadata_candidate",
+      "risk_notes": "Internet Archive metadata candidate; requires author normalization, OCR quality audit, rights verification, and poem-boundary parsing before acceptance.",
+      "source_id": "internet_archive_ReliquesOfAncientEnglishPoetry1866P2",
+      "source_name": "internet_archive",
+      "source_publication_year": 1866,
+      "source_url": "https://archive.org/details/ReliquesOfAncientEnglishPoetry1866P2",
+      "source_work_title": "Reliques of ancient English poetry: consisting of old heroic ballads, songs, and other pieces of our earlier poets; together with some few of later date",
+      "status": "candidate"
+    }
+  ],
+  "source_names": {
+    "internet_archive": 500
+  },
+  "statuses": {
+    "candidate": 500
+  },
+  "top_authors": [
+    [
+      "<missing>",
+      16
+    ],
+    [
+      "Philander Bailey West",
+      10
+    ],
+    [
+      "Percy, Thomas, 1729-1811",
+      6
+    ],
+    [
+      "Tennyson, Alfred Tennyson, Baron, 1809-1892",
+      6
+    ],
+    [
+      "William Shakespeare",
+      5
+    ],
+    [
+      "Aikin, John, 1747-1822, ed",
+      5
+    ],
+    [
+      "Pope, Alexander, 1688-1744",
+      4
+    ],
+    [
+      "Disraeli, Benjamin, Earl of Beaconsfield, 1804-1881",
+      4
+    ],
+    [
+      "Louis A. Godey, Sarah Josepha Hale",
+      4
+    ],
+    [
+      "Walter Scott",
+      3
+    ],
+    [
+      "Percy Bysshe Shelley",
+      3
+    ],
+    [
+      "Edgar Allan Poe",
+      3
+    ],
+    [
+      "Ann Ward Radcliffe",
+      3
+    ],
+    [
+      "Charles J. Peterson",
+      3
+    ],
+    [
+      "Louis A. Godey; Sarah Josepha Hale",
+      3
+    ],
+    [
+      "Browning, Elizabeth Barrett, 1806-1861",
+      3
+    ],
+    [
+      "John Dryden",
+      3
+    ],
+    [
+      "Goldsmith, Oliver, 1730?-1774",
+      3
+    ],
+    [
+      "Williams, Isaac, 1802-1865",
+      2
+    ],
+    [
+      "Lowell, James Russell, 1819-1891",
+      2
+    ],
+    [
+      "Cushag",
+      2
+    ],
+    [
+      "Swift, Jonathan, 1667-1745",
+      2
+    ],
+    [
+      "Southey, Robert, 1774-1843",
+      2
+    ],
+    [
+      "Alexander Pope",
+      2
+    ],
+    [
+      "Rossetti, Christina Georgina, 1830-1894",
+      2
+    ],
+    [
+      "Russell, Matthew, S. J, Rev",
+      2
+    ],
+    [
+      "Dante Gabriel Rossetti",
+      2
+    ],
+    [
+      "The Whims Company (New York)",
+      2
+    ],
+    [
+      "Anonymous",
+      2
+    ],
+    [
+      "John Wolcot",
+      2
+    ]
+  ],
+  "top_years": [
+    [
+      "1870",
+      13
+    ],
+    [
+      "1864",
+      13
+    ],
+    [
+      "1904",
+      10
+    ],
+    [
+      "1916",
+      9
+    ],
+    [
+      "1915",
+      8
+    ],
+    [
+      "1820",
+      8
+    ],
+    [
+      "1919",
+      7
+    ],
+    [
+      "1906",
+      7
+    ],
+    [
+      "1914",
+      7
+    ],
+    [
+      "1851",
+      7
+    ],
+    [
+      "1794",
+      7
+    ],
+    [
+      "1850",
+      7
+    ],
+    [
+      "1922",
+      7
+    ],
+    [
+      "1905",
+      7
+    ],
+    [
+      "1926",
+      7
+    ],
+    [
+      "1865",
+      6
+    ],
+    [
+      "1874",
+      6
+    ],
+    [
+      "1908",
+      6
+    ],
+    [
+      "1868",
+      6
+    ],
+    [
+      "1896",
+      6
+    ],
+    [
+      "1881",
+      6
+    ],
+    [
+      "1880",
+      6
+    ],
+    [
+      "1920",
+      6
+    ],
+    [
+      "1902",
+      6
+    ],
+    [
+      "1907",
+      5
+    ],
+    [
+      "1927",
+      5
+    ],
+    [
+      "1873",
+      5
+    ],
+    [
+      "1846",
+      5
+    ],
+    [
+      "1844",
+      5
+    ],
+    [
+      "1845",
+      5
+    ]
+  ],
+  "unique_author_names": 390
+}

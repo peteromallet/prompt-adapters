@@ -1,0 +1,50 @@
+{
+  "checkpoint": "/Users/peteromalley/Documents/reigh-workspace/prompt-adapters/experiments/2026-05-text-022-broader-clean-split-restart/results/runpod_tmp/train_artifacts/tmp/stage1_v3_8_core2_cleanheldout_restart/final.pt",
+  "checkpoint_upload": "skipped",
+  "completed_at": "2026-04-26T21:01:20.004391+00:00",
+  "config": "configs/stage1_v5_8_poetry_pair_audited_min25_stronger_style_lrfloor_restart006.yaml",
+  "dataset_syncs": [
+    {
+      "local_dir": "/Users/peteromalley/Documents/reigh-workspace/text-ip-adapter/data/pairs_v5_7_poetry_pair_audited_min25",
+      "remote_dir": "/workspace/text-ip-adapter/data/pairs_v5_7_poetry_pair_audited_min25",
+      "result": {
+        "changed": true,
+        "hash": "831b0b5180b7d65e49de11a8b0b15e40538a6518ac0d08835c8bc72d53e4a205"
+      }
+    }
+  ],
+  "experiment_id": "2026-05-text-031-poetry-v5-8-longer-lrfloor",
+  "hf_token_synced": true,
+  "launched_at": "2026-04-26T20:30:26.947418+00:00",
+  "max_steps": 2400,
+  "n_probes": 12,
+  "pod_id": "qlar6owdk1lfbm",
+  "preflight_stdout": "scripts/train.py True 822\nsrc/text_ip_adapter/data/dataset.py True 6856\nsrc/text_ip_adapter/train/loop.py True 13949\nconfigs/stage1_v5_8_poetry_pair_audited_min25_stronger_style_lrfloor_restart006.yaml True 1532\ndata/pairs_v5_7_poetry_pair_audited_min25/train.jsonl True 5554203\ndata/pairs_v5_7_poetry_pair_audited_min25/probes_balanced_n24.jsonl True 21365\ncheckpoints/stage1_gemma_no_trunk/final.pt True 966090430\nmax_steps 2400\nmin_lr_ratio 0.1\nstyle_triplet_weight 1.5\nstyle_triplet_margin 0.35\ncontrastive_weight 0.2\ntrain_rows 3135\n",
+  "project_sync": {
+    "changed": true,
+    "hash": "8f60f2c0b27ca8d82644cde9fd4f305764b8dbd218796ab37e89b88b7b0826f2"
+  },
+  "ready_at": "2026-04-26T20:30:46.243469+00:00",
+  "remote_eval_dir": "/tmp/exp031_v5_8_longer_lrfloor_eval",
+  "remote_orch_log_dir": "/tmp/exp031_v5_8_longer_lrfloor_orch",
+  "remote_project_root": "/tmp/text-ip-adapter-031-v5-8-longer-lrfloor",
+  "remote_train_dir": "/tmp/stage1_v5_8_poetry_pair_audited_min25_stronger_style_lrfloor_restart006",
+  "status": "completed",
+  "storage": {
+    "matches": [
+      {
+        "dataCenterId": "EU-RO-1",
+        "id": "m6ccu1lodp",
+        "name": "Peter",
+        "size": 3000
+      }
+    ],
+    "storage_name": "Peter"
+  },
+  "terminated": true,
+  "terminated_at": "2026-04-26T21:01:20.725820+00:00",
+  "train_artifacts_download": "skipped",
+  "training_completed_at": "2026-04-26T20:51:53.254095+00:00",
+  "training_started_at": "2026-04-26T20:31:41.788138+00:00",
+  "workspace_root": "/workspace/text-ip-adapter"
+}

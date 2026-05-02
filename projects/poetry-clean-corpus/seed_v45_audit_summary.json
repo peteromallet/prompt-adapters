@@ -1,0 +1,119 @@
+{
+  "artifact_rate": 0.0028328611898017,
+  "authors": 27,
+  "duplicate_clean_hash_groups": 0,
+  "flag_counts": {
+    "classroom_prompt": 1,
+    "placeholder": 1,
+    "toc_index": 1
+  },
+  "gates": {
+    "all_public_domain": true,
+    "max_artifact_rate": true,
+    "min_authors": true,
+    "min_records_per_author": true,
+    "no_duplicate_clean_text": true,
+    "no_parse_errors": true
+  },
+  "low_authors": {},
+  "min_records_per_author": 10,
+  "parse_errors": [],
+  "passed": true,
+  "path": "text-ip-adapter/data/poetry_corpus_v0_seed_from_v45/corpus.jsonl",
+  "retained_authors_at_min_records": 27,
+  "rows": 1059,
+  "top_author_counts": [
+    [
+      "oscar_wilde",
+      61
+    ],
+    [
+      "edna_millay",
+      60
+    ],
+    [
+      "william_wordsworth",
+      49
+    ],
+    [
+      "edwin_arlington_robinson",
+      47
+    ],
+    [
+      "john_masefield",
+      47
+    ],
+    [
+      "elizabeth_browning",
+      44
+    ],
+    [
+      "stephen_crane",
+      44
+    ],
+    [
+      "algernon_swinburne",
+      42
+    ],
+    [
+      "amy_lowell",
+      41
+    ],
+    [
+      "dante_rossetti",
+      41
+    ],
+    [
+      "edgar_allan_poe",
+      41
+    ],
+    [
+      "gerard_manley_hopkins",
+      41
+    ],
+    [
+      "henry_longfellow",
+      41
+    ],
+    [
+      "rupert_brooke",
+      41
+    ],
+    [
+      "walt_whitman",
+      41
+    ],
+    [
+      "william_blake",
+      41
+    ],
+    [
+      "william_butler_yeats",
+      41
+    ],
+    [
+      "thomas_hardy",
+      40
+    ],
+    [
+      "robert_frost",
+      37
+    ],
+    [
+      "sara_teasdale",
+      32
+    ]
+  ],
+  "top_author_flags": {
+    "gerard_manley_hopkins": {
+      "placeholder": 1
+    },
+    "thomas_hardy": {
+      "classroom_prompt": 1
+    },
+    "william_wordsworth": {
+      "toc_index": 1
+    }
+  },
+  "unique_clean_hashes": 1059
+}

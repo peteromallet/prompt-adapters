@@ -6,7 +6,7 @@ claims:
     statement: "Prefix-K/V adapters on a frozen base LM beat the prompted_baseline for style transfer, at reasonable data scales."
     status: testing                       # untested | testing | supported | refuted | abandoned
     primary_project: text-gemma3-prefix-kv
-    evidence_so_far: "001 T2 FAIL (30%). 002 T2 PASS (70%) was register bias per 003's diagnostic (projector collapse). 004 added contrastive loss on projector K/V at weight 0.1 — projector unblock decisive (cos_K/V 0.91→0.41), T2 PASS 60%, T3b WEAK 55% — first non-register-bias C1 evidence but modest. 005 tested weight 0.3 hypothesis ('more pressure'); REFUTED — T3b regressed to 50%, α-blend LLM-judge signal inverted (+0.25→−0.25), same-domain cos_K got worse (swap 0.31→0.69). Loss-only lever explored on both sides; non-monotonic response. Next: 006 architectural fix (no-trunk projector) — the shared MLP trunk is the root structural cause."
+    evidence_so_far: "001 T2 FAIL (30%). 002 T2 PASS (70%) was register bias per 003's diagnostic (projector collapse). 004 added contrastive loss on projector K/V at weight 0.1 - projector unblock decisive (cos_K/V 0.91->0.41), T2 PASS 60%, T3b WEAK 55%. 005 stronger contrastive was refuted. 006 no-trunk partially confirmed the architectural fix but Opus corrected Haiku over-optimism. 013/014/015 established that contrastive must stay on and anti-repeat decoding removes loops. 017 v3.4 artifact-clean smoke is the best current direction: pathway stayed healthy (`cos_K_last_swap=0.502`), sampled generations stopped looping (`repeat3_mean=0.002`), T1/T4 passed, but author-level style still needs n>=20 dual-judge T2/T3b."
 
   - id: C2
     statement: "The architectural pattern (reference encoder → projector → prefix injection into frozen base) transfers across modalities."
@@ -33,9 +33,15 @@ active_projects:
   - id: text-gemma3-prefix-kv
     modality: text
     status: active
-    current_experiment: 2026-05-text-006-projector-no-trunk
+    current_experiment: 2026-05-text-018-v3.5-strict-artifact-clean-core3-longer
     claim_primary: C1
-    diagnostic_finding: "003 localized failure to projector. 004 (contrastive weight 0.1) achieved cos_K/V 0.91→0.41 and first non-register-bias C1 evidence with WEAK T3b 55%. 005 (contrastive weight 0.3, same architecture) REFUTED 'more pressure is better' — T3b regressed to 50%, α-blend LLM-judge signal inverted (+0.25→−0.25), same-domain cos_K got WORSE (swap 0.31→0.69). The projector's response to contrastive weight is non-monotonic. Loss-only intervention exhausted at this architecture. Next: 006 architectural fix (no-trunk projector — remove shared MLP trunk, per-layer heads project z directly to K/V)."
+    diagnostic_finding: "003 localized failure to projector. 004/005 showed contrastive weight is useful but non-monotonic. 006 no-trunk fixed the pathway but Haiku overstated style quality. 013 corrected data while preserving pathway, 014 refuted contrastive-off, 015 proved decoding controls remove mechanical loops, and 017 showed v3.4 artifact-clean data improves sampled generations without breaking the pathway. Next: scale the 017 recipe and require n>=20 dual-judge T2/T3b."
+  - id: poetry-clean-corpus
+    modality: text
+    status: active
+    current_artifact: poetry_corpus_v0_seed_from_v45
+    supports_claim: C1
+    diagnostic_finding: "025 showed pair-level cleanup and structural balancing are necessary but not sufficient. The next data workstream is a source-level public-domain poetry corpus with provenance, deterministic gates, and conservative pair derivation; row-count pair expansion is explicitly deprioritized."
 
 planned_projects:
   - id: audio-musicgen-prefix-kv

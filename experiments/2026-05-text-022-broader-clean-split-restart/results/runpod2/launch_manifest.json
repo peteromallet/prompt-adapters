@@ -1,0 +1,32 @@
+{
+  "pod_id": "pc0e8ccxdgnj1p",
+  "status": "ready",
+  "config": "configs/stage1_v3_8_core2_cleanheldout_restart.yaml",
+  "storage": {
+    "storage_name": "Peter",
+    "matches": [
+      {
+        "id": "m6ccu1lodp",
+        "name": "Peter",
+        "size": 3000,
+        "dataCenterId": "EU-RO-1"
+      }
+    ]
+  },
+  "launched_at": "2026-04-26T06:46:16+0200",
+  "remote_output": "/tmp/stage1_v3_8_core2_cleanheldout_restart",
+  "remote_eval": "/tmp/022_v3_8_eval",
+  "install_mode": "deps_only_no_editable",
+  "hf_token_synced": true,
+  "project_sync": {
+    "changed": true,
+    "hash": "88d5cd8e8e71966263aabd97eb2349efbd88f1d57fc7d8f041a5cfd5cd318347"
+  },
+  "dataset_sync": [
+    {
+      "changed": true,
+      "hash": "c3b2281ae92205528000031a0f43ae4c08bffc9e3db3f5c1efb528e6b4acdb39"
+    }
+  ],
+  "terminated": true
+}

@@ -1,0 +1,37 @@
+id: 2026-05-text-019-balanced-checkpoint-comparison
+modality: text
+project: text-gemma3-prefix-kv
+tags:
+  - checkpoint-comparison
+  - eval-only
+  - balanced-probes
+status: completed
+consequential: true
+question: "Did 018 fail because the 3000-step continuation overtrained, or because 017's positive read was probe-dependent?"
+hypothesis: "If 018 overtrained, early 018 checkpoints should preserve better own/swap pathway separation than final while keeping sampled generations clean. If 017 was probe-dependent, 017 final will also look weak on the balanced n21 probe."
+parent: 2026-05-text-018-v3.5-strict-artifact-clean-core3-longer
+base_model: google/gemma-3-4b-pt
+dataset: "data/pairs_v3_5_artifact_clean_core3"
+probe_set: "data/pairs_v3_5_artifact_clean_core3/probes_balanced_n21.jsonl"
+config: "configs/stage1_v3_5_artifact_clean_core3_longer.yaml"
+compute: "Completed RunPod eval-only comparison on pod 2wk8ccy36w75cq; pod terminated after artifact download."
+checkpoints:
+  - label: "017_final"
+    path: "checkpoints/stage1_v3_4_artifact_clean_core3_smoke/final.pt"
+  - label: "018_step500"
+    path: "checkpoints/stage1_v3_5_artifact_clean_core3_longer/step_500.pt"
+  - label: "018_step1000"
+    path: "checkpoints/stage1_v3_5_artifact_clean_core3_longer/step_1000.pt"
+  - label: "018_final"
+    path: "checkpoints/stage1_v3_5_artifact_clean_core3_longer/final.pt"
+decision_rule: "Choose the checkpoint with the best balanced n21 pathway (`cos_K_last_swap` lowest without random/code collapse) only if sampled generations stay low-repeat and T4 does not worsen. If all checkpoints are weak, stop training work and fix probe/data/eval design."
+headline: "Step1000 is the best checkpoint, and speech is the dominant weak register."
+outcome:
+  status: completed
+  best_checkpoint: "018_step1000"
+  best_pathway: "018_step1000 has the best balanced n21 pathway: cos_K_last_swap=0.609, random=-0.114, code=-0.070."
+  register_finding: "Speech dominates the weakness: speech cos_K_last_swap stays ~0.97 for every checkpoint, while poetry+screenplay mean is best at 0.428 for 018_step1000."
+  generation: "All checkpoints stay low-repeat under sampled anti-repeat decoding; 018_step1000 adapter repeat3_mean=0.0015, repeated-line=0.0, artifact_rows=0."
+  eval_battery: "T1 PASS for all. 018_step1000 gives surface T3 WEAK (13/21), T4 mem WEAK from formulaic speech salutations, T4 ref leak PASS."
+  caveat: "No dual-judge style evaluation was run because no judge key was available."
+next: "Use 018_step1000 as the best current checkpoint for eval, but the next training experiment should isolate/drop speech or repair speech prompts/salutations before widening architecture."

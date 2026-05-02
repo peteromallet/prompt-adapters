@@ -1,0 +1,56 @@
+{
+  "checkpoint": "/Users/peteromalley/Documents/reigh-workspace/prompt-adapters/experiments/2026-05-text-022-broader-clean-split-restart/results/runpod_tmp/train_artifacts/tmp/stage1_v3_8_core2_cleanheldout_restart/final.pt",
+  "checkpoint_upload": "skipped",
+  "config": "configs/stage1_gemma3_4b_pt_poetry_v5_10_paired_completion_explicit_neg_1300.yaml",
+  "dataset_syncs": [
+    {
+      "local_dir": "/Users/peteromalley/Documents/reigh-workspace/text-ip-adapter/data/pairs_v5_10_poetry_llm_style_medium_strong",
+      "remote_dir": "/workspace/text-ip-adapter/data/pairs_v5_10_poetry_llm_style_medium_strong",
+      "result": {
+        "changed": true,
+        "hash": "96d3390584699f1ae0689da4640e56fbda252ca508d2c2dffeb6555e52c3fd1b"
+      }
+    }
+  ],
+  "experiment_id": "2026-05-text-041-gemma3-4b-pt-paired-explicit-neg-1300",
+  "hf_token_synced": true,
+  "launched_at": "2026-04-27T16:15:44.504712+00:00",
+  "max_steps": 1300,
+  "n_probes": 12,
+  "pod_id": "rch7oh2a4z0wel",
+  "preflight_stdout": "scripts/train.py True 822\nsrc/text_ip_adapter/data/dataset.py True 7899\nsrc/text_ip_adapter/train/loop.py True 16855\nconfigs/stage1_gemma3_4b_pt_poetry_v5_10_paired_completion_explicit_neg_1300.yaml True 1484\ndata/pairs_v5_10_poetry_llm_style_medium_strong/train.jsonl True 5536556\ndata/pairs_v5_10_poetry_llm_style_medium_strong/probes_balanced_n24.jsonl True 21365\n True 4096\nmax_steps 1300\nmin_lr_ratio 0.1\nstyle_triplet_weight 1.5\nstyle_triplet_margin 0.35\ncontrastive_weight 0.2\ntrain_rows 2868\n",
+  "project_sync": {
+    "changed": true,
+    "hash": "dcfa0bfa1b08f48478e77f9fbf78be2fc9e47f7f7076930c1625dcb3324a6382"
+  },
+  "ready_at": "2026-04-27T16:16:19.653975+00:00",
+  "remote_eval_dir": "/tmp/exp041_gemma3_4b_pt_paired_explicit_neg_eval",
+  "remote_orch_log_dir": "/tmp/exp041_gemma3_4b_pt_paired_explicit_neg_orch",
+  "remote_project_root": "/tmp/text-ip-adapter-041-gemma3-4b-pt-paired-explicit-neg",
+  "remote_train_dir": "/tmp/stage1_gemma3_4b_pt_poetry_v5_10_paired_completion_explicit_neg_1300",
+  "skipped_checkpoint_evals": [
+    {
+      "checkpoint": "/tmp/stage1_gemma3_4b_pt_poetry_v5_10_paired_completion_explicit_neg_1300/step_1300.pt",
+      "tag": "step_1300"
+    }
+  ],
+  "status": "completed",
+  "storage": {
+    "matches": [
+      {
+        "dataCenterId": "EU-RO-1",
+        "id": "m6ccu1lodp",
+        "name": "Peter",
+        "size": 3000
+      }
+    ],
+    "storage_name": "Peter"
+  },
+  "completed_at": "2026-04-27T16:34:00+00:00",
+  "recovery_note": "Runner hit local ENOSPC while downloading train artifacts after eval artifacts/logs were already downloaded. Freed generated checkpoint/tar artifacts; RunPod lookup then returned pod not found, consistent with termination.",
+  "terminated": true,
+  "terminated_at": "2026-04-27T16:34:00+00:00",
+  "training_completed_at": "2026-04-27T16:22:06.661946+00:00",
+  "training_started_at": "2026-04-27T16:16:53.440496+00:00",
+  "workspace_root": "/workspace/text-ip-adapter"
+}

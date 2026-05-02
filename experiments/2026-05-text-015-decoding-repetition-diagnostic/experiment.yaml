@@ -1,0 +1,22 @@
+id: 2026-05-text-015-decoding-repetition-diagnostic
+modality: text
+project: text-gemma3-prefix-kv
+tags:
+  - decoding
+  - repetition
+  - v3-corpus
+  - checkpoint-eval
+status: completed
+consequential: true
+question: "Are the repeated generations after 013 primarily a decoding-time failure?"
+hypothesis: "If explicit anti-repetition decoding controls substantially clean up 013 samples while keeping the checkpoint and data fixed, the next step should tune generation/eval decoding before spending on another training run. If loops persist, the failure is encoded by the supervised objective or target construction."
+parent: 2026-05-text-013-v3.3-corrected-poetry-core3-smoke
+base_model: google/gemma-3-4b-pt
+dataset: "data/pairs_v3_3_corrected_poetry_core3"
+config: "configs/stage1_v3_3_corrected_poetry_core3_smoke.yaml"
+checkpoint: "checkpoints/stage1_v3_3_corrected_poetry_core3_smoke/final.pt"
+compute: "Completed RunPod checkpoint-only eval against the persisted 013 checkpoint; no training. Pod x74jz8wzhb18l1 terminated."
+decision_rule: "Promote decoding controls only if loops visibly reduce in poetry/screenplay/speech without turning outputs generic or destroying own-vs-swap style contrast."
+headline: "Partially confirmed: anti-repetition decoding nearly eliminates mechanical loops, but quality issues remain."
+result: "Adapter n-gram/line repetition dropped sharply versus 013. Sampled anti-repeat had repeat_3=0.0 and repeat_line=0.0 across poetry/screenplay/speech adapter samples, versus 013 repeat_3 of 0.806/0.261/0.416 and repeat_line of 0.637/0.261/0.207. Some instruction leakage, generic content, no-ref spam, and page-number artifacts remain."
+next: "Formalize sampled anti-repeat eval config, then run a small judge/human audit on 015 outputs. If style carryover is still weak, change target construction/objective rather than removing contrastive or doing more data-only cleanup."

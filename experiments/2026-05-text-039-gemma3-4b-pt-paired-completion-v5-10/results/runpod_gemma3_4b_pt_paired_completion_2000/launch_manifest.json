@@ -1,0 +1,55 @@
+{
+  "checkpoint": "/Users/peteromalley/Documents/reigh-workspace/prompt-adapters/experiments/2026-05-text-022-broader-clean-split-restart/results/runpod_tmp/train_artifacts/tmp/stage1_v3_8_core2_cleanheldout_restart/final.pt",
+  "checkpoint_upload": "skipped",
+  "completed_at": "2026-04-27T15:15:06.972159+00:00",
+  "config": "configs/stage1_gemma3_4b_pt_poetry_v5_10_paired_completion_2000.yaml",
+  "dataset_syncs": [
+    {
+      "local_dir": "/Users/peteromalley/Documents/reigh-workspace/text-ip-adapter/data/pairs_v5_10_poetry_llm_style_medium_strong",
+      "remote_dir": "/workspace/text-ip-adapter/data/pairs_v5_10_poetry_llm_style_medium_strong",
+      "result": {
+        "changed": true,
+        "hash": "96d3390584699f1ae0689da4640e56fbda252ca508d2c2dffeb6555e52c3fd1b"
+      }
+    }
+  ],
+  "experiment_id": "2026-05-text-039-gemma3-4b-pt-paired-completion-v5-10",
+  "hf_token_synced": true,
+  "launched_at": "2026-04-27T14:27:30.529982+00:00",
+  "max_steps": 2000,
+  "n_probes": 12,
+  "pod_id": "agodt9v6runksb",
+  "preflight_stdout": "scripts/train.py True 822\nsrc/text_ip_adapter/data/dataset.py True 7899\nsrc/text_ip_adapter/train/loop.py True 14413\nconfigs/stage1_gemma3_4b_pt_poetry_v5_10_paired_completion_2000.yaml True 1356\ndata/pairs_v5_10_poetry_llm_style_medium_strong/train.jsonl True 5536556\ndata/pairs_v5_10_poetry_llm_style_medium_strong/probes_balanced_n24.jsonl True 21365\n True 4096\nmax_steps 2000\nmin_lr_ratio 0.1\nstyle_triplet_weight 1.5\nstyle_triplet_margin 0.35\ncontrastive_weight 0.2\ntrain_rows 2868\n",
+  "project_sync": {
+    "changed": true,
+    "hash": "0dbf6b26f6f7d100f6762f287b9b18a9e882ecf05fd956bc7711213e170afd34"
+  },
+  "ready_at": "2026-04-27T14:27:54.036629+00:00",
+  "remote_eval_dir": "/tmp/exp039_gemma3_4b_pt_paired_eval",
+  "remote_orch_log_dir": "/tmp/exp039_gemma3_4b_pt_paired_orch",
+  "remote_project_root": "/tmp/text-ip-adapter-039-gemma3-4b-pt-paired",
+  "remote_train_dir": "/tmp/stage1_gemma3_4b_pt_poetry_v5_10_paired_completion_2000",
+  "skipped_checkpoint_evals": [
+    {
+      "checkpoint": "/tmp/stage1_gemma3_4b_pt_poetry_v5_10_paired_completion_2000/step_2000.pt",
+      "tag": "step_2000"
+    }
+  ],
+  "status": "completed",
+  "storage": {
+    "matches": [
+      {
+        "dataCenterId": "EU-RO-1",
+        "id": "m6ccu1lodp",
+        "name": "Peter",
+        "size": 3000
+      }
+    ],
+    "storage_name": "Peter"
+  },
+  "terminated": true,
+  "terminated_at": "2026-04-27T15:15:07.711519+00:00",
+  "training_completed_at": "2026-04-27T14:40:31.299591+00:00",
+  "training_started_at": "2026-04-27T14:28:36.109421+00:00",
+  "workspace_root": "/workspace/text-ip-adapter"
+}

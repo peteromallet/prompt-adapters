@@ -1,0 +1,242 @@
+{
+  "summary": {
+    "train": {
+      "total": 8908,
+      "poetry": 2267,
+      "poetry_stage_speaker": 80,
+      "screenplay": 5652,
+      "screenplay_page_line": 1362,
+      "assignment_spam": 15,
+      "screenplay_continued": 239,
+      "speech": 989
+    },
+    "val": {
+      "total": 294,
+      "poetry": 187,
+      "poetry_stage_speaker": 10,
+      "poetry_toc": 1,
+      "screenplay": 57,
+      "screenplay_page_line": 22,
+      "screenplay_continued": 20,
+      "speech": 50
+    },
+    "test": {
+      "total": 255,
+      "poetry": 155,
+      "poetry_stage_speaker": 4,
+      "screenplay": 50,
+      "speech": 50,
+      "assignment_spam": 1
+    }
+  },
+  "examples": {
+    "poetry_stage_speaker": [
+      {
+        "split": "train",
+        "author": "algernon_swinburne",
+        "target_doc_id": "algernon_swinburne_629fc3dfdfd2",
+        "snippet": "I /  / Lift up thy lips, turn round, look back for love, / Blind love that comes by night and casts out rest; / Of all things tired thy lips look weariest, / Save the long smile that they are wearied of. / Ah sweet, albeit no love be sweet enough, / Choo"
+      },
+      {
+        "split": "train",
+        "author": "algernon_swinburne",
+        "target_doc_id": "algernon_swinburne_96f6e10935f4",
+        "snippet": "I /  / Who hath known the ways of time / Or trodden behind his feet? / There is no such man among men. / For chance overcomes him, or crime / Changes; for all things sweet / In time wax bitter again. / Who shall give sorrow enough, / Or who the abundance of "
+      },
+      {
+        "split": "train",
+        "author": "algernon_swinburne",
+        "target_doc_id": "algernon_swinburne_dd43d824ffdb",
+        "snippet": "I /  / White rose in red rose-garden / Is not so white; / Snowdrops that plead for pardon / And pine for fright / Because the hard East blows / Over their maiden rows / Grow not as this face grows from pale to bright. /  / Behind the veil, forbidden, / Shut up f"
+      },
+      {
+        "split": "train",
+        "author": "algernon_swinburne",
+        "target_doc_id": "algernon_swinburne_dd43d824ffdb",
+        "snippet": "I /  / White rose in red rose-garden / Is not so white; / Snowdrops that plead for pardon / And pine for fright / Because the hard East blows / Over their maiden rows / Grow not as this face grows from pale to bright. /  / Behind the veil, forbidden, / Shut up f"
+      },
+      {
+        "split": "train",
+        "author": "amy_lowell",
+        "target_doc_id": "amy_lowell_08dcdbb72eab",
+        "snippet": "I pray to be the tool which to your hand / Long use has shaped and moulded till it be / Apt for your need, and, unconsideringly, / You take it for its service. I demand / To be forgotten in the woven strand / Which grows the multi-coloured tapestry / O"
+      },
+      {
+        "split": "train",
+        "author": "amy_lowell",
+        "target_doc_id": "amy_lowell_16e66843c6e9",
+        "snippet": "There are rumours about the First Consul. Malmaison is full of women, / and Paris is only two leagues distant. Madame Bonaparte stands on the / wooden bridge at sunset, and watches a black swan pushing the pink and / silver water in front of him "
+      },
+      {
+        "split": "train",
+        "author": "amy_lowell",
+        "target_doc_id": "amy_lowell_1d1ddeca326d",
+        "snippet": "L /  / Eunice was very quiet all that day, / A little dazed, and yet she seemed content. / At candle-time, he asked if she would play / Upon her harpsichord, at once she went / And tinkled airs from Lully's 'Carnival' / And 'Bacchus', newly brought away "
+      },
+      {
+        "split": "train",
+        "author": "amy_lowell",
+        "target_doc_id": "amy_lowell_1e67cd8d7a87",
+        "snippet": "V /  / The roses bloom at Malmaison. And not only roses. Tulips, myrtles, / geraniums, camelias, rhododendrons, dahlias, double hyacinths. All the / year through, under glass, under the sky, flowers bud, expand, die, and / give way to others, always "
+      }
+    ],
+    "screenplay_page_line": [
+      {
+        "split": "train",
+        "author": "127_hours",
+        "target_doc_id": "127_hours_00e0ac07b86e",
+        "snippet": "INT. ROPE BAG. NIGHT. /  /   /  BLACK - but we can hear his breathing close as in a space /  suit. LONG PAUSE. /  /  ARON /  God, I am praying to you for /  guidance. I'm trapped in Blue John /  Canyon - you probably know that - /  and I don't know what I am s"
+      },
+      {
+        "split": "train",
+        "author": "127_hours",
+        "target_doc_id": "127_hours_1ef2d402aa45",
+        "snippet": "INT. GARAGE. DAY. going like crazy [WE HEAR himself. The /  We're in the IT POUNDING IN CONTRAST spots in his /  doorway of a TO HIS SLURRING DELIVERY] eyes bleed /  garage with I swear it's like 3 x what across into /  friends in the it should be."
+      },
+      {
+        "split": "train",
+        "author": "127_hours",
+        "target_doc_id": "127_hours_203d65b7311e",
+        "snippet": "INT. ARON IN CANYON. DAY. /  /  Looking down onto the ground, around his leg, his toes /  holding the stick like a chopstick lift the knife out and up /  tremulously, breathlessly, towards his good arm. He picks it /  off the stick gently. Big smile."
+      },
+      {
+        "split": "train",
+        "author": "127_hours",
+        "target_doc_id": "127_hours_31281c11494e",
+        "snippet": "INT. CANYON. VIDEO FOOTAGE. /  /   /  /  ARON /  So the way I see it... there's kind /  of four things happening here... I /  tried to move it with some /  rigging... useless... and I tried /  chipping away at the rock... I /  think part of the problem is, is / "
+      },
+      {
+        "split": "train",
+        "author": "127_hours",
+        "target_doc_id": "127_hours_3baa5899df57",
+        "snippet": "INT. ASPEN STORE. DAY. /  /  Aron leaves work: at no point do we see Aron. He's there, /  you sense him in reflective surfaces, his arms, particularly /  his right one and his feet occasionally come into shot. It's /  not a strict P.O.V, more like 'o"
+      },
+      {
+        "split": "train",
+        "author": "127_hours",
+        "target_doc_id": "127_hours_3f0a3049b59d",
+        "snippet": "INT. CANYON. MORNING. VIDEO FOOTAGE. /  /  Aron joins the morning chorus. /  /  ARON /  Good morning everyone! It's 6:45 /  Tuesday morning in BJ Canyon. The /  weather is great! I figure by now /  that Leona, my housemate - Hi /  Leona! - has missed me hope"
+      },
+      {
+        "split": "train",
+        "author": "127_hours",
+        "target_doc_id": "127_hours_40954ada2be7",
+        "snippet": "INT. CANYON. MORNING. /  /  Without warning he suddenly tourniquets his arm again . Twice /  around the fore arm, knotted twice and clipped with a /  carabiner that he twists 6 times. He secures the fix by /  attaching the purple webbing. /  /   /  Looks t"
+      },
+      {
+        "split": "train",
+        "author": "127_hours",
+        "target_doc_id": "127_hours_5d9c03c68735",
+        "snippet": "INT. CANYON. DAY. /  /  He can't cut the tendon, no matter how hard he slices. But /  nothing will stop his addiction to surgery now. He folds in /  and swaps the blade for the pliers. He uses them to bite into /  an edge of the yellowy tendon. Then "
+      }
+    ],
+    "assignment_spam": [
+      {
+        "split": "train",
+        "author": "12_monkeys",
+        "target_doc_id": "12_monkeys_d485ba219b1d",
+        "snippet": "INT. MOTEL ROOM /  /  ANGLE ON TV, the picture of RAILLY filling the screen. /  /  ----------------------- PAGE 52 MISSING ----------------------- /  /  COLE /  My notes. Observations. Clues. /  /  RAILLY /  Clues? What kind of clues? /  /  COLE /  A secret army. Th"
+      },
+      {
+        "split": "train",
+        "author": "adaptation",
+        "target_doc_id": "adaptation_70b70f87e2c6",
+        "snippet": "INT. ROMANTIC RESTAURANT - EVENING /  / Kaufman eats with Margaret. Margaret raises a glass. /  /  MARGARET /  To a fucking awesome assignment, man. /  / Kaufman, pleased, clicks glasses. He takes a breath. /  /  KAUFMAN /  Hey, I'm going to an orchid show Sun"
+      },
+      {
+        "split": "train",
+        "author": "alien_nation",
+        "target_doc_id": "alien_nation_8ecd73748288",
+        "snippet": "EXT. HENRY FORD BOULEVARD - NIGHT /  / The police mop-up is winding down. Cop cars, coroner's / wagons, fire trucks. We MOVE through it all to find Sykes / and Jetson seated on the curb, away from the railing. /  /  JETSON /  With Harcourt and Kipling de"
+      },
+      {
+        "split": "train",
+        "author": "american_history_x",
+        "target_doc_id": "american_history_x_c695ffbabced",
+        "snippet": "EXT. APARTMENT BUILDING - THE COPS /  / Danny skates up to the front gate and looks at them. /  /  COP #1 / How the hell...? /  / Derek slaps the roof on the passenger side and scares the / hell out of the officers. /  /  COP #2 / Son of a bitch. /  /  DEREK / Pretty "
+      },
+      {
+        "split": "train",
+        "author": "american_milkshake",
+        "target_doc_id": "american_milkshake_942210484cc7",
+        "snippet": "INT. CLASSROOM - DAY /   /  Everyone working away - Haroon and Jolie seated in the back /  with a giant stand alone magnifying glass. /   /  The teacher MR. APPLEBAUM puts a paper on Jolie's desk /  labeled B+, then Haroon's, labeled B-. /   /  HAROON /  B m"
+      },
+      {
+        "split": "train",
+        "author": "antz",
+        "target_doc_id": "antz_c830dd0df256",
+        "snippet": "EXT. ANT MOUND - NIGHT /  /  It's a starry, moonlit night. The shadows crowd around the /  panicked Z, who looks up at the sky as we see the army on the /  march... /  /  Z /  Wait a minute, there's been a /  mistake! I've got to get back to the /  colony! /  / "
+      },
+      {
+        "split": "train",
+        "author": "being_john_malkovich",
+        "target_doc_id": "being_john_malkovich_e642ee437962",
+        "snippet": "INT. CRAIG AND MAXINE'S OFFICE - MORNING /  /  Maxine sits at her desk composing an ad. Craig stands /  behind her, ostensibly looking over her shoulder, but /  actually studying the back of her head. He sighs. /  /  MAXINE /  Okay. Here it is.  /  (readin"
+      },
+      {
+        "split": "train",
+        "author": "black_panther",
+        "target_doc_id": "black_panther_bd37b44ab8bd",
+        "snippet": "INT. HALL OF KINGS, CITY OF THE DEAD - NIGHT /  /  T'Challa enters to find Zuri tending to the garden. He looks /  around to the other Shamans. /  /  T ' CHALLA /  Leave us. /  They immediately head out . zuri turns to T'Challa . /  /  ZURI /  So your mission "
+      }
+    ],
+    "screenplay_continued": [
+      {
+        "split": "train",
+        "author": "12_years_a_slave",
+        "target_doc_id": "12_years_a_slave_0f4aee44c5a4",
+        "snippet": "INT. FORD PLANATION/GREAT HOUSE - NIGHT /  /  As we come into the scene, Solomon lays on a blanket on /  the floor. Eventually, his eyes flutter, then open. He /  is in the foyer of the Ford house. As he gets his /  bearings, he looks around the inte"
+      },
+      {
+        "split": "train",
+        "author": "12_years_a_slave",
+        "target_doc_id": "12_years_a_slave_119c353d374f",
+        "snippet": "EXT. FIELD - DUSK/END OF DAY /  /  The groups of slaves and Chickasaws are now intermingled. /  They \"break bread\" - actually they work on the carcass of /  the deer which is now roasting over a large fire. As /  well the group share a smoke on a pip"
+      },
+      {
+        "split": "train",
+        "author": "12_years_a_slave",
+        "target_doc_id": "12_years_a_slave_1fa1025df28d",
+        "snippet": "INT. STORE - LATER /  /  We are inside the store of MR. CEPHAS PARKER; a white man /  and a supplier of general goods. Solomon greets him /  /  WITH: /  /  SOLOMON /  Mr. Parker. /  /  PARKER /  Mr. Northup. Mrs. Northup. /  /  With money in hand the Northup childre"
+      },
+      {
+        "split": "train",
+        "author": "12_years_a_slave",
+        "target_doc_id": "12_years_a_slave_2d7a52126895",
+        "snippet": "INT. NORTHUP HOUSE/BEDROOM - MORNING /  /  It is a Saturday morning. Clad in her finest attire is /  ANNE; Solomon's wife, a few years younger than he. We /  see also the Northup children: MARGARET who is eight, and /  ALONZO who is five. They are ha"
+      },
+      {
+        "split": "train",
+        "author": "12_years_a_slave",
+        "target_doc_id": "12_years_a_slave_45c01a2d884b",
+        "snippet": "EXT. TURNER PLANTATION - NIGHT /  /  Solomon plays his violin, but plays it with an anxious /  nature as he waits. /  Then, as before, a figure appears in the distance. It is /  Celeste coming out of the night. She makes her way /  directly to Solomon."
+      },
+      {
+        "split": "train",
+        "author": "12_years_a_slave",
+        "target_doc_id": "12_years_a_slave_48fabecb89c7",
+        "snippet": "EXT. ROAD - DAY /  /  Solomon walks along a well-worn path, shopping bag draped  /  over one shoulder. We see his feet. As the walk slowly  /  gathers pace, Solomon suddenly turns left into dense  /  foliage. His tread is now a full blown sprint, tre"
+      },
+      {
+        "split": "train",
+        "author": "12_years_a_slave",
+        "target_doc_id": "12_years_a_slave_4ae4d3a247b8",
+        "snippet": "EXT. MASTER EPPS'S PLANTATION/SLAVE CEMETERY - LATER /  /  We are beyond the main of the plantation, the cotton /  field in the background. We are at the slaves' cemetery, /  a mixture of crude crosses and unsettled ground. /  Solomon, Bob and Henry,"
+      },
+      {
+        "split": "train",
+        "author": "12_years_a_slave",
+        "target_doc_id": "12_years_a_slave_4ccfe6dfe289",
+        "snippet": "INT. MASTER EPPS'S PLANTATION/MAIN HOUSE - NIGHT /  /  Despite the lateness of the hour, the slaves are up and /  now fully dressed. They take up position in the middle /  of the floor. They wait, poised like actors. Solomon /  strikes up a tune; Hen"
+      }
+    ],
+    "poetry_toc": [
+      {
+        "split": "val",
+        "author": "sara_teasdale",
+        "target_doc_id": "sara_teasdale_690890c626f3",
+        "snippet": "Helen of Troy /  / Beatrice /  / Sappho /  / Marianna Alcoforando /  / Guenevere /  / Erinna /  / Love Songs / Song / The Rose and the Bee / The Song Maker / Wild Asters / When Love Goes / The Wayfarer / The Princess in the Tower / When Love Was Born / The Shrine / The Blind / Love Me / "
+      }
+    ]
+  }
+}

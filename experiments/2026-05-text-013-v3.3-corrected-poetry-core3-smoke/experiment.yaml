@@ -1,0 +1,52 @@
+id: 2026-05-text-013-v3.3-corrected-poetry-core3-smoke
+modality: text
+project: text-gemma3-prefix-kv
+tags:
+  - v3-corpus
+  - data-quality
+  - corrected-poetry
+  - smoke
+status: completed
+consequential: true
+question: "After fixing bogus Gutenberg poetry IDs and applying the 012 audit-derived filters, does the no-trunk warmstart adapter produce better qualitative generations on poetry, screenplay, and speech?"
+hypothesis: "The remaining 012 failures were dominated by poisoned data, especially poetry sources mapped to non-poetry Gutenberg books and speech transcript/formal-document artifacts. A corrected core3 corpus should preserve pathway separation while reducing boilerplate and non-register generations."
+parent: 2026-05-text-012-v3.2-boilerplate-objective-cleanup
+base_model: google/gemma-3-4b-pt
+dataset: "data/pairs_v3_3_corrected_poetry_core3"
+core_commit:
+compute: "1,500-step RunPod RTX 4090 smoke from checkpoints/stage1_gemma_no_trunk/final.pt; pod 5fb510b915pz3n terminated after artifact download"
+results:
+  v3_3_corrected_poetry_core3:
+    train_rows: 8908
+    val_rows: 294
+    test_rows: 255
+    train_by_register:
+      poetry: 2267
+      screenplay: 5652
+      speech: 989
+    val_by_register:
+      poetry: 187
+      screenplay: 57
+      speech: 50
+    test_by_register:
+      poetry: 155
+      screenplay: 50
+      speech: 50
+    heldout_authors_per_register: 2
+    hard_gates_pass: true
+    targeted_poetry_bad_marker_count: 0
+  smoke:
+    steps: 1500
+    final_checkpoint_remote: "/workspace/text-ip-adapter/checkpoints/stage1_v3_3_corrected_poetry_core3_smoke/final.pt"
+    final_samples_bad: true
+    qualitative: "Register shape improved, but poetry/screenplay/speech still repeat phrases or sentences."
+  pathway:
+    n_probes: 15
+    mean_cos_z_swap: 0.40906314123421905
+    mean_cos_K_first_swap: 0.46874245852231977
+    mean_cos_K_last_swap: 0.3975494518876076
+    mean_cos_K_last_random: -0.03866682462394237
+    mean_cos_K_last_code: 0.04368530064821243
+    mean_gen_jaccard_swap: 0.03559678905877132
+headline: "v3.3 corrected-poetry core3 is pathway-positive but generation-quality-negative."
+next: "Do not full-run. Keep the corrected data, then test objective/decoding ablations, starting with contrastive_weight=0 on the same v3.3 core3 data and a smaller smoke probe."

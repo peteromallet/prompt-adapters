@@ -1,0 +1,305 @@
+{
+  "test1_discrimination": {
+    "per_step": {
+      "2000": {
+        "mean_jaccard": 0.01680638644825915,
+        "n": 20,
+        "max": 0.13513513513513514,
+        "min": 0.0
+      }
+    },
+    "final_step": 2000,
+    "final_mean_jaccard": 0.01680638644825915,
+    "verdict": "PASS",
+    "note": "Jaccard of 3-grams between adapter and adapter_swap. Lower = more discrimination."
+  },
+  "test3_style_carryover": {
+    "per_probe": [
+      {
+        "probe_id": "probe_00",
+        "own_author": "michel_de_montaigne",
+        "swap_author": "matthew_arnold",
+        "sim_own": 0.999567901191373,
+        "sim_swap": 0.9984397271325736,
+        "advantage_own": 0.0011281740587993916
+      },
+      {
+        "probe_id": "probe_01",
+        "own_author": "michel_de_montaigne",
+        "swap_author": "matthew_arnold",
+        "sim_own": 0.9999673836958289,
+        "sim_swap": 0.9994476957819205,
+        "advantage_own": 0.0005196879139084398
+      },
+      {
+        "probe_id": "probe_02",
+        "own_author": "michel_de_montaigne",
+        "swap_author": "matthew_arnold",
+        "sim_own": 0.9998038441511736,
+        "sim_swap": 0.9999709871652048,
+        "advantage_own": -0.00016714301403120135
+      },
+      {
+        "probe_id": "probe_03",
+        "own_author": "michel_de_montaigne",
+        "swap_author": "matthew_arnold",
+        "sim_own": 0.9999995263455306,
+        "sim_swap": 0.9996174758777068,
+        "advantage_own": 0.00038205046782380236
+      },
+      {
+        "probe_id": "probe_04",
+        "own_author": "michel_de_montaigne",
+        "swap_author": "matthew_arnold",
+        "sim_own": 0.9994938570841007,
+        "sim_swap": 0.998523827276843,
+        "advantage_own": 0.0009700298072576885
+      },
+      {
+        "probe_id": "probe_05",
+        "own_author": "michel_de_montaigne",
+        "swap_author": "matthew_arnold",
+        "sim_own": 0.9975948609709718,
+        "sim_swap": 0.9990412835240238,
+        "advantage_own": -0.0014464225530519403
+      },
+      {
+        "probe_id": "probe_06",
+        "own_author": "matthew_arnold",
+        "swap_author": "sara_teasdale",
+        "sim_own": 0.9999241241176515,
+        "sim_swap": 0.9998700460862554,
+        "advantage_own": 5.4078031396120885e-05
+      },
+      {
+        "probe_id": "probe_07",
+        "own_author": "sara_teasdale",
+        "swap_author": "matthew_arnold",
+        "sim_own": 0.9991553379162272,
+        "sim_swap": 0.9988276838641758,
+        "advantage_own": 0.0003276540520514848
+      },
+      {
+        "probe_id": "probe_08",
+        "own_author": "stephen_crane",
+        "swap_author": "matthew_arnold",
+        "sim_own": 0.9999708724329727,
+        "sim_swap": 0.9999523877872786,
+        "advantage_own": 1.848464569409458e-05
+      },
+      {
+        "probe_id": "probe_09",
+        "own_author": "matthew_arnold",
+        "swap_author": "stephen_crane",
+        "sim_own": 0.9995896536934737,
+        "sim_swap": 0.9995429387501134,
+        "advantage_own": 4.671494336039306e-05
+      },
+      {
+        "probe_id": "probe_10",
+        "own_author": "matthew_arnold",
+        "swap_author": "sara_teasdale",
+        "sim_own": 0.9998679454256628,
+        "sim_swap": 0.9999348983039216,
+        "advantage_own": -6.695287825875251e-05
+      },
+      {
+        "probe_id": "probe_11",
+        "own_author": "matthew_arnold",
+        "swap_author": "stephen_crane",
+        "sim_own": 0.9998342840835396,
+        "sim_swap": 0.9997738784516609,
+        "advantage_own": 6.040563187870163e-05
+      },
+      {
+        "probe_id": "probe_12",
+        "own_author": "12_monkeys",
+        "swap_author": "2012",
+        "sim_own": 0.9997139515781986,
+        "sim_swap": 0.9998368322795336,
+        "advantage_own": -0.00012288070133492646
+      },
+      {
+        "probe_id": "probe_13",
+        "own_author": "2012",
+        "swap_author": "12_monkeys",
+        "sim_own": 0.9997685219819271,
+        "sim_swap": 0.999939921753933,
+        "advantage_own": -0.00017139977200586465
+      },
+      {
+        "probe_id": "probe_14",
+        "own_author": "8mm",
+        "swap_author": "after_life",
+        "sim_own": 0.9999913898623274,
+        "sim_swap": 0.9999714507760651,
+        "advantage_own": 1.9939086262299455e-05
+      },
+      {
+        "probe_id": "probe_15",
+        "own_author": "after_life",
+        "swap_author": "8mm",
+        "sim_own": 0.9998300444762526,
+        "sim_swap": 0.9998620034602336,
+        "advantage_own": -3.1958983981006384e-05
+      },
+      {
+        "probe_id": "probe_16",
+        "own_author": "alien_vs_predator",
+        "swap_author": "american_pie",
+        "sim_own": 0.9999108390499111,
+        "sim_swap": 0.9999757009040241,
+        "advantage_own": -6.48618541130297e-05
+      },
+      {
+        "probe_id": "probe_17",
+        "own_author": "american_pie",
+        "swap_author": "alien_vs_predator",
+        "sim_own": 0.9999125824207625,
+        "sim_swap": 0.9997862848947667,
+        "advantage_own": 0.0001262975259957999
+      },
+      {
+        "probe_id": "probe_18",
+        "own_author": "michel_de_montaigne",
+        "swap_author": "matthew_arnold",
+        "sim_own": 0.9998884113880488,
+        "sim_swap": 0.9991457692618068,
+        "advantage_own": 0.0007426421262420879
+      },
+      {
+        "probe_id": "probe_19",
+        "own_author": "michel_de_montaigne",
+        "swap_author": "matthew_arnold",
+        "sim_own": 0.9996932364473743,
+        "sim_swap": 0.999993871995414,
+        "advantage_own": -0.00030063554803971826
+      }
+    ],
+    "mean_advantage": 0.00010119514929269325,
+    "own_wins": 12,
+    "total": 20,
+    "verdict": "WEAK",
+    "note": "advantage_own = cos(gen_feats, own_ref_feats) - cos(gen_feats, swap_ref_feats). >0.05 = PASS."
+  },
+  "test3b_llm_style_match": {
+    "verdict": "SKIPPED",
+    "reason": "--skip-llm-judge"
+  },
+  "test4_memorization": {
+    "per_probe": [
+      {
+        "probe_id": "probe_00",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_01",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_02",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_03",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_04",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_05",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_06",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_07",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_08",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_09",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_10",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_11",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_12",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_13",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_14",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_15",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_16",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_17",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_18",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "probe_19",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      }
+    ],
+    "target_memorization_rate": 0.0,
+    "ref_leak_rate": 0.0,
+    "memorization_verdict": "PASS",
+    "leak_verdict": "PASS",
+    "note": "memorization: fraction of adapter outputs with any 10-gram in training targets. leak: 5-gram overlap with probe's own reference."
+  },
+  "test5_loss_curve": {
+    "verdict": "NO_DATA"
+  },
+  "test2_llm_judge": {
+    "verdict": "SKIPPED",
+    "reason": "--skip-llm-judge"
+  }
+}

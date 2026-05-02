@@ -1,0 +1,25 @@
+{
+  "cos_K_first_swap": 0.988702392578125,
+  "opus_t3b_wins": 4,
+  "opus_t3b_rate": 0.2,
+  "opus_t2_wins": 5,
+  "opus_t2_rate": 0.25,
+  "opus_alpha_signal": 0.25,
+  "opus_alpha_monotonic": true,
+  "mode_collapse_count": 28,
+  "mode_collapse_rate": 0.56,
+  "thresholds": {
+    "cos_K_first_swap_le_0.30": false,
+    "opus_t3b_wins_ge_11": false,
+    "opus_alpha_signal_ge_0.4": false,
+    "mode_collapse_lt_10": false
+  },
+  "verdict": "INVESTIGATE_FIRST",
+  "reasons": [
+    "cos_K_first_swap=0.989 >> 0.30 - adapter K/V caches for own vs swap references are nearly identical (cosine ~0.99), meaning the conditioning signal is collapsing to the same prefix regardless of input reference",
+    "Opus T3b adapter_wins=4/20 (20%) - far below 55% threshold; 16/20 ties because adapter and adapter_swap produce nearly identical outputs (no style differentiation)",
+    "Opus alpha-blend signal=0.25 < 0.4 threshold - alpha mostly has no effect; 28/50 judgments are mode-collapsed; A_wins by alpha=[1,2,2,3,3] - tiny gradient",
+    "Mode collapse 28/50 (56%) >> 20% threshold; in samples_n20.jsonl, 5 probes (12,14,15,16,17 - all screenplay refs) produce PURE WHITESPACE for both adapter and adapter_swap (total collapse on screenplay domain)",
+    "Vs 006 baseline: 006 was 50% T3b on Opus and Haiku falsely passed it. v2_dryrun shows materially WORSE Opus T3b (20%) and full screenplay-domain collapse, despite 40x larger corpus. The no-trunk projector at this scale (2k steps, batch 4) is not learning style discrimination - it is learning a single dominant register that ignores the reference text."
+  ]
+}

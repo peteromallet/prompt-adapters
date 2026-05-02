@@ -1,0 +1,26 @@
+id: 2026-05-text-017-v3.4-artifact-clean-core3-smoke
+modality: text
+project: text-gemma3-prefix-kv
+tags:
+  - v3-corpus
+  - data-cleanup
+  - artifact-clean
+  - smoke
+status: completed
+consequential: true
+question: "Does the artifact-clean v3.4 core3 corpus improve generation quality while preserving the healthy contrastive-on pathway from 013?"
+hypothesis: "015 showed decoding can remove mechanical loops, while the v3.4 cleanup removed residual page-number, continuation, poetry apparatus, and public-record artifacts without breaking heldout gates. If artifacts were materially degrading style learning, the same contrastive-on no-trunk recipe should produce cleaner samples than 013 under both deterministic and sampled anti-repeat evaluation."
+parent: 2026-05-text-015-decoding-repetition-diagnostic
+base_model: google/gemma-3-4b-pt
+dataset: "data/pairs_v3_4_artifact_clean_core3"
+config: "configs/stage1_v3_4_artifact_clean_core3_smoke.yaml"
+compute: "Completed 1,500-step RunPod RTX 4090 smoke from checkpoints/stage1_gemma_no_trunk/final.pt on pod 0bt8ytgxhc97kx; pod terminated after artifact download."
+decision_rule: "Promising only if pathway remains near 013 (`cos_K_last_swap` roughly <=0.5) and sampled anti-repeat outputs improve style quality versus 015/013 without returning artifact leakage."
+headline: "Partially confirmed: v3.4 keeps the healthy pathway and substantially improves sampled generations, but residual artifacts and missing dual-judge eval keep it provisional."
+outcome:
+  status: partially_confirmed
+  pathway: "PASS/near-threshold: cos_K_last_swap=0.502, cos_z_swap=0.499; random/code K_last near zero or negative."
+  sampled_generation: "Improved versus loop-heavy 013: adapter repeat3_mean=0.002, repeated-line mean=0.0, empty=0."
+  eval_battery: "T1 PASS (adapter/swap Jaccard=0.004), T4 PASS/PASS (0% target memorization, 0% ref leak), T5 SLOW (17.5% loss improvement), surface T3 FAIL, LLM judges skipped."
+  caveat: "Sample n=15 smoke only; surface T3 is known brittle; dual-judge T2/T3b was not run because no judge key was available."
+next: "Run a longer v3.4 artifact-clean core3 training job with sampled anti-repeat eval and dual-judge n>=20 style judging; keep contrastive on."

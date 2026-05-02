@@ -1,0 +1,11 @@
+{
+  "launched_at": "2026-04-25T19:21:30+02:00",
+  "pod_id": "5fb510b915pz3n",
+  "remote_root": "/workspace/text-ip-adapter",
+  "remote_log": "/workspace/text-ip-adapter/train.log",
+  "remote_pid": 379,
+  "config": "configs/stage1_v3_3_corrected_poetry_core3_smoke.yaml",
+  "dataset": "data/pairs_v3_3_corrected_poetry_core3",
+  "status": "completed_and_pod_terminated",
+  "notes": "Initial PID 236 failed immediately because the pod lacked Hugging Face auth for gated google/gemma-3-4b-pt. Uploaded the local Hugging Face token to /root/.cache/huggingface/token and restarted on the same pod as PID 379. Training completed, artifacts were downloaded, pathway probe completed, and pod termination was confirmed by a follow-up not-found status."
+}

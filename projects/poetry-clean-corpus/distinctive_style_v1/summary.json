@@ -1,0 +1,111 @@
+{
+  "docs": {
+    "author_advantage": {
+      "max": 0.23197686554269048,
+      "mean": -0.009469964007432791,
+      "median": -0.009021009834271926,
+      "min": -0.13496997358758916,
+      "n": 3306,
+      "p10": -0.04491842327109985,
+      "p25": -0.02690678976312394,
+      "p75": 0.005502335933666669,
+      "p90": 0.018639874976747017
+    },
+    "chars": {
+      "max": 4609,
+      "mean": 551.0523290986085,
+      "median": 419.0,
+      "min": 100,
+      "n": 3306,
+      "p10": 156,
+      "p25": 237,
+      "p75": 704,
+      "p90": 1048
+    },
+    "generic_per_100": {
+      "max": 28.0,
+      "mean": 2.5095942751932747,
+      "median": 1.9230769230769231,
+      "min": 0.0,
+      "n": 3306,
+      "p10": 0.0,
+      "p25": 0.0,
+      "p75": 3.8461538461538463,
+      "p90": 5.982905982905983
+    },
+    "keep": 344,
+    "total": 3306
+  },
+  "output": "/Users/peteromalley/Documents/reigh-workspace/text-ip-adapter/data/pairs_v5_9_poetry_distinctive_medium",
+  "pairs": {
+    "dropped_low_author_after_filter": {
+      "bowen_maria": 7,
+      "caswall_edward_1814_1878": 1,
+      "dante_gabriel_rossetti": 1,
+      "davidson_gustav_1895_1971": 6,
+      "donahoe_daniel_joseph_1853_1930": 6,
+      "elizabeth_barrett_browning": 3,
+      "ellen_russell_emerson": 3,
+      "ernest_charles_jones": 1,
+      "fitzgerald_marcella_agnes_1845": 1,
+      "gaffney_francis_a": 11,
+      "glyndon_howard_1840_1923": 1,
+      "john_clare": 4,
+      "lucas_daniel_bedinger_1836_1909": 1,
+      "percy_bysshe_shelley": 1,
+      "rudyard_kipling": 2,
+      "rupert_brooke": 3,
+      "ruskin_john_1819_1900": 1,
+      "sephen_pell": 1,
+      "skidmore_harriet_m_1837_1904": 1
+    },
+    "final_author_counts": {
+      "edwin_arlington_robinson": 28,
+      "stewart_john_of_baldynneis": 27
+    },
+    "final_authors": 2,
+    "final_train": 55,
+    "kept_before_min_author": 110,
+    "min_author_advantage": {
+      "max": 0.2083440749164998,
+      "mean": -0.02295376633137738,
+      "median": -0.022279149161676504,
+      "min": -0.13496997358758916,
+      "n": 3135,
+      "p10": -0.05655493936587702,
+      "p25": -0.0392313111038588,
+      "p75": -0.007786056952621578,
+      "p90": 0.005033205596821744
+    },
+    "ref_target_cohesion": {
+      "max": 0.9328066155717981,
+      "mean": 0.3872973677831305,
+      "median": 0.38082443620960665,
+      "min": 0.022036495724607603,
+      "n": 3135,
+      "p10": 0.2091914800700086,
+      "p25": 0.28087355985702245,
+      "p75": 0.4839175395207349,
+      "p90": 0.5828892689398034
+    },
+    "reject_reasons": {
+      "low_ref_target_cohesion": 1,
+      "ref_doc_not_distinctive_medium": 2805,
+      "target_doc_not_distinctive_medium": 2804,
+      "too_long": 117,
+      "too_short": 1141
+    },
+    "source_authors": 47,
+    "source_train": 3135
+  },
+  "source": "/Users/peteromalley/Documents/reigh-workspace/text-ip-adapter/data/pairs_v5_7_poetry_pair_audited_min25",
+  "thresholds": {
+    "max_chars": 1800,
+    "max_generic_per_100": 9.0,
+    "min_chars": 220,
+    "min_doc_advantage": 0.015,
+    "min_lines": 4,
+    "min_pair_cohesion": 0.035,
+    "min_pairs_per_author_after_filter": 20
+  }
+}

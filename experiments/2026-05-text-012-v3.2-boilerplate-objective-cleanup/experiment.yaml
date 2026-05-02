@@ -1,0 +1,20 @@
+id: 2026-05-text-012-v3.2-boilerplate-objective-cleanup
+modality: text
+project: text-gemma3-prefix-kv
+tags:
+  - v3-corpus
+  - data-quality
+  - boilerplate-filter
+  - instruction-quality
+status: planned
+consequential: true
+question: "Can stricter boilerplate cleanup and no-theme style instructions remove the repetition/metadata artifacts seen in 011 without killing register coverage?"
+hypothesis: "011 showed a healthy pathway but bad generations caused by train targets containing transcript/public-record/reference-book artifacts and low-information themes. Stripping transcript boilerplate, filtering formal transmitted-bill/reference artifacts, and using no-theme style instructions should preserve pathway separation while reducing qualitative repetition in a 1,500-step smoke."
+parent: 2026-05-text-011-v3.1-data-eval-repair
+base_model: google/gemma-3-4b-pt
+dataset: "v3.2 rebuilt from raw sources with boilerplate cleanup; target data/pairs_v3_2"
+core_commit:
+compute: "CPU rebuild plus optional 1,500-step RunPod RTX 4090 smoke if gates pass"
+results: {}
+headline: "Planned v3.2 cleanup after 011 found transcript/reference boilerplate artifacts."
+next: "Run strict CPU gates; launch cheap smoke only if poetry/screenplay/speech remain viable."

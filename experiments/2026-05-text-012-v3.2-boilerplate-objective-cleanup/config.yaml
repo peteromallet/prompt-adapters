@@ -1,0 +1,29 @@
+base_model: google/gemma-3-4b-pt
+parent_experiment: 2026-05-text-011-v3.1-data-eval-repair
+data_paths:
+  - ../../../text-ip-adapter/data/raw/gutenberg_poetry
+  - ../../../text-ip-adapter/data/raw/gutenberg_essays
+  - ../../../text-ip-adapter/data/raw/imsdb
+  - ../../../text-ip-adapter/data/raw/speeches
+target_outputs:
+  - ../../../text-ip-adapter/data/pairs_v3_2/train.jsonl
+  - ../../../text-ip-adapter/data/pairs_v3_2/val.jsonl
+  - ../../../text-ip-adapter/data/pairs_v3_2/test.jsonl
+  - ../../../text-ip-adapter/data/pairs_v3_2/manifest.json
+  - ../../../text-ip-adapter/data/pairs_v3_2/probes_balanced_n20.jsonl
+gates:
+  min_train_pairs_by_register:
+    poetry: 1500
+    essay: 80
+    screenplay: 1500
+    speech: 1200
+  min_heldout_pairs_by_register: 50
+  min_heldout_authors_by_register: 2
+  author_disjoint: true
+  source_dataset_present: true
+filters:
+  clean_boilerplate: true
+  filter_suspicious_targets: true
+  instruction_mode: content_style_no_theme
+eval:
+  n_probes: 20

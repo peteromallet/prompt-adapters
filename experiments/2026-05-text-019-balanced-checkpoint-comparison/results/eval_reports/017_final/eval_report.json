@@ -1,0 +1,318 @@
+{
+  "test1_discrimination": {
+    "per_step": {
+      "9999": {
+        "mean_jaccard": 0.00481543416326025,
+        "n": 21,
+        "max": 0.04807692307692308,
+        "min": 0.0
+      }
+    },
+    "final_step": 9999,
+    "final_mean_jaccard": 0.00481543416326025,
+    "verdict": "PASS",
+    "note": "Jaccard of 3-grams between adapter and adapter_swap. Lower = more discrimination."
+  },
+  "test3_style_carryover": {
+    "per_probe": [
+      {
+        "probe_id": "v31_poetry_00",
+        "own_author": "thomas_hardy",
+        "swap_author": "sara_teasdale",
+        "sim_own": 0.9990946945682678,
+        "sim_swap": 0.9998319438005611,
+        "advantage_own": -0.0007372492322932356
+      },
+      {
+        "probe_id": "v31_poetry_01",
+        "own_author": "sara_teasdale",
+        "swap_author": "stephen_crane",
+        "sim_own": 0.9999404469673787,
+        "sim_swap": 0.9999794018424767,
+        "advantage_own": -3.895487509797402e-05
+      },
+      {
+        "probe_id": "v31_poetry_02",
+        "own_author": "stephen_crane",
+        "swap_author": "rudyard_kipling",
+        "sim_own": 0.9999769649921489,
+        "sim_swap": 0.9998902105474029,
+        "advantage_own": 8.675444474604e-05
+      },
+      {
+        "probe_id": "v31_poetry_03",
+        "own_author": "rudyard_kipling",
+        "swap_author": "thomas_hardy",
+        "sim_own": 0.9998654688419263,
+        "sim_swap": 0.9995358877360215,
+        "advantage_own": 0.00032958110590475265
+      },
+      {
+        "probe_id": "v31_poetry_04",
+        "own_author": "thomas_hardy",
+        "swap_author": "sara_teasdale",
+        "sim_own": 0.9995786420193167,
+        "sim_swap": 0.9999834999349143,
+        "advantage_own": -0.00040485791559763395
+      },
+      {
+        "probe_id": "v31_poetry_05",
+        "own_author": "sara_teasdale",
+        "swap_author": "stephen_crane",
+        "sim_own": 0.9999705889103501,
+        "sim_swap": 0.9999797879261805,
+        "advantage_own": -9.19901583040783e-06
+      },
+      {
+        "probe_id": "v31_poetry_06",
+        "own_author": "stephen_crane",
+        "swap_author": "rudyard_kipling",
+        "sim_own": 0.9997721693834449,
+        "sim_swap": 0.9999922513482026,
+        "advantage_own": -0.00022008196475764574
+      },
+      {
+        "probe_id": "v31_screenplay_00",
+        "own_author": "10_things_i_hate_about_you",
+        "swap_author": "17_again",
+        "sim_own": 0.9999451484021288,
+        "sim_swap": 0.9998852789713646,
+        "advantage_own": 5.9869430764192266e-05
+      },
+      {
+        "probe_id": "v31_screenplay_01",
+        "own_author": "17_again",
+        "swap_author": "12_and_holding",
+        "sim_own": 0.999934504745247,
+        "sim_swap": 0.9998642774836484,
+        "advantage_own": 7.022726159866544e-05
+      },
+      {
+        "probe_id": "v31_screenplay_02",
+        "own_author": "12_and_holding",
+        "swap_author": "cellular",
+        "sim_own": 0.9999092011804371,
+        "sim_swap": 0.9999815665483305,
+        "advantage_own": -7.236536789334558e-05
+      },
+      {
+        "probe_id": "v31_screenplay_03",
+        "own_author": "cellular",
+        "swap_author": "10_things_i_hate_about_you",
+        "sim_own": 0.9998997197741047,
+        "sim_swap": 0.9999909672731433,
+        "advantage_own": -9.124749903854923e-05
+      },
+      {
+        "probe_id": "v31_screenplay_04",
+        "own_author": "10_things_i_hate_about_you",
+        "swap_author": "17_again",
+        "sim_own": 0.9999681533974728,
+        "sim_swap": 0.9999134194731945,
+        "advantage_own": 5.4733924278349555e-05
+      },
+      {
+        "probe_id": "v31_screenplay_05",
+        "own_author": "17_again",
+        "swap_author": "12_and_holding",
+        "sim_own": 0.9998968736474779,
+        "sim_swap": 0.9998031048542664,
+        "advantage_own": 9.376879321154608e-05
+      },
+      {
+        "probe_id": "v31_screenplay_06",
+        "own_author": "12_and_holding",
+        "swap_author": "cellular",
+        "sim_own": 0.9997462664837258,
+        "sim_swap": 0.9999442426615619,
+        "advantage_own": -0.0001979761778361233
+      },
+      {
+        "probe_id": "v31_speech_00",
+        "own_author": "vanburen",
+        "swap_author": "buchanan",
+        "sim_own": 0.999982013749761,
+        "sim_swap": 0.9999939296657644,
+        "advantage_own": -1.191591600335773e-05
+      },
+      {
+        "probe_id": "v31_speech_01",
+        "own_author": "buchanan",
+        "swap_author": "jqadams",
+        "sim_own": 0.9997825494564239,
+        "sim_swap": 0.9999264379388608,
+        "advantage_own": -0.00014388848243696017
+      },
+      {
+        "probe_id": "v31_speech_02",
+        "own_author": "jqadams",
+        "swap_author": "madison",
+        "sim_own": 0.9998621702853352,
+        "sim_swap": 0.9998458973058968,
+        "advantage_own": 1.6272979438403112e-05
+      },
+      {
+        "probe_id": "v31_speech_03",
+        "own_author": "madison",
+        "swap_author": "vanburen",
+        "sim_own": 0.9997107579248723,
+        "sim_swap": 0.9997406845236145,
+        "advantage_own": -2.992659874223591e-05
+      },
+      {
+        "probe_id": "v31_speech_04",
+        "own_author": "vanburen",
+        "swap_author": "buchanan",
+        "sim_own": 0.9999946414017019,
+        "sim_swap": 0.9999829515682425,
+        "advantage_own": 1.1689833459449517e-05
+      },
+      {
+        "probe_id": "v31_speech_05",
+        "own_author": "buchanan",
+        "swap_author": "jqadams",
+        "sim_own": 0.9998108103238157,
+        "sim_swap": 0.9999425256718084,
+        "advantage_own": -0.00013171534799272244
+      },
+      {
+        "probe_id": "v31_speech_06",
+        "own_author": "jqadams",
+        "swap_author": "madison",
+        "sim_own": 0.9999002090311649,
+        "sim_swap": 0.9998862756414526,
+        "advantage_own": 1.3933389712339483e-05
+      }
+    ],
+    "mean_advantage": -6.440701097173587e-05,
+    "own_wins": 9,
+    "total": 21,
+    "verdict": "FAIL",
+    "note": "advantage_own = cos(gen_feats, own_ref_feats) - cos(gen_feats, swap_ref_feats). >0.05 = PASS."
+  },
+  "test3b_llm_style_match": {
+    "verdict": "SKIPPED",
+    "reason": "--skip-llm-judge"
+  },
+  "test4_memorization": {
+    "per_probe": [
+      {
+        "probe_id": "v31_poetry_00",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "v31_poetry_01",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "v31_poetry_02",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "v31_poetry_03",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "v31_poetry_04",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "v31_poetry_05",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "v31_poetry_06",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "v31_screenplay_00",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "v31_screenplay_01",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "v31_screenplay_02",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "v31_screenplay_03",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "v31_screenplay_04",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "v31_screenplay_05",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "v31_screenplay_06",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "v31_speech_00",
+        "target_10gram_hits": 3,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "v31_speech_01",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "v31_speech_02",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "v31_speech_03",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "v31_speech_04",
+        "target_10gram_hits": 1,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "v31_speech_05",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "v31_speech_06",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      }
+    ],
+    "target_memorization_rate": 0.09523809523809523,
+    "ref_leak_rate": 0.0,
+    "memorization_verdict": "WEAK",
+    "leak_verdict": "PASS",
+    "note": "memorization: fraction of adapter outputs with any 10-gram in training targets. leak: 5-gram overlap with probe's own reference."
+  },
+  "test5_loss_curve": {
+    "verdict": "NO_DATA"
+  },
+  "test2_llm_judge": {
+    "verdict": "SKIPPED",
+    "reason": "--skip-llm-judge"
+  }
+}

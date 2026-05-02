@@ -1,0 +1,13 @@
+adapter_config: ../../../text-ip-adapter/configs/stage1_v3_no_trunk_warmstart.yaml
+data_paths:
+  - ../../../text-ip-adapter/data/pairs_v3_candidate/train.jsonl
+  - ../../../text-ip-adapter/data/pairs_v3_candidate/val.jsonl
+  - ../../../text-ip-adapter/data/pairs_v3_candidate/test.jsonl
+train_hparams:
+  steps: 5000
+  batch_size: 2
+  contrastive_weight: 0.1
+  init_from: checkpoints/stage1_gemma_no_trunk/final.pt
+eval:
+  n_probes: 20
+train_sample_probe_count: 4

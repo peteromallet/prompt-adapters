@@ -1,0 +1,40 @@
+id: 2026-05-text-009-v3-data-rebuild-speechfix
+modality: text
+project: text-gemma3-prefix-kv
+tags:
+  - data-rebuild
+  - speech-source
+  - split-policy
+  - v3-corpus
+status: planned
+consequential: true
+question: "Can we rebuild the text style-transfer corpus so speech author diversity and per-register held-out coverage are real before launching another GPU run?"
+hypothesis: "The v2/v2_bundle failures are primarily corpus-construction failures, not a lack of source material: fixing Miller Center speech author extraction and enforcing per-register split gates should yield a launchable v3 corpus with >=1500 train speech pairs, speech in val/test, and no register absent from held-out splits."
+parent: 2026-05-text-008-v2-warmstart-minfix
+base_model: none
+dataset: "Pod-side cached Miller Center speech HTML plus existing poetry/essay/screenplay sources; output target data/pairs_v3/*.jsonl"
+core_commit:
+compute: "CPU-only data build/audit on existing RunPod pod; no GPU training"
+results:
+  v3_candidate:
+    train_rows: 10730
+    val_rows: 310
+    test_rows: 310
+    train_by_register:
+      poetry: 2944
+      essay: 144
+      screenplay: 5708
+      speech: 1934
+    val_by_register:
+      poetry: 100
+      essay: 100
+      screenplay: 60
+      speech: 50
+    test_by_register:
+      poetry: 100
+      essay: 100
+      screenplay: 60
+      speech: 50
+    hard_gates_pass: true
+headline: "Candidate v3 corpus passes hard data gates after fixing Miller speech author extraction and capacity-aware held-out splits."
+next: "Launch a new canonical no-trunk warmstart training experiment on v3; keep caveat that held-out author counts are sparse for poetry/essay/speech."

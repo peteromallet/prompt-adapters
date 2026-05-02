@@ -1,0 +1,35 @@
+{
+  "test2_llm_judge": {
+    "verdict": "PASS",
+    "status": "pass",
+    "adapter_win_rate": 0.8,
+    "description": "T2: Adapter vs prompted_baseline style match"
+  },
+  "test3_style_carryover": {
+    "verdict": "PASS",
+    "status": "pass",
+    "description": "Style carryover supported by alpha-blend signal"
+  },
+  "test3b_llm_style_match": {
+    "verdict": "PASS",
+    "status": "pass",
+    "adapter_win_rate": 0.8,
+    "description": "T3b: Adapter vs target text style match"
+  },
+  "test4_memorization": {
+    "verdict": "PASS",
+    "status": "pass",
+    "description": "No memorization detected (probes show zero/random perform worse than own/swap)"
+  },
+  "test5_loss_curve": {
+    "verdict": "PASS",
+    "status": "pass",
+    "description": "Training loss decreased; contrastive loss stable"
+  },
+  "alpha_blend_signal": {
+    "signal_strength": 1.0,
+    "monotonic": true,
+    "endpoints_commit": true,
+    "verdict": "PASS"
+  }
+}

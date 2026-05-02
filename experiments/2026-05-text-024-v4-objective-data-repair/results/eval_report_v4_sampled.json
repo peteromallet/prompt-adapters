@@ -1,0 +1,461 @@
+{
+  "test1_discrimination": {
+    "per_step": {
+      "750": {
+        "mean_jaccard": 0.0006602112676056338,
+        "n": 32,
+        "max": 0.014084507042253521,
+        "min": 0.0
+      }
+    },
+    "final_step": 750,
+    "final_mean_jaccard": 0.0006602112676056338,
+    "verdict": "PASS",
+    "note": "Jaccard of 3-grams between adapter and adapter_swap. Lower = more discrimination."
+  },
+  "test3_style_carryover": {
+    "per_probe": [
+      {
+        "probe_id": "core2v39_poetry_00",
+        "own_author": "christina_rossetti",
+        "swap_author": "edwin_arlington_robinson",
+        "sim_own": 0.9995698265187578,
+        "sim_swap": 0.9999160790275452,
+        "advantage_own": -0.00034625250878739244
+      },
+      {
+        "probe_id": "core2v39_poetry_01",
+        "own_author": "edwin_arlington_robinson",
+        "swap_author": "emily_dickinson",
+        "sim_own": 0.9999648452105808,
+        "sim_swap": 0.9998814953421341,
+        "advantage_own": 8.334986844671377e-05
+      },
+      {
+        "probe_id": "core2v39_poetry_02",
+        "own_author": "emily_dickinson",
+        "swap_author": "john_masefield",
+        "sim_own": 0.9999869551669543,
+        "sim_swap": 0.9997825305265851,
+        "advantage_own": 0.00020442464036929398
+      },
+      {
+        "probe_id": "core2v39_poetry_03",
+        "own_author": "john_masefield",
+        "swap_author": "matthew_arnold",
+        "sim_own": 0.9998463632834953,
+        "sim_swap": 0.999789541358469,
+        "advantage_own": 5.6821925026318e-05
+      },
+      {
+        "probe_id": "core2v39_poetry_04",
+        "own_author": "matthew_arnold",
+        "swap_author": "edna_millay",
+        "sim_own": 0.9999780139186484,
+        "sim_swap": 0.9999612907239562,
+        "advantage_own": 1.6723194692147558e-05
+      },
+      {
+        "probe_id": "core2v39_poetry_05",
+        "own_author": "edna_millay",
+        "swap_author": "sara_teasdale",
+        "sim_own": 0.9999802339301019,
+        "sim_swap": 0.9999120603701183,
+        "advantage_own": 6.817355998367525e-05
+      },
+      {
+        "probe_id": "core2v39_poetry_06",
+        "own_author": "sara_teasdale",
+        "swap_author": "stephen_crane",
+        "sim_own": 0.9999750594625387,
+        "sim_swap": 0.9997667334452159,
+        "advantage_own": 0.00020832601732279077
+      },
+      {
+        "probe_id": "core2v39_poetry_07",
+        "own_author": "stephen_crane",
+        "swap_author": "christina_rossetti",
+        "sim_own": 0.9998475008116936,
+        "sim_swap": 0.999954532037918,
+        "advantage_own": -0.00010703122622435224
+      },
+      {
+        "probe_id": "core2v39_poetry_08",
+        "own_author": "christina_rossetti",
+        "swap_author": "edwin_arlington_robinson",
+        "sim_own": 0.9999488900628194,
+        "sim_swap": 0.9999952281749116,
+        "advantage_own": -4.633811209220351e-05
+      },
+      {
+        "probe_id": "core2v39_poetry_09",
+        "own_author": "edwin_arlington_robinson",
+        "swap_author": "emily_dickinson",
+        "sim_own": 0.999904647036611,
+        "sim_swap": 0.99998334974854,
+        "advantage_own": -7.87027119290018e-05
+      },
+      {
+        "probe_id": "core2v39_poetry_10",
+        "own_author": "emily_dickinson",
+        "swap_author": "john_masefield",
+        "sim_own": 0.9998335891064135,
+        "sim_swap": 0.9996456172217529,
+        "advantage_own": 0.00018797188466057602
+      },
+      {
+        "probe_id": "core2v39_poetry_11",
+        "own_author": "john_masefield",
+        "swap_author": "matthew_arnold",
+        "sim_own": 0.9998250963116693,
+        "sim_swap": 0.9999486075529704,
+        "advantage_own": -0.0001235112413011663
+      },
+      {
+        "probe_id": "core2v39_poetry_12",
+        "own_author": "matthew_arnold",
+        "swap_author": "edna_millay",
+        "sim_own": 0.999929314379962,
+        "sim_swap": 0.9996981475552595,
+        "advantage_own": 0.00023116682470247785
+      },
+      {
+        "probe_id": "core2v39_poetry_13",
+        "own_author": "edna_millay",
+        "swap_author": "sara_teasdale",
+        "sim_own": 0.9997901637138749,
+        "sim_swap": 0.999979940208023,
+        "advantage_own": -0.0001897764941481972
+      },
+      {
+        "probe_id": "core2v39_poetry_14",
+        "own_author": "sara_teasdale",
+        "swap_author": "stephen_crane",
+        "sim_own": 0.9998570297194727,
+        "sim_swap": 0.9995815987172206,
+        "advantage_own": 0.00027543100225202455
+      },
+      {
+        "probe_id": "core2v39_poetry_15",
+        "own_author": "stephen_crane",
+        "swap_author": "christina_rossetti",
+        "sim_own": 0.9997374640233341,
+        "sim_swap": 0.999957907747868,
+        "advantage_own": -0.00022044372453389194
+      },
+      {
+        "probe_id": "core2v39_screenplay_00",
+        "own_author": "50_50",
+        "swap_author": "ad_astra",
+        "sim_own": 0.9997501100486034,
+        "sim_swap": 0.9997896682989802,
+        "advantage_own": -3.955825037682548e-05
+      },
+      {
+        "probe_id": "core2v39_screenplay_01",
+        "own_author": "ad_astra",
+        "swap_author": "asteroid_city",
+        "sim_own": 0.9998891953892073,
+        "sim_swap": 0.9996915858416888,
+        "advantage_own": 0.0001976095475184625
+      },
+      {
+        "probe_id": "core2v39_screenplay_02",
+        "own_author": "asteroid_city",
+        "swap_author": "blood_simple",
+        "sim_own": 0.999925669730919,
+        "sim_swap": 0.9999971115268061,
+        "advantage_own": -7.144179588713939e-05
+      },
+      {
+        "probe_id": "core2v39_screenplay_03",
+        "own_author": "blood_simple",
+        "swap_author": "bourne_ultimatum_the",
+        "sim_own": 0.9999478296228187,
+        "sim_swap": 0.9995158404294018,
+        "advantage_own": 0.0004319891934169151
+      },
+      {
+        "probe_id": "core2v39_screenplay_04",
+        "own_author": "bourne_ultimatum_the",
+        "swap_author": "chasing_amy",
+        "sim_own": 0.9995723646303222,
+        "sim_swap": 0.9999841229284258,
+        "advantage_own": -0.00041175829810358167
+      },
+      {
+        "probe_id": "core2v39_screenplay_05",
+        "own_author": "chasing_amy",
+        "swap_author": "birds_the",
+        "sim_own": 0.9999805200068279,
+        "sim_swap": 0.9999930778321982,
+        "advantage_own": -1.255782537024075e-05
+      },
+      {
+        "probe_id": "core2v39_screenplay_06",
+        "own_author": "birds_the",
+        "swap_author": "cellular",
+        "sim_own": 0.9997531667148608,
+        "sim_swap": 0.999914390834485,
+        "advantage_own": -0.00016122411962415928
+      },
+      {
+        "probe_id": "core2v39_screenplay_07",
+        "own_author": "cellular",
+        "swap_author": "50_50",
+        "sim_own": 0.9995567247086556,
+        "sim_swap": 0.9989019564981559,
+        "advantage_own": 0.000654768210499701
+      },
+      {
+        "probe_id": "core2v39_screenplay_08",
+        "own_author": "50_50",
+        "swap_author": "ad_astra",
+        "sim_own": 0.9999547961726931,
+        "sim_swap": 0.9999896975552861,
+        "advantage_own": -3.4901382592988917e-05
+      },
+      {
+        "probe_id": "core2v39_screenplay_09",
+        "own_author": "ad_astra",
+        "swap_author": "asteroid_city",
+        "sim_own": 0.9997808707215307,
+        "sim_swap": 0.9997623471595521,
+        "advantage_own": 1.8523561978511793e-05
+      },
+      {
+        "probe_id": "core2v39_screenplay_10",
+        "own_author": "asteroid_city",
+        "swap_author": "blood_simple",
+        "sim_own": 0.9998523307068804,
+        "sim_swap": 0.999968959810718,
+        "advantage_own": -0.0001166291038375844
+      },
+      {
+        "probe_id": "core2v39_screenplay_11",
+        "own_author": "blood_simple",
+        "swap_author": "bourne_ultimatum_the",
+        "sim_own": 0.9997185445630551,
+        "sim_swap": 0.998581040272956,
+        "advantage_own": 0.0011375042900990673
+      },
+      {
+        "probe_id": "core2v39_screenplay_12",
+        "own_author": "bourne_ultimatum_the",
+        "swap_author": "chasing_amy",
+        "sim_own": 0.998721811138022,
+        "sim_swap": 0.9999439989860464,
+        "advantage_own": -0.0012221878480243031
+      },
+      {
+        "probe_id": "core2v39_screenplay_13",
+        "own_author": "chasing_amy",
+        "swap_author": "birds_the",
+        "sim_own": 0.9998533587490744,
+        "sim_swap": 0.999478736795359,
+        "advantage_own": 0.00037462195371540385
+      },
+      {
+        "probe_id": "core2v39_screenplay_14",
+        "own_author": "birds_the",
+        "swap_author": "cellular",
+        "sim_own": 0.9998714676329292,
+        "sim_swap": 0.9999900591313817,
+        "advantage_own": -0.00011859149845250272
+      },
+      {
+        "probe_id": "core2v39_screenplay_15",
+        "own_author": "cellular",
+        "swap_author": "50_50",
+        "sim_own": 0.9999507923980127,
+        "sim_swap": 0.9998572849787025,
+        "advantage_own": 9.350741931013484e-05
+      }
+    ],
+    "mean_advantage": 2.9375217272146342e-05,
+    "own_wins": 16,
+    "total": 32,
+    "verdict": "WEAK",
+    "note": "advantage_own = cos(gen_feats, own_ref_feats) - cos(gen_feats, swap_ref_feats). >0.05 = PASS."
+  },
+  "test3b_llm_style_match": {
+    "verdict": "SKIPPED",
+    "reason": "--skip-llm-judge"
+  },
+  "test4_memorization": {
+    "per_probe": [
+      {
+        "probe_id": "core2v39_poetry_00",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "core2v39_poetry_01",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "core2v39_poetry_02",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "core2v39_poetry_03",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "core2v39_poetry_04",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "core2v39_poetry_05",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "core2v39_poetry_06",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "core2v39_poetry_07",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "core2v39_poetry_08",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "core2v39_poetry_09",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "core2v39_poetry_10",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "core2v39_poetry_11",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "core2v39_poetry_12",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "core2v39_poetry_13",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "core2v39_poetry_14",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "core2v39_poetry_15",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "core2v39_screenplay_00",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "core2v39_screenplay_01",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "core2v39_screenplay_02",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "core2v39_screenplay_03",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "core2v39_screenplay_04",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "core2v39_screenplay_05",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "core2v39_screenplay_06",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "core2v39_screenplay_07",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "core2v39_screenplay_08",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "core2v39_screenplay_09",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "core2v39_screenplay_10",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "core2v39_screenplay_11",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "core2v39_screenplay_12",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "core2v39_screenplay_13",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "core2v39_screenplay_14",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      },
+      {
+        "probe_id": "core2v39_screenplay_15",
+        "target_10gram_hits": 0,
+        "ref_5gram_hits": 0
+      }
+    ],
+    "target_memorization_rate": 0.0,
+    "ref_leak_rate": 0.0,
+    "memorization_verdict": "PASS",
+    "leak_verdict": "PASS",
+    "note": "memorization: fraction of adapter outputs with any 10-gram in training targets. leak: 5-gram overlap with probe's own reference."
+  },
+  "test5_loss_curve": {
+    "verdict": "NO_DATA"
+  },
+  "test2_llm_judge": {
+    "verdict": "SKIPPED",
+    "reason": "--skip-llm-judge"
+  }
+}

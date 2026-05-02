@@ -1,0 +1,120 @@
+{
+  "summary": {
+    "train": {
+      "total": 8819,
+      "poetry": 2265,
+      "poetry_stage_speaker": 72,
+      "poetry_note_picture": 2,
+      "screenplay": 5635,
+      "assignment_spam": 16,
+      "speech": 919
+    },
+    "val": {
+      "total": 283,
+      "poetry": 183,
+      "poetry_stage_speaker": 6,
+      "poetry_note_picture": 2,
+      "screenplay": 50,
+      "speech": 50
+    },
+    "test": {
+      "total": 247,
+      "poetry": 147,
+      "poetry_stage_speaker": 4,
+      "screenplay": 50,
+      "speech": 50
+    }
+  },
+  "examples": {
+    "poetry_stage_speaker": [
+      {
+        "split": "train",
+        "author": "algernon_swinburne",
+        "target_doc_id": "algernon_swinburne_629fc3dfdfd2",
+        "snippet": "I /  / Lift up thy lips, turn round, look back for love, / Blind love that comes by night and casts out rest; / Of all things tired thy lips look weariest, / Save the long smile that they are wearied of. / Ah sweet, albeit no love b"
+      },
+      {
+        "split": "train",
+        "author": "algernon_swinburne",
+        "target_doc_id": "algernon_swinburne_96f6e10935f4",
+        "snippet": "I /  / Who hath known the ways of time / Or trodden behind his feet? / There is no such man among men. / For chance overcomes him, or crime / Changes; for all things sweet / In time wax bitter again. / Who shall give sorrow enough, / Or w"
+      },
+      {
+        "split": "train",
+        "author": "algernon_swinburne",
+        "target_doc_id": "algernon_swinburne_dd43d824ffdb",
+        "snippet": "I /  / White rose in red rose-garden / Is not so white; / Snowdrops that plead for pardon / And pine for fright / Because the hard East blows / Over their maiden rows / Grow not as this face grows from pale to bright. /  / Behind the veil, "
+      },
+      {
+        "split": "train",
+        "author": "algernon_swinburne",
+        "target_doc_id": "algernon_swinburne_dd43d824ffdb",
+        "snippet": "I /  / White rose in red rose-garden / Is not so white; / Snowdrops that plead for pardon / And pine for fright / Because the hard East blows / Over their maiden rows / Grow not as this face grows from pale to bright. /  / Behind the veil, "
+      },
+      {
+        "split": "train",
+        "author": "amy_lowell",
+        "target_doc_id": "amy_lowell_1d1ddeca326d",
+        "snippet": "L /  / Eunice was very quiet all that day, / A little dazed, and yet she seemed content. / At candle-time, he asked if she would play / Upon her harpsichord, at once she went / And tinkled airs from Lully's 'Carnival' / And 'Bacchus',"
+      }
+    ],
+    "poetry_note_picture": [
+      {
+        "split": "train",
+        "author": "matthew_arnold",
+        "target_doc_id": "matthew_arnold_7464dcb10b14",
+        "snippet": "_ELEGIAC POEMS._ /  / THE SCHOLAR-GYPSY 291 /  / THYRSIS 299 /  / MEMORIAL VERSES 307 /  / STANZAS IN MEMORY OF EDWARD QUILLINAN 310 /  / STANZAS FROM CARNAC 311 /  / A SOUTHERN NIGHT 312 /  / HAWORTH CHURCHYARD 317 /  / EPILOGUE 321 /  / RUGBY CHAPEL 321 / "
+      },
+      {
+        "split": "train",
+        "author": "william_butler_yeats",
+        "target_doc_id": "william_butler_yeats_39c74b548c67",
+        "snippet": "EARLY POEMS. /  / BALLADS AND LYRICS: / TO SOME I HAVE TALKED WITH BY THE FIRE. A DEDICATION / TO A VOLUME OF EARLY POEMS 89 / THE SONG OF THE HAPPY SHEPHERD 91 / THE SAD SHEPHERD 94 / THE CLOAK, THE BOAT, AND THE SHOES 96 / ANASHUYA AN"
+      },
+      {
+        "split": "val",
+        "author": "thomas_hardy",
+        "target_doc_id": "thomas_hardy_5e0e725252a0",
+        "snippet": "THEY bear him to his resting-place\u2014 / In slow procession sweeping by; / I follow at a stranger\u2019s space; / His kindred they, his sweetheart I. / Unchanged my gown of garish dye, / Though sable-sad is their attire; / But they stand ro"
+      },
+      {
+        "split": "val",
+        "author": "thomas_hardy",
+        "target_doc_id": "thomas_hardy_5e0e725252a0",
+        "snippet": "THEY bear him to his resting-place\u2014 / In slow procession sweeping by; / I follow at a stranger\u2019s space; / His kindred they, his sweetheart I. / Unchanged my gown of garish dye, / Though sable-sad is their attire; / But they stand ro"
+      }
+    ],
+    "assignment_spam": [
+      {
+        "split": "train",
+        "author": "12_monkeys",
+        "target_doc_id": "12_monkeys_d485ba219b1d",
+        "snippet": "INT. MOTEL ROOM /  /  ANGLE ON TV, the picture of RAILLY filling the screen. /  /  ----------------------- PAGE 52 MISSING ----------------------- /  /  COLE /  My notes. Observations. Clues. /  /  RAILLY /  Clues? What kind of clues? /  /  COL"
+      },
+      {
+        "split": "train",
+        "author": "adaptation",
+        "target_doc_id": "adaptation_70b70f87e2c6",
+        "snippet": "INT. ROMANTIC RESTAURANT - EVENING /  / Kaufman eats with Margaret. Margaret raises a glass. /  /  MARGARET /  To a fucking awesome assignment, man. /  / Kaufman, pleased, clicks glasses. He takes a breath. /  /  KAUFMAN /  Hey, I'm going t"
+      },
+      {
+        "split": "train",
+        "author": "alien_nation",
+        "target_doc_id": "alien_nation_8ecd73748288",
+        "snippet": "EXT. HENRY FORD BOULEVARD - NIGHT /  / The police mop-up is winding down. Cop cars, coroner's / wagons, fire trucks. We MOVE through it all to find Sykes / and Jetson seated on the curb, away from the railing. /  /  JETSON /  With Har"
+      },
+      {
+        "split": "train",
+        "author": "american_history_x",
+        "target_doc_id": "american_history_x_c695ffbabced",
+        "snippet": "EXT. APARTMENT BUILDING - THE COPS /  / Danny skates up to the front gate and looks at them. /  /  COP #1 / How the hell...? /  / Derek slaps the roof on the passenger side and scares the / hell out of the officers. /  /  COP #2 / Son of a bi"
+      },
+      {
+        "split": "train",
+        "author": "american_milkshake",
+        "target_doc_id": "american_milkshake_942210484cc7",
+        "snippet": "INT. CLASSROOM - DAY /   /  Everyone working away - Haroon and Jolie seated in the back /  with a giant stand alone magnifying glass. /   /  The teacher MR. APPLEBAUM puts a paper on Jolie's desk /  labeled B+, then Haroon's, labele"
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+id: 2026-05-text-016-style-audit-after-decoding
+modality: text
+project: text-gemma3-prefix-kv
+tags:
+  - evaluation
+  - style-judge
+  - decoding
+  - v3-corpus
+status: planned
+consequential: true
+question: "After sampled anti-repeat decoding removes loops, do adapter outputs actually carry reference style better than swap and prompted baselines?"
+hypothesis: "015 showed that deterministic decoding was masking the real question with mechanical loops. With sampled anti-repeat decoding, style quality should be judged directly before another training run. If T3b remains weak, the next training intervention should target target construction/objective rather than contrastive or architecture."
+parent: 2026-05-text-015-decoding-repetition-diagnostic
+base_model: google/gemma-3-4b-pt
+dataset: "data/pairs_v3_3_corrected_poetry_core3"
+inputs:
+  samples: "experiments/2026-05-text-015-decoding-repetition-diagnostic/results/runpod_eval/workspace/text-ip-adapter/eval_runs/2026-05-text-015-decoding-repetition-diagnostic/sampled_rep/samples.jsonl"
+  probes: "data/pairs_v3_3_corrected_poetry_core3/probes_balanced_n15.jsonl"
+  decoding_profile: "configs/decoding_sampled_antirepeat.yaml"
+decision_rule: "Proceed to training-objective work only if sampled anti-repeat still fails style carryover: T3b < 60% or manual/Opus audit finds author style mostly generic. If T3b passes, rerun a larger n=30 sampled eval before claiming progress."
+headline: "Next best bet: style audit after decoding fix."
+next: "Run when an Anthropic/OpenAI judge key is available, or complete a stricter manual audit with blinded own-vs-swap comparisons."

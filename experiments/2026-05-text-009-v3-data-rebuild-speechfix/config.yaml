@@ -1,0 +1,23 @@
+base_model: none
+data_paths:
+  - ../../../text-ip-adapter/data/raw/speeches/
+  - ../../../text-ip-adapter/data/sources_v2/canonical/poetry.jsonl
+  - ../../../text-ip-adapter/data/sources_v2/canonical/essay.jsonl
+  - ../../../text-ip-adapter/data/sources_v2/canonical/screenplay.jsonl
+target_outputs:
+  - ../../../text-ip-adapter/data/pairs_v3/train.jsonl
+  - ../../../text-ip-adapter/data/pairs_v3/val.jsonl
+  - ../../../text-ip-adapter/data/pairs_v3/test.jsonl
+  - ../../../text-ip-adapter/data/pairs_v3/manifest.json
+gates:
+  speech:
+    min_train_pairs: 1500
+    min_val_pairs: 100
+    min_test_pairs: 100
+    min_authors: 30
+  per_register_heldout:
+    min_val_pairs: 50
+    min_test_pairs: 50
+  author_disjoint: true
+eval:
+  n_probes: 0

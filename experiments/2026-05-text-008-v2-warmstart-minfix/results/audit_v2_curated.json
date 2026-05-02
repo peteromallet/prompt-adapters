@@ -1,0 +1,756 @@
+{
+  "audit": {
+    "after": {
+      "by_register": {
+        "essay": {
+          "row_count": 2240,
+          "unique_authors": 1770
+        },
+        "poetry": {
+          "row_count": 5360,
+          "unique_authors": 2133
+        },
+        "screenplay": {
+          "row_count": 810,
+          "unique_authors": 54
+        },
+        "speech": {
+          "row_count": 462,
+          "unique_authors": 244
+        }
+      },
+      "by_split": {
+        "test": {
+          "registers": {
+            "essay": {
+              "ocr_scored_rows": 0,
+              "pct_medium_source": 100.0,
+              "pct_non_literary_web_scaffolding": 0.0,
+              "pct_ocr_score_gt_0_10": null,
+              "pct_rule_generated_instruction": 100.0,
+              "pct_suspicious_stopword_instruction": 4.93,
+              "pct_target_len_below_100": 0.0,
+              "ref_text_length": {
+                "mean": 2776.92,
+                "p10": 782,
+                "p50": 3480,
+                "p90": 3969
+              },
+              "row_count": 142,
+              "target_text_length": {
+                "mean": 2460.66,
+                "p10": 777,
+                "p50": 2210,
+                "p90": 3945
+              },
+              "unique_authors": 102
+            },
+            "poetry": {
+              "ocr_scored_rows": 0,
+              "pct_ocr_score_gt_0_10": null,
+              "pct_rule_generated_instruction": 100.0,
+              "pct_suspicious_stopword_instruction": 100.0,
+              "pct_target_len_below_100": 0.0,
+              "ref_text_length": {
+                "mean": 1637.38,
+                "p10": 529,
+                "p50": 1134,
+                "p90": 3964
+              },
+              "row_count": 275,
+              "target_text_length": {
+                "mean": 1601.09,
+                "p10": 509,
+                "p50": 1116,
+                "p90": 3973
+              },
+              "unique_authors": 111
+            },
+            "screenplay": {
+              "ocr_scored_rows": 0,
+              "pct_lacks_obvious_screenplay_structure": 0.0,
+              "pct_ocr_score_gt_0_10": null,
+              "pct_rule_generated_instruction": 100.0,
+              "pct_suspicious_stopword_instruction": 3.33,
+              "pct_target_len_below_100": 0.0,
+              "pct_target_mostly_whitespace": 0.0,
+              "ref_text_length": {
+                "mean": 3957.9,
+                "p10": 3933,
+                "p50": 3956,
+                "p90": 3979
+              },
+              "row_count": 30,
+              "target_text_length": {
+                "mean": 3852.5,
+                "p10": 3846,
+                "p50": 3951,
+                "p90": 3979
+              },
+              "unique_authors": 2
+            },
+            "speech": {
+              "ocr_scored_rows": 0,
+              "pct_mr_author_and_un_debate": 0.0,
+              "pct_mr_author_slug": 0.0,
+              "pct_ocr_score_gt_0_10": null,
+              "pct_rule_generated_instruction": 100.0,
+              "pct_suspicious_stopword_instruction": 0.0,
+              "pct_target_len_below_100": 0.0,
+              "ref_text_length": {
+                "mean": 1339.62,
+                "p10": 548,
+                "p50": 871,
+                "p90": 2567
+              },
+              "row_count": 13,
+              "target_text_length": {
+                "mean": 926.15,
+                "p10": 474,
+                "p50": 745,
+                "p90": 1275
+              },
+              "unique_authors": 7
+            }
+          },
+          "row_count": 460,
+          "unique_authors": 222
+        },
+        "train": {
+          "registers": {
+            "essay": {
+              "ocr_scored_rows": 0,
+              "pct_medium_source": 100.0,
+              "pct_non_literary_web_scaffolding": 0.0,
+              "pct_ocr_score_gt_0_10": null,
+              "pct_rule_generated_instruction": 100.0,
+              "pct_suspicious_stopword_instruction": 3.57,
+              "pct_target_len_below_100": 0.0,
+              "ref_text_length": {
+                "mean": 2751.93,
+                "p10": 783,
+                "p50": 3289,
+                "p90": 3966
+              },
+              "row_count": 1961,
+              "target_text_length": {
+                "mean": 2524.8,
+                "p10": 684,
+                "p50": 2668,
+                "p90": 3962
+              },
+              "unique_authors": 1563
+            },
+            "poetry": {
+              "ocr_scored_rows": 0,
+              "pct_ocr_score_gt_0_10": null,
+              "pct_rule_generated_instruction": 100.0,
+              "pct_suspicious_stopword_instruction": 100.0,
+              "pct_target_len_below_100": 0.0,
+              "ref_text_length": {
+                "mean": 1438.2,
+                "p10": 533,
+                "p50": 1032,
+                "p90": 3501
+              },
+              "row_count": 4785,
+              "target_text_length": {
+                "mean": 1443.41,
+                "p10": 547,
+                "p50": 1041,
+                "p90": 3463
+              },
+              "unique_authors": 1902
+            },
+            "screenplay": {
+              "ocr_scored_rows": 0,
+              "pct_lacks_obvious_screenplay_structure": 6.8,
+              "pct_ocr_score_gt_0_10": null,
+              "pct_rule_generated_instruction": 100.0,
+              "pct_suspicious_stopword_instruction": 1.73,
+              "pct_target_len_below_100": 0.0,
+              "pct_target_mostly_whitespace": 0.0,
+              "ref_text_length": {
+                "mean": 3956.49,
+                "p10": 3930,
+                "p50": 3967,
+                "p90": 3990
+              },
+              "row_count": 750,
+              "target_text_length": {
+                "mean": 3885.7,
+                "p10": 3925,
+                "p50": 3964,
+                "p90": 3987
+              },
+              "unique_authors": 50
+            },
+            "speech": {
+              "ocr_scored_rows": 0,
+              "pct_mr_author_and_un_debate": 0.0,
+              "pct_mr_author_slug": 0.0,
+              "pct_ocr_score_gt_0_10": null,
+              "pct_rule_generated_instruction": 100.0,
+              "pct_suspicious_stopword_instruction": 1.23,
+              "pct_target_len_below_100": 0.0,
+              "ref_text_length": {
+                "mean": 1483.34,
+                "p10": 454,
+                "p50": 932,
+                "p90": 3940
+              },
+              "row_count": 406,
+              "target_text_length": {
+                "mean": 1472.64,
+                "p10": 462,
+                "p50": 851,
+                "p90": 3920
+              },
+              "unique_authors": 214
+            }
+          },
+          "row_count": 7902,
+          "unique_authors": 3729
+        },
+        "val": {
+          "registers": {
+            "essay": {
+              "ocr_scored_rows": 0,
+              "pct_medium_source": 100.0,
+              "pct_non_literary_web_scaffolding": 0.0,
+              "pct_ocr_score_gt_0_10": null,
+              "pct_rule_generated_instruction": 100.0,
+              "pct_suspicious_stopword_instruction": 2.19,
+              "pct_target_len_below_100": 0.0,
+              "ref_text_length": {
+                "mean": 2924.92,
+                "p10": 884,
+                "p50": 3719,
+                "p90": 3977
+              },
+              "row_count": 137,
+              "target_text_length": {
+                "mean": 2611.34,
+                "p10": 773,
+                "p50": 3058,
+                "p90": 3984
+              },
+              "unique_authors": 105
+            },
+            "poetry": {
+              "ocr_scored_rows": 0,
+              "pct_ocr_score_gt_0_10": null,
+              "pct_rule_generated_instruction": 100.0,
+              "pct_suspicious_stopword_instruction": 100.0,
+              "pct_target_len_below_100": 0.0,
+              "ref_text_length": {
+                "mean": 1524.92,
+                "p10": 521,
+                "p50": 1083,
+                "p90": 3798
+              },
+              "row_count": 300,
+              "target_text_length": {
+                "mean": 1413.94,
+                "p10": 524,
+                "p50": 988,
+                "p90": 3317
+              },
+              "unique_authors": 120
+            },
+            "screenplay": {
+              "ocr_scored_rows": 0,
+              "pct_lacks_obvious_screenplay_structure": 40.0,
+              "pct_ocr_score_gt_0_10": null,
+              "pct_rule_generated_instruction": 100.0,
+              "pct_suspicious_stopword_instruction": 0.0,
+              "pct_target_len_below_100": 0.0,
+              "pct_target_mostly_whitespace": 0.0,
+              "ref_text_length": {
+                "mean": 3915.43,
+                "p10": 3923,
+                "p50": 3967,
+                "p90": 3992
+              },
+              "row_count": 30,
+              "target_text_length": {
+                "mean": 3894.7,
+                "p10": 3906,
+                "p50": 3973,
+                "p90": 3992
+              },
+              "unique_authors": 2
+            },
+            "speech": {
+              "ocr_scored_rows": 0,
+              "pct_mr_author_and_un_debate": 0.0,
+              "pct_mr_author_slug": 0.0,
+              "pct_ocr_score_gt_0_10": null,
+              "pct_rule_generated_instruction": 100.0,
+              "pct_suspicious_stopword_instruction": 6.98,
+              "pct_target_len_below_100": 0.0,
+              "ref_text_length": {
+                "mean": 1296.93,
+                "p10": 474,
+                "p50": 944,
+                "p90": 3025
+              },
+              "row_count": 43,
+              "target_text_length": {
+                "mean": 1194.07,
+                "p10": 443,
+                "p50": 671,
+                "p90": 3244
+              },
+              "unique_authors": 23
+            }
+          },
+          "row_count": 510,
+          "unique_authors": 249
+        }
+      },
+      "overall": {
+        "row_count": 8872,
+        "unique_authors": 4200
+      }
+    },
+    "before": {
+      "by_split": {
+        "test": {
+          "registers": {
+            "essay": {
+              "ocr_scored_rows": 0,
+              "pct_medium_source": 100.0,
+              "pct_non_literary_web_scaffolding": 59.43,
+              "pct_ocr_score_gt_0_10": null,
+              "pct_rule_generated_instruction": 100.0,
+              "pct_suspicious_stopword_instruction": 4.57,
+              "pct_target_len_below_100": 0.0,
+              "ref_text_length": {
+                "mean": 2971.68,
+                "p10": 930,
+                "p50": 3812,
+                "p90": 3969
+              },
+              "row_count": 350,
+              "target_text_length": {
+                "mean": 2848.05,
+                "p10": 886,
+                "p50": 3444,
+                "p90": 3974
+              },
+              "unique_authors": 213
+            },
+            "poetry": {
+              "ocr_scored_rows": 0,
+              "pct_ocr_score_gt_0_10": null,
+              "pct_rule_generated_instruction": 100.0,
+              "pct_suspicious_stopword_instruction": 100.0,
+              "pct_target_len_below_100": 0.0,
+              "ref_text_length": {
+                "mean": 1637.38,
+                "p10": 529,
+                "p50": 1134,
+                "p90": 3964
+              },
+              "row_count": 275,
+              "target_text_length": {
+                "mean": 1601.09,
+                "p10": 509,
+                "p50": 1116,
+                "p90": 3973
+              },
+              "unique_authors": 111
+            },
+            "screenplay": {
+              "ocr_scored_rows": 0,
+              "pct_lacks_obvious_screenplay_structure": 0.0,
+              "pct_ocr_score_gt_0_10": null,
+              "pct_rule_generated_instruction": 100.0,
+              "pct_suspicious_stopword_instruction": 3.33,
+              "pct_target_len_below_100": 0.0,
+              "pct_target_mostly_whitespace": 0.0,
+              "ref_text_length": {
+                "mean": 3957.9,
+                "p10": 3933,
+                "p50": 3956,
+                "p90": 3979
+              },
+              "row_count": 30,
+              "target_text_length": {
+                "mean": 3852.5,
+                "p10": 3846,
+                "p50": 3951,
+                "p90": 3979
+              },
+              "unique_authors": 2
+            },
+            "speech": {
+              "ocr_scored_rows": 0,
+              "pct_mr_author_and_un_debate": 90.71,
+              "pct_mr_author_slug": 90.71,
+              "pct_ocr_score_gt_0_10": null,
+              "pct_rule_generated_instruction": 100.0,
+              "pct_suspicious_stopword_instruction": 0.71,
+              "pct_target_len_below_100": 0.0,
+              "ref_text_length": {
+                "mean": 1377.78,
+                "p10": 443,
+                "p50": 1032,
+                "p90": 3144
+              },
+              "row_count": 140,
+              "target_text_length": {
+                "mean": 1572.84,
+                "p10": 490,
+                "p50": 1038,
+                "p90": 3904
+              },
+              "unique_authors": 61
+            }
+          },
+          "row_count": 795,
+          "unique_authors": 386
+        },
+        "train": {
+          "registers": {
+            "essay": {
+              "ocr_scored_rows": 0,
+              "pct_medium_source": 100.0,
+              "pct_non_literary_web_scaffolding": 60.78,
+              "pct_ocr_score_gt_0_10": null,
+              "pct_rule_generated_instruction": 100.0,
+              "pct_suspicious_stopword_instruction": 3.58,
+              "pct_target_len_below_100": 0.0,
+              "ref_text_length": {
+                "mean": 2948.37,
+                "p10": 963,
+                "p50": 3706,
+                "p90": 3972
+              },
+              "row_count": 5000,
+              "target_text_length": {
+                "mean": 2963.02,
+                "p10": 949,
+                "p50": 3741,
+                "p90": 3974
+              },
+              "unique_authors": 3381
+            },
+            "poetry": {
+              "ocr_scored_rows": 0,
+              "pct_ocr_score_gt_0_10": null,
+              "pct_rule_generated_instruction": 100.0,
+              "pct_suspicious_stopword_instruction": 100.0,
+              "pct_target_len_below_100": 0.0,
+              "ref_text_length": {
+                "mean": 1438.2,
+                "p10": 533,
+                "p50": 1032,
+                "p90": 3501
+              },
+              "row_count": 4785,
+              "target_text_length": {
+                "mean": 1443.41,
+                "p10": 547,
+                "p50": 1041,
+                "p90": 3463
+              },
+              "unique_authors": 1902
+            },
+            "screenplay": {
+              "ocr_scored_rows": 0,
+              "pct_lacks_obvious_screenplay_structure": 6.8,
+              "pct_ocr_score_gt_0_10": null,
+              "pct_rule_generated_instruction": 100.0,
+              "pct_suspicious_stopword_instruction": 1.73,
+              "pct_target_len_below_100": 0.0,
+              "pct_target_mostly_whitespace": 0.0,
+              "ref_text_length": {
+                "mean": 3956.49,
+                "p10": 3930,
+                "p50": 3967,
+                "p90": 3990
+              },
+              "row_count": 750,
+              "target_text_length": {
+                "mean": 3885.7,
+                "p10": 3925,
+                "p50": 3964,
+                "p90": 3987
+              },
+              "unique_authors": 50
+            },
+            "speech": {
+              "ocr_scored_rows": 0,
+              "pct_mr_author_and_un_debate": 86.52,
+              "pct_mr_author_slug": 86.52,
+              "pct_ocr_score_gt_0_10": null,
+              "pct_rule_generated_instruction": 100.0,
+              "pct_suspicious_stopword_instruction": 0.83,
+              "pct_target_len_below_100": 0.0,
+              "ref_text_length": {
+                "mean": 1654.2,
+                "p10": 463,
+                "p50": 1091,
+                "p90": 3951
+              },
+              "row_count": 3012,
+              "target_text_length": {
+                "mean": 1662.76,
+                "p10": 465,
+                "p50": 1085,
+                "p90": 3949
+              },
+              "unique_authors": 1251
+            }
+          },
+          "row_count": 13547,
+          "unique_authors": 6584
+        },
+        "val": {
+          "registers": {
+            "essay": {
+              "ocr_scored_rows": 0,
+              "pct_medium_source": 100.0,
+              "pct_non_literary_web_scaffolding": 60.86,
+              "pct_ocr_score_gt_0_10": null,
+              "pct_rule_generated_instruction": 100.0,
+              "pct_suspicious_stopword_instruction": 2.86,
+              "pct_target_len_below_100": 0.0,
+              "ref_text_length": {
+                "mean": 3069.49,
+                "p10": 1046,
+                "p50": 3826,
+                "p90": 3976
+              },
+              "row_count": 350,
+              "target_text_length": {
+                "mean": 3051.16,
+                "p10": 1104,
+                "p50": 3796,
+                "p90": 3977
+              },
+              "unique_authors": 216
+            },
+            "poetry": {
+              "ocr_scored_rows": 0,
+              "pct_ocr_score_gt_0_10": null,
+              "pct_rule_generated_instruction": 100.0,
+              "pct_suspicious_stopword_instruction": 100.0,
+              "pct_target_len_below_100": 0.0,
+              "ref_text_length": {
+                "mean": 1524.92,
+                "p10": 521,
+                "p50": 1083,
+                "p90": 3798
+              },
+              "row_count": 300,
+              "target_text_length": {
+                "mean": 1413.94,
+                "p10": 524,
+                "p50": 988,
+                "p90": 3317
+              },
+              "unique_authors": 120
+            },
+            "screenplay": {
+              "ocr_scored_rows": 0,
+              "pct_lacks_obvious_screenplay_structure": 40.0,
+              "pct_ocr_score_gt_0_10": null,
+              "pct_rule_generated_instruction": 100.0,
+              "pct_suspicious_stopword_instruction": 0.0,
+              "pct_target_len_below_100": 0.0,
+              "pct_target_mostly_whitespace": 0.0,
+              "ref_text_length": {
+                "mean": 3915.43,
+                "p10": 3923,
+                "p50": 3967,
+                "p90": 3992
+              },
+              "row_count": 30,
+              "target_text_length": {
+                "mean": 3894.7,
+                "p10": 3906,
+                "p50": 3973,
+                "p90": 3992
+              },
+              "unique_authors": 2
+            },
+            "speech": {
+              "ocr_scored_rows": 0,
+              "pct_mr_author_and_un_debate": 70.34,
+              "pct_mr_author_slug": 70.34,
+              "pct_ocr_score_gt_0_10": null,
+              "pct_rule_generated_instruction": 100.0,
+              "pct_suspicious_stopword_instruction": 3.45,
+              "pct_target_len_below_100": 0.0,
+              "ref_text_length": {
+                "mean": 1527.94,
+                "p10": 476,
+                "p50": 944,
+                "p90": 3933
+              },
+              "row_count": 145,
+              "target_text_length": {
+                "mean": 1547.55,
+                "p10": 449,
+                "p50": 937,
+                "p90": 3900
+              },
+              "unique_authors": 64
+            }
+          },
+          "row_count": 825,
+          "unique_authors": 401
+        }
+      },
+      "overall": {
+        "row_count": 15167,
+        "unique_authors": 7371
+      }
+    }
+  },
+  "command": "scripts/curate_v2_pairs.py --input-dir data/pairs_v2 --output-dir data/pairs_v2",
+  "corpus_version": "v2",
+  "counts": {
+    "by_register": {
+      "essay": {
+        "after": 2240,
+        "before": 5700,
+        "unique_authors_after": 1770,
+        "unique_authors_before": 3810
+      },
+      "poetry": {
+        "after": 5360,
+        "before": 5360,
+        "unique_authors_after": 2133,
+        "unique_authors_before": 2133
+      },
+      "screenplay": {
+        "after": 810,
+        "before": 810,
+        "unique_authors_after": 54,
+        "unique_authors_before": 54
+      },
+      "speech": {
+        "after": 462,
+        "before": 3297,
+        "unique_authors_after": 244,
+        "unique_authors_before": 1376
+      }
+    },
+    "by_split": {
+      "test": {
+        "after": 460,
+        "before": 795,
+        "unique_authors_after": 222,
+        "unique_authors_before": 386
+      },
+      "train": {
+        "after": 7902,
+        "before": 13547,
+        "unique_authors_after": 3729,
+        "unique_authors_before": 6584
+      },
+      "val": {
+        "after": 510,
+        "before": 825,
+        "unique_authors_after": 249,
+        "unique_authors_before": 401
+      }
+    }
+  },
+  "gates": {
+    "ag1_pass": false,
+    "ag1_survival_fraction": 0.585,
+    "ag2_pass": false,
+    "ag3_pass": true
+  },
+  "generated_at_utc": "2026-04-25T10:43:28.680864Z",
+  "input_dir": "/workspace/text-ip-adapter/data/pairs_v2",
+  "input_files": {
+    "test": {
+      "path": "/workspace/text-ip-adapter/data/pairs_v2/test.v2_clean.jsonl",
+      "rows": 795,
+      "sha256": "cdcf1fbd5eb07c8954ad697e23ea24ae8d895ef6b8e7e8eb9e916bd273b863cb"
+    },
+    "train": {
+      "path": "/workspace/text-ip-adapter/data/pairs_v2/train.v2_clean.jsonl",
+      "rows": 13547,
+      "sha256": "f3600408c86738f651d8c8601fd339c92c4ef12e338b3adf635447fd59e63b2b"
+    },
+    "val": {
+      "path": "/workspace/text-ip-adapter/data/pairs_v2/val.v2_clean.jsonl",
+      "rows": 825,
+      "sha256": "a32351707844c0be1722da74c565971345f2ab3a975577d2f9a08b74dab96820"
+    }
+  },
+  "output_dir": "/workspace/text-ip-adapter/data/pairs_v2",
+  "output_files": {
+    "test": {
+      "path": "/workspace/text-ip-adapter/data/pairs_v2/test.v2_curated.jsonl",
+      "rows": 460,
+      "sha256": "0c03b299094a71a2d08d7839b5056ee7c91882b8a1cbf81d3cc50914a1f61257"
+    },
+    "train": {
+      "path": "/workspace/text-ip-adapter/data/pairs_v2/train.v2_curated.jsonl",
+      "rows": 7902,
+      "sha256": "8550bff3edf5fcc68ca0dcaad5e30565e36629cd2c545a37e1e9e43b349c7e62"
+    },
+    "val": {
+      "path": "/workspace/text-ip-adapter/data/pairs_v2/val.v2_curated.jsonl",
+      "rows": 510,
+      "sha256": "dabb77afc52b204171b4d703266f38c9b68b7d6204fe10d664402cade2e3c936"
+    }
+  },
+  "removed_rows": {
+    "filter_rules": [
+      "drop rows where stripped target_text length < 100",
+      "drop rows with OCR score > 0.10 when OCR score exists",
+      "drop rows carrying a short flag",
+      "drop speech rows where author slug matches ^mr_ and source indicates un_debate",
+      "drop essay rows matching the non-literary web/code/listicle regex set",
+      "drop screenplay entirely if fewer than 30% of screenplay rows survive the above filters"
+    ],
+    "removed_rows_by_reason": {
+      "essay_non_literary_scaffolding": 3460,
+      "speech_mr_un_debate": 2835
+    },
+    "removed_rows_by_split": {
+      "test": {
+        "essay_non_literary_scaffolding": 208,
+        "speech_mr_un_debate": 127
+      },
+      "train": {
+        "essay_non_literary_scaffolding": 3039,
+        "speech_mr_un_debate": 2606
+      },
+      "val": {
+        "essay_non_literary_scaffolding": 213,
+        "speech_mr_un_debate": 102
+      }
+    },
+    "screenplay_dropped_entirely": false,
+    "screenplay_retained_ratio_before_register_drop": 1.0,
+    "screenplay_rows_removed_by_register_drop": 0
+  },
+  "unique_authors": {
+    "after": {
+      "by_split": {
+        "test": 222,
+        "train": 3729,
+        "val": 249
+      },
+      "overall": 4200
+    },
+    "before": {
+      "by_split": {
+        "test": 386,
+        "train": 6584,
+        "val": 401
+      },
+      "overall": 7371
+    }
+  }
+}

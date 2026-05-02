@@ -1,0 +1,40 @@
+{
+  "decision_counts": {
+    "delete": 685,
+    "edit": 68,
+    "keep": 3106
+  },
+  "decision_files": [
+    "prompt-adapters/projects/poetry-clean-corpus/pair_audit_v1/decisions/decisions_shard_00.jsonl",
+    "prompt-adapters/projects/poetry-clean-corpus/pair_audit_v1/decisions/decisions_shard_01.jsonl",
+    "prompt-adapters/projects/poetry-clean-corpus/pair_audit_v1/decisions/decisions_shard_02.jsonl",
+    "prompt-adapters/projects/poetry-clean-corpus/pair_audit_v1/decisions/decisions_shard_03.jsonl",
+    "prompt-adapters/projects/poetry-clean-corpus/pair_audit_v1/decisions/decisions_shard_04.jsonl",
+    "prompt-adapters/projects/poetry-clean-corpus/pair_audit_v1/decisions/decisions_shard_05.jsonl",
+    "prompt-adapters/projects/poetry-clean-corpus/pair_audit_v1/decisions/decisions_shard_06.jsonl",
+    "prompt-adapters/projects/poetry-clean-corpus/pair_audit_v1/decisions/decisions_shard_07.jsonl",
+    "prompt-adapters/projects/poetry-clean-corpus/pair_audit_v1/decisions/decisions_shard_08.jsonl",
+    "prompt-adapters/projects/poetry-clean-corpus/pair_audit_v1/decisions/decisions_shard_09.jsonl"
+  ],
+  "decision_rows": 3859,
+  "decisions_dir": "prompt-adapters/projects/poetry-clean-corpus/pair_audit_v1/decisions",
+  "errors": [],
+  "output_rows": 3174,
+  "reason_counts": {
+    "drama_or_dialogue": 70,
+    "foreign_language": 2,
+    "metadata": 165,
+    "non_poetry": 2,
+    "ocr": 471,
+    "prose": 132,
+    "style_mismatch": 37
+  },
+  "severity_counts": {
+    "major": 684,
+    "minor": 69,
+    "none": 3106
+  },
+  "source_rows": 3859,
+  "source_train": "text-ip-adapter/data/pairs_v5_4_poetry_corpus_probe_artifact_clean/train.jsonl",
+  "valid": true
+}

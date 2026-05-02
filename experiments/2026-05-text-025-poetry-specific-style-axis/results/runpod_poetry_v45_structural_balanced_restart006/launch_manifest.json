@@ -1,0 +1,50 @@
+{
+  "checkpoint": "/Users/peteromalley/Documents/reigh-workspace/prompt-adapters/experiments/2026-05-text-022-broader-clean-split-restart/results/runpod_tmp/train_artifacts/tmp/stage1_v3_8_core2_cleanheldout_restart/final.pt",
+  "checkpoint_upload": "skipped",
+  "config": "configs/stage1_v4_5_poetry_structural_balanced_triplet_restart006.yaml",
+  "dataset_syncs": [
+    {
+      "local_dir": "/Users/peteromalley/Documents/reigh-workspace/text-ip-adapter/data/pairs_v4_5_poetry_structural_balanced",
+      "remote_dir": "/workspace/text-ip-adapter/data/pairs_v4_5_poetry_structural_balanced",
+      "result": {
+        "changed": true,
+        "hash": "85735c7a9877c1ca23edf15e0b35078c6c85b21b808cbbf4ff0ad80214082c9d"
+      }
+    }
+  ],
+  "error": "OSError(28, 'No space left on device')",
+  "experiment_id": "2026-05-text-025-poetry-specific-style-axis",
+  "failed_at": "2026-04-26T13:55:42.047638+00:00",
+  "hf_token_synced": true,
+  "launched_at": "2026-04-26T13:27:57.699448+00:00",
+  "max_steps": 1200,
+  "n_probes": 16,
+  "pod_id": "e4sjagd00oa5kl",
+  "preflight_stdout": "scripts/train.py True 822\nsrc/text_ip_adapter/data/dataset.py True 6856\nsrc/text_ip_adapter/train/loop.py True 13716\nconfigs/stage1_v4_5_poetry_structural_balanced_triplet_restart006.yaml True 1273\ndata/pairs_v4_5_poetry_structural_balanced/train.jsonl True 3146389\ndata/pairs_v4_5_poetry_structural_balanced/probes_balanced_n16.jsonl True 42097\ncheckpoints/stage1_gemma_no_trunk/final.pt True 966090430\nmax_steps 1200\nstyle_triplet_weight 0.7\nstyle_triplet_margin 0.35\ncontrastive_weight 0.1\ntrain_rows 727\n",
+  "project_sync": {
+    "changed": true,
+    "hash": "91138165ec453165aaf98b64e4425588a8174552defdd64bb42ad0d75fd9b9ac"
+  },
+  "ready_at": "2026-04-26T13:28:44.564937+00:00",
+  "remote_eval_dir": "/tmp/exp025_poetry_v45_structural_balanced_eval",
+  "remote_orch_log_dir": "/tmp/exp025_poetry_v45_structural_balanced_orch",
+  "remote_project_root": "/tmp/text-ip-adapter-025-poetry-v45-structural-balanced",
+  "remote_train_dir": "/tmp/stage1_v4_5_poetry_structural_balanced_triplet_restart006",
+  "status": "failed",
+  "storage": {
+    "matches": [
+      {
+        "dataCenterId": "EU-RO-1",
+        "id": "m6ccu1lodp",
+        "name": "Peter",
+        "size": 3000
+      }
+    ],
+    "storage_name": "Peter"
+  },
+  "terminated": true,
+  "terminated_at": "2026-04-26T13:55:42.778136+00:00",
+  "training_completed_at": "2026-04-26T13:40:59.342681+00:00",
+  "training_started_at": "2026-04-26T13:30:01.080316+00:00",
+  "workspace_root": "/workspace/text-ip-adapter"
+}

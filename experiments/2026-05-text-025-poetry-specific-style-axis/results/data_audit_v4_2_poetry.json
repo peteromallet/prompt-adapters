@@ -1,0 +1,114 @@
+{
+  "probes": {
+    "authors": {
+      "christina_rossetti": 2,
+      "edna_millay": 2,
+      "edwin_arlington_robinson": 2,
+      "emily_dickinson": 2,
+      "john_masefield": 2,
+      "matthew_arnold": 2,
+      "sara_teasdale": 2,
+      "stephen_crane": 2
+    },
+    "instructions": {
+      "Write a short poem in the style of the reference passage.": 16
+    },
+    "rows": 16,
+    "swap_authors": {
+      "null": 16
+    }
+  },
+  "test": {
+    "authors": {
+      "christina_rossetti": 100,
+      "emily_dickinson": 86,
+      "sara_teasdale": 88,
+      "stephen_crane": 85
+    },
+    "has_source_artifact_like_lines": 0,
+    "instruction_counts": {
+      "Write a short poem in the style of the reference passage.": 359
+    },
+    "ref_words_min_median_max": [
+      42,
+      105,
+      125
+    ],
+    "registers": {
+      "poetry": 359
+    },
+    "rows": 359,
+    "target_words_min_median_max": [
+      40,
+      81,
+      567
+    ]
+  },
+  "train": {
+    "authors": {
+      "algernon_swinburne": 97,
+      "amy_lowell": 99,
+      "dante_rossetti": 100,
+      "edgar_allan_poe": 83,
+      "elizabeth_browning": 100,
+      "gerard_manley_hopkins": 94,
+      "henry_longfellow": 100,
+      "john_keats": 100,
+      "oscar_wilde": 97,
+      "robert_frost": 100,
+      "rudyard_kipling": 59,
+      "rupert_brooke": 99,
+      "t_s_eliot": 94,
+      "thomas_hardy": 92,
+      "walt_whitman": 97,
+      "wilfred_owen": 94,
+      "william_blake": 100,
+      "william_butler_yeats": 95,
+      "william_wordsworth": 95
+    },
+    "has_source_artifact_like_lines": 0,
+    "instruction_counts": {
+      "Write a short poem in the style of the reference passage.": 1795
+    },
+    "ref_words_min_median_max": [
+      47,
+      121,
+      486
+    ],
+    "registers": {
+      "poetry": 1795
+    },
+    "rows": 1795,
+    "target_words_min_median_max": [
+      40,
+      118,
+      562
+    ]
+  },
+  "val": {
+    "authors": {
+      "edna_millay": 95,
+      "edwin_arlington_robinson": 99,
+      "john_masefield": 96,
+      "matthew_arnold": 97
+    },
+    "has_source_artifact_like_lines": 0,
+    "instruction_counts": {
+      "Write a short poem in the style of the reference passage.": 387
+    },
+    "ref_words_min_median_max": [
+      57,
+      113,
+      248
+    ],
+    "registers": {
+      "poetry": 387
+    },
+    "rows": 387,
+    "target_words_min_median_max": [
+      41,
+      119,
+      546
+    ]
+  }
+}

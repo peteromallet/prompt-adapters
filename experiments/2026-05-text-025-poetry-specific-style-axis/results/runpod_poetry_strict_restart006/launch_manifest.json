@@ -1,0 +1,50 @@
+{
+  "checkpoint": "/Users/peteromalley/Documents/reigh-workspace/prompt-adapters/experiments/2026-05-text-022-broader-clean-split-restart/results/runpod_tmp/train_artifacts/tmp/stage1_v3_8_core2_cleanheldout_restart/final.pt",
+  "checkpoint_upload": "skipped",
+  "config": "configs/stage1_v4_3_poetry_strict_triplet_restart006.yaml",
+  "dataset_syncs": [
+    {
+      "local_dir": "/Users/peteromalley/Documents/reigh-workspace/text-ip-adapter/data/pairs_v4_3_poetry_strict",
+      "remote_dir": "/workspace/text-ip-adapter/data/pairs_v4_3_poetry_strict",
+      "result": {
+        "changed": true,
+        "hash": "3c6e2b7f70ddcca976d964508f739c6ca2b4caab05d01d3bd016bb5ae352b586"
+      }
+    }
+  ],
+  "error": "OSError(28, 'No space left on device')",
+  "experiment_id": "2026-05-text-025-poetry-specific-style-axis",
+  "failed_at": "2026-04-26T12:21:16.474823+00:00",
+  "hf_token_synced": true,
+  "launched_at": "2026-04-26T11:51:48.974206+00:00",
+  "max_steps": 1200,
+  "n_probes": 16,
+  "pod_id": "6h88m2oeyt2xd3",
+  "preflight_stdout": "scripts/train.py True 822\nsrc/text_ip_adapter/data/dataset.py True 6856\nsrc/text_ip_adapter/train/loop.py True 13716\nconfigs/stage1_v4_3_poetry_strict_triplet_restart006.yaml True 1194\ndata/pairs_v4_3_poetry_strict/train.jsonl True 7612702\ndata/pairs_v4_3_poetry_strict/probes_balanced_n16.jsonl True 42559\ncheckpoints/stage1_gemma_no_trunk/final.pt True 966090430\nmax_steps 1200\nstyle_triplet_weight 0.7\nstyle_triplet_margin 0.35\ncontrastive_weight 0.1\ntrain_rows 1771\n",
+  "project_sync": {
+    "changed": true,
+    "hash": "9583eb6ebf2a95006801524b197ec5eab73c3657d81889abf0185e8df9d69510"
+  },
+  "ready_at": "2026-04-26T11:52:12.341976+00:00",
+  "remote_eval_dir": "/tmp/exp025_poetry_strict_eval",
+  "remote_orch_log_dir": "/tmp/exp025_poetry_strict_orch",
+  "remote_project_root": "/tmp/text-ip-adapter-025-poetry-strict",
+  "remote_train_dir": "/tmp/stage1_v4_3_poetry_strict_triplet_restart006",
+  "status": "failed",
+  "storage": {
+    "matches": [
+      {
+        "dataCenterId": "EU-RO-1",
+        "id": "m6ccu1lodp",
+        "name": "Peter",
+        "size": 3000
+      }
+    ],
+    "storage_name": "Peter"
+  },
+  "terminated": true,
+  "terminated_at": "2026-04-26T12:21:17.205734+00:00",
+  "training_completed_at": "2026-04-26T12:03:30.482871+00:00",
+  "training_started_at": "2026-04-26T11:53:06.322877+00:00",
+  "workspace_root": "/workspace/text-ip-adapter"
+}
